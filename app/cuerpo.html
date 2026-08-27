@@ -1,0 +1,41 @@
+<header class="pl-top">
+  <div class="pl-top-in">
+    __LOGO__
+    <div class="pl-top-t">
+      <p class="label">Planificador de newsletters</p>
+      <h1>Plan 2027</h1>
+    </div>
+    <div class="pl-top-acts">
+      <button class="btn btn-outline-blue btn-sm" id="btn-csv">Exportar CSV</button>
+      <button class="btn btn-outline-blue btn-sm" id="btn-brief">Brief de diseño</button>
+      <button class="btn btn-blue" id="btn-guardar" disabled>Guardar</button>
+    </div>
+  </div>
+</header>
+
+<div class="pl-kpis" id="kpis"></div>
+
+<div class="pl-bar">
+  <div class="pl-bar-in">
+    <select id="f-mes" aria-label="Filtrar por mes"></select>
+    <select id="f-estado" aria-label="Filtrar por estado"></select>
+    <input type="text" id="f-texto" placeholder="Buscar tema, URL o motivo" aria-label="Buscar">
+    <button class="btn btn-outline-blue btn-sm" id="btn-nuevo">+ Añadir envío</button>
+    <label class="pl-check"><input type="checkbox" id="f-razon" checked> Argumento comercial</label>
+    <span class="pl-sucio" id="sucio">Todo guardado</span>
+  </div>
+</div>
+
+<div id="avisos"></div>
+<div id="tabla"></div>
+
+<footer class="pl-pie">
+  <p><strong>Cómo usarlo.</strong> Todo lo que ves se edita: pulsa sobre el tema y escribe, cambia la
+  fecha o el estado, pega una URL, quita un envío con la ×, añade uno nuevo. Los cambios no se guardan
+  solos — pulsa <strong>Guardar</strong> y quedan como versión nueva para todos.</p>
+  <p><strong>Las fechas van al momento de compra, no al de consumo.</strong> La mantelería de Navidad
+  está en octubre porque es cuando el hostelero la cierra; la terraza en marzo; la caja del roscón en
+  noviembre. La línea gris bajo cada tema es el argumento comercial.</p>
+  <p><strong>Las URL son de referencia para diseño</strong>, sacadas de enlaces usados en newsletters
+  anteriores. Las definitivas por idioma, con marcas de seguimiento, se ponen al maquetar en Mailchimp.</p>
+</footer>

@@ -86,11 +86,51 @@ El histórico se usa solo para dos cosas:
    enlaces posteriores a `FECHA_MIGRACION` y los anteriores se marcan para revisar.
 2. **Avisar de solapamiento** si un tema muy parecido salió en los últimos 10 meses.
 
+## La aplicación
+
+`app/` contiene el planificador: una sola página que se abre en el navegador, con los
+104 envíos de 2027 cargados y editables.
+
+| Fichero | Qué es |
+|---|---|
+| `app/app.js` | Toda la lógica: pintado, edición, filtros, guardado y exportaciones. |
+| `app/app.css` | Estilos propios, encima de la hoja de marca. |
+| `app/cuerpo.html` | El esqueleto de la interfaz (cabecera, KPIs, barra de filtros, pie). |
+| `app/montar.py` | Ensambla los tres en `planificador.html` con los datos de `data/temas-2027.json`. |
+| `app/probar.py` | Suite de pruebas en navegador (Playwright): 33 comprobaciones. |
+| `docs/planificador.html` | La versión ensamblada y publicada. |
+
+```bash
+python3 app/montar.py    # -> planificador.html
+python3 app/probar.py    # abre Chromium y verifica todo
+```
+
+### Cómo se guarda
+
+La página **se reescribe a sí misma**. `documento(ESTADO)` devuelve el documento HTML
+completo con los datos incrustados, y al pulsar Guardar se publica como versión nueva
+mediante la capacidad `artifact` del visor. Por eso todas las funciones de `app.js` son
+declaraciones de primer nivel: `codigoFuente()` las serializa con `toString()` para
+meterlas en el documento nuevo. La generación siguiente sigue sabiendo reconstruirse
+(la suite lo comprueba hasta la tercera generación).
+
+Detalles que la suite cubre y conviene no romper:
+
+- Los cambios **no se guardan solos**: se marca «Cambios sin guardar» y hay que pulsar Guardar.
+- Antes de publicar, el estado se copia a `sessionStorage`; si el guardado no llega a
+  completarse, al recargar se ofrece recuperarlo.
+- Si `publish` devuelve `not_writer` / `not_granted`, la página pasa a **solo lectura**:
+  se puede editar y exportar, pero no guardar.
+- Sin `window.claude` (fichero guardado, otro host) no revienta: solo lectura y sin descargas.
+- `conflict` no se reintenta — el visor recarga a la versión que ganó.
+
 ## Pendiente
 
 - **Catálogo de producto** — 6 temas de 2027 no tienen enlace porque son categorías que
   nunca se han enlazado en una newsletter (posavasos, personalizados, Airlaid). El
   catálogo cerraría ese hueco y permitiría bajar de categoría a referencia concreta.
 - Ampliar el calendario comercial: febrero y agosto son los meses con menos ocasiones.
-- Interfaz del planificador, vista de aprobación y brief de diseño en Gmail.
+- Brief de diseño como borrador en Gmail (ahora se descarga como `.txt`).
+- Vista de aprobación para gerencia, separada de la de edición.
 - Conector de Mailchimp para traer aperturas y clics, y saber qué temas funcionan.
+- Reordenar envíos arrastrando (ahora se cambia la fecha a mano).
