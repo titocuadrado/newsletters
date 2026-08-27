@@ -1,0 +1,6245 @@
+{
+ "temas": [
+  {
+   "id": "servilletas-canguro",
+   "nombre": "Servilletas Canguro",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-13",
+    "2025-04-03",
+    "2025-10-30",
+    "2026-04-16"
+   ],
+   "notas_internas": [
+    "repetida"
+   ],
+   "veces_enviado": 4,
+   "ultimo_envio": "2026-04-16",
+   "temporadas": [
+    "otono",
+    "primavera",
+    "verano"
+   ]
+  },
+  {
+   "id": "aperitivos-navidad-24-26",
+   "nombre": "Aperitivos Navidad (24-26)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    24,
+    26
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-10-29",
+    "2024-12-24",
+    "2025-12-02"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 3,
+   "ultimo_envio": "2025-12-02",
+   "temporadas": [
+    "invierno",
+    "otono"
+   ]
+  },
+  {
+   "id": "bolsas-para-regalos-yute-sos-lujo-47-53",
+   "nombre": "Bolsas para regalos: yute, sos, lujo (47-53)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    47,
+    53
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-11-19",
+    "2025-01-02",
+    "2025-12-30"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 3,
+   "ultimo_envio": "2025-12-30",
+   "temporadas": [
+    "invierno",
+    "otono"
+   ]
+  },
+  {
+   "id": "807-nuevas-referencias-manteleria-spunbond-pag-75",
+   "nombre": "807 - Nuevas referencias manteleria Spunbond (pag 75)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Spunbond"
+   ],
+   "paginas_catalogo": [
+    75
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-01-21",
+    "2025-02-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2025-02-18",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "artinox-31",
+   "nombre": "Artinox 31",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Artinox"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-09-17",
+    "2024-10-22"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2024-10-22",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "catering-y-pasteleria-de-navidad-32-41",
+   "nombre": "Catering y pastelería de Navidad (32-41)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    32,
+    41
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-12-17",
+    "2025-12-16"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2025-12-16",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "conjuntos-decorados-14-23",
+   "nombre": "Conjuntos decorados (14-23)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    14,
+    23
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-11-12",
+    "2025-11-11"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2025-11-11",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cotillon-y-fin-de-ano",
+   "nombre": "Cotillón y Fin de Año",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/cotillon/bolsas-de-cotillon.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-11-17",
+    "2026-12-15"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "veces_enviado": 2,
+   "ultimo_envio": "2026-12-15",
+   "temporadas": [
+    "invierno",
+    "otono"
+   ]
+  },
+  {
+   "id": "el-cotillon-73-87",
+   "nombre": "El Cotillón (73-87)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    73,
+    87
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-11-05",
+    "2025-11-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2025-11-18",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "felicitacion-de-navidad",
+   "nombre": "Felicitación de Navidad",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "institucional",
+   "envios": [
+    "2025-12-23",
+    "2026-12-22"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2026-12-22",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "papel-antigrasa-pfas-free",
+   "nombre": "Papel antigrasa PFAS Free",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "PFAS FREE"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-11-28",
+    "2025-04-29"
+   ],
+   "notas_internas": [
+    "repetida"
+   ],
+   "veces_enviado": 2,
+   "ultimo_envio": "2025-04-29",
+   "temporadas": [
+    "otono",
+    "primavera"
+   ]
+  },
+  {
+   "id": "papel-y-bolsitas-regalo-54-61",
+   "nombre": "Papel y bolsitas regalo (54-61)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    54,
+    61
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-12-31",
+    "2025-12-11"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2025-12-11",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "paper-cutlery-144-145",
+   "nombre": "Paper Cutlery 144-145",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Paper Cutlery"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-11-07",
+    "2025-06-10"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2025-06-10",
+   "temporadas": [
+    "otono",
+    "verano"
+   ]
+  },
+  {
+   "id": "servilletas-manteles-y-tu-y-yo-de-navidad-5-12",
+   "nombre": "Servilletas, manteles y Tu y yo de Navidad (5-12)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    5,
+    12
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-12-10",
+    "2025-11-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2025-11-04",
+   "temporadas": [
+    "invierno",
+    "otono"
+   ]
+  },
+  {
+   "id": "tarrinas-helado",
+   "nombre": "Tarrinas helado",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-04-09",
+    "2026-06-02"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2026-06-02",
+   "temporadas": [
+    "primavera",
+    "verano"
+   ]
+  },
+  {
+   "id": "vasos-compostable-132",
+   "nombre": "Vasos Compostable 132",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-10-31",
+    "2025-02-25"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 2,
+   "ultimo_envio": "2025-02-25",
+   "temporadas": [
+    "invierno",
+    "otono"
+   ]
+  },
+  {
+   "id": "1-burgers-gourmet",
+   "nombre": "1. Burgers Gourmet 🍔",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-03-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-03-18",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "10-experiencias-gastronomicas-premium",
+   "nombre": "10. Experiencias Gastronómicas Premium 🍽️",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-06-05"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-06-05",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "11-delivery-catering",
+   "nombre": "11. Delivery & Catering 🚗🍱",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-06-12"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-06-12",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "12-coffee-shops-y-bares",
+   "nombre": "12. Coffee Shops y Bares ☕🍹",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-07-01"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-01",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "13-cocina-internacional",
+   "nombre": "13. Cocina Internacional 🌍",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-07-08"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-08",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "14-panaderias-feta",
+   "nombre": "14. Panaderías 🍩🥐 (Feta)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-07-22"
+   ],
+   "notas_internas": [
+    "(feta)",
+    "feta)"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-22",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "2-poke-bowls",
+   "nombre": "2. Poke Bowls 🥗",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-03-25"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-03-25",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "3-kebab-y-street-food",
+   "nombre": "3. Kebab y Street Food 🌯",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-04-01"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-04-01",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "4-tacos-y-comida-mexicana",
+   "nombre": "4. Tacos y Comida Mexicana 🌮",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-04-08"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-04-08",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "5-pasteleria-artesanal",
+   "nombre": "5. Pastelería Artesanal 🥐",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-04-24"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-04-24",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "6-gofres-y-dulces-para-street-food",
+   "nombre": "6. Gofres y Dulces para Street Food 🧇",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-04-15"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-04-15",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "8-take-away-delivery",
+   "nombre": "8. Take Away & Delivery 🍔🥗",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-05-13"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-05-13",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "802-bolsas-sos-para-catering-pizza-y-delivery-124-125",
+   "nombre": "802 - Bolsas SOS para catering, pizza y delivery (124-125)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    124,
+    125
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-02-11"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-02-11",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "9-comida-saludable-y-vegana",
+   "nombre": "9. Comida Saludable y Vegana 🥑🥗",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-05-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-05-20",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "actualizacion-tarifa-mayo",
+   "nombre": "Actualizacion Tarifa Mayo",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "tarifa",
+   "envios": [
+    "2025-05-06"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-05-06",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "airlaid",
+   "nombre": "Airlaid",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Airlaid"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-09"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-09",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "airlaid-natural-62",
+   "nombre": "Airlaid Natural 62",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Airlaid"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-15"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-15",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "airlaid-y-dry-cotton-aurelie-feta",
+   "nombre": "Airlaid y Dry Cotton Aurelie (Feta)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Airlaid",
+    "DRY COTTON"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-07-10"
+   ],
+   "notas_internas": [
+    "(feta)",
+    "aurelie",
+    "feta)"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-10",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "akala-37-39",
+   "nombre": "Akala 37-39",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-18",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "akala-381-383",
+   "nombre": "Akala (381-383)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [
+    381,
+    383
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-01-09"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-01-09",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "akala-porcelana-376",
+   "nombre": "Akala Porcelana (376)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [
+    376
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-03-13"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-03-13",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "akala-video",
+   "nombre": "Akala (video)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "video",
+   "envios": [
+    "2025-08-14"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-08-14",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "amenities",
+   "nombre": "Amenities",
+   "familia": "habitaciones",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-11-14"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-11-14",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "amenities-para-hoteles-y-alojamientos",
+   "nombre": "Amenities para hoteles y alojamientos",
+   "familia": "habitaciones",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/amenities-hotel-habitaciones-acogida.html",
+   "tipo": "producto",
+   "envios": [
+    "2026-09-24"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-09-24",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "aperitivos-cana-de-azucar-26",
+   "nombre": "Aperitivos Caña de azúcar 26",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-09-03"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-09-03",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "artinox-vintage-32-33",
+   "nombre": "Artinox Vintage 32, 33",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Artinox",
+    "Vintage"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-09-24"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-09-24",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "asamiware-melamina",
+   "nombre": "AsamiWare (melamina)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-11"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-11",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "asamiware-melamina-344",
+   "nombre": "Asamiware Melamina 344",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-10-03"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-10-03",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "asamiware-tenemos-nueva-vajilla-en-azul",
+   "nombre": "Asamiware (tenemos nueva vajilla en azul)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-01-13"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-01-13",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "bambu-para-bufet-pag-307",
+   "nombre": "Bambú para bufet (pag 307)",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [
+    307
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-02-27"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-02-27",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "bandejas-bufet-melamina-347",
+   "nombre": "Bandejas bufet melamina 347",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-10-10"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-10-10",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "bandejas-carton-16",
+   "nombre": "Bandejas cartón 16",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-10-15"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-10-15",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "bandejas-con-funda-para-catering-nuevas-pag-207",
+   "nombre": "Bandejas con funda para catering nuevas pag 207",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    207
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-02-26"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-02-26",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "bandejas-de-madera-new-pag-335",
+   "nombre": "Bandejas de madera NEW pag 335",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Reuse it"
+   ],
+   "paginas_catalogo": [
+    335
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-05-19"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-05-19",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "bandejas-sushi-carton-nuevas-y-cajas-sushi-en-general-159-y-",
+   "nombre": "Bandejas Sushi cartón nuevas y cajas sushi en general (159 y 166)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-01-16"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-01-16",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "bandejas-trasporte-178",
+   "nombre": "Bandejas trasporte 178",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-10-08"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-10-08",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "barquillas-y-tapa-172",
+   "nombre": "Barquillas y tapa (172)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    172
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-27"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-27",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "bebidas-calientes-vasos-de-carton-doble-pared-ondulados-prot",
+   "nombre": "Bebidas calientes. Vasos de cartón, doble pared, ondulados/protectores de calor, tapas, paletinas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-calientes.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-09-10"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-09-10",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "bebidas-frias-batidos-y-granizados-vasos-tapas-pajitas",
+   "nombre": "Bebidas frías, batidos y granizados. Vasos, tapas, pajitas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-04-30"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-04-30",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "bionic-aperitivos-cana-de-azucar-239",
+   "nombre": "Bionic Aperitivos Caña de azúcar (239)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "BIONIC"
+   ],
+   "paginas_catalogo": [
+    239
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-05-28"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-05-28",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "bolsas-abiertas-a-2-lados-para-fast-food-bolleria-comida-par",
+   "nombre": "Bolsas abiertas a 2 lados para fast food, bollería, comida para llevar (98,99)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    98,
+    99
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-18",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "bolsas-aluminio-parole-new-pag-112-bolsas-parole-ventana-pag",
+   "nombre": "Bolsas aluminio parole NEW pag 112 + Bolsas parole ventana pag 117",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "PAROLE"
+   ],
+   "paginas_catalogo": [
+    112,
+    117
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-03-03"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-03-03",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "bolsas-base-ancha-delivery",
+   "nombre": "Bolsas base ancha delivery",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-11-13"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-11-13",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "bolsas-con-asas",
+   "nombre": "Bolsas con asas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-09-30"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-09-30",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "bolsas-cotillon-73-87",
+   "nombre": "Bolsas Cotillón (73-87)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    73,
+    87
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-12-12"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-12-12",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "bolsas-cubiertos-con-servilleta-new-estuches-para-cubiertos-",
+   "nombre": "Bolsas cubiertos con servilleta - New Estuches para cubiertos Leaf pag 89",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Leaf"
+   ],
+   "paginas_catalogo": [
+    89
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-02-12"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-02-12",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "bolsas-just-in-time-85-86-87",
+   "nombre": "Bolsas Just in time 85, 86, 87",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Just in Time"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-05-22"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-05-22",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "bolsas-para-croissant-105",
+   "nombre": "Bolsas para croissant (105)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    105
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-11"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-11",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "bolsas-para-pan-104-106-107",
+   "nombre": "Bolsas para pan (104, 106, 107)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    104,
+    106,
+    107
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-02"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-02",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "bolsas-para-patatas-fritas-100",
+   "nombre": "Bolsas para patatas fritas (100)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    100
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-06"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-06",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "bolsas-para-take-away-y-delivery",
+   "nombre": "Bolsas para take-away y delivery",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-10-15"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-10-15",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "bolsas-planas-times-9",
+   "nombre": "Bolsas planas Times 9",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "TIMES"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-16"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-16",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "bolsas-sin-asas-detalle-nuevas-cat-y-zoo",
+   "nombre": "Bolsas sin asas (detalle Nuevas Cat y Zoo)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-10-21"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-10-21",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "bolsas-sos-10-11",
+   "nombre": "Bolsas SOS 10-11",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-18",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "botellas-lotes-y-packaging-gourmet-botellas-thepack-gourmet-",
+   "nombre": "Botellas, lotes y packaging gourmet. Botellas THEPACK Gourmet, presentación de lotes, botelleros y soluciones regalo",
+   "familia": "cotillon",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/cotillon/cajas-para-botellas-y-lotes.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-11-19"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-11-19",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "botellas-navidad-thepack-gourmet",
+   "nombre": "Botellas Navidad ThePack Gourmet",
+   "familia": "cotillon",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-11-25"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-11-25",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "botelleros",
+   "nombre": "Botelleros",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-12-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-12-18",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "buffet-y-eventos-todo-para-presentar-y-servir-mini-recipient",
+   "nombre": "Buffet y eventos: todo para presentar y servir. Mini recipientes, soportes, bandejas, menaje de presentación y soluciones para buffet",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/bar-y-buffet.html",
+   "tipo": "producto",
+   "envios": [
+    "2026-11-05"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-11-05",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cajas-con-tapa-de-madera-de-alamo-ideal-delivery-pag-27",
+   "nombre": "Cajas con tapa de madera de álamo ideal Delivery pag 27",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    27
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-05-21"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-05-21",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "cajas-con-ventana-sandwich-pag-177",
+   "nombre": "Cajas con ventana sandwich pag 177",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    177
+   ],
+   "url_es": "https://www.garciadepou.com/es/take-away/cajas-con-ventana.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-06-25"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-06-25",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cajas-de-pizza-detalle-novedad-caja-de-pizza-con-ventana",
+   "nombre": "Cajas de pizza (detalle Novedad Caja de pizza con ventana)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-10-14"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-10-14",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cajas-hamburguesas",
+   "nombre": "Cajas hamburguesas",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-10-02"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-10-02",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cajas-hamburguesas-blog-hamburguesas",
+   "nombre": "Cajas hamburguesas + Blog Hamburguesas",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/cajas-para-hamburguesas.html?product_list_order=position",
+   "tipo": "contenido-blog",
+   "envios": [
+    "2026-08-13"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-08-13",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cajas-hamburguesas-fitipaldi-y-feel-green",
+   "nombre": "Cajas hamburguesas fitipaldi y feel green",
+   "familia": "take-away",
+   "marcas": [
+    "FEEL GREEN",
+    "Fitipaldi"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-06-17"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-06-17",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cajas-menu-infantil-177",
+   "nombre": "Cajas menú infantil (177)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    177
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-25"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-25",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cajas-multiuso-estancas-cajas-americanas-con-compartimentos-",
+   "nombre": "Cajas multiuso estancas (cajas americanas), con compartimentos, con aluminio y Roast and Go pag 173, 174, 175",
+   "familia": "take-away",
+   "marcas": [
+    "Roast and Go"
+   ],
+   "paginas_catalogo": [
+    173,
+    174,
+    175
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-10-09"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-10-09",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cajas-para-comida-y-paper-lock-157-158",
+   "nombre": "Cajas para comida y Paper Lock (157, 158)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    157,
+    158
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-05-30"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-05-30",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "cajas-para-pedidos-take-away-pag-172-177",
+   "nombre": "Cajas para pedidos take-away (pag 172-177)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    172,
+    177
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-03-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-03-04",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "cajas-para-sushi-159",
+   "nombre": "Cajas para sushi (159)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    159
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-22"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-22",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cajas-pasteleria",
+   "nombre": "Cajas pastelería",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/pasteleria/cajas-para-pasteleria.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-08-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-08-18",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cajas-pasteleria-apertura-frontal",
+   "nombre": "Cajas pasteleria apertura frontal",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-05-27"
+   ],
+   "notas_internas": [
+    "no stock"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-05-27",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "cajas-pasteleria-apertura-frontal-pag-201-hay-blanca-deco-y-",
+   "nombre": "Cajas pastelería apertura frontal (pag. 201) Hay Blanca, deco y marrón",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    201
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-02-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-02-04",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "cajas-pasteleria-destacar-que-tenemos-nuevos-e-infinidad-de-",
+   "nombre": "Cajas pastelería (destacar que tenemos nuevos e infinidad de tamaños y lo de la apertura frontal)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-10-28"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-10-28",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cataleg-new",
+   "nombre": "Catàleg NEW",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2025-06-26"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-06-26",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "catalogo-navidad",
+   "nombre": "Catálogo Navidad",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2024-10-24"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-10-24",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "catalogo-navidad-2025",
+   "nombre": "Catalogo Navidad 2025",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2025-09-16"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-09-16",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "catalogo-navidad-2025-laia",
+   "nombre": "Catálogo Navidad 2025 (Laia)",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2025-07-15"
+   ],
+   "notas_internas": [
+    "laia"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-15",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "catalogo-navidad-2026",
+   "nombre": "Catálogo Navidad 2026",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/christmas",
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2026-09-15"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-09-15",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "catalogo-nuevo",
+   "nombre": "Catálogo Nuevo",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2024-10-17"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-10-17",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "catalogo-quiere-catalogo-fisico",
+   "nombre": "Resend Catalogo Quiere catalogo físico",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2024-12-03"
+   ],
+   "notas_internas": [
+    "resend"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-12-03",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "catering-presentar-y-transportar-bandejas-con-funda-cajas-pa",
+   "nombre": "Catering: presentar y transportar. Bandejas con funda, cajas para transporte, soluciones para platos preparados, pastelería, etc",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/bandejas-traiteur.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-09-17"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-09-17",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "catering-y-pasteleria-para-navidad-cajas-bandejas-blondas-ca",
+   "nombre": "Catering y pastelería para Navidad. Cajas, bandejas, blondas, cápsulas, transporte y presentación",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/cotillon/pasteleria.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-11-03"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-11-03",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "catering-y-pasteleria-preparados-para-los-grandes-servicios-",
+   "nombre": "REPETIR: Catering y pastelería: preparados para los grandes servicios. Reposición de cajas, bandejas, discos, blondas, cápsulas y soluciones de transporte",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/pasteleria",
+   "tipo": "repeticion",
+   "envios": [
+    "2026-12-10"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-12-10",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "conchas-hamburguesas-taller-xl",
+   "nombre": "Conchas hamburguesas Taller XL",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-07-03"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-03",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "contenedores-lacados-25",
+   "nombre": "Contenedores lacados 25",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-06"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-06",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "contenedores-lacados-aptos-para-microondas-pag-25",
+   "nombre": "Contenedores lacados aptos para microondas pag 25",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    25
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-05-14"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-05-14",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "contenedores-lacados-pag-35",
+   "nombre": "Contenedores lacados pag 35",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    35
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-09-23"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-09-23",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cotillon-73-87",
+   "nombre": "Repetida Cotillón (73-87)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    73,
+    87
+   ],
+   "url_es": null,
+   "tipo": "repeticion",
+   "envios": [
+    "2025-12-04"
+   ],
+   "notas_internas": [
+    "repetida"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-12-04",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "cristaleria-profesional-para-hosteleria",
+   "nombre": "Cristalería profesional para hostelería",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/marcas/waki-glass.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-10-08"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-10-08",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cristaleria-vintage-waki-glass",
+   "nombre": "Cristalería Vintage Waki Glass",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Vintage",
+    "Waki Glass"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/tafel-en-accessoires/vasos-cristal.html",
+   "tipo": "producto",
+   "envios": [
+    "2026-06-30"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-06-30",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cuberteria-essenza-pag-41-new",
+   "nombre": "Cubertería Essenza pag 41 NEW",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "CUBE",
+    "Essenza"
+   ],
+   "paginas_catalogo": [
+    41
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-09-09"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-09-09",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cuberteria-fibra-de-madera-362",
+   "nombre": "Cubertería fibra de madera 362",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "CUBE"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-22"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-22",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cuberteria-oslo-366",
+   "nombre": "Cubertería Oslo 366",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "CUBE",
+    "Oslo"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-08"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-08",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cuberteria-profesional-para-hosteleria-nuevas-lineas-inox-mo",
+   "nombre": "Cubertería profesional para hostelería. Nuevas líneas inox, modelos con mango de madera y surtido de cuberterías",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "CUBE",
+    "Linea"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/mesa-y-accesorios/cubiertos-inox.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-09-22"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-09-22",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "cubiertos-inox-essenza-dakota-olivia-siena-y-essenza",
+   "nombre": "Cubiertos INOX Essenza, Dakota, Olivia, Siena y Essenza",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Dakota",
+    "Essenza",
+    "Olivia",
+    "Siena"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-04-07"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-04-07",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "cubiertos-vintage-34",
+   "nombre": "Cubiertos Vintage 34",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Vintage"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-02"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-02",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cubos-para-pollo-148",
+   "nombre": "Cubos para pollo (148)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    148
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-16"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-16",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "cucuruchos-carton-y-papelinas-punta-papel-churros-castanas-e",
+   "nombre": "Cucuruchos cartón y papelinas punta papel: churros, castañas, etc",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-02-10"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-02-10",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "diseno-fitipaldi-papel-y-envases-blog-hamburguesas",
+   "nombre": "Diseño Fitipaldi: Papel y envases + BLOG Hamburguesas",
+   "familia": "institucional",
+   "marcas": [
+    "Fitipaldi"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/#6a32/fullscreen/m=and&p=2&q=Fitipaldi",
+   "tipo": "contenido-blog",
+   "envios": [
+    "2026-08-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-08-20",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "diseno-jazz",
+   "nombre": "Diseño Jazz",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Jazz"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-20",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "dry-cotton",
+   "nombre": "Dry Cotton",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "DRY COTTON"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-29"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-29",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "elegancia-black-cajas-buger-black-vasos-fritos-black-bolsas-",
+   "nombre": "Elegancia Black: cajas buger (black), vasos fritos (black), bolsas sos (black) per exemple",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-03-05"
+   ],
+   "notas_internas": [
+    "per exemple"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-03-05",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "enamelware-335",
+   "nombre": "Enamelware 335",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Enamelware"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-09-05"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-09-05",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "enamelware-hierro-esmaltado",
+   "nombre": "Enamelware (hierro esmaltado)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Enamelware"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-04",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "encuesta-satisfaccion",
+   "nombre": "Encuesta satisfacción",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "institucional",
+   "envios": [
+    "2025-06-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-06-04",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "ensaladeras-para-comida-fresca-poke-ensaladas-fruta",
+   "nombre": "Ensaladeras para comida fresca: poke, ensaladas, fruta",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    222,
+    225
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-05-14"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-05-14",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "envases-aptos-para-microondas-24",
+   "nombre": "Envases aptos para microondas 24",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-27"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-27",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "envases-multiuso-estancos-new-cajas-americanas-microondables",
+   "nombre": "Envases multiuso estancos- New Cajas americanas microondables CUBE pag 179",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "CUBE"
+   ],
+   "paginas_catalogo": [
+    179
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-02-17"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-02-17",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "envases-para-microondas-pag-24",
+   "nombre": "Envases para microondas pag 24",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    24
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-05-02"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-05-02",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "envases-para-sushi-pag-21",
+   "nombre": "Envases para sushi pag 21",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    21
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-05-07"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-05-07",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "envases-sushi-21",
+   "nombre": "Envases sushi 21",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-20",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "especial-bebidas-para-llevar-178-179",
+   "nombre": "Especial bebidas para llevar (178, 179)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    178,
+    179
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-18",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "especial-san-valentin-manteleria-decorada-tete-a-tete-velas-",
+   "nombre": "Especial San Valentín: Mantelería decorada, Tête-à-Tête, velas y accesorios para mesas románticas",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-01-30"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-01-30",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "felicitacion-navidad",
+   "nombre": "Felicitación Navidad",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "institucional",
+   "envios": [
+    "2024-12-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-12-20",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "gel-y-champu-en-dispensador",
+   "nombre": "Gel y champú en dispensador",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-11"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-11",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "grill-go-pag-111",
+   "nombre": "Grill & Go pag 111",
+   "familia": "take-away",
+   "marcas": [
+    "Grill & Go"
+   ],
+   "paginas_catalogo": [
+    111
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-04-28"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-04-28",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "historia-portadas-catalogo",
+   "nombre": "Historia Portadas Catalogo",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2026-03-24"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-03-24",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "ipanema-71",
+   "nombre": "Ipanema 71",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Ipanema"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-09-26"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-09-26",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "just-in-time",
+   "nombre": "Just in time",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Just in Time"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-25"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-25",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "just-in-time-para-ninos-pag-37-new-y-just-in-time-en-general",
+   "nombre": "Just in Time para niños pag 37 NEW y Just in Time en general",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Just in Time"
+   ],
+   "paginas_catalogo": [
+    37
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-05-26"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-05-26",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "keiko",
+   "nombre": "Keiko",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Keiko"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-04",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "kintsu-envases-de-carton-para-sushi",
+   "nombre": "Kintsu: envases de cartón para sushi",
+   "familia": "take-away",
+   "marcas": [
+    "Kintsu"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/envases-para-sushi-y-comida-oriental.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-08-25"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-08-25",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "la-mesa-de-fin-de-ano",
+   "nombre": "REPETIR: La mesa de Fin de Año",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html",
+   "tipo": "repeticion",
+   "envios": [
+    "2026-12-17"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-12-17",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "lamparas-44",
+   "nombre": "Lámparas 44",
+   "familia": "mesa-accesorios",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-09-10"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-09-10",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "like-linen",
+   "nombre": "Like-Linen",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Like-Linen"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/marcas/like-linen.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-06-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-06-04",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "like-linen-keiko-69",
+   "nombre": "Like Linen Keiko 69",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Keiko"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-09-12"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-09-12",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "like-linen-rhombus-4",
+   "nombre": "Like Linen Rhombus 4",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-13"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-13",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "linea-grafitti-new",
+   "nombre": "Linea Grafitti NEW",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Grafitti",
+    "Linea"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-08-07"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-08-07",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "linea-reciclada-servilletas-mantelines-5",
+   "nombre": "Linea Reciclada Servilletas mantelines 5",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Linea"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-25"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-25",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "lotes-y-botellas-62-69",
+   "nombre": "Lotes y botellas (62-69)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    62,
+    69
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-11-26"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-11-26",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "maletas-de-transporte-y-cajas-para-llevar-178-179",
+   "nombre": "Maletas de transporte y cajas para llevar (178, 179)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    178,
+    179
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-20",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "manteleria-airlaid-natural-pag-48-49",
+   "nombre": "Mantelería Airlaid Natural pag 48-49",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Airlaid"
+   ],
+   "paginas_catalogo": [
+    48,
+    49
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-04-02"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-04-02",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "manteleria-linea-reciclada-39-43",
+   "nombre": "Mantelería Línea reciclada (39-43)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Linea"
+   ],
+   "paginas_catalogo": [
+    39,
+    43
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-02-03"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-02-03",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "manteles",
+   "nombre": "Manteles",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/manteles-de-papel.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-09-08"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-09-08",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "mantelines-798",
+   "nombre": "Repetida Mantelines 798",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "repeticion",
+   "envios": [
+    "2025-04-22"
+   ],
+   "notas_internas": [
+    "repetida"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-04-22",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "mantelines-blog-mantelines-sebastia-marti",
+   "nombre": "Mantelines (rep) + Blog mantelines Sebastià Martí",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "contenido-blog",
+   "envios": [
+    "2026-01-20"
+   ],
+   "notas_internas": [
+    "(rep",
+    "rep)"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-01-20",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "mantelines-de-papel-reciclado-a-vintage",
+   "nombre": "Mantelines: De papel reciclado a Vintage",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Vintage"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/manteles-individuales.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-08-11"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-08-11",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "mantelines-new",
+   "nombre": "Mantelines NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-07-24"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-24",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "mantelines-spundbond-textura-impresa",
+   "nombre": "Mantelines spundbond textura impresa",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-12-09"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-12-09",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "melamina-pag-361-productos-ideales-para-eventos-y-servicios-",
+   "nombre": "Melamina (Pag. 361). Productos ideales para eventos y servicios al aire libre: envases de food service y menaje durable",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    361
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-03-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-03-20",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "mesas-de-trabajo-cocina-42",
+   "nombre": "Mesas de trabajo cocina 42",
+   "familia": "utensilios-cocina",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-10-17"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-10-17",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "mini-recipientes-para-aperitivos-cana-de-azucar-pag-26",
+   "nombre": "Mini recipientes para aperitivos caña de azúcar pag 26",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    26
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-05-16"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-05-16",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "mobiliario-supra-tek-video",
+   "nombre": "Mobiliario Supra-TEK Video",
+   "familia": "mesa-accesorios",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "video",
+   "envios": [
+    "2025-03-06"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-03-06",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "navidad-2026-aperitivos-y-cocteles-mini-recipientes-vasitos-",
+   "nombre": "Navidad 2026: aperitivos y cócteles. Mini recipientes, vasitos, cucharitas, soportes y soluciones de presentación para aperitivos y eventos",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/kerstmis/vajilla-para-aperitivos.html",
+   "tipo": "producto",
+   "envios": [
+    "2026-10-27"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-10-27",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "navidad-2026-prepare-la-mesa-les-diferents-linies",
+   "nombre": "Navidad 2026: prepare la mesa. Les diferents linies",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html",
+   "tipo": "producto",
+   "envios": [
+    "2026-10-13"
+   ],
+   "notas_internas": [
+    "les diferents linies"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-10-13",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "navidad-aperitivos-y-presentaciones-especiales-mini-recipien",
+   "nombre": "REPETIR: Navidad: aperitivos y presentaciones especiales. Mini recipientes, vasitos, cucharas, bandejas y soluciones para aperitivos",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/kerstmis/vajilla-para-aperitivos.html",
+   "tipo": "repeticion",
+   "envios": [
+    "2026-12-01"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-12-01",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "navidad-mesas-preparadas-para-los-grandes-servicios-serville",
+   "nombre": "Navidad: mesas preparadas para los grandes servicios. Servilletas, mantelería, Tête-à-Tête, cubertería y vasos",
+   "familia": "cotillon",
+   "marcas": [
+    "CUBE"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/cotillon/manteles-de-navidad-de-papel.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-11-10"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-11-10",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "new-barquillas-para-hot-dog-y-otras-barquillas",
+   "nombre": "NEW Barquillas para hot dog y otras barquillas",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/barquitas-para-fast-food-y-snack.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-07-21"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-07-21",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-bolsas-boutique-asas-cordel",
+   "nombre": "NEW Bolsas boutique asas cordel",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/bolsas-boutique-asa-cordel-100-g-m2-40-15x32-cm-negro-kraft.html",
+   "tipo": "novedad",
+   "envios": [
+    "2026-08-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-08-04",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-cajas-panini-automontable",
+   "nombre": "NEW CAJAS \"PANINI\" AUTOMONTABLE",
+   "familia": "take-away",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/cajas-panini-automontable-thepack-220-g-m2-24x10x7-cm-natural-ca.html",
+   "tipo": "novedad",
+   "envios": [
+    "2026-07-30"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-07-30",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-conchas-bionic-para-burritos-y-otras-conchas",
+   "nombre": "NEW Conchas Bionic para burritos y otras conchas",
+   "familia": "take-away",
+   "marcas": [
+    "BIONIC"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/bionic/conchas.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-06-16"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-06-16",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-envases-de-carton-take-away-envases-multiuso-microondabl",
+   "nombre": "NEW Envases de cartón take away: envases multiuso microondables feel green y cajas americanas horneables Oven safe",
+   "familia": "take-away",
+   "marcas": [
+    "FEEL GREEN"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/recipientes-take-away-microondables.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-07-23"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-07-23",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-envases-para-fritos-cajas-con-abrefacil-superior-parole-",
+   "nombre": "NEW Envases para fritos: cajas con abrefacil superior parole y feel green, y vasos con cierre y vasos abiertos",
+   "familia": "take-away",
+   "marcas": [
+    "FEEL GREEN",
+    "PAROLE"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/recipientes-para-fritas.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-07-02"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-07-02",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-mini-recipientes-de-loza",
+   "nombre": "NEW Mini recipientes de loza",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Crockery"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/bar-en-buffet/voorgerechten/mini-recipientes-loza-crockery.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-09-01"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-09-01",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "new-mini-recipientes-para-aperitivos-de-melamina-asamiware",
+   "nombre": "NEW Mini recipientes para aperitivos de melamina Asamiware",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/bar-en-buffet/voorgerechten/mini-recipientes-melamina-asamiware.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-07-14"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-07-14",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-platos-de-porcelana-akala",
+   "nombre": "NEW Platos de porcelana AKALA",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/mesa-y-accesorios/porcelana-blanca/platos-de-porcelana.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-07-28"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-07-28",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-ramequines-negros-plateados-artinox-y-otros",
+   "nombre": "NEW Ramequines Negros/plateados Artinox y otros",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Artinox"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/bar-y-buffet/baskets-inox/ramequines.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-07-09"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-07-09",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-set-lounge-pag-500",
+   "nombre": "NEW Set Lounge pag 500",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Set Lounge"
+   ],
+   "paginas_catalogo": [
+    500
+   ],
+   "url_es": "https://www.garciadepou.com/es/mesa-y-accesorios/mobiliario-hosteleria.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-06-11"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-06-11",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-soportes-de-papel-antigrasa-para-recipientes",
+   "nombre": "NEW Soportes de papel antigrasa para recipientes",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/take-away/papel-antigrasa/envoltorios-recipientes-presentacion.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-07-16"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-07-16",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-utensilios-de-bambu-para-bufet",
+   "nombre": "NEW Utensilios de bambú para bufet",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/bar-y-buffet/presentadores-para-buffet-displays/utensilios-de-bambu.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-08-27"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-08-27",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-vasos-cierre-mariposa",
+   "nombre": "NEW Vasos cierre Mariposa",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-frias.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-06-09"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-06-09",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "new-vasos-flurry-y-helados",
+   "nombre": "NEW Vasos Flurry y helados",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Flurry"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/tarrinas-para-helados.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-06-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-06-18",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "nuestras-colecciones",
+   "nombre": "Nuestras colecciones:",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/marcas.html",
+   "tipo": "producto",
+   "envios": [
+    "2025-10-16"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-10-16",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "nueva-web-print",
+   "nombre": "Nueva web print",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "institucional",
+   "envios": [
+    "2025-06-03"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-06-03",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "nuevas-bandejas-fast-food-simil-madera-pag-43-new",
+   "nombre": "Nuevas bandejas fast food simil madera pag 43 NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    43
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-09-02"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-09-02",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "nuevas-barquillas-191-new-y-barquillas-en-general",
+   "nombre": "Nuevas barquillas 191 NEW y barquillas en general",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-04-23"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-04-23",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "nuevas-barquillas-termosellables-pag-189-y-otras-y-maquina-d",
+   "nombre": "Nuevas Barquillas termosellables pag 189 y otras y máquina de termosellar en detalle pag 189",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    189
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-03-10"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-03-10",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "nuevas-conchas-thepack-burger-s-y-l-en-feel-green-blanco-y-f",
+   "nombre": "Nuevas conchas THEPACK burger S y L, en feel green, blanco y fitipaldi",
+   "familia": "take-away",
+   "marcas": [
+    "FEEL GREEN",
+    "Fitipaldi",
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-05-28"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-05-28",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "nuevas-ensaladeras-negras",
+   "nombre": "Nuevas Ensaladeras negras",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-01-22"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-01-22",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "nuevas-medidas-manteles-dry-cotton-pag-52-y-dry-cotton-en-ge",
+   "nombre": "Nuevas medidas Manteles Dry Cotton (pag 52) y Dry Cotton en general",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "DRY COTTON"
+   ],
+   "paginas_catalogo": [
+    52
+   ],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/dry-cotton.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-08-06"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-08-06",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "nuevas-tablas-de-madera-para-presentacion-320",
+   "nombre": "Nuevas Tablas de madera para presentación (320)",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [
+    320
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-01-14"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-01-14",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "nuevo-catalogo-2026",
+   "nombre": "NUEVO CATALOGO 2026",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2026-01-26"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-01-26",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "nuevo-diseno-leaf-papel-antigasa-pagina-99",
+   "nombre": "Nuevo diseño Leaf papel antigasa (página 99)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Leaf"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-03-26"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-03-26",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "nuevo-papel-antigrasa-aluminio-fitipaldi-fast-food-rojo-108",
+   "nombre": "Nuevo Papel antigrasa + aluminio Fitipaldi fast food, Rojo (108)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Fitipaldi"
+   ],
+   "paginas_catalogo": [
+    108
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-01-23"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-01-23",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "nuevos-aros-de-horneado-con-papel-pag-300-emili",
+   "nombre": "Nuevos Aros de horneado con papel pag 300 (EMILI)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    300
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-03-19"
+   ],
+   "notas_internas": [
+    "emili"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-03-19",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "nuevos-conos-helados-y-tarrinas",
+   "nombre": "Nuevos conos helados y tarrinas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-07-29"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-29",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "nuevos-cubos-porta-cubiertos-pag-45-new",
+   "nombre": "Nuevos cubos porta cubiertos pag 45 NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    45
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-09-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-09-04",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "nuevos-disenos-vasos-compostable-grass-gradient-pagina-135-y",
+   "nombre": "Nuevos diseños vasos compostable Grass, Gradient (página 135) y vasos compostables (página 140)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-compostables.html?product_list_order=position",
+   "tipo": "novedad",
+   "envios": [
+    "2026-07-07"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-07-07",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "nuevos-mantelines-eden-maui-modernismo-fast-food-pag-30-32-3",
+   "nombre": "Nuevos Mantelines: Eden, Maui, Modernismo, Fast Food (pag. 30, 32, 33)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    30,
+    32,
+    33
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2024-12-05"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-12-05",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "nuevos-mantelines-reciclados",
+   "nombre": "Nuevos Mantelines reciclados",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-03-12"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-03-12",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "nuevos-recipientes-cuadrados-pag-17-new",
+   "nombre": "Nuevos recipientes cuadrados pag 17 NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    17
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-08-28"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-08-28",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "packaging-para-comercios-y-regalo-bolsas-boutique-cordon-sos",
+   "nombre": "Packaging para comercios y regalo. Bolsas boutique, cordón, SOS, papel y bolsas de presentación. Campaña navideña",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/cotillon/papel-y-bolsas-para-regalos.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-10-29"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-10-29",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "packaging-para-regalos-y-productos-gourmet-bolsas-regalo-bou",
+   "nombre": "REPETIR: Packaging para regalos y productos gourmet. Bolsas regalo/boutique, papel, botelleros y presentación premium",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/cotillon/papel-y-bolsas-para-regalos.html?product_list_order=position",
+   "tipo": "repeticion",
+   "envios": [
+    "2026-12-03"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-12-03",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "pajitas-bubble-tea-12",
+   "nombre": "Pajitas Bubble Tea 12",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-30"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-30",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "papel-aluminio-8",
+   "nombre": "Papel + aluminio 8",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-23"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-23",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "papel-antigrasa-cera-vegetal-nomes-els-de-dalt-pag-99",
+   "nombre": "Papel antigrasa cera vegetal (només els de dalt)(pag.99)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    99
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-02-06"
+   ],
+   "notas_internas": [
+    "nomes els de dalt"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-02-06",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "papel-antigrasa-fitipaldi-azul-new",
+   "nombre": "Papel antigrasa Fitipaldi Azul - New",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Fitipaldi"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-07-31"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-31",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "papel-antigrasa-just-paper",
+   "nombre": "Papel antigrasa Just paper",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Just Paper"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-08-19"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-08-19",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "papel-antigrasa-leaf",
+   "nombre": "Papel antigrasa Leaf",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Leaf"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-09-18"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-09-18",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "papel-antigrasas",
+   "nombre": "Papel antigrasas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-10-07"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-10-07",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "papel-cera-vegetal",
+   "nombre": "Papel cera vegetal",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-08-26"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-08-26",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "papelinas-punta-101",
+   "nombre": "Papelinas punta (101)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    101
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-27"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-27",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "papelinas-punta-pag-105-noves-pfas-free",
+   "nombre": "Papelinas Punta Pag 105 Noves PFAS Free",
+   "familia": "take-away",
+   "marcas": [
+    "PFAS FREE"
+   ],
+   "paginas_catalogo": [
+    105
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-05-29"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-05-29",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "paper-cutlery-soluciones-para-cubiertos-estuches-para-cubier",
+   "nombre": "Paper Cutlery + Soluciones para cubiertos: estuches para cubiertos Leaf + alternativas de un solo uso. DOS PARTS",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Leaf",
+    "Paper Cutlery"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/cubiertos-desechables/cubiertos-de-papel.html",
+   "tipo": "producto",
+   "envios": [
+    "2026-10-22"
+   ],
+   "notas_internas": [
+    "dos parts"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-10-22",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "pasteleria-profesional-presentar-proteger-y-transportar-caja",
+   "nombre": "Pastelería profesional: presentar, proteger y transportar. Cajas para rosquillas, bandejas, discos, blondas, cápsulas, moldes",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/pasteleria",
+   "tipo": "producto",
+   "envios": [
+    "2026-10-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-10-20",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "pequenas-tarrinas-carton-y-papel-plisado-143-y-pequenas-tarr",
+   "nombre": "Pequeñas tarrinas cartón y papel plisado 143 y Pequeñas Tarrinas Bionic pag 278",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "BIONIC"
+   ],
+   "paginas_catalogo": [
+    278
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-05-07"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-05-07",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "pequenas-tarrinas-para-salsas-carton-y-papel-plisado-140",
+   "nombre": "Pequeñas tarrinas para salsas: cartón y papel plisado (140)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    140
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-01"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-01",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "personalizados-aurelie-feta",
+   "nombre": "Personalizados Aurelie (Feta)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-08-05"
+   ],
+   "notas_internas": [
+    "(feta)",
+    "aurelie",
+    "feta)"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-08-05",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "pfas-free",
+   "nombre": "PFAS Free",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "PFAS FREE"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/pfas-free.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-09-03"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-09-03",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "pizza-panini-sandwich-bocadillos-dos-parts-una-amb-les-caixe",
+   "nombre": "PIZZA · PANINI · SÁNDWICH · BOCADILLOS. DOS PARTS: una amb les caixes de pizza i una altra amb les caixes per a entrepans",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/take-away/bocadillos-y-sandwiches/envases-de-carton.html",
+   "tipo": "producto",
+   "envios": [
+    "2026-10-06"
+   ],
+   "notas_internas": [
+    "dos parts"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-10-06",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "prepare-su-stock-para-navidad-servilletas-vasos-bolsas-envas",
+   "nombre": "Prepare su stock para Navidad. Servilletas, vasos, bolsas, envases, take-away… Una mica de tot. Per tornar a enllaçar el catàleg",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/christmas",
+   "tipo": "lanzamiento-catalogo",
+   "envios": [
+    "2026-11-24"
+   ],
+   "notas_internas": [
+    "per tornar",
+    "una mica de tot"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-11-24",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "presentacion-bufet-y-catering-madera-297-300",
+   "nombre": "Presentación bufet y catering madera 297-300",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-15"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-15",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "recipientes-aperitivos-bambu-new-mini-recipientes-negros-pag",
+   "nombre": "Recipientes aperitivos Bambú - New Mini Recipientes negros pag 315",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    315
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-02-19"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-02-19",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "recipientes-carton-con-tapa-14",
+   "nombre": "Recipientes cartón con tapa 14",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    14
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-25"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-25",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "recycled-feel-green",
+   "nombre": "Recycled Feel Green",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "FEEL GREEN"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-08-12"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-08-12",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "safari-60",
+   "nombre": "Safari 60",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Safari"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-29"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-29",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "separadores-insertables-ensaladeras",
+   "nombre": "Separadores Insertables Ensaladeras",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-11-06"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-11-06",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "servilletas-canguro-3",
+   "nombre": "Servilletas canguro 3",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-04"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-04",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "servilletas-canguro-agilidad-y-presentacion-en-mesa",
+   "nombre": "Servilletas canguro: agilidad y presentación en mesa",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Kangaroo"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-10-01"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-10-01",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "servilletas-canguro-double-point-nous-colors-pag-79",
+   "nombre": "Servilletas canguro Double Point nous colors (pag 79)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Double Point"
+   ],
+   "paginas_catalogo": [
+    79
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-02-20"
+   ],
+   "notas_internas": [
+    "nous colors"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-02-20",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "servilletas-ciudades",
+   "nombre": "Servilletas ciudades",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-05-14"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-05-14",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "servilletas-like-linen-hi-ha-nous-dissenys-argyle-madras-iii",
+   "nombre": "Servilletas Like Linen (hi ha nous dissenys Argyle, Madras III, mides…)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-10-23"
+   ],
+   "notas_internas": [
+    "hi ha",
+    "nous dissenys"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-10-23",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "servilletas-y-mantelines-vertex-like-linen",
+   "nombre": "Servilletas y mantelines Vertex Like Linen",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-03-17"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-03-17",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "sillas-de-madera-nuevas-emili",
+   "nombre": "Sillas de madera nuevas (EMILI)",
+   "familia": "mesa-accesorios",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-03-31"
+   ],
+   "notas_internas": [
+    "emili"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-03-31",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "sillas-poliester-y-terciopelo-471-y-totes-en-general",
+   "nombre": "Sillas poliester y terciopelo 471 y totes en general",
+   "familia": "mesa-accesorios",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-11-21"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-11-21",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "sopas-cremas-y-comida-caliente-para-llevar-tarrinas-con-tapa",
+   "nombre": "Sopas, cremas y comida caliente para llevar. Tarrinas con tapa, envases para platos calientes, opciones microondables y take-away",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/take-away/tarrinas/tarrinas-para-sopas.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-09-29"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-09-29",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "spunbond-textura-impresa",
+   "nombre": "Spunbond Textura Impresa",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Spunbond"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-05-08"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-05-08",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "street-food-de-invierno-cross-selling-de-churros-castanas-so",
+   "nombre": "Street Food de invierno. Cross-selling de Churros, castañas, sopas, cremas, bebidas calientes y soluciones para consumo para llevar",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/disposable-products/cucuruchos-de-papel.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-11-26"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-11-26",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "street-food-palas-bandejas-conos-envases-para-crepes-waffles",
+   "nombre": "Street Food: Palas, bandejas, conos, envases para Crepes, waffles y gofres",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-05-12"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-05-12",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "supratek-video",
+   "nombre": "Supratek (video)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Supratek"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "video",
+   "envios": [
+    "2025-08-21"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-08-21",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "take-away-delivery-para-la-temporada-alta-bolsas-cajas-envas",
+   "nombre": "Take Away & Delivery para la temporada alta. Bolsas, cajas, envases estancos, packaging para pedidos y transporte",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/take-away.html",
+   "tipo": "producto",
+   "envios": [
+    "2026-11-12"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-11-12",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "tarifas-noviembre",
+   "nombre": "Tarifas noviembre",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "tarifa",
+   "envios": [
+    "2025-11-27"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-11-27",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "tarrinas-con-tapa-para-sopas-nuevas-tarrinas-sopa-y-crema",
+   "nombre": "Tarrinas con tapa para sopas nuevas, Tarrinas sopa y crema",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-01-08"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-01-08",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "tarrinas-helado-770",
+   "nombre": "Repetida Tarrinas helado 770",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "repeticion",
+   "envios": [
+    "2025-04-10"
+   ],
+   "notas_internas": [
+    "repetida"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-04-10",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "tarrinas-insertables-rectangulares",
+   "nombre": "Tarrinas insertables rectangulares",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-01-29"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-01-29",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "tarrinas-papel-plisado-12",
+   "nombre": "Tarrinas papel plisado 12",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-20",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "tarrinas-para-helados-y-paper-spoon-141-145",
+   "nombre": "Tarrinas para helados y Paper Spoon (141-145)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    141,
+    145
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-13"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-13",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "tarrinas-sopa-y-crema",
+   "nombre": "Tarrinas sopa y crema",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-01-07"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-01-07",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "thepack-black",
+   "nombre": "THEPACK Black",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-10-01"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-10-01",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "thepack-blog-normativa-envases-pfas",
+   "nombre": "ThePack + Blog Normativa Envases pfas",
+   "familia": "institucional",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "contenido-blog",
+   "envios": [
+    "2026-04-21"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-04-21",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "times",
+   "nombre": "Times",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "TIMES"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-11-20"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-11-20",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "toallitas-pag-89-90-91",
+   "nombre": "Toallitas pag 89, 90, 91",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    89,
+    90,
+    91
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-05-15"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-05-15",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "toallitas-refrescantes",
+   "nombre": "Toallitas refrescantes",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-05-21"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-05-21",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "toallitas-refrescantes-89-90",
+   "nombre": "Toallitas refrescantes 89-90",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-01"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-01",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "todo-crepes-175",
+   "nombre": "Todo crepes (175)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    175
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-06"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-06",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "todo-palomitas-176",
+   "nombre": "Todo palomitas (176)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    176
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-30"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-30",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "vajilla-akala-porcelana-new-platos-para-pizza-akala-porcelan",
+   "nombre": "Vajilla Akala Porcelana- New Platos para pizza Akala Porcelana pag 396",
+   "familia": "take-away",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [
+    396
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-02-24"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-02-24",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "vajilla-melamina-asamiware",
+   "nombre": "Vajilla Melamina Asamiware",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "url_es": "https://www.garciadepou.com/es/mesa-y-accesorios/melamina.html?product_list_order=position",
+   "tipo": "producto",
+   "envios": [
+    "2026-06-23"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-06-23",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "vasitos-para-postres-con-tapa-y-sin-tapa-pag-334-335",
+   "nombre": "Vasitos para postres, con tapa y sin tapa (pag. 334,335)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    334,
+    335
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-01-28"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-01-28",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "vasos-abiertos-para-fritos-pag-190",
+   "nombre": "Vasos abiertos para fritos pag 190",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    190
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-05-05"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-05-05",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "vasos-bebidas-calientes-carton-ondulado-carton-protector-cal",
+   "nombre": "Vasos bebidas calientes, cartón ondulado, cartón protector calor, paletinas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-02-05"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-02-05",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "vasos-cafe-esmenta-els-nous",
+   "nombre": "Vasos café (esmenta els nous)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-09-25"
+   ],
+   "notas_internas": [
+    "esmenta"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-09-25",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "vasos-cafe-java",
+   "nombre": "Vasos café Java",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-02-13"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-02-13",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "vasos-compostables",
+   "nombre": "Vasos compostables (rep 815 o 792)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "repeticion",
+   "envios": [
+    "2025-06-19"
+   ],
+   "notas_internas": [
+    "(rep"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-06-19",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "vasos-doble-capa-compostables-pag-15-new",
+   "nombre": "Vasos doble capa compostables pag 15 NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    15
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2025-07-17"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-07-17",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "vasos-irrompibles-pag-325",
+   "nombre": "Vasos irrompibles (Pag 325)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    325
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-03-11"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-03-11",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "vasos-pla-con-tapa-23",
+   "nombre": "Vasos PLA con tapa 23",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    23
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-09"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-09",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "vasos-reutilizables-305-306",
+   "nombre": "Vasos reutilizables (305-306)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    305,
+    306
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-07-23"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-07-23",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "vasos-transparentes-para-granizados-batidos-zumos-y-helados-",
+   "nombre": "Vasos transparentes para granizados, batidos, zumos y helados, con tapas (Aquests de cara al bon temps està bé) pag 23",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    23
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-05-09"
+   ],
+   "notas_internas": [
+    "aquests de cara"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-05-09",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "viva-el-vintage-mantelines-vintage-nuevos-fitipaldi-y-times",
+   "nombre": "Viva el vintage: Mantelines Vintage Nuevos, Fitipaldi y Times",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Fitipaldi",
+    "Spunbond",
+    "TIMES",
+    "Vintage"
+   ],
+   "paginas_catalogo": [
+    78
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [
+    "2026-04-14"
+   ],
+   "notas_internas": [
+    "no hay materia prima"
+   ],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-04-14",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "waki-glass",
+   "nombre": "Waki Glass",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Waki Glass"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2026-01-15"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2026-01-15",
+   "temporadas": [
+    "invierno"
+   ]
+  },
+  {
+   "id": "waki-glass-29",
+   "nombre": "Waki glass 29",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Waki Glass"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-06-27"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-06-27",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "waki-glass-vasos-para-aperitivos-y-tarros-pag-29",
+   "nombre": "Waki Glass Vasos para aperitivos y tarros pag 29",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Waki Glass"
+   ],
+   "paginas_catalogo": [
+    29
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-05-23"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-05-23",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "wood-275",
+   "nombre": "Wood 275",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "WOOD"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-09-19"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-09-19",
+   "temporadas": [
+    "otono"
+   ]
+  },
+  {
+   "id": "wood-pinchos-y-cucharillas-264-fritos-o-barquillas",
+   "nombre": "Wood pinchos y cucharillas (264) + Fritos o Barquillas",
+   "familia": "take-away",
+   "marcas": [
+    "WOOD"
+   ],
+   "paginas_catalogo": [
+    264
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2024-08-08"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2024-08-08",
+   "temporadas": [
+    "verano"
+   ]
+  },
+  {
+   "id": "wood-un-solo-uso-pag-279",
+   "nombre": "WOOD un solo uso (Pag. 279)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "WOOD"
+   ],
+   "paginas_catalogo": [
+    279
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [
+    "2025-03-27"
+   ],
+   "notas_internas": [],
+   "veces_enviado": 1,
+   "ultimo_envio": "2025-03-27",
+   "temporadas": [
+    "primavera"
+   ]
+  },
+  {
+   "id": "areca",
+   "nombre": "Areca",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Areca"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "areca-boles-platos-y-bandejas",
+   "nombre": "Areca boles, platos y bandejas",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Areca"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "artinox",
+   "nombre": "Artinox",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Artinox"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "bandejas-carton-pasteleria",
+   "nombre": "Bandejas cartón pastelería",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "bandejas-con-tapa-catering-thepack",
+   "nombre": "Bandejas con tapa catering ThePack",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "bandejas-de-transporte-para-catering-186",
+   "nombre": "Bandejas de transporte para catering (186)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    186
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "barquilla-sushi-con-tapa",
+   "nombre": "Barquilla sushi con tapa",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [
+    "no stock"
+   ],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "barquillas",
+   "nombre": "Barquillas",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "barquillas-termosellables",
+   "nombre": "Barquillas termosellables",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [
+    "no stock"
+   ],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "barquillas-y-fundas-164",
+   "nombre": "Barquillas y fundas (164)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    164
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "bionic",
+   "nombre": "Bionic",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "BIONIC"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "bionic-boles-tarrinas-y-bandejas",
+   "nombre": "Bionic boles, tarrinas y bandejas",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "BIONIC"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "bolsas-sos",
+   "nombre": "Bolsas SOS",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "cajas-con-ventana-en-general-168-ensaladas-171",
+   "nombre": "Cajas con ventana en general (168 ensaladas 171)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "cajas-para-sandwich-y-wrap-169",
+   "nombre": "Cajas para sandwich y wrap 169",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "cajas-pasteleria-chocolate-algunas",
+   "nombre": "Cajas pastelería chocolate (algunas)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "cajas-pasteleria-color-chocolate",
+   "nombre": "Cajas pasteleria color chocolate",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [
+    "no stock"
+   ],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "cajas-sushi",
+   "nombre": "Cajas Sushi",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "chafing-dish-41",
+   "nombre": "Chafing Dish 41",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [
+    "no stock"
+   ],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "cubos-palomitas",
+   "nombre": "Cubos palomitas",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "cubos-palomitas-17",
+   "nombre": "Cubos palomitas 17",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [
+    "no stock"
+   ],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "cubos-pedal-negros-46",
+   "nombre": "Cubos pedal negros 46",
+   "familia": "limpieza-higiene",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [
+    "no stock"
+   ],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "cubos-pollos",
+   "nombre": "Cubos pollos",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "disenos-tundra-madras-etc",
+   "nombre": "Diseños Tundra, Madras, etc",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "double-point",
+   "nombre": "Double Point",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Double Point"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "double-point-airlaid-y-like-linen-tres-calidades-de-manteler",
+   "nombre": "Double Point, Airlaid y Like-Linen: tres calidades de mantelería",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Airlaid",
+    "Double Point",
+    "Like-Linen"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "ensaladeras-150-151",
+   "nombre": "Ensaladeras (150,151)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    150,
+    151
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "envases-estancos-para-todo-tipo-de-comida-americanas-compart",
+   "nombre": "Envases estancos para todo tipo de comida: americanas, compartimentos, comida asiática… (160-163)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    160,
+    163
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "especial-aperitivos-asia-bambu-carton-picks",
+   "nombre": "Especial aperitivos: Asia, bambú, cartón, picks…",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "estanteria-botellas-bar-cubitera-champanera-todo-en-negro-ma",
+   "nombre": "Estanteria botellas bar, cubitera, champañera… todo en negro mate pag 425-426",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [
+    425,
+    426
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "flushable-roll-it",
+   "nombre": "Flushable Roll it",
+   "familia": "limpieza-higiene",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "just-paper-bolsas-con-ventana",
+   "nombre": "Just paper: bolsas con ventana",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Just Paper"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "linea-arrow",
+   "nombre": "Linea Arrow",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Arrow",
+    "Linea"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "madera-y-bambu",
+   "nombre": "Madera y bambú",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "manteleria-like-linen",
+   "nombre": "Mantelería Like Linen",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "manteles-y-mantelines-reciclados",
+   "nombre": "Manteles y mantelines reciclados",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "mantelines",
+   "nombre": "Mantelines",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "nuevo-diseno-caja-americana-cube-kraft-interior-pagina-179-n",
+   "nombre": "Nuevo diseño caja americana CUBE kraft interior (página 179) + Nuevo diseño OVENSAFE (página 182)",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "CUBE",
+    "Ovensafe"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "palas-crepes-y-gofres-184-185",
+   "nombre": "Palas crepes y gofres 184, 185",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "papel-antigrasa",
+   "nombre": "Papel antigrasa",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "papel-con-aluminio",
+   "nombre": "Papel con aluminio",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "papel-encerado-antigrasas-7",
+   "nombre": "Papel encerado antigrasas 7",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [
+    "no stock"
+   ],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "paper-cutlery-13",
+   "nombre": "Paper Cutlery 13",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Paper Cutlery"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [
+    "no stock"
+   ],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "presentacion-bufet-y-catering-bambu-288-290-295",
+   "nombre": "Presentación bufet y catering bambú 288 290-295",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "servilletas-air-laid-slim-y-slim-plus-pagina-47-48-49-nuevos",
+   "nombre": "Servilletas air laid Slim y Slim plus (página 47, 48, 49) + Nuevos diseños airlaid Mist, Chevron, Madras I, II, III, Dune + Tundra. Servilletas Slim/ Slim plus en blanco, airlaid natural y dry cotton",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Airlaid",
+    "DRY COTTON"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "servilletas-canguro-double-point",
+   "nombre": "Servilletas canguro double point",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Double Point"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "servilletas-y-manteles-reciclados",
+   "nombre": "Servilletas y manteles reciclados",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "sobres-adhesivos-ecommerce-pag-31-new",
+   "nombre": "Sobres adhesivos ecommerce pag 31 NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    31
+   ],
+   "url_es": null,
+   "tipo": "novedad",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "spundbond",
+   "nombre": "Spundbond",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "todo-pizzas-cajas-papel-antigrasa-para-cajas-de-pizza-97",
+   "nombre": "Todo Pizzas Cajas + Papel antigrasa para cajas de pizza (97)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    97
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "vasos-fritos-cajetillas-cucuruchos",
+   "nombre": "Vasos fritos, cajetillas, cucuruchos",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "vintage-artinox",
+   "nombre": "Vintage Artinox",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Artinox",
+    "Vintage"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "wood",
+   "nombre": "Wood",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "WOOD"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "wood-agitadores-265-vasos-cafe",
+   "nombre": "Wood agitadores (265) + vasos café",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "WOOD"
+   ],
+   "paginas_catalogo": [
+    265
+   ],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  },
+  {
+   "id": "wood-cubiertos",
+   "nombre": "Wood cubiertos",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "WOOD"
+   ],
+   "paginas_catalogo": [],
+   "url_es": null,
+   "tipo": "producto",
+   "envios": [],
+   "notas_internas": [],
+   "veces_enviado": 0,
+   "ultimo_envio": null,
+   "temporadas": []
+  }
+ ]
+}

@@ -1,0 +1,999 @@
+<title>Planificador de Newsletters GdP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════
+   GARCÍA DE POU — Brand stylesheet
+   Hoja base de marca. Copiar tal cual al proyecto y construir encima.
+   Origen: styles.css del rediseño (Multiplica). No editar los tokens.
+
+   Requiere en el <head>:
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── RESET ────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+html { font-size: 16px; overflow-x: clip; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  background: var(--white);
+  color: var(--black);
+  overflow-x: clip;
+}
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+a { color: inherit; text-decoration: none; cursor: pointer; }
+ul { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ── TOKENS ───────────────────────────────────────────────────────────── */
+:root {
+  /* Neutros */
+  --black:  #0A0A0A;
+  --white:  #FFFFFF;
+  --g50:    #F5F5F5;   /* fondo de sección puntual / zebra */
+  --g100:   #EEEEEE;   /* bordes DECORATIVOS: cards, divisores, paneles */
+  --g300:   #C4C4C4;
+  --g400:   #909090;   /* bordes de CONTROL interactivo — WCAG 1.4.11 ≈3.2:1 */
+  --g500:   #6E6E6E;   /* texto secundario, labels, eyebrows (AA sobre blanco) */
+  --g600:   #555555;   /* texto enfático secundario */
+  --g700:   #3D3D3D;   /* banners, barras de anuncio */
+
+  /* Marca */
+  --blue:      #002D72;   /* azul corporativo GDP — SOLO acción */
+  --blue-80:   #1A4490;   /* hover de botón azul */
+  --blue-60:   #2C5BA8;   /* hover sobre fondo azul */
+  --blue-10:   #EBF0F8;   /* fondo suave / estado activo */
+  --white-15:  #ffffff26; /* separadores sobre fondo azul */
+  --yellow:    #FFD100;   /* SOLO ofertas/badges/acentos de marketing */
+  --terracota: #8B3A2A;   /* destacados cálidos: banners, campañas */
+
+  /* Feedback / estado — nunca como color principal de UI */
+  --green:       #C5E63D;
+  --green-dark:  #2F4A05;
+  --yellow-dark: #7A5C00;
+  --red:         #A21C1C;
+  --red-10:      #FDECEC;
+  --red-accent:  #EE333E;
+  --red-promo:   #D42B2B;
+  --green-eco:      #2D7A4F;   /* pilar eco / sostenibilidad */
+  --green-eco-dark: #1F5A38;
+
+  /* Pills de estado — fondo sólido claro + texto oscuro (AA ≥ 4.5) */
+  --pill-success-bg: #E3F3E8;  --pill-success-fg: #15683A;
+  --pill-warn-bg:    #FBEBCF;  --pill-warn-fg:    #8A5800;
+  --pill-info-bg:    #E3ECFB;  --pill-info-fg:    #1A4490;
+  --pill-neutral-bg: #ECEEF1;  --pill-neutral-fg: #44494F;
+
+  /* Layout */
+  --container:   100%;
+  --gap:         clamp(24px, 4vw, 64px);
+  --grid-cols:   24;
+  --grid-gutter: var(--sp-16);
+  --radius:      8px;
+
+  /* Alturas de control — usar SIEMPRE estos tokens */
+  --ctrl-h-xs: 26px;
+  --ctrl-h-sm: 32px;
+  --ctrl-h:    44px;   /* estándar: botón default, qty, add-to-cart */
+  --ctrl-h-lg: 48px;
+
+  /* Escala tipográfica */
+  --fs-2xs:  10px;   /* badges, códigos, contadores */
+  --fs-3xs:  12px;   /* nav, breadcrumbs, micro-labels */
+  --fs-xs:   14px;   /* labels, eyebrows, botones */
+  --fs-sm:   16px;
+  --fs-base: 14px;   /* cuerpo secundario */
+  --fs-md:   16px;   /* cuerpo, botones LG */
+  --fs-lg:   16px;   /* cuerpo principal */
+  --fs-xl:   18px;   /* subheadings */
+  --fs-2xl:  20px;   /* precios, headings */
+  --fs-3xl:  24px;   /* Caveat decorativo */
+  --fs-4xl:  32px;   /* títulos de sección */
+
+  /* Espaciado — 8-point grid. NUNCA px literales en padding/margin/gap. */
+  --sp-4:  4px;
+  --sp-8:  8px;
+  --sp-12: 12px;
+  --sp-16: 16px;
+  --sp-20: 20px;
+  --sp-24: 24px;
+  --sp-32: 32px;
+  --sp-40: 40px;
+  --sp-48: 48px;
+  --sp-64: 64px;
+  --sp-80: 80px;
+  --sp-96: 96px;
+}
+
+/* ── LAYOUT ───────────────────────────────────────────────────────────── */
+.wrap { max-width: var(--container); margin-inline: auto; padding-inline: var(--gap); }
+
+/* Grid de 24 columnas, gutter 16px */
+.row { display: flex; flex-wrap: wrap; margin-inline: calc(var(--grid-gutter) / -2); }
+.row > [class*="col-"] { padding-inline: calc(var(--grid-gutter) / 2); }
+[class*="col-"] { flex: 0 0 auto; width: 100%; }
+@media (min-width: 1100px) {
+  .col-lg-1  { width: calc(100% / 24 * 1);  } .col-lg-2  { width: calc(100% / 24 * 2);  }
+  .col-lg-3  { width: calc(100% / 24 * 3);  } .col-lg-4  { width: calc(100% / 24 * 4);  }
+  .col-lg-5  { width: calc(100% / 24 * 5);  } .col-lg-6  { width: calc(100% / 24 * 6);  }
+  .col-lg-7  { width: calc(100% / 24 * 7);  } .col-lg-8  { width: calc(100% / 24 * 8);  }
+  .col-lg-9  { width: calc(100% / 24 * 9);  } .col-lg-10 { width: calc(100% / 24 * 10); }
+  .col-lg-11 { width: calc(100% / 24 * 11); } .col-lg-12 { width: calc(100% / 24 * 12); }
+  .col-lg-14 { width: calc(100% / 24 * 14); } .col-lg-15 { width: calc(100% / 24 * 15); }
+  .col-lg-16 { width: calc(100% / 24 * 16); } .col-lg-18 { width: calc(100% / 24 * 18); }
+  .col-lg-20 { width: calc(100% / 24 * 20); } .col-lg-24 { width: 100%; }
+}
+
+/* ── TIPOGRAFÍA — taxonomía cerrada, no inventar combinaciones ────────── */
+.t-hero {
+  font-size: clamp(44px, 6vw, 96px); font-weight: 900; line-height: .95;
+  letter-spacing: -.04em; text-transform: uppercase;
+}
+.t-number {
+  font-size: clamp(40px, 7vw, 100px); font-weight: 900; line-height: 1;
+  letter-spacing: -.05em; color: #949494;
+}
+.section-title, .t-h1 {
+  font-size: clamp(22px, 2.5vw, 36px); font-weight: 900; line-height: 1.05;
+  letter-spacing: -.04em; text-transform: uppercase; color: var(--black);
+}
+.t-h2 { font-size: clamp(18px, 2vw, 24px); font-weight: 900; line-height: 1.1; letter-spacing: -.03em; }
+.t-h3 { font-size: var(--fs-xl); font-weight: 700; line-height: 1.2; letter-spacing: -.02em; }
+.t-subtitle {
+  font-size: var(--fs-md); font-weight: 700; line-height: 1.2;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+/* Eyebrow — firma visual: toda cabecera de sección lleva eyebrow + section-title */
+.label, .t-eyebrow {
+  font-size: var(--fs-xs); font-weight: 600; line-height: 1.2;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--g500);
+}
+.t-label-block {
+  font-size: var(--fs-xs); font-weight: 700; line-height: 1.2;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--black);
+}
+.t-nav { font-size: var(--fs-3xs); font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.t-micro { font-size: var(--fs-3xs); font-weight: 600; line-height: 1.3; }
+.t-body    { font-size: var(--fs-md);   font-weight: 400; line-height: 1.5; }
+.t-body-sm { font-size: var(--fs-base); font-weight: 400; line-height: 1.5; }
+.t-body-medium   { font-size: var(--fs-md); font-weight: 500; line-height: 1.4; }
+.t-body-semibold { font-size: var(--fs-md); font-weight: 600; line-height: 1.4; }
+.t-script { font-family: 'Caveat', cursive; font-weight: 500; line-height: 1; letter-spacing: -.01em; }
+
+.section-header {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  margin-bottom: var(--sp-48);
+}
+@media (max-width: 720px) {
+  .section-header { flex-direction: column; align-items: center; text-align: center; gap: var(--sp-16); }
+}
+
+/* ── BOTONES ──────────────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--sp-8);
+  height: var(--ctrl-h); padding: 0 28px;
+  font-family: inherit; font-size: var(--fs-xs); font-weight: 500;
+  letter-spacing: .07em; text-transform: uppercase; white-space: nowrap;
+  border-radius: var(--radius);
+  transition: background .2s, color .2s, border-color .2s;
+}
+.btn svg { flex-shrink: 0; }
+.btn-sm { height: var(--ctrl-h-sm); padding: 0 var(--sp-16); font-size: var(--fs-3xs); gap: 6px; }
+.btn-lg { height: 56px; padding: 0 var(--sp-48); font-size: var(--fs-md); gap: var(--sp-8); letter-spacing: .06em; }
+.btn.btn-icon-only { padding: 0; width: var(--ctrl-h); aspect-ratio: 1; }
+.btn.btn-sm.btn-icon-only { width: var(--ctrl-h-sm); }
+
+.btn-blue         { background: var(--blue); color: var(--white); }
+.btn-blue:hover   { background: var(--blue-80); }
+.btn-outline-blue       { border: 1.5px solid var(--blue); color: var(--blue); }
+.btn-outline-blue:hover { background: var(--blue); color: var(--white); }
+/* Yellow — uso muy comedido: marketing/ofertas puntuales */
+.btn-yellow       { background: var(--yellow); color: var(--blue); }
+.btn-yellow:hover { background: var(--white); color: var(--blue); }
+/* White / Outline-White — SOLO sobre fondo oscuro o foto */
+.btn-white        { background: var(--white); color: var(--blue); }
+.btn-white:hover  { background: var(--blue-80); color: var(--white); }
+.btn-outline-white       { border: 1.5px solid rgba(255,255,255,.7); color: var(--white); }
+.btn-outline-white:hover { background: var(--white); border-color: var(--white); color: var(--blue); }
+
+.btn:disabled, .btn[aria-disabled="true"] { opacity: .35; cursor: not-allowed; pointer-events: none; }
+
+/* Iconos <img> dentro de botón */
+.btn-ico { width: 16px; height: 16px; object-fit: contain; }
+.btn-blue .btn-ico { filter: brightness(0) invert(1); }
+.btn-outline-blue:hover .btn-ico { filter: brightness(0) invert(1); }
+
+/* ── ICONO CLICABLE EN TABLA — norma del sistema, no recrear ──────────── */
+.table-icon-btn {
+  background: transparent; border: none; cursor: pointer; color: var(--blue);
+  width: 32px; height: 32px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background .2s, color .2s; flex-shrink: 0;
+}
+.table-icon-btn:hover { background: var(--blue); color: var(--white); }
+.tib-ico { width: 18px; height: 18px; object-fit: contain; }
+.table-icon-btn:hover .tib-ico { filter: brightness(0) invert(1); }
+
+/* Chevron compartido — <img> a icons/chevron-*.svg (carga en file:// sin servidor) */
+.gdp-chevron { width: 1em; height: 1em; flex-shrink: 0; object-fit: contain; vertical-align: middle; }
+
+/* ── CARDS ────────────────────────────────────────────────────────────── */
+.gdp-card {
+  background: var(--white);
+  display: flex; flex-direction: column; height: 100%;
+  position: relative;
+  border: 1px solid var(--g100);      /* borde decorativo */
+  border-radius: var(--radius);
+  transition: box-shadow .25s;
+}
+/* REGLA: el hover de card es SOMBRA. Nunca cambiar el color del borde. */
+.gdp-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+.gdp-card-img { aspect-ratio: 3/4; overflow: hidden; background: var(--g50); position: relative; }
+.gdp-card-img img { transition: transform .6s cubic-bezier(.16,1,.3,1); }
+.gdp-card:hover .gdp-card-img img { transform: scale(1.05); }
+.gdp-card-body { padding: var(--sp-16); display: flex; flex-direction: column; gap: var(--sp-8); flex: 1; }
+
+/* ── FORMULARIOS ──────────────────────────────────────────────────────── */
+.gdp-field { position: relative; display: flex; flex-direction: column; }
+.gdp-field > span {                    /* label flotante sobre el input */
+  position: absolute; top: var(--sp-8); left: var(--sp-16); z-index: 1;
+  color: var(--g500); font-size: var(--fs-3xs); font-weight: 600;
+}
+.gdp-field input,
+.gdp-field select,
+.gdp-field textarea {
+  width: 100%; height: 56px;
+  border: 1px solid var(--g400);       /* borde de control — AA 1.4.11 */
+  border-radius: var(--radius);
+  background: var(--g50); color: var(--black);
+  font: inherit; font-size: var(--fs-md);
+  padding: var(--sp-20) var(--sp-16) var(--sp-8);
+  outline: none;
+  transition: border-color .2s, background .2s;
+}
+.gdp-field textarea { height: auto; min-height: 72px; resize: none; padding-top: var(--sp-32); }
+.gdp-field input:focus,
+.gdp-field select:focus,
+.gdp-field textarea:focus { border-color: var(--blue); background: var(--white); }
+.gdp-field.is-error input,
+.gdp-field.is-error select,
+.gdp-field.is-error textarea { border-color: var(--red); background: var(--red-10); }
+.gdp-field-error { margin-top: var(--sp-8); color: var(--red); font-size: var(--fs-sm); line-height: 1.35; }
+.gdp-field-hint  { font-size: var(--fs-3xs); color: var(--g500); margin-top: var(--sp-4); }
+.gdp-field-grid  { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-16); }
+.gdp-field--full { grid-column: 1 / -1; }
+@media (max-width: 720px) { .gdp-field-grid { grid-template-columns: 1fr; } }
+
+/* ── ALERTAS ──────────────────────────────────────────────────────────── */
+.gdp-alert {
+  display: flex; align-items: stretch; gap: 0;
+  border: 1px solid; border-radius: var(--radius);
+  background: var(--white); overflow: hidden; text-align: left;
+}
+.gdp-alert-icon {
+  flex-shrink: 0; width: 54px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white);
+}
+.gdp-alert-icon svg { width: 22px; height: 22px; }
+.gdp-alert-content { flex: 1; min-width: 0; padding: var(--sp-12) var(--sp-16) var(--sp-12) var(--sp-12); }
+.gdp-alert-title {
+  display: block; font-size: var(--fs-base); font-weight: 700;
+  letter-spacing: -.02em; color: var(--black); margin-bottom: var(--sp-4); line-height: 1.3;
+}
+.gdp-alert-msg { margin: 0; font-size: var(--fs-base); font-weight: 400; color: var(--g500); }
+
+.gdp-alert--success { border-color: var(--green); }
+.gdp-alert--success .gdp-alert-icon { background: var(--green); color: var(--green-dark); }
+.gdp-alert--warning { border-color: var(--yellow); }
+.gdp-alert--warning .gdp-alert-icon { background: var(--yellow); color: var(--yellow-dark); }
+.gdp-alert--info    { border-color: var(--blue); }
+.gdp-alert--info .gdp-alert-icon    { background: var(--blue); }
+.gdp-alert--error   { border-color: var(--red); }
+.gdp-alert--error .gdp-alert-icon   { background: var(--red); }
+.gdp-alert--neutral { border-color: var(--g300); }
+.gdp-alert--neutral .gdp-alert-icon { background: var(--g500); }
+
+/* ── PILLS DE ESTADO ──────────────────────────────────────────────────── */
+.gdp-status {
+  display: inline-flex; align-items: center;
+  padding: 3px 10px; border-radius: 999px;
+  font-size: var(--fs-3xs); font-weight: 700; line-height: 1.45; white-space: nowrap;
+  background: var(--pill-neutral-bg); color: var(--pill-neutral-fg);
+}
+.gdp-status--success { background: var(--pill-success-bg); color: var(--pill-success-fg); }
+.gdp-status--warn    { background: var(--pill-warn-bg);    color: var(--pill-warn-fg); }
+.gdp-status--info    { background: var(--pill-info-bg);    color: var(--pill-info-fg); }
+
+/* ── BARRA DE ANUNCIO ─────────────────────────────────────────────────── */
+.gdp-announcement {
+  background: var(--g700); height: 32px;
+  display: flex; align-items: center; overflow: hidden;
+}
+.gdp-announcement .ann-item {
+  display: flex; align-items: center; gap: var(--sp-48); padding-right: var(--sp-48);
+  font-size: var(--fs-xs); font-weight: 500; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--g100); flex-shrink: 0;
+}
+
+/* ── ACCIÓN FLOTANTE MOBILE — siempre en barra blanca inferior ────────── */
+.gdp-mobile-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+  background: var(--white); border-top: 1px solid var(--g100);
+  padding: var(--sp-12) var(--gap);
+}
+.gdp-mobile-bar .btn { width: 100%; }
+
+/* ── DIVISOR ──────────────────────────────────────────────────────────── */
+.gdp-divider { height: 1px; background: var(--g100); border: none; }
+
+
+/* ── Propuesta: componentes propios, todos sobre tokens de marca ───────── */
+body { padding-bottom: var(--sp-64); }
+.pl-doc-head { border-bottom: 1px solid var(--g100); padding: var(--sp-32) 0 var(--sp-24); }
+.pl-doc-head .pl-logo { width: auto; height: 38px; }
+.pl-meta { display: flex; flex-wrap: wrap; gap: var(--sp-8) var(--sp-24); margin-top: var(--sp-16); }
+.pl-meta span { font-size: var(--fs-3xs); color: var(--g500); text-transform: uppercase; letter-spacing: .08em; }
+.pl-title { margin-top: var(--sp-24); max-width: 20ch; }
+.pl-lede { max-width: 62ch; margin-top: var(--sp-16); color: var(--g600); line-height: 1.55; }
+
+section.pl-s { padding: var(--sp-48) 0 0; }
+.pl-prose { max-width: 66ch; display: flex; flex-direction: column; gap: var(--sp-16); }
+.pl-prose p { line-height: 1.6; }
+.pl-prose strong { font-weight: 700; }
+
+/* Cifras */
+.pl-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-16); margin-top: var(--sp-24); }
+.pl-stat { border: 1px solid var(--g100); border-radius: var(--radius); padding: var(--sp-20); background: var(--white); }
+.pl-stat b { display: block; font-size: var(--fs-4xl); font-weight: 900; letter-spacing: -.04em;
+  color: var(--black); font-variant-numeric: tabular-nums; line-height: 1; }
+.pl-stat span { display: block; margin-top: var(--sp-8); font-size: var(--fs-3xs); color: var(--g500);
+  text-transform: uppercase; letter-spacing: .08em; line-height: 1.4; }
+
+/* Tablas */
+.pl-scroll { overflow-x: auto; margin-top: var(--sp-24); border: 1px solid var(--g100); border-radius: var(--radius); }
+table.pl-t { width: 100%; border-collapse: collapse; font-size: var(--fs-base); min-width: 640px; }
+table.pl-t th { text-align: left; font-size: var(--fs-2xs); font-weight: 700; color: var(--g500);
+  text-transform: uppercase; letter-spacing: .1em; padding: var(--sp-12) var(--sp-16);
+  border-bottom: 1px solid var(--g100); white-space: nowrap; background: var(--g50); }
+table.pl-t td { padding: var(--sp-12) var(--sp-16); border-bottom: 1px solid var(--g100);
+  vertical-align: top; line-height: 1.5; }
+table.pl-t tbody tr:last-child td { border-bottom: none; }
+table.pl-t td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.pl-t td.hoy { color: var(--g500); }
+.pl-t-cap { font-size: var(--fs-3xs); color: var(--g500); margin-top: var(--sp-8); line-height: 1.5; }
+
+/* Fricciones */
+.pl-fr { display: flex; flex-direction: column; gap: var(--sp-4); margin-top: var(--sp-24);
+  border: 1px solid var(--g100); border-radius: var(--radius); overflow: hidden; }
+.pl-fr-item { display: grid; grid-template-columns: 40px 1fr 200px; gap: var(--sp-16);
+  padding: var(--sp-20); border-bottom: 1px solid var(--g100); align-items: start; }
+.pl-fr-item:last-child { border-bottom: none; }
+.pl-fr-n { font-size: var(--fs-2xl); font-weight: 900; color: var(--g300);
+  font-variant-numeric: tabular-nums; letter-spacing: -.03em; line-height: 1.1; }
+.pl-fr-b h3 { font-size: var(--fs-md); font-weight: 700; line-height: 1.35; }
+.pl-fr-b p { font-size: var(--fs-base); color: var(--g600); line-height: 1.55; margin-top: var(--sp-8); }
+.pl-fr-ev { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.5;
+  border-left: 2px solid var(--g100); padding-left: var(--sp-12); }
+.pl-fr-ev b { color: var(--black); font-variant-numeric: tabular-nums; }
+
+/* Piezas del sistema */
+.pl-piezas { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-16); margin-top: var(--sp-24); }
+.pl-pieza { border: 1px solid var(--g100); border-radius: var(--radius); padding: var(--sp-24); background: var(--white); }
+.pl-pieza .label { margin-bottom: var(--sp-8); }
+.pl-pieza h3 { font-size: var(--fs-xl); font-weight: 800; letter-spacing: -.02em; line-height: 1.25; }
+.pl-pieza p { font-size: var(--fs-base); color: var(--g600); line-height: 1.6; margin-top: var(--sp-12); }
+.pl-pieza code { font-size: var(--fs-2xs); background: var(--g50); padding: 2px 6px; border-radius: 4px;
+  color: var(--g700); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+/* Maqueta del planificador */
+.pl-mock { margin-top: var(--sp-24); border: 1px solid var(--g100); border-radius: var(--radius);
+  overflow: hidden; background: var(--white); }
+.pl-mock-bar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-12);
+  padding: var(--sp-16) var(--sp-20); border-bottom: 1px solid var(--g100); background: var(--g50); }
+.pl-mock-bar .pl-q { font-size: var(--fs-md); font-weight: 800; letter-spacing: -.02em; }
+.pl-mock-bar .pl-q em { font-style: normal; color: var(--g500); font-weight: 400; }
+.pl-mock-acts { display: flex; flex-wrap: wrap; gap: var(--sp-8); margin-left: auto; }
+.pl-mock-scroll { overflow-x: auto; }
+table.pl-plan { width: 100%; border-collapse: collapse; font-size: var(--fs-base); min-width: 900px; }
+table.pl-plan th { text-align: left; font-size: var(--fs-2xs); font-weight: 700; color: var(--g500);
+  text-transform: uppercase; letter-spacing: .1em; padding: var(--sp-12) var(--sp-16);
+  border-bottom: 1px solid var(--g100); white-space: nowrap; }
+table.pl-plan td { padding: var(--sp-12) var(--sp-16); border-bottom: 1px solid var(--g100); line-height: 1.45; }
+table.pl-plan tbody tr:nth-child(even) { background: var(--g50); }
+table.pl-plan tbody tr:last-child td { border-bottom: none; }
+.pl-fecha { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pl-fecha em { display: block; font-style: normal; font-weight: 400; font-size: var(--fs-2xs);
+  color: var(--g500); text-transform: uppercase; letter-spacing: .06em; }
+.pl-asunto { min-width: 240px; }
+.pl-motivo { display: block; font-size: var(--fs-2xs); color: var(--g500); margin-top: 4px; line-height: 1.4; }
+.pl-fam { font-size: var(--fs-2xs); color: var(--g500); text-transform: uppercase;
+  letter-spacing: .06em; white-space: nowrap; }
+.pl-idiomas { display: flex; gap: 4px; }
+.pl-lg { font-size: var(--fs-2xs); font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+  padding: 3px 6px; border-radius: 4px; background: var(--blue-10); color: var(--blue); }
+.pl-lg.falta { background: var(--g50); color: var(--g400); }
+.pl-pags { font-size: var(--fs-2xs); color: var(--g500); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* Flujo de estados */
+.pl-flow { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-8); margin-top: var(--sp-24); }
+.pl-flow .gdp-status { white-space: nowrap; }
+.pl-flow-arrow { color: var(--g300); font-size: var(--fs-md); }
+
+/* Fases */
+.pl-fases { display: flex; flex-direction: column; gap: var(--sp-16); margin-top: var(--sp-24); }
+.pl-fase { display: grid; grid-template-columns: 120px 1fr; gap: var(--sp-24);
+  border: 1px solid var(--g100); border-radius: var(--radius); padding: var(--sp-24); }
+.pl-fase-n .label { color: var(--g500); }
+.pl-fase-n b { display: block; font-size: var(--fs-2xl); font-weight: 900; letter-spacing: -.03em; margin-top: 2px; }
+.pl-fase-b h3 { font-size: var(--fs-md); font-weight: 700; line-height: 1.35; }
+.pl-fase-b ul { margin-top: var(--sp-12); display: flex; flex-direction: column; gap: var(--sp-8); }
+.pl-fase-b li { font-size: var(--fs-base); color: var(--g600); line-height: 1.55; padding-left: var(--sp-16); position: relative; }
+.pl-fase-b li::before { content: ''; position: absolute; left: 0; top: .55em; width: 5px; height: 5px;
+  border-radius: 50%; background: var(--g300); }
+
+/* Preguntas */
+.pl-q-list { display: flex; flex-direction: column; gap: var(--sp-16); margin-top: var(--sp-24); }
+.pl-q-item { border-left: 3px solid var(--blue); padding: var(--sp-4) 0 var(--sp-4) var(--sp-20); }
+.pl-q-item h3 { font-size: var(--fs-md); font-weight: 700; line-height: 1.4; }
+.pl-q-item p { font-size: var(--fs-base); color: var(--g600); line-height: 1.6; margin-top: var(--sp-8); max-width: 62ch; }
+
+.pl-nota { font-family: 'Caveat', cursive; font-size: var(--fs-3xl); color: var(--g600);
+  margin-top: var(--sp-24); line-height: 1.3; }
+
+footer.pl-foot { margin-top: var(--sp-64); border-top: 1px solid var(--g100); padding-top: var(--sp-24); }
+footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.6; }
+
+@media (max-width: 1000px) {
+  .pl-stats { grid-template-columns: repeat(2, 1fr); }
+  .pl-piezas { grid-template-columns: 1fr; }
+  .pl-fr-item { grid-template-columns: 32px 1fr; }
+  .pl-fr-ev { grid-column: 2; border-left: none; border-top: 1px solid var(--g100);
+    padding: var(--sp-12) 0 0; margin-top: var(--sp-4); }
+  .pl-fase { grid-template-columns: 1fr; gap: var(--sp-12); }
+}
+@media (max-width: 560px) {
+  .pl-stats { grid-template-columns: 1fr; }
+}
+</style>
+
+<header class="pl-doc-head">
+  <div class="wrap">
+    <svg class="pl-logo" role="img" aria-label="García de Pou" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="275" height="38" viewBox="0 0 275 38">
+    <defs>
+        <path id="a" d="M0 .845h229.144v21.03H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#002D72" d="M0 0v18.328c0 9.064 5.722 16.604 14.144 19.525l.355-.123c8.024-2.785 13.787-10.418 13.787-19.402V0H0zm14.148 29.115c-1.99 0-6.72-.693-6.86-3.496L7.278 8.025h1.196v7.468a5.65 5.65 0 0 1 1.09-.642 8.975 8.975 0 0 1 1.681-.556l.383 1.813c-.49.115-.928.262-1.298.43-1.014.461-1.196.908-1.196 1.065 0 .158.182.604 1.196 1.064.929.423 2.277.708 3.817.708s2.889-.285 3.818-.708c1.014-.46 1.196-.906 1.196-1.064 0-.157-.183-.604-1.196-1.065a7.27 7.27 0 0 0-1.409-.455l.417-1.78c1.017.225 2.048.588 2.814 1.14l.023-7.418h1.197l.005 17.464c0 2.91-4.843 3.626-6.865 3.626zm-2.136-16.582h4.262l-.67 5.204h-2.922l-.67-5.204zm9.732-5.54h-7.105v4.547h-.993V6.993H6.543V5.795h15.2v1.198z"/>
+        <g transform="translate(45 7.95)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="#002D72" d="M219.68 21.845c-1.444 0-2.741-.182-3.896-.547-1.153-.367-2.134-.926-2.941-1.675-.809-.772-1.435-1.734-1.876-2.89-.424-1.173-.635-2.55-.635-4.132V1.249h5.683v11.238c0 1.463.337 2.554 1.011 3.264.673.694 1.576 1.041 2.71 1.041 1.135 0 2.041-.337 2.714-1.012.673-.674 1.01-1.724 1.01-3.149V1.25h5.684v11.209c0 1.636-.231 3.052-.693 4.246-.443 1.176-1.078 2.147-1.904 2.919-.808.75-1.799 1.308-2.971 1.675-1.155.365-2.453.547-3.896.547zm-23.373.03c-1.557 0-3-.27-4.329-.807-1.327-.559-2.47-1.31-3.431-2.255a10.482 10.482 0 0 1-2.28-3.32 10.337 10.337 0 0 1-.808-4.075c0-1.502.27-2.86.808-4.131a10.2 10.2 0 0 1 2.309-3.352 10.485 10.485 0 0 1 3.462-2.251c1.325-.559 2.769-.839 4.326-.839 1.558 0 3 .28 4.33.839 1.325.538 2.47 1.28 3.43 2.224.963.945 1.713 2.05 2.253 3.322.558 1.271.835 2.628.835 4.071 0 1.504-.277 2.87-.835 4.161-.54 1.27-1.299 2.387-2.28 3.351-.98.945-2.136 1.696-3.463 2.255-1.327.536-2.769.808-4.327.808zm.057-5.054a5.02 5.02 0 0 0 3.723-1.588 5.63 5.63 0 0 0 1.038-1.735c.25-.655.374-1.348.374-2.08 0-.789-.125-1.483-.374-2.138a5.374 5.374 0 0 0-1.066-1.734 5.11 5.11 0 0 0-1.646-1.184 4.766 4.766 0 0 0-2.106-.462c-.77 0-1.474.144-2.106.434a5.179 5.179 0 0 0-1.617 1.184 5.246 5.246 0 0 0-1.037 1.704 6.158 6.158 0 0 0-.347 2.08c0 .79.126 1.484.375 2.139.249.653.595 1.232 1.038 1.732.463.502 1.01.906 1.645 1.214a5.04 5.04 0 0 0 2.106.434zM166.67 1.25h8.655c1.27 0 2.423.163 3.462.49 1.038.31 1.924.772 2.654 1.387a5.86 5.86 0 0 1 1.673 2.225c.404.887.608 1.889.608 3.005 0 1.252-.223 2.3-.665 3.206a6.33 6.33 0 0 1-1.788 2.283c-.772.615-1.696 1.079-2.772 1.388-1.056.305-2.21.46-3.46.46h-2.77v5.779h-5.597V1.249zm8.251 10.052c1 0 1.779-.229 2.337-.69.576-.482.866-1.13.866-1.936 0-.925-.29-1.582-.866-2.024-.558-.461-1.346-.693-2.367-.693h-2.625v5.343h2.655zM108.368 1.105h5.393l8.598 20.367h-6l-1.47-3.611h-7.791l-1.442 3.61h-5.887l8.599-20.366zm4.906 12.393L111.02 7.75l-2.278 5.748h4.532zM91.2 21.47h5.626V1.25H91.2v20.22zm-12.32.406c-1.442 0-2.798-.261-4.068-.78a10.194 10.194 0 0 1-3.318-2.169 11.002 11.002 0 0 1-2.222-3.32c-.537-1.291-.808-2.685-.808-4.189 0-1.522.271-2.889.808-4.16a10.34 10.34 0 0 1 2.222-3.35 10.056 10.056 0 0 1 3.345-2.254c1.31-.54 2.734-.809 4.272-.809 1.039 0 1.98.105 2.826.318a8.695 8.695 0 0 1 2.309.866c.712.366 1.347.81 1.905 1.33.575.52 1.086 1.087 1.529 1.704l-4.214 3.263c-.575-.73-1.21-1.308-1.903-1.732-.692-.426-1.53-.636-2.51-.636a4.45 4.45 0 0 0-1.96.432 4.568 4.568 0 0 0-1.504 1.128 5.617 5.617 0 0 0-1.009 1.704 6.23 6.23 0 0 0-.345 2.08c0 .81.115 1.52.345 2.196.25.654.588 1.222 1.01 1.704.425.482.923.867 1.503 1.157a4.716 4.716 0 0 0 1.96.404c.519 0 .99-.059 1.414-.175a4.34 4.34 0 0 0 1.183-.492c.364-.23.7-.49 1.01-.78.326-.306.643-.643.95-1.009l4.214 3.004c-.48.655-1.01 1.262-1.587 1.822a8.566 8.566 0 0 1-1.933 1.443 9.77 9.77 0 0 1-2.422.951c-.887.232-1.887.349-3.002.349zM47.548 1.249h9.55c1.557 0 2.876.193 3.953.578 1.077.387 1.952.924 2.625 1.618 1.193 1.155 1.79 2.723 1.79 4.71 0 1.615-.376 2.907-1.126 3.927-.751 1.022-1.76 1.8-3.03 2.342l4.819 7.048h-6.463l-4.07-6.125h-2.45v6.125h-5.598V1.249zm9.29 9.707c.961 0 1.702-.213 2.22-.635.52-.444.78-1.032.78-1.763 0-.867-.268-1.465-.807-1.847-.539-.407-1.279-.609-2.221-.609h-3.665v4.854h3.693zm-26.11-9.851h5.397l8.594 20.367H38.72l-1.471-3.611h-7.791l-1.442 3.61H22.13l8.6-20.366zm4.904 12.393l-2.25-5.748-2.278 5.748h4.528zm-24.64 8.378c-1.577 0-3.038-.251-4.385-.751a10.7 10.7 0 0 1-3.464-2.167 10.02 10.02 0 0 1-2.306-3.293C.278 14.375 0 12.959 0 11.418c0-1.522.27-2.889.807-4.16a10.472 10.472 0 0 1 2.28-3.35 10.208 10.208 0 0 1 3.434-2.254c1.346-.54 2.798-.809 4.355-.809 1.79 0 3.328.26 4.618.78 1.308.52 2.5 1.241 3.578 2.166l-3.29 3.96a8.857 8.857 0 0 0-2.25-1.417c-.751-.326-1.625-.491-2.626-.491-.73 0-1.414.144-2.049.433A5.144 5.144 0 0 0 7.242 7.46a5.687 5.687 0 0 0-1.097 1.762 5.819 5.819 0 0 0-.404 2.167c0 .868.136 1.616.404 2.311a5.41 5.41 0 0 0 1.124 1.793c.503.48 1.08.866 1.734 1.153.673.27 1.412.406 2.22.406 1.31 0 2.387-.28 3.231-.839v-2.456h-3.982v-4.1h9.291v12.219l-2.953-1.272a15.13 15.13 0 0 1-.855.375c-1.461.598-3.116.897-4.963.897z" mask="url(#b)"/>
+        </g>
+        <path fill="#A6A8AB" d="M192.292 9.199h14.973v3.178H195.84v5.257h10.126v3.176H195.84v5.432h11.57v3.178h-15.118V9.2zm-21.696 0h7.53c1.575 0 3.02.26 4.326.78 1.328.5 2.463 1.202 3.405 2.109a9.28 9.28 0 0 1 2.221 3.205c.522 1.214.781 2.533.781 3.958 0 1.483-.26 2.813-.78 4.044a9.246 9.246 0 0 1-2.222 3.207c-.942.906-2.077 1.619-3.405 2.14-1.307.519-2.751.778-4.326.778h-7.53V9.2zm7.53 16.987c1.056 0 2.019-.165 2.884-.492.867-.347 1.596-.818 2.194-1.416a6.312 6.312 0 0 0 1.414-2.166 7.18 7.18 0 0 0 .518-2.744c0-1.041-.172-1.954-.518-2.803a5.96 5.96 0 0 0-1.414-2.166c-.598-.618-1.327-1.1-2.194-1.445-.865-.347-1.828-.52-2.884-.52h-3.982v13.752h3.982z"/>
+    </g>
+</svg>
+    <h1 class="section-title pl-title" style="font-size: var(--fs-4xl)">Planificador de newsletters</h1>
+    <p class="t-body pl-lede">Propuesta para sustituir el Excel de planning por un sistema que genere el
+      calendario, proponga los temas a partir de lo ya enviado, resuelva las URL en los cuatro idiomas y
+      prepare solo la lista de aprobación y el brief de diseño.</p>
+    <div class="pl-meta">
+      <span>Marketing · García de Pou</span>
+      <span>27 agosto 2026</span>
+      <span>Base: Planning_NL_2026.xlsx</span>
+      <span>Estado: propuesta para revisar</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
+      <p class="label">Punto de partida</p>
+      <h2 class="section-title">Ya he leído tu Excel</h2>
+    </div></div>
+    <div class="pl-prose">
+      <p>He importado las tres hojas y las he convertido en datos. Salen <strong>292 envíos fechados</strong>
+      entre el 2 de mayo de 2024 y el 22 de diciembre de 2026, más <strong>59 ideas sin fecha</strong> al pie
+      de las hojas. De ahí he construido un banco de <strong>327 temas únicos</strong>, cada uno con su familia
+      de catálogo, sus marcas, sus páginas, su URL si la tenía, cuántas veces se ha enviado y cuándo fue la
+      última vez.</p>
+      <p>El dato importante no es el volumen: es que <strong>toda esa memoria estaba en texto libre</strong>.
+      Dos años de criterio tuyo dentro de celdas que no se pueden ordenar, contar ni consultar. Eso es lo que
+      cambia el sistema — el Excel olvida, el banco recuerda.</p>
+    </div>
+    <div class="pl-stats">
+      <div class="pl-stat"><b>292</b><span>envíos importados y fechados</span></div>
+      <div class="pl-stat"><b>327</b><span>temas en el banco</span></div>
+      <div class="pl-stat"><b>20%</b><span>de los envíos llevaban URL</span></div>
+      <div class="pl-stat"><b>1%</b><span>de los envíos en 4 de las 8 familias</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
+      <p class="label">Diagnóstico</p>
+      <h2 class="section-title">Siete fricciones, con la prueba al lado</h2>
+    </div></div>
+    <div class="pl-fr">
+
+      <div class="pl-fr-item">
+        <div class="pl-fr-n">01</div>
+        <div class="pl-fr-b">
+          <h3>La fecha se escribe a mano</h3>
+          <p>«Martes 18 junio» es texto, no una fecha. No se puede ordenar, filtrar ni cruzar con nada, y hay
+          erratas que lo demuestran. Con dos envíos fijos por semana, escribir las fechas de un trimestre es
+          trabajo que la máquina hace en un segundo y sin fallos.</p>
+        </div>
+        <div class="pl-fr-ev">«Juves 20 junio» · «Miercoles 14 mayo» · «Mar 6 oct» — tres formatos distintos.
+        <b>4</b> envíos fuera del patrón martes/jueves.</div>
+      </div>
+
+      <div class="pl-fr-item">
+        <div class="pl-fr-n">02</div>
+        <div class="pl-fr-b">
+          <h3>La URL solo existe en uno de cada cinco envíos</h3>
+          <p>Y las primeras aparecen en octubre de 2025. En los otros 235 envíos la URL se resolvió en algún
+          otro sitio: un correo, un mensaje, la cabeza de alguien. Es justo el dato que diseño necesita y el
+          que dice si la newsletter convierte.</p>
+        </div>
+        <div class="pl-fr-ev"><b>57</b> de <b>292</b> envíos con URL. Primera: <b>16-oct-2025</b>.</div>
+      </div>
+
+      <div class="pl-fr-item">
+        <div class="pl-fr-n">03</div>
+        <div class="pl-fr-b">
+          <h3>Hay ocho URL con el idioma mezclado</h3>
+          <p>Dentro de <code>/es/</code> aparecen rutas en neerlandés e inglés. Funcionan por los rewrites de
+          Magento, así que nadie lo nota. Pero son URL que no se pueden traducir automáticamente a las otras
+          tres versiones, porque el patrón de la ruta no es el español.</p>
+        </div>
+        <div class="pl-fr-ev"><code>/es/kerstmis/</code> · <code>/es/tafel-en-accessoires/</code> ·
+        <code>/es/bar-en-buffet/voorgerechten/</code> · <code>/es/disposable-products/</code></div>
+      </div>
+
+      <div class="pl-fr-item">
+        <div class="pl-fr-n">04</div>
+        <div class="pl-fr-b">
+          <h3>Envías en cuatro idiomas y solo anotas una URL</h3>
+          <p>63 de las 64 URL del Excel son <code>/es/</code>. Las versiones en inglés, francés y portugués
+          apuntan a otra parte que el planning no registra — o apuntan al español. Es la pregunta que más me
+          cambia el diseño del sistema, y está abajo.</p>
+        </div>
+        <div class="pl-fr-ev"><b>63</b> de <b>64</b> URL en <code>/es/</code>. Ninguna en
+        <code>/en/</code>, <code>/fr/</code> ni <code>/pt/</code>.</div>
+      </div>
+
+      <div class="pl-fr-item">
+        <div class="pl-fr-n">05</div>
+        <div class="pl-fr-b">
+          <h3>Una celda guarda tres cosas distintas</h3>
+          <p>El asunto publicable, la página del catálogo y una nota interna en catalán viven juntos en la misma
+          celda. Cada vez que preparas el brief de diseño tienes que separarlos mentalmente. Son tres campos,
+          y separados se pueden reutilizar.</p>
+        </div>
+        <div class="pl-fr-ev"><b>93</b> envíos con la página dentro del texto · <b>30</b> con nota interna:
+        «només els de dalt», «hi ha nous dissenys», «DOS PARTS».</div>
+      </div>
+
+      <div class="pl-fr-item">
+        <div class="pl-fr-n">06</div>
+        <div class="pl-fr-b">
+          <h3>El estado es vocabulario libre</h3>
+          <p>Siete etiquetas distintas para decir en qué punto está cada envío, escritas dentro del propio tema.
+          Así no hay manera de ver de un golpe qué está aprobado por gerencia, qué está en diseño y qué falta
+          montar — que es exactamente lo que necesitas saber cada lunes.</p>
+        </div>
+        <div class="pl-fr-ev">«(Feta)» · «Repetida» · «REPETIR» · «no stock» · «stock» · «NEW» · «HOS»</div>
+      </div>
+
+      <div class="pl-fr-item">
+        <div class="pl-fr-n">07</div>
+        <div class="pl-fr-b">
+          <h3>Hay catálogo sin estrenar</h3>
+          <p>Esta es la que menos esperaba. Un solo uso y take away se llevan el 64% de los envíos, y eso tiene
+          lógica de negocio. Pero <strong>Limpieza e higiene, Habitaciones y acogida, Utensilios de cocina y
+          Rotulación son cuatro de las ocho familias de la web y suman tres envíos en 292</strong>. Y 55 temas
+          del banco no se han enviado nunca. El problema no es repetirse — 256 de los 327 temas se usaron una
+          sola vez. Es que hay surtido que no ha salido en dos años.</p>
+        </div>
+        <div class="pl-fr-ev">un solo uso <b>45%</b> · take away <b>19%</b> · cotillón <b>10%</b> ·
+        las cuatro familias restantes juntas <b>1%</b>.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
+      <p class="label">El sistema</p>
+      <h2 class="section-title">Cuatro piezas y un solo sitio donde vive el dato</h2>
+    </div></div>
+    <div class="pl-prose">
+      <p>Propongo una aplicación en el repositorio, sin servidor: los datos son ficheros JSON versionados en
+      git y la interfaz es una página que se abre en el navegador. La clave del diseño es que
+      <strong>la aplicación y yo leemos y escribimos los mismos ficheros</strong>. Tú trabajas en la pantalla;
+      yo puedo generar un trimestre, validar URL o redactar el brief sin que haya que exportar ni importar nada.
+      Y como está en git, cada cambio del planning queda registrado con fecha.</p>
+    </div>
+    <div class="pl-piezas">
+      <div class="pl-pieza">
+        <p class="label">Pieza 1 · la memoria</p>
+        <h3>Banco de temas</h3>
+        <p>Los 327 temas ya cargados, cada uno con familia, marcas, páginas de catálogo, URL, en qué temporadas
+        se ha usado, cuántas veces y cuándo fue la última. Es el activo que hoy no existe: cuando propongas un
+        tema sabrás al instante si lo enviaste hace ocho meses o si nunca ha salido.
+        <br><code>data/temas.json</code></p>
+      </div>
+      <div class="pl-pieza">
+        <p class="label">Pieza 2 · las fechas</p>
+        <h3>Generador de calendario</h3>
+        <p>Martes y jueves a las 15:00 de todo el trimestre, generados. Marca los festivos como aviso, no como
+        bloqueo, porque tú sí has enviado el 15 de agosto y el 24 de diciembre. Los envíos extraordinarios
+        (catálogo, tarifas, felicitación) se insertan fuera del patrón sin romper nada.</p>
+      </div>
+      <div class="pl-pieza">
+        <p class="label">Pieza 3 · el enlace</p>
+        <h3>Resolutor de URL</h3>
+        <p>Un índice de las URL del sitio en los cuatro idiomas. Escribes el tema, te propone la URL, y genera
+        las tres traducciones. Avisa si alguna devuelve 404 antes de que la newsletter salga, y detecta las
+        rutas con el idioma mezclado. Necesita un volcado del sitemap: es lo único que te voy a pedir.
+        <br><code>data/urls.json</code></p>
+      </div>
+      <div class="pl-pieza">
+        <p class="label">Pieza 4 · las salidas</p>
+        <h3>Lista de aprobación y brief</h3>
+        <p>Los dos documentos que hoy preparas a mano. La vista de aprobación para gerencia, en una página y
+        con el estado de cada envío. Y el brief de diseño como borrador en tu Gmail, con la tabla completa:
+        fecha, asunto, URL de los cuatro idiomas, páginas del catálogo y notas internas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
+      <p class="label">Antes y después</p>
+      <h2 class="section-title">Qué deja de ser trabajo tuyo</h2>
+    </div></div>
+    <div class="pl-scroll">
+      <table class="pl-t">
+        <thead><tr><th>Paso</th><th>Hoy</th><th>Con el sistema</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Pensar los temas</strong></td>
+            <td class="hoy">De memoria y criterio, mirando el catálogo y las hojas anteriores.</td>
+            <td>Te propongo el trimestre entero desde el banco: temporada, rotación y familias sin estrenar.
+            Sigue siendo tu decisión — aceptas, cambias o descartas cada línea.</td>
+          </tr>
+          <tr>
+            <td><strong>Poner las fechas</strong></td>
+            <td class="hoy">A mano, en texto, una por una.</td>
+            <td>Generadas. Arrastras para mover un envío y el resto se recoloca.</td>
+          </tr>
+          <tr>
+            <td><strong>Buscar la URL</strong></td>
+            <td class="hoy">Ir a la web, buscar la categoría, copiar y pegar. Una por envío, cuando se hace.</td>
+            <td>Autocompletado desde el índice, más las tres traducciones. Con aviso si el enlace está roto.</td>
+          </tr>
+          <tr>
+            <td><strong>Página del catálogo</strong></td>
+            <td class="hoy">Escrita dentro del propio asunto.</td>
+            <td>Campo propio, heredado del tema. Se actualiza al cambiar de catálogo.</td>
+          </tr>
+          <tr>
+            <td><strong>Aprobación de gerencia</strong></td>
+            <td class="hoy">Enviar el Excel y esperar comentarios sueltos.</td>
+            <td>Vista de aprobación en una página. Lo aprobado queda marcado y con fecha.</td>
+          </tr>
+          <tr>
+            <td><strong>Brief a diseño</strong></td>
+            <td class="hoy">Redactar el email a mano cada trimestre, con la lista aprobada.</td>
+            <td>Borrador listo en tu Gmail con la tabla completa. Lo revisas y lo envías tú.</td>
+          </tr>
+          <tr>
+            <td><strong>Montaje en Mailchimp</strong></td>
+            <td class="hoy">Manual, cuatro veces por envío (una por idioma).</td>
+            <td>Fase 3. Hay conector oficial de Mailchimp: se puede crear la campaña desde el plan.</td>
+          </tr>
+          <tr>
+            <td><strong>Resultados</strong></td>
+            <td class="hoy">Se consultan en Mailchimp y se quedan ahí.</td>
+            <td>Aperturas y clics vuelven al banco. El tema pasa a saber cómo funcionó la última vez.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="pl-t-cap">Lo que no cambia: el criterio editorial es tuyo. El sistema quita el trabajo mecánico
+    de alrededor — fechas, URL, formatos, correos — para que el tiempo se vaya en decidir qué se cuenta.</p>
+  </div>
+</section>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
+      <p class="label">Demostración</p>
+      <h2 class="section-title">El primer trimestre de 2027, generado</h2>
+    </div></div>
+    <div class="pl-prose">
+      <p>Esto no es una maqueta con texto de relleno. Es la salida real del motor sobre tu histórico: he pedido
+      el Q1 de 2027 y ha generado los 25 huecos y propuesto un tema para cada uno. La columna de la derecha
+      dice por qué eligió ese tema y cuándo se envió por última vez.</p>
+    </div>
+    <div class="pl-mock">
+      <div class="pl-mock-bar">
+        <div class="pl-q">Q1 2027 <em>· enero – marzo · 25 envíos</em></div>
+        <div class="pl-mock-acts">
+          <button class="btn btn-outline-blue btn-sm">Regenerar</button>
+          <button class="btn btn-outline-blue btn-sm">Resolver URL</button>
+          <button class="btn btn-blue btn-sm">Enviar a aprobación</button>
+        </div>
+      </div>
+      <div class="pl-mock-scroll">
+        <table class="pl-plan">
+          <thead><tr>
+            <th>Fecha</th><th>Asunto propuesto</th><th>Familia</th><th>Págs.</th><th>Idiomas</th><th>Estado</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td class="pl-fecha">5 ene 2027<em>martes 15:00</em></td>
+              <td class="pl-asunto">Tarrinas sopa y crema<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 7/1/2025</span></td>
+              <td class="pl-fam">un solo uso</td>
+              <td class="pl-pags">—</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">7 ene 2027<em>jueves 15:00</em></td>
+              <td class="pl-asunto">Akala (381-383)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 9/1/2025</span></td>
+              <td class="pl-fam">mesa accesorios</td>
+              <td class="pl-pags">381, 383</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">12 ene 2027<em>martes 15:00</em></td>
+              <td class="pl-asunto">Amenities<span class="pl-motivo">Estreno · familia infrarrepresentada · última vez 14/11/2024</span></td>
+              <td class="pl-fam">habitaciones</td>
+              <td class="pl-pags">—</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">14 ene 2027<em>jueves 15:00</em></td>
+              <td class="pl-asunto">Tarrinas con tapa para sopas nuevas, Tarrinas sopa y crema<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 8/1/2026</span></td>
+              <td class="pl-fam">un solo uso</td>
+              <td class="pl-pags">—</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">19 ene 2027<em>martes 15:00</em></td>
+              <td class="pl-asunto">Nuevas Tablas de madera para presentación (320)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 14/1/2025</span></td>
+              <td class="pl-fam">bar buffet</td>
+              <td class="pl-pags">320</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">21 ene 2027<em>jueves 15:00</em></td>
+              <td class="pl-asunto">Mesas de trabajo cocina 42<span class="pl-motivo">Estreno · familia infrarrepresentada · última vez 17/10/2024</span></td>
+              <td class="pl-fam">utensilios cocina</td>
+              <td class="pl-pags">—</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">26 ene 2027<em>martes 15:00</em></td>
+              <td class="pl-asunto">Nuevo Papel antigrasa + aluminio Fitipaldi fast food, Rojo (108)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 23/1/2025</span></td>
+              <td class="pl-fam">un solo uso</td>
+              <td class="pl-pags">108</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">28 ene 2027<em>jueves 15:00</em></td>
+              <td class="pl-asunto">807 - Nuevas referencias manteleria Spunbond (pag 75)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 18/2/2025</span></td>
+              <td class="pl-fam">un solo uso</td>
+              <td class="pl-pags">75</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">2 feb 2027<em>martes 15:00</em></td>
+              <td class="pl-asunto">Cubos pedal negros 46<span class="pl-motivo">Estreno · familia infrarrepresentada · sin envíos previos</span></td>
+              <td class="pl-fam">limpieza higiene</td>
+              <td class="pl-pags">—</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">4 feb 2027<em>jueves 15:00</em></td>
+              <td class="pl-asunto">Vasitos para postres, con tapa y sin tapa (pag. 334,335)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 28/1/2025</span></td>
+              <td class="pl-fam">sin clasificar</td>
+              <td class="pl-pags">334, 335</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">9 feb 2027<em>martes 15:00</em></td>
+              <td class="pl-asunto">Cajas pastelería apertura frontal (pag. 201) Hay Blanca, deco y marrón<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 4/2/2025</span></td>
+              <td class="pl-fam">un solo uso</td>
+              <td class="pl-pags">201</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">11 feb 2027<em>jueves 15:00</em></td>
+              <td class="pl-asunto">Flushable Roll it<span class="pl-motivo">Estreno · familia infrarrepresentada · sin envíos previos</span></td>
+              <td class="pl-fam">limpieza higiene</td>
+              <td class="pl-pags">—</td>
+              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="pl-t-cap">Fila real del motor <code>proponer_plan.py</code>. Las páginas salen del banco;
+    los idiomas aparecen en gris porque el índice de URL es la fase 2 y todavía no está cargado.
+    Se muestran las 12 primeras de 25.</p>
+
+    <div class="pl-prose" style="margin-top: var(--sp-32)">
+      <p><strong>Dos cosas que el propio motor deja a la vista</strong>, y que prefiero decirte ahora que
+      descubrirlas tú luego. La primera: el 5 y el 14 de enero propone dos temas de tarrinas de sopa que son
+      casi el mismo — el banco viene del Excel y arrastra duplicados con nombres distintos. Hace falta una pasada
+      de consolidación, contigo, para fundirlos. La segunda: algunos nombres llegan tal cual estaban
+      («1. Burgers Gourmet 🍔», «Mobiliario Supra-TEK Video»), y el asunto que ve el cliente hay que
+      escribirlo aparte del nombre interno del tema. Las dos se arreglan en la fase 1.</p>
+      <p>Y una que sí ha funcionado: el primer intento colocó bolsas de regalo de Navidad la primera semana de
+      enero, porque el ancla estacional miraba la misma semana del año anterior sin más. Añadí ventanas
+      estacionales por tema y desapareció. Ahora enero abre con sopas y cremas, que es donde toca.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
+      <p class="label">Proceso</p>
+      <h2 class="section-title">El estado de cada envío, en una sola línea</h2>
+    </div></div>
+    <div class="pl-prose">
+      <p>Las siete etiquetas sueltas del Excel se convierten en un recorrido fijo. Cada envío está siempre en
+      uno de estos siete estados, y la pantalla se puede filtrar por cualquiera de ellos.</p>
+    </div>
+    <div class="pl-flow">
+      <span class="gdp-status">Idea</span>
+      <span class="pl-flow-arrow">→</span>
+      <span class="gdp-status">Propuesta</span>
+      <span class="pl-flow-arrow">→</span>
+      <span class="gdp-status gdp-status--info">En aprobación</span>
+      <span class="pl-flow-arrow">→</span>
+      <span class="gdp-status gdp-status--info">Aprobada</span>
+      <span class="pl-flow-arrow">→</span>
+      <span class="gdp-status gdp-status--warn">En diseño</span>
+      <span class="pl-flow-arrow">→</span>
+      <span class="gdp-status gdp-status--warn">Montada</span>
+      <span class="pl-flow-arrow">→</span>
+      <span class="gdp-status gdp-status--success">Enviada</span>
+    </div>
+    <p class="pl-t-cap">Aparte, dos marcas independientes del estado, porque pueden pasar en cualquier punto:
+    <strong>sin stock</strong> (bloquea el envío y te pide sustituir el tema) y <strong>repetición</strong>
+    (el tema ya salió y se reenvía a propósito).</p>
+  </div>
+</section>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
+      <p class="label">Entrega</p>
+      <h2 class="section-title">Tres fases, la primera ya sustituye al Excel</h2>
+    </div></div>
+    <div class="pl-fases">
+      <div class="pl-fase">
+        <div class="pl-fase-n"><p class="label">Fase</p><b>01</b></div>
+        <div class="pl-fase-b">
+          <h3>El planificador funcionando — no necesita nada de nadie</h3>
+          <ul>
+            <li>Banco de temas depurado: consolidar duplicados y separar el nombre interno del asunto público.</li>
+            <li>Pantalla del planificador con el trimestre, arrastrar para mover, estados y filtros.</li>
+            <li>Motor de propuesta de temas, ya funcionando, afinado con lo que salga de la depuración.</li>
+            <li>Vista de aprobación para gerencia y borrador del brief de diseño en Gmail.</li>
+            <li>Al terminar esta fase, el Excel deja de usarse.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pl-fase">
+        <div class="pl-fase-n"><p class="label">Fase</p><b>02</b></div>
+        <div class="pl-fase-b">
+          <h3>Las URL, en los cuatro idiomas — necesito el sitemap</h3>
+          <ul>
+            <li>Índice de URL del sitio en español, inglés, francés y portugués.</li>
+            <li>Autocompletado al escribir el tema y las tres traducciones automáticas.</li>
+            <li>Validador que comprueba las cuatro antes de que salga la newsletter.</li>
+            <li>Revisión de las ocho URL con el idioma mezclado que ya están en el histórico.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pl-fase">
+        <div class="pl-fase-n"><p class="label">Fase</p><b>03</b></div>
+        <div class="pl-fase-b">
+          <h3>Mailchimp en los dos sentidos</h3>
+          <ul>
+            <li>Conectar el conector oficial de Mailchimp y crear la campaña desde el plan aprobado.</li>
+            <li>Traer aperturas, clics y bajas de vuelta al banco de temas.</li>
+            <li>Con dos años de histórico ya cargado, ahí empieza a poder decirse qué temas funcionan.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
+      <p class="label">Lo que necesito de ti</p>
+      <h2 class="section-title">Cinco decisiones</h2>
+    </div></div>
+    <div class="pl-q-list">
+      <div class="pl-q-item">
+        <h3>1 · Las URL de inglés, francés y portugués: ¿quién las pone hoy?</h3>
+        <p>Es la que más cambia el sistema. Si diseño las traduce, el planificador solo tiene que generarlas y
+        pasárselas validadas. Si las cuatro versiones enlazan al español, es un agujero de conversión que vale
+        la pena arreglar y hay que decidir si se arregla ahora.</p>
+      </div>
+      <div class="pl-q-item">
+        <h3>2 · ¿Me puedes conseguir el sitemap de garciadepou.com?</h3>
+        <p>Desde aquí el dominio me lo bloquea el proxy de red, así que no puedo rastrearlo yo. Con el
+        <code>sitemap.xml</code> de los cuatro idiomas, o un export de categorías de Magento, monto el índice
+        completo. Sin él puedo arrancar con las 64 URL que ya están en el Excel e ir creciendo, pero es peor.</p>
+      </div>
+      <div class="pl-q-item">
+        <h3>3 · ¿Dónde quieres trabajar: la aplicación o un Google Sheet?</h3>
+        <p>Recomiendo la aplicación. Un Sheet volvería a ser texto libre y perderíamos justo lo que arreglamos.
+        Pero si gerencia prefiere revisar en un Sheet, la vista de aprobación se exporta ahí sin problema.</p>
+      </div>
+      <div class="pl-q-item">
+        <h3>4 · ¿Conectamos Mailchimp?</h3>
+        <p>Existe conector oficial y no está instalado en tu cuenta. Es lo que permite cerrar el círculo:
+        crear la campaña desde el plan y traer los resultados. Se puede dejar para el final, pero cuanto antes
+        se conecte, antes empieza a acumularse el dato de rendimiento por tema.</p>
+      </div>
+      <div class="pl-q-item">
+        <h3>5 · ¿Alguna fecha que haya que saltar siempre?</h3>
+        <p>En tu histórico enviaste el 15 de agosto, el 24 y el 31 de diciembre, así que de momento trato los
+        festivos como aviso y no como bloqueo. Si hay días que nunca deben salir, los marco como cerrados.</p>
+      </div>
+    </div>
+    <p class="pl-nota">Con la respuesta a la 1 y la 2 puedo tener la fase 1 lista para que la pruebes.</p>
+  </div>
+</section>
+
+<footer class="pl-foot">
+  <div class="wrap">
+    <p>Propuesta preparada sobre <strong>Planning_NL_2026.xlsx</strong> (3 hojas, 351 filas). Todas las cifras
+    de este documento salen de la importación de ese fichero, no de estimaciones. El código de importación y
+    el motor de propuesta están en la rama <code>claude/garcia-pou-newsletter-planner-e9691c</code> del
+    repositorio <code>newsletters</code>, con los datos generados en <code>data/</code>.</p>
+  </div>
+</footer>
+
+</main>

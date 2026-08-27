@@ -1,0 +1,5593 @@
+{
+ "generado_desde": "/root/.claude/uploads/a6c731b2-4699-56e5-9040-4985801b1bea/fc2d11b8-Planning_NL_2026.xlsx",
+ "envios": [
+  {
+   "tema": "Envases para microondas pag 24",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    24
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!2",
+   "tipo": "producto",
+   "fecha": "2024-05-02",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2024
+  },
+  {
+   "tema": "Envases para sushi pag 21",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    21
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!3",
+   "tipo": "producto",
+   "fecha": "2024-05-07",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2024
+  },
+  {
+   "tema": "Vasos transparentes para granizados, batidos, zumos y helados, con tapas (Aquests de cara al bon temps està bé) pag 23",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    23
+   ],
+   "urls": [],
+   "notas_internas": [
+    "aquests de cara"
+   ],
+   "alternativa": "",
+   "origen": "Hoja1!4",
+   "tipo": "producto",
+   "fecha": "2024-05-09",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2024
+  },
+  {
+   "tema": "Contenedores lacados aptos para microondas pag 25",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    25
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!5",
+   "tipo": "producto",
+   "fecha": "2024-05-14",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2024
+  },
+  {
+   "tema": "Mini recipientes para aperitivos caña de azúcar pag 26",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    26
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!6",
+   "tipo": "producto",
+   "fecha": "2024-05-16",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2024
+  },
+  {
+   "tema": "Cajas con tapa de madera de álamo ideal Delivery pag 27",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    27
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!7",
+   "tipo": "producto",
+   "fecha": "2024-05-21",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2024
+  },
+  {
+   "tema": "Waki Glass Vasos para aperitivos y tarros pag 29",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Waki Glass"
+   ],
+   "paginas_catalogo": [
+    29
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!8",
+   "tipo": "producto",
+   "fecha": "2024-05-23",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bionic Aperitivos Caña de azúcar (239)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "BIONIC"
+   ],
+   "paginas_catalogo": [
+    239
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!9",
+   "tipo": "producto",
+   "fecha": "2024-05-28",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2024
+  },
+  {
+   "tema": "Cajas para comida y Paper Lock (157, 158)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    157,
+    158
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!10",
+   "tipo": "producto",
+   "fecha": "2024-05-30",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2024
+  },
+  {
+   "tema": "Keiko",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Keiko"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!11",
+   "tipo": "producto",
+   "fecha": "2024-06-04",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Todo crepes (175)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    175
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!12",
+   "tipo": "producto",
+   "fecha": "2024-06-06",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "AsamiWare (melamina)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!13",
+   "tipo": "producto",
+   "fecha": "2024-06-11",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Tarrinas para helados y Paper Spoon (141-145)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    141,
+    145
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!14",
+   "tipo": "producto",
+   "fecha": "2024-06-13",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bolsas abiertas a 2 lados para fast food, bollería, comida para llevar (98,99)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    98,
+    99
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!15",
+   "tipo": "producto",
+   "fecha": "2024-06-18",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bolsas SOS 10-11",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "HOS",
+   "origen": "Hoja2!3",
+   "tipo": "producto",
+   "fecha": "2024-06-18",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Diseño Jazz",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Jazz"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!16",
+   "tipo": "producto",
+   "fecha": "2024-06-20",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Tarrinas papel plisado 12",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "NEW",
+   "origen": "Hoja2!4",
+   "tipo": "producto",
+   "fecha": "2024-06-20",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Cajas menú infantil (177)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    177
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!17",
+   "tipo": "producto",
+   "fecha": "2024-06-25",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Linea Reciclada Servilletas mantelines 5",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Linea"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "FETES NEW",
+   "origen": "Hoja2!5",
+   "tipo": "producto",
+   "fecha": "2024-06-25",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Barquillas y tapa (172)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    172
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!18",
+   "tipo": "producto",
+   "fecha": "2024-06-27",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Waki glass 29",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Waki Glass"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!6",
+   "tipo": "producto",
+   "fecha": "2024-06-27",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bolsas para pan (104, 106, 107)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    104,
+    106,
+    107
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!19",
+   "tipo": "producto",
+   "fecha": "2024-07-02",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Cubiertos Vintage 34",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Vintage"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!7",
+   "tipo": "producto",
+   "fecha": "2024-07-02",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Enamelware (hierro esmaltado)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Enamelware"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!20",
+   "tipo": "producto",
+   "fecha": "2024-07-04",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Servilletas canguro 3",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!8",
+   "tipo": "producto",
+   "fecha": "2024-07-04",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Airlaid",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Airlaid"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!21",
+   "tipo": "producto",
+   "fecha": "2024-07-09",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Vasos PLA con tapa 23",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    23
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!9",
+   "tipo": "producto",
+   "fecha": "2024-07-09",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bolsas para croissant (105)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    105
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!22",
+   "tipo": "producto",
+   "fecha": "2024-07-11",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Gel y champú en dispensador",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!10",
+   "tipo": "producto",
+   "fecha": "2024-07-11",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Cubos para pollo (148)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    148
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!23",
+   "tipo": "producto",
+   "fecha": "2024-07-16",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bolsas planas Times 9",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "TIMES"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!11",
+   "tipo": "producto",
+   "fecha": "2024-07-16",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Especial bebidas para llevar (178, 179)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    178,
+    179
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!24",
+   "tipo": "producto",
+   "fecha": "2024-07-18",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Akala 37-39",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!12",
+   "tipo": "producto",
+   "fecha": "2024-07-18",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Vasos reutilizables (305-306)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    305,
+    306
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!25",
+   "tipo": "producto",
+   "fecha": "2024-07-23",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Papel + aluminio 8",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!13",
+   "tipo": "producto",
+   "fecha": "2024-07-23",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Just in time",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Just in Time"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!26",
+   "tipo": "producto",
+   "fecha": "2024-07-25",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Recipientes cartón con tapa 14",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    14
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!14",
+   "tipo": "producto",
+   "fecha": "2024-07-25",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Todo palomitas (176)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    176
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!27",
+   "tipo": "producto",
+   "fecha": "2024-07-30",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Pajitas Bubble Tea 12",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!15",
+   "tipo": "producto",
+   "fecha": "2024-07-30",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2024
+  },
+  {
+   "tema": "Pequeñas tarrinas para salsas: cartón y papel plisado (140)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    140
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!28",
+   "tipo": "producto",
+   "fecha": "2024-08-01",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Toallitas refrescantes 89-90",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!16",
+   "tipo": "producto",
+   "fecha": "2024-08-01",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bolsas para patatas fritas (100)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    100
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!29",
+   "tipo": "producto",
+   "fecha": "2024-08-06",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Contenedores lacados 25",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!17",
+   "tipo": "producto",
+   "fecha": "2024-08-06",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Wood pinchos y cucharillas (264) + Fritos o Barquillas",
+   "familia": "take-away",
+   "marcas": [
+    "WOOD"
+   ],
+   "paginas_catalogo": [
+    264
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!30",
+   "tipo": "producto",
+   "fecha": "2024-08-08",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Cubertería Oslo 366",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "CUBE",
+    "Oslo"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!18",
+   "tipo": "producto",
+   "fecha": "2024-08-08",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Servilletas Canguro",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!31",
+   "tipo": "producto",
+   "fecha": "2024-08-13",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Like Linen Rhombus 4",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!19",
+   "tipo": "producto",
+   "fecha": "2024-08-13",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Presentación bufet y catering madera 297-300",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!32",
+   "tipo": "producto",
+   "fecha": "2024-08-15",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Airlaid Natural 62",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Airlaid"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!20",
+   "tipo": "producto",
+   "fecha": "2024-08-15",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Maletas de transporte y cajas para llevar (178, 179)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    178,
+    179
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!33",
+   "tipo": "producto",
+   "fecha": "2024-08-20",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Envases sushi 21",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!21",
+   "tipo": "producto",
+   "fecha": "2024-08-20",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Cajas para sushi (159)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    159
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!34",
+   "tipo": "producto",
+   "fecha": "2024-08-22",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Cubertería fibra de madera 362",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "CUBE"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!22",
+   "tipo": "producto",
+   "fecha": "2024-08-22",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Papelinas punta (101)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    101
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!35",
+   "tipo": "producto",
+   "fecha": "2024-08-27",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Envases aptos para microondas 24",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!23",
+   "tipo": "producto",
+   "fecha": "2024-08-27",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Dry Cotton",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "DRY COTTON"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja1!36",
+   "tipo": "producto",
+   "fecha": "2024-08-29",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Safari 60",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Safari"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!24",
+   "tipo": "producto",
+   "fecha": "2024-08-29",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2024
+  },
+  {
+   "tema": "Aperitivos Caña de azúcar 26",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!25",
+   "tipo": "producto",
+   "fecha": "2024-09-03",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2024
+  },
+  {
+   "tema": "Enamelware 335",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Enamelware"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!26",
+   "tipo": "producto",
+   "fecha": "2024-09-05",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2024
+  },
+  {
+   "tema": "Lámparas 44",
+   "familia": "mesa-accesorios",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!27",
+   "tipo": "producto",
+   "fecha": "2024-09-10",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2024
+  },
+  {
+   "tema": "Like Linen Keiko 69",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Keiko"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!28",
+   "tipo": "producto",
+   "fecha": "2024-09-12",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2024
+  },
+  {
+   "tema": "Artinox 31",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Artinox"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!29",
+   "tipo": "producto",
+   "fecha": "2024-09-17",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2024
+  },
+  {
+   "tema": "Wood 275",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "WOOD"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!30",
+   "tipo": "producto",
+   "fecha": "2024-09-19",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2024
+  },
+  {
+   "tema": "Artinox Vintage 32, 33",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Artinox",
+    "Vintage"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!31",
+   "tipo": "producto",
+   "fecha": "2024-09-24",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2024
+  },
+  {
+   "tema": "Ipanema 71",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Ipanema"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!32",
+   "tipo": "producto",
+   "fecha": "2024-09-26",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2024
+  },
+  {
+   "tema": "THEPACK Black",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!33",
+   "tipo": "producto",
+   "fecha": "2024-10-01",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Asamiware Melamina 344",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!34",
+   "tipo": "producto",
+   "fecha": "2024-10-03",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bandejas trasporte 178",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!35",
+   "tipo": "producto",
+   "fecha": "2024-10-08",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bandejas bufet melamina 347",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!36",
+   "tipo": "producto",
+   "fecha": "2024-10-10",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bandejas cartón 16",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!37",
+   "tipo": "producto",
+   "fecha": "2024-10-15",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Mesas de trabajo cocina 42",
+   "familia": "utensilios-cocina",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja2!38",
+   "tipo": "producto",
+   "fecha": "2024-10-17",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Catálogo Nuevo",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!3",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2024-10-17",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Artinox 31",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Artinox"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!4",
+   "tipo": "producto",
+   "fecha": "2024-10-22",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Catálogo Navidad",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!5",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2024-10-24",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Aperitivos Navidad (24-26)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    24,
+    26
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!6",
+   "tipo": "producto",
+   "fecha": "2024-10-29",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "Vasos Compostable 132",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!7",
+   "tipo": "producto",
+   "fecha": "2024-10-31",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2024
+  },
+  {
+   "tema": "El Cotillón (73-87)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    73,
+    87
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!8",
+   "tipo": "producto",
+   "fecha": "2024-11-05",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2024
+  },
+  {
+   "tema": "Paper Cutlery 144-145",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Paper Cutlery"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!9",
+   "tipo": "producto",
+   "fecha": "2024-11-07",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2024
+  },
+  {
+   "tema": "Conjuntos decorados (14-23)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    14,
+    23
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!10",
+   "tipo": "producto",
+   "fecha": "2024-11-12",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2024
+  },
+  {
+   "tema": "Amenities",
+   "familia": "habitaciones",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!11",
+   "tipo": "producto",
+   "fecha": "2024-11-14",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bolsas para regalos: yute, sos, lujo (47-53)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    47,
+    53
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!12",
+   "tipo": "producto",
+   "fecha": "2024-11-19",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2024
+  },
+  {
+   "tema": "Sillas poliester y terciopelo 471 y totes en general",
+   "familia": "mesa-accesorios",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!13",
+   "tipo": "producto",
+   "fecha": "2024-11-21",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2024
+  },
+  {
+   "tema": "Lotes y botellas (62-69)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    62,
+    69
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!14",
+   "tipo": "producto",
+   "fecha": "2024-11-26",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2024
+  },
+  {
+   "tema": "Papel antigrasa PFAS Free",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "PFAS FREE"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!15",
+   "tipo": "producto",
+   "fecha": "2024-11-28",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2024
+  },
+  {
+   "tema": "Resend Catalogo Quiere catalogo físico",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "resend"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!16",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2024-12-03",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2024
+  },
+  {
+   "tema": "Nuevos Mantelines: Eden, Maui, Modernismo, Fast Food (pag. 30, 32, 33)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    30,
+    32,
+    33
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!17",
+   "tipo": "novedad",
+   "fecha": "2024-12-05",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2024
+  },
+  {
+   "tema": "Servilletas, manteles y Tu y yo de Navidad (5-12)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    5,
+    12
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!18",
+   "tipo": "producto",
+   "fecha": "2024-12-10",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bolsas Cotillón (73-87)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    73,
+    87
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!19",
+   "tipo": "producto",
+   "fecha": "2024-12-12",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2024
+  },
+  {
+   "tema": "Catering y pastelería de Navidad (32-41)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    32,
+    41
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!20",
+   "tipo": "producto",
+   "fecha": "2024-12-17",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2024
+  },
+  {
+   "tema": "Felicitación Navidad",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!21",
+   "tipo": "institucional",
+   "fecha": "2024-12-20",
+   "hora": "15:00",
+   "dia_semana": "viernes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2024
+  },
+  {
+   "tema": "Aperitivos Navidad (24-26)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    24,
+    26
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!22",
+   "tipo": "producto",
+   "fecha": "2024-12-24",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2024
+  },
+  {
+   "tema": "Papel y bolsitas regalo (54-61)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    54,
+    61
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!23",
+   "tipo": "producto",
+   "fecha": "2024-12-31",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2024
+  },
+  {
+   "tema": "Bolsas para regalos: yute, sos, lujo (47-53)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    47,
+    53
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!24",
+   "tipo": "producto",
+   "fecha": "2025-01-02",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2025
+  },
+  {
+   "tema": "Tarrinas sopa y crema",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!25",
+   "tipo": "producto",
+   "fecha": "2025-01-07",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2025
+  },
+  {
+   "tema": "Akala (381-383)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [
+    381,
+    383
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!26",
+   "tipo": "producto",
+   "fecha": "2025-01-09",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2025
+  },
+  {
+   "tema": "Nuevas Tablas de madera para presentación (320)",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [
+    320
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!27",
+   "tipo": "novedad",
+   "fecha": "2025-01-14",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2025
+  },
+  {
+   "tema": "Bandejas Sushi cartón nuevas y cajas sushi en general (159 y 166)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!28",
+   "tipo": "novedad",
+   "fecha": "2025-01-16",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2025
+  },
+  {
+   "tema": "807 - Nuevas referencias manteleria Spunbond (pag 75)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Spunbond"
+   ],
+   "paginas_catalogo": [
+    75
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!29",
+   "tipo": "novedad",
+   "fecha": "2025-01-21",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2025
+  },
+  {
+   "tema": "Nuevo Papel antigrasa + aluminio Fitipaldi fast food, Rojo (108)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Fitipaldi"
+   ],
+   "paginas_catalogo": [
+    108
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!30",
+   "tipo": "novedad",
+   "fecha": "2025-01-23",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2025
+  },
+  {
+   "tema": "Vasitos para postres, con tapa y sin tapa (pag. 334,335)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    334,
+    335
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!31",
+   "tipo": "producto",
+   "fecha": "2025-01-28",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2025
+  },
+  {
+   "tema": "Especial San Valentín: Mantelería decorada, Tête-à-Tête, velas y accesorios para mesas románticas",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!32",
+   "tipo": "producto",
+   "fecha": "2025-01-30",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2025
+  },
+  {
+   "tema": "Cajas pastelería apertura frontal (pag. 201) Hay Blanca, deco y marrón",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    201
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!33",
+   "tipo": "producto",
+   "fecha": "2025-02-04",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2025
+  },
+  {
+   "tema": "Papel antigrasa cera vegetal (només els de dalt)(pag.99)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    99
+   ],
+   "urls": [],
+   "notas_internas": [
+    "nomes els de dalt"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!34",
+   "tipo": "producto",
+   "fecha": "2025-02-06",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2025
+  },
+  {
+   "tema": "802 - Bolsas SOS para catering, pizza y delivery (124-125)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    124,
+    125
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!35",
+   "tipo": "producto",
+   "fecha": "2025-02-11",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2025
+  },
+  {
+   "tema": "Vasos café Java",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!36",
+   "tipo": "producto",
+   "fecha": "2025-02-13",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2025
+  },
+  {
+   "tema": "807 - Nuevas referencias manteleria Spunbond (pag 75)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Spunbond"
+   ],
+   "paginas_catalogo": [
+    75
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!37",
+   "tipo": "novedad",
+   "fecha": "2025-02-18",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2025
+  },
+  {
+   "tema": "Servilletas canguro Double Point nous colors (pag 79)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Double Point"
+   ],
+   "paginas_catalogo": [
+    79
+   ],
+   "urls": [],
+   "notas_internas": [
+    "nous colors"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!38",
+   "tipo": "producto",
+   "fecha": "2025-02-20",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2025
+  },
+  {
+   "tema": "Vasos Compostable 132",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!39",
+   "tipo": "producto",
+   "fecha": "2025-02-25",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2025
+  },
+  {
+   "tema": "Bambú para bufet (pag 307)",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [
+    307
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!40",
+   "tipo": "producto",
+   "fecha": "2025-02-27",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2025
+  },
+  {
+   "tema": "Cajas para pedidos take-away (pag 172-177)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    172,
+    177
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!41",
+   "tipo": "producto",
+   "fecha": "2025-03-04",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2025
+  },
+  {
+   "tema": "Mobiliario Supra-TEK Video",
+   "familia": "mesa-accesorios",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!42",
+   "tipo": "video",
+   "fecha": "2025-03-06",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2025
+  },
+  {
+   "tema": "Vasos irrompibles (Pag 325)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    325
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!43",
+   "tipo": "producto",
+   "fecha": "2025-03-11",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2025
+  },
+  {
+   "tema": "Akala Porcelana (376)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [
+    376
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!44",
+   "tipo": "producto",
+   "fecha": "2025-03-13",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2025
+  },
+  {
+   "tema": "1. Burgers Gourmet 🍔",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!45",
+   "tipo": "producto",
+   "fecha": "2025-03-18",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2025
+  },
+  {
+   "tema": "Melamina (Pag. 361). Productos ideales para eventos y servicios al aire libre: envases de food service y menaje durable",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    361
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!46",
+   "tipo": "producto",
+   "fecha": "2025-03-20",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2025
+  },
+  {
+   "tema": "2. Poke Bowls 🥗",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!47",
+   "tipo": "producto",
+   "fecha": "2025-03-25",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2025
+  },
+  {
+   "tema": "WOOD un solo uso (Pag. 279)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "WOOD"
+   ],
+   "paginas_catalogo": [
+    279
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!48",
+   "tipo": "producto",
+   "fecha": "2025-03-27",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2025
+  },
+  {
+   "tema": "3. Kebab y Street Food 🌯",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!49",
+   "tipo": "producto",
+   "fecha": "2025-04-01",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2025
+  },
+  {
+   "tema": "Repetida Servilletas Canguro",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "repetida"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!50",
+   "tipo": "repeticion",
+   "fecha": "2025-04-03",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2025
+  },
+  {
+   "tema": "4. Tacos y Comida Mexicana 🌮",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!51",
+   "tipo": "producto",
+   "fecha": "2025-04-08",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2025
+  },
+  {
+   "tema": "Repetida Tarrinas helado 770",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "repetida"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!52",
+   "tipo": "repeticion",
+   "fecha": "2025-04-10",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2025
+  },
+  {
+   "tema": "6. Gofres y Dulces para Street Food 🧇",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!53",
+   "tipo": "producto",
+   "fecha": "2025-04-15",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2025
+  },
+  {
+   "tema": "Repetida Mantelines 798",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "repetida"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!54",
+   "tipo": "repeticion",
+   "fecha": "2025-04-22",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2025
+  },
+  {
+   "tema": "5. Pastelería Artesanal 🥐",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!55",
+   "tipo": "producto",
+   "fecha": "2025-04-24",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2025
+  },
+  {
+   "tema": "Repetida Papel antigrasa PFAS FREE",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "PFAS FREE"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "repetida"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!56",
+   "tipo": "repeticion",
+   "fecha": "2025-04-29",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2025
+  },
+  {
+   "tema": "Actualizacion Tarifa Mayo",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!57",
+   "tipo": "tarifa",
+   "fecha": "2025-05-06",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2025
+  },
+  {
+   "tema": "Spunbond Textura Impresa",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Spunbond"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!58",
+   "tipo": "producto",
+   "fecha": "2025-05-08",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2025
+  },
+  {
+   "tema": "8. Take Away & Delivery 🍔🥗",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!59",
+   "tipo": "producto",
+   "fecha": "2025-05-13",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2025
+  },
+  {
+   "tema": "Servilletas ciudades",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!60",
+   "tipo": "producto",
+   "fecha": "2025-05-14",
+   "hora": "15:00",
+   "dia_semana": "miercoles",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2025
+  },
+  {
+   "tema": "Toallitas pag 89, 90, 91",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    89,
+    90,
+    91
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!61",
+   "tipo": "producto",
+   "fecha": "2025-05-15",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2025
+  },
+  {
+   "tema": "9. Comida Saludable y Vegana 🥑🥗",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!62",
+   "tipo": "producto",
+   "fecha": "2025-05-20",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2025
+  },
+  {
+   "tema": "Bolsas Just in time 85, 86, 87",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Just in Time"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!63",
+   "tipo": "producto",
+   "fecha": "2025-05-22",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2025
+  },
+  {
+   "tema": "Cajas pasteleria apertura frontal",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!64",
+   "tipo": "producto",
+   "fecha": "2025-05-27",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2025
+  },
+  {
+   "tema": "Papelinas Punta Pag 105 Noves PFAS Free",
+   "familia": "take-away",
+   "marcas": [
+    "PFAS FREE"
+   ],
+   "paginas_catalogo": [
+    105
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!65",
+   "tipo": "producto",
+   "fecha": "2025-05-29",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2025
+  },
+  {
+   "tema": "Nueva web print",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!66",
+   "tipo": "institucional",
+   "fecha": "2025-06-03",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2025
+  },
+  {
+   "tema": "Encuesta satisfacción",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!67",
+   "tipo": "institucional",
+   "fecha": "2025-06-04",
+   "hora": "15:00",
+   "dia_semana": "miercoles",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2025
+  },
+  {
+   "tema": "10. Experiencias Gastronómicas Premium 🍽️",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!68",
+   "tipo": "producto",
+   "fecha": "2025-06-05",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2025
+  },
+  {
+   "tema": "Paper Cutlery 144-145",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Paper Cutlery"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!69",
+   "tipo": "producto",
+   "fecha": "2025-06-10",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2025
+  },
+  {
+   "tema": "11. Delivery & Catering 🚗🍱",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!70",
+   "tipo": "producto",
+   "fecha": "2025-06-12",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2025
+  },
+  {
+   "tema": "Cajas hamburguesas fitipaldi y feel green",
+   "familia": "take-away",
+   "marcas": [
+    "FEEL GREEN",
+    "Fitipaldi"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!71",
+   "tipo": "producto",
+   "fecha": "2025-06-17",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2025
+  },
+  {
+   "tema": "Vasos compostables (rep 815 o 792)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "(rep"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!72",
+   "tipo": "repeticion",
+   "fecha": "2025-06-19",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2025
+  },
+  {
+   "tema": "Catàleg NEW",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!73",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2025-06-26",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2025
+  },
+  {
+   "tema": "12. Coffee Shops y Bares ☕🍹",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!74",
+   "tipo": "producto",
+   "fecha": "2025-07-01",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "Conchas hamburguesas Taller XL",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!75",
+   "tipo": "producto",
+   "fecha": "2025-07-03",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "13. Cocina Internacional 🌍",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!76",
+   "tipo": "producto",
+   "fecha": "2025-07-08",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "Airlaid y Dry Cotton Aurelie (Feta)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "DRY COTTON",
+    "Airlaid"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "(feta)",
+    "aurelie",
+    "feta)"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!77",
+   "tipo": "producto",
+   "fecha": "2025-07-10",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "Catálogo Navidad 2025 (Laia)",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "laia"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!78",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2025-07-15",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "Vasos doble capa compostables pag 15 NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    15
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!79",
+   "tipo": "novedad",
+   "fecha": "2025-07-17",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "14. Panaderías 🍩🥐 (Feta)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "(feta)",
+    "feta)"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!80",
+   "tipo": "producto",
+   "fecha": "2025-07-22",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "Mantelines NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!81",
+   "tipo": "novedad",
+   "fecha": "2025-07-24",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "Nuevos conos helados y tarrinas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!82",
+   "tipo": "novedad",
+   "fecha": "2025-07-29",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "Papel antigrasa Fitipaldi Azul - New",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Fitipaldi"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!83",
+   "tipo": "novedad",
+   "fecha": "2025-07-31",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2025
+  },
+  {
+   "tema": "Personalizados Aurelie (Feta)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "(feta)",
+    "aurelie",
+    "feta)"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!84",
+   "tipo": "producto",
+   "fecha": "2025-08-05",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2025
+  },
+  {
+   "tema": "Linea Grafitti NEW",
+   "familia": "sin-clasificar",
+   "marcas": [
+    "Grafitti",
+    "Linea"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!85",
+   "tipo": "novedad",
+   "fecha": "2025-08-07",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2025
+  },
+  {
+   "tema": "Recycled Feel Green",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "FEEL GREEN"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!86",
+   "tipo": "producto",
+   "fecha": "2025-08-12",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2025
+  },
+  {
+   "tema": "Akala (video)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!87",
+   "tipo": "video",
+   "fecha": "2025-08-14",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2025
+  },
+  {
+   "tema": "Papel antigrasa Just paper",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Just Paper"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!88",
+   "tipo": "producto",
+   "fecha": "2025-08-19",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2025
+  },
+  {
+   "tema": "Supratek (video)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Supratek"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!89",
+   "tipo": "video",
+   "fecha": "2025-08-21",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2025
+  },
+  {
+   "tema": "Papel cera vegetal",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!90",
+   "tipo": "producto",
+   "fecha": "2025-08-26",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2025
+  },
+  {
+   "tema": "Nuevos recipientes cuadrados pag 17 NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    17
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!91",
+   "tipo": "novedad",
+   "fecha": "2025-08-28",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2025
+  },
+  {
+   "tema": "Nuevas bandejas fast food simil madera pag 43 NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    43
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!92",
+   "tipo": "novedad",
+   "fecha": "2025-09-02",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2025
+  },
+  {
+   "tema": "Nuevos cubos porta cubiertos pag 45 NEW",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    45
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!93",
+   "tipo": "novedad",
+   "fecha": "2025-09-04",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2025
+  },
+  {
+   "tema": "Cubertería Essenza pag 41 NEW",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "CUBE",
+    "Essenza"
+   ],
+   "paginas_catalogo": [
+    41
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!94",
+   "tipo": "novedad",
+   "fecha": "2025-09-09",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2025
+  },
+  {
+   "tema": "Catalogo Navidad 2025",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!95",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2025-09-16",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2025
+  },
+  {
+   "tema": "Papel antigrasa Leaf",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Leaf"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!96",
+   "tipo": "producto",
+   "fecha": "2025-09-18",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2025
+  },
+  {
+   "tema": "Contenedores lacados pag 35",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    35
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!97",
+   "tipo": "producto",
+   "fecha": "2025-09-23",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2025
+  },
+  {
+   "tema": "Vasos café (esmenta els nous)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "esmenta"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!98",
+   "tipo": "producto",
+   "fecha": "2025-09-25",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2025
+  },
+  {
+   "tema": "Bolsas con asas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!99",
+   "tipo": "producto",
+   "fecha": "2025-09-30",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2025
+  },
+  {
+   "tema": "Cajas hamburguesas",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!100",
+   "tipo": "producto",
+   "fecha": "2025-10-02",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2025
+  },
+  {
+   "tema": "Papel antigrasas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!101",
+   "tipo": "producto",
+   "fecha": "2025-10-07",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2025
+  },
+  {
+   "tema": "Cajas multiuso estancas (cajas americanas), con compartimentos, con aluminio y Roast and Go pag 173, 174, 175",
+   "familia": "take-away",
+   "marcas": [
+    "Roast and Go"
+   ],
+   "paginas_catalogo": [
+    173,
+    174,
+    175
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!102",
+   "tipo": "producto",
+   "fecha": "2025-10-09",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2025
+  },
+  {
+   "tema": "Cajas de pizza (detalle Novedad Caja de pizza con ventana)",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!103",
+   "tipo": "producto",
+   "fecha": "2025-10-14",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2025
+  },
+  {
+   "tema": "Nuestras colecciones:",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/marcas.html"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!104",
+   "tipo": "producto",
+   "fecha": "2025-10-16",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2025
+  },
+  {
+   "tema": "Bolsas sin asas (detalle Nuevas Cat y Zoo)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!105",
+   "tipo": "novedad",
+   "fecha": "2025-10-21",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2025
+  },
+  {
+   "tema": "Servilletas Like Linen (hi ha nous dissenys Argyle, Madras III, mides…)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "hi ha",
+    "nous dissenys"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!106",
+   "tipo": "producto",
+   "fecha": "2025-10-23",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2025
+  },
+  {
+   "tema": "Cajas pastelería (destacar que tenemos nuevos e infinidad de tamaños y lo de la apertura frontal)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!107",
+   "tipo": "novedad",
+   "fecha": "2025-10-28",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2025
+  },
+  {
+   "tema": "Servilletas Canguro",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!108",
+   "tipo": "producto",
+   "fecha": "2025-10-30",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2025
+  },
+  {
+   "tema": "Servilletas, manteles y Tu y yo de Navidad (5-12)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    5,
+    12
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!109",
+   "tipo": "producto",
+   "fecha": "2025-11-04",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2025
+  },
+  {
+   "tema": "Separadores Insertables Ensaladeras",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!110",
+   "tipo": "producto",
+   "fecha": "2025-11-06",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2025
+  },
+  {
+   "tema": "Conjuntos decorados (14-23)",
+   "familia": "sin-clasificar",
+   "marcas": [],
+   "paginas_catalogo": [
+    14,
+    23
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!111",
+   "tipo": "producto",
+   "fecha": "2025-11-11",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2025
+  },
+  {
+   "tema": "Bolsas base ancha delivery",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!112",
+   "tipo": "producto",
+   "fecha": "2025-11-13",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2025
+  },
+  {
+   "tema": "El Cotillón (73-87)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    73,
+    87
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!113",
+   "tipo": "producto",
+   "fecha": "2025-11-18",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2025
+  },
+  {
+   "tema": "Times",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "TIMES"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!114",
+   "tipo": "producto",
+   "fecha": "2025-11-20",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2025
+  },
+  {
+   "tema": "Botellas Navidad ThePack Gourmet",
+   "familia": "cotillon",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!115",
+   "tipo": "producto",
+   "fecha": "2025-11-25",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2025
+  },
+  {
+   "tema": "Tarifas noviembre",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!116",
+   "tipo": "tarifa",
+   "fecha": "2025-11-27",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2025
+  },
+  {
+   "tema": "Aperitivos Navidad (24-26)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    24,
+    26
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!117",
+   "tipo": "producto",
+   "fecha": "2025-12-02",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2025
+  },
+  {
+   "tema": "Repetida Cotillón (73-87)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    73,
+    87
+   ],
+   "urls": [],
+   "notas_internas": [
+    "repetida"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!118",
+   "tipo": "repeticion",
+   "fecha": "2025-12-04",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2025
+  },
+  {
+   "tema": "Mantelines spundbond textura impresa",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!119",
+   "tipo": "producto",
+   "fecha": "2025-12-09",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2025
+  },
+  {
+   "tema": "Papel y bolsitas regalo (54-61)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    54,
+    61
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!120",
+   "tipo": "producto",
+   "fecha": "2025-12-11",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2025
+  },
+  {
+   "tema": "Catering y pastelería de Navidad (32-41)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    32,
+    41
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!121",
+   "tipo": "producto",
+   "fecha": "2025-12-16",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2025
+  },
+  {
+   "tema": "Botelleros",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!122",
+   "tipo": "producto",
+   "fecha": "2025-12-18",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2025
+  },
+  {
+   "tema": "Felicitación de Navidad",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!123",
+   "tipo": "institucional",
+   "fecha": "2025-12-23",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2025
+  },
+  {
+   "tema": "Bolsas para regalos: yute, sos, lujo (47-53)",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [
+    47,
+    53
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!124",
+   "tipo": "producto",
+   "fecha": "2025-12-30",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2025
+  },
+  {
+   "tema": "Tarrinas con tapa para sopas nuevas, Tarrinas sopa y crema",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!125",
+   "tipo": "novedad",
+   "fecha": "2026-01-08",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2026
+  },
+  {
+   "tema": "Asamiware (tenemos nueva vajilla en azul)",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!126",
+   "tipo": "producto",
+   "fecha": "2026-01-13",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2026
+  },
+  {
+   "tema": "Waki Glass",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Waki Glass"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!127",
+   "tipo": "producto",
+   "fecha": "2026-01-15",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2026
+  },
+  {
+   "tema": "Mantelines (rep) + Blog mantelines Sebastià Martí",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "(rep",
+    "rep)"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!128",
+   "tipo": "contenido-blog",
+   "fecha": "2026-01-20",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2026
+  },
+  {
+   "tema": "Nuevas Ensaladeras negras",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!129",
+   "tipo": "novedad",
+   "fecha": "2026-01-22",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2026
+  },
+  {
+   "tema": "NUEVO CATALOGO 2026",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!130",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2026-01-26",
+   "hora": "15:00",
+   "dia_semana": "lunes",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2026
+  },
+  {
+   "tema": "Tarrinas insertables rectangulares",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!131",
+   "tipo": "producto",
+   "fecha": "2026-01-29",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 1,
+   "anyo": 2026
+  },
+  {
+   "tema": "Mantelería Línea reciclada (39-43)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Linea"
+   ],
+   "paginas_catalogo": [
+    39,
+    43
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!132",
+   "tipo": "producto",
+   "fecha": "2026-02-03",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2026
+  },
+  {
+   "tema": "Vasos bebidas calientes, cartón ondulado, cartón protector calor, paletinas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!133",
+   "tipo": "producto",
+   "fecha": "2026-02-05",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2026
+  },
+  {
+   "tema": "Cucuruchos cartón y papelinas punta papel: churros, castañas, etc",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!134",
+   "tipo": "producto",
+   "fecha": "2026-02-10",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2026
+  },
+  {
+   "tema": "Bolsas cubiertos con servilleta - New Estuches para cubiertos Leaf pag 89",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Leaf"
+   ],
+   "paginas_catalogo": [
+    89
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!135",
+   "tipo": "novedad",
+   "fecha": "2026-02-12",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2026
+  },
+  {
+   "tema": "Envases multiuso estancos- New Cajas americanas microondables CUBE pag 179",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "CUBE"
+   ],
+   "paginas_catalogo": [
+    179
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!136",
+   "tipo": "novedad",
+   "fecha": "2026-02-17",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2026
+  },
+  {
+   "tema": "Recipientes aperitivos Bambú - New Mini Recipientes negros pag 315",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    315
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!137",
+   "tipo": "novedad",
+   "fecha": "2026-02-19",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2026
+  },
+  {
+   "tema": "Vajilla Akala Porcelana- New Platos para pizza Akala Porcelana pag 396",
+   "familia": "take-away",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [
+    396
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!138",
+   "tipo": "novedad",
+   "fecha": "2026-02-24",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2026
+  },
+  {
+   "tema": "Bandejas con funda para catering nuevas pag 207",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    207
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!139",
+   "tipo": "novedad",
+   "fecha": "2026-02-26",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 2,
+   "anyo": 2026
+  },
+  {
+   "tema": "Bolsas aluminio parole NEW pag 112 + Bolsas parole ventana pag 117",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "PAROLE"
+   ],
+   "paginas_catalogo": [
+    112,
+    117
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!140",
+   "tipo": "novedad",
+   "fecha": "2026-03-03",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2026
+  },
+  {
+   "tema": "Elegancia Black: cajas buger (black), vasos fritos (black), bolsas sos (black) per exemple",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "per exemple"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!141",
+   "tipo": "producto",
+   "fecha": "2026-03-05",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2026
+  },
+  {
+   "tema": "Nuevas Barquillas termosellables pag 189 y otras y máquina de termosellar en detalle pag 189",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    189
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!142",
+   "tipo": "novedad",
+   "fecha": "2026-03-10",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2026
+  },
+  {
+   "tema": "Nuevos Mantelines reciclados",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!143",
+   "tipo": "novedad",
+   "fecha": "2026-03-12",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2026
+  },
+  {
+   "tema": "Servilletas y mantelines Vertex Like Linen",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!144",
+   "tipo": "producto",
+   "fecha": "2026-03-17",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2026
+  },
+  {
+   "tema": "Nuevos Aros de horneado con papel pag 300 (EMILI)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [
+    300
+   ],
+   "urls": [],
+   "notas_internas": [
+    "emili"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!145",
+   "tipo": "novedad",
+   "fecha": "2026-03-19",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2026
+  },
+  {
+   "tema": "Historia Portadas Catalogo",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!146",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2026-03-24",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2026
+  },
+  {
+   "tema": "Nuevo diseño Leaf papel antigasa (página 99)",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Leaf"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!147",
+   "tipo": "novedad",
+   "fecha": "2026-03-26",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2026
+  },
+  {
+   "tema": "Sillas de madera nuevas (EMILI)",
+   "familia": "mesa-accesorios",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [
+    "emili"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!148",
+   "tipo": "novedad",
+   "fecha": "2026-03-31",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 3,
+   "anyo": 2026
+  },
+  {
+   "tema": "Mantelería Airlaid Natural pag 48-49",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Airlaid"
+   ],
+   "paginas_catalogo": [
+    48,
+    49
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!149",
+   "tipo": "producto",
+   "fecha": "2026-04-02",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2026
+  },
+  {
+   "tema": "Cubiertos INOX Essenza, Dakota, Olivia, Siena y Essenza",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Dakota",
+    "Essenza",
+    "Olivia",
+    "Siena"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!150",
+   "tipo": "producto",
+   "fecha": "2026-04-07",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2026
+  },
+  {
+   "tema": "Tarrinas helado",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!151",
+   "tipo": "producto",
+   "fecha": "2026-04-09",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2026
+  },
+  {
+   "tema": "Viva el vintage: Mantelines Vintage Nuevos, Fitipaldi y Times",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "TIMES",
+    "Spunbond",
+    "Fitipaldi",
+    "Vintage"
+   ],
+   "paginas_catalogo": [
+    78
+   ],
+   "urls": [],
+   "notas_internas": [
+    "no hay materia prima"
+   ],
+   "alternativa": "Manteles en formato Spunbond pag 78 nuevas medidas NO HAY MATERIA PRIMA",
+   "origen": "Hoja3!152",
+   "tipo": "novedad",
+   "fecha": "2026-04-14",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2026
+  },
+  {
+   "tema": "Servilletas Canguro",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "Tablas de bambú par presentación 328 y bandejas bambú 327 y sushi bases",
+   "origen": "Hoja3!153",
+   "tipo": "producto",
+   "fecha": "2026-04-16",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2026
+  },
+  {
+   "tema": "ThePack + Blog Normativa Envases pfas",
+   "familia": "institucional",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!154",
+   "tipo": "contenido-blog",
+   "fecha": "2026-04-21",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2026
+  },
+  {
+   "tema": "Nuevas barquillas 191 NEW y barquillas en general",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!155",
+   "tipo": "novedad",
+   "fecha": "2026-04-23",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2026
+  },
+  {
+   "tema": "Grill & Go pag 111",
+   "familia": "take-away",
+   "marcas": [
+    "Grill & Go"
+   ],
+   "paginas_catalogo": [
+    111
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!156",
+   "tipo": "producto",
+   "fecha": "2026-04-28",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2026
+  },
+  {
+   "tema": "Bebidas frías, batidos y granizados. Vasos, tapas, pajitas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!157",
+   "tipo": "producto",
+   "fecha": "2026-04-30",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 4,
+   "anyo": 2026
+  },
+  {
+   "tema": "Vasos abiertos para fritos pag 190",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    190
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!158",
+   "tipo": "producto",
+   "fecha": "2026-05-05",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2026
+  },
+  {
+   "tema": "Pequeñas tarrinas cartón y papel plisado 143 y Pequeñas Tarrinas Bionic pag 278",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "BIONIC"
+   ],
+   "paginas_catalogo": [
+    278
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!159",
+   "tipo": "producto",
+   "fecha": "2026-05-07",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2026
+  },
+  {
+   "tema": "Street Food: Palas, bandejas, conos, envases para Crepes, waffles y gofres",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "Packaging Take Away para Street Food: cajas, barquillas, portavasos, etc.",
+   "origen": "Hoja3!160",
+   "tipo": "producto",
+   "fecha": "2026-05-12",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2026
+  },
+  {
+   "tema": "Ensaladeras para comida fresca: poke, ensaladas, fruta",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    222,
+    225
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "Bandejas, discos y bases para tartas pag 222, 225 foto 223",
+   "origen": "Hoja3!161",
+   "tipo": "producto",
+   "fecha": "2026-05-14",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2026
+  },
+  {
+   "tema": "Bandejas de madera NEW pag 335",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Reuse it"
+   ],
+   "paginas_catalogo": [
+    335
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "Vasos Reuse it",
+   "origen": "Hoja3!162",
+   "tipo": "novedad",
+   "fecha": "2026-05-19",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2026
+  },
+  {
+   "tema": "Toallitas refrescantes",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!163",
+   "tipo": "producto",
+   "fecha": "2026-05-21",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2026
+  },
+  {
+   "tema": "Just in Time para niños pag 37 NEW y Just in Time en general",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Just in Time"
+   ],
+   "paginas_catalogo": [
+    37
+   ],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!164",
+   "tipo": "novedad",
+   "fecha": "2026-05-26",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2026
+  },
+  {
+   "tema": "Nuevas conchas THEPACK burger S y L, en feel green, blanco y fitipaldi",
+   "familia": "take-away",
+   "marcas": [
+    "THEPACK",
+    "FEEL GREEN",
+    "Fitipaldi"
+   ],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!165",
+   "tipo": "novedad",
+   "fecha": "2026-05-28",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "primavera",
+   "mes": 5,
+   "anyo": 2026
+  },
+  {
+   "tema": "Tarrinas helado",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!166",
+   "tipo": "producto",
+   "fecha": "2026-06-02",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2026
+  },
+  {
+   "tema": "Like-Linen",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Like-Linen"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/marcas/like-linen.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!167",
+   "tipo": "producto",
+   "fecha": "2026-06-04",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Vasos cierre Mariposa",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-frias.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!168",
+   "tipo": "novedad",
+   "fecha": "2026-06-09",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Set Lounge pag 500",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Set Lounge"
+   ],
+   "paginas_catalogo": [
+    500
+   ],
+   "urls": [
+    "https://www.garciadepou.com/es/mesa-y-accesorios/mobiliario-hosteleria.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!169",
+   "tipo": "novedad",
+   "fecha": "2026-06-11",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Conchas Bionic para burritos y otras conchas",
+   "familia": "take-away",
+   "marcas": [
+    "BIONIC"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/bionic/conchas.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!170",
+   "tipo": "novedad",
+   "fecha": "2026-06-16",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Vasos Flurry y helados",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Flurry"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/tarrinas-para-helados.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!171",
+   "tipo": "novedad",
+   "fecha": "2026-06-18",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2026
+  },
+  {
+   "tema": "Vajilla Melamina Asamiware",
+   "familia": "mesa-accesorios",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/mesa-y-accesorios/melamina.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!172",
+   "tipo": "producto",
+   "fecha": "2026-06-23",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2026
+  },
+  {
+   "tema": "Cajas con ventana sandwich pag 177",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [
+    177
+   ],
+   "urls": [
+    "https://www.garciadepou.com/es/take-away/cajas-con-ventana.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!173",
+   "tipo": "producto",
+   "fecha": "2026-06-25",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2026
+  },
+  {
+   "tema": "Cristalería Vintage Waki Glass",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Waki Glass",
+    "Vintage"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/tafel-en-accessoires/vasos-cristal.html"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!174",
+   "tipo": "producto",
+   "fecha": "2026-06-30",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 6,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Envases para fritos: cajas con abrefacil superior parole y feel green, y vasos con cierre y vasos abiertos",
+   "familia": "take-away",
+   "marcas": [
+    "FEEL GREEN",
+    "PAROLE"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/recipientes-para-fritas.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!175",
+   "tipo": "novedad",
+   "fecha": "2026-07-02",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2026
+  },
+  {
+   "tema": "Nuevos diseños vasos compostable Grass, Gradient (página 135) y vasos compostables (página 140)",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-compostables.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!176",
+   "tipo": "novedad",
+   "fecha": "2026-07-07",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Ramequines Negros/plateados Artinox y otros",
+   "familia": "bar-buffet",
+   "marcas": [
+    "Artinox"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/bar-y-buffet/baskets-inox/ramequines.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!177",
+   "tipo": "novedad",
+   "fecha": "2026-07-09",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Mini recipientes para aperitivos de melamina Asamiware",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Asamiware"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/bar-en-buffet/voorgerechten/mini-recipientes-melamina-asamiware.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!178",
+   "tipo": "novedad",
+   "fecha": "2026-07-14",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Soportes de papel antigrasa para recipientes",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/take-away/papel-antigrasa/envoltorios-recipientes-presentacion.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!179",
+   "tipo": "novedad",
+   "fecha": "2026-07-16",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Barquillas para hot dog y otras barquillas",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/barquitas-para-fast-food-y-snack.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!180",
+   "tipo": "novedad",
+   "fecha": "2026-07-21",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Envases de cartón take away: envases multiuso microondables feel green y cajas americanas horneables Oven safe",
+   "familia": "take-away",
+   "marcas": [
+    "FEEL GREEN"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/recipientes-take-away-microondables.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!181",
+   "tipo": "novedad",
+   "fecha": "2026-07-23",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Platos de porcelana AKALA",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Akala"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/mesa-y-accesorios/porcelana-blanca/platos-de-porcelana.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!182",
+   "tipo": "novedad",
+   "fecha": "2026-07-28",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW CAJAS \"PANINI\" AUTOMONTABLE",
+   "familia": "take-away",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cajas-panini-automontable-thepack-220-g-m2-24x10x7-cm-natural-ca.html"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!183",
+   "tipo": "novedad",
+   "fecha": "2026-07-30",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 7,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Bolsas boutique asas cordel",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/bolsas-boutique-asa-cordel-100-g-m2-40-15x32-cm-negro-kraft.html"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!184",
+   "tipo": "novedad",
+   "fecha": "2026-08-04",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2026
+  },
+  {
+   "tema": "Nuevas medidas Manteles Dry Cotton (pag 52) y Dry Cotton en general",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "DRY COTTON"
+   ],
+   "paginas_catalogo": [
+    52
+   ],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/dry-cotton.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!185",
+   "tipo": "novedad",
+   "fecha": "2026-08-06",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2026
+  },
+  {
+   "tema": "Mantelines: De papel reciclado a Vintage",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Vintage"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/manteles-individuales.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!186",
+   "tipo": "producto",
+   "fecha": "2026-08-11",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2026
+  },
+  {
+   "tema": "Cajas hamburguesas + Blog Hamburguesas",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/cajas-para-hamburguesas.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!187",
+   "tipo": "contenido-blog",
+   "fecha": "2026-08-13",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2026
+  },
+  {
+   "tema": "Cajas pastelería",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/pasteleria/cajas-para-pasteleria.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!188",
+   "tipo": "producto",
+   "fecha": "2026-08-18",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2026
+  },
+  {
+   "tema": "Diseño Fitipaldi: Papel y envases + BLOG Hamburguesas",
+   "familia": "institucional",
+   "marcas": [
+    "Fitipaldi"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/#6a32/fullscreen/m=and&p=2&q=Fitipaldi"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!189",
+   "tipo": "contenido-blog",
+   "fecha": "2026-08-20",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2026
+  },
+  {
+   "tema": "Kintsu: envases de cartón para sushi",
+   "familia": "take-away",
+   "marcas": [
+    "Kintsu"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/envases-para-sushi-y-comida-oriental.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!190",
+   "tipo": "producto",
+   "fecha": "2026-08-25",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Utensilios de bambú para bufet",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/bar-y-buffet/presentadores-para-buffet-displays/utensilios-de-bambu.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!191",
+   "tipo": "novedad",
+   "fecha": "2026-08-27",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "verano",
+   "mes": 8,
+   "anyo": 2026
+  },
+  {
+   "tema": "NEW Mini recipientes de loza",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Crockery"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/bar-en-buffet/voorgerechten/mini-recipientes-loza-crockery.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!192",
+   "tipo": "novedad",
+   "fecha": "2026-09-01",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2026
+  },
+  {
+   "tema": "PFAS Free",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "PFAS FREE"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/pfas-free.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!193",
+   "tipo": "producto",
+   "fecha": "2026-09-03",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2026
+  },
+  {
+   "tema": "Manteles",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/manteles-de-papel.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!194",
+   "tipo": "producto",
+   "fecha": "2026-09-08",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2026
+  },
+  {
+   "tema": "Bebidas calientes. Vasos de cartón, doble pared, ondulados/protectores de calor, tapas, paletinas",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-calientes.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!195",
+   "tipo": "producto",
+   "fecha": "2026-09-10",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2026
+  },
+  {
+   "tema": "Catálogo Navidad 2026",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/christmas"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!196",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2026-09-15",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2026
+  },
+  {
+   "tema": "Catering: presentar y transportar. Bandejas con funda, cajas para transporte, soluciones para platos preparados, pastelería, etc",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/bandejas-traiteur.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!197",
+   "tipo": "producto",
+   "fecha": "2026-09-17",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2026
+  },
+  {
+   "tema": "Cubertería profesional para hostelería. Nuevas líneas inox, modelos con mango de madera y surtido de cuberterías",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "CUBE",
+    "Linea"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/mesa-y-accesorios/cubiertos-inox.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!198",
+   "tipo": "novedad",
+   "fecha": "2026-09-22",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2026
+  },
+  {
+   "tema": "Amenities para hoteles y alojamientos",
+   "familia": "habitaciones",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/amenities-hotel-habitaciones-acogida.html"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!199",
+   "tipo": "producto",
+   "fecha": "2026-09-24",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2026
+  },
+  {
+   "tema": "Sopas, cremas y comida caliente para llevar. Tarrinas con tapa, envases para platos calientes, opciones microondables y take-away",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/take-away/tarrinas/tarrinas-para-sopas.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!200",
+   "tipo": "producto",
+   "fecha": "2026-09-29",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 9,
+   "anyo": 2026
+  },
+  {
+   "tema": "Servilletas canguro: agilidad y presentación en mesa",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Kangaroo"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!201",
+   "tipo": "producto",
+   "fecha": "2026-10-01",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2026
+  },
+  {
+   "tema": "PIZZA · PANINI · SÁNDWICH · BOCADILLOS. DOS PARTS: una amb les caixes de pizza i una altra amb les caixes per a entrepans",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/take-away/bocadillos-y-sandwiches/envases-de-carton.html",
+    "https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/cajas-de-pizza-microcanal.html"
+   ],
+   "notas_internas": [
+    "dos parts"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!202",
+   "tipo": "producto",
+   "fecha": "2026-10-06",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2026
+  },
+  {
+   "tema": "Cristalería profesional para hostelería",
+   "familia": "bar-buffet",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/marcas/waki-glass.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!203",
+   "tipo": "producto",
+   "fecha": "2026-10-08",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2026
+  },
+  {
+   "tema": "Navidad 2026: prepare la mesa. Les diferents linies",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html"
+   ],
+   "notas_internas": [
+    "les diferents linies"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!204",
+   "tipo": "producto",
+   "fecha": "2026-10-13",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2026
+  },
+  {
+   "tema": "Bolsas para take-away y delivery",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!205",
+   "tipo": "producto",
+   "fecha": "2026-10-15",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2026
+  },
+  {
+   "tema": "Pastelería profesional: presentar, proteger y transportar. Cajas para rosquillas, bandejas, discos, blondas, cápsulas, moldes",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/pasteleria"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!206",
+   "tipo": "producto",
+   "fecha": "2026-10-20",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2026
+  },
+  {
+   "tema": "Paper Cutlery + Soluciones para cubiertos: estuches para cubiertos Leaf + alternativas de un solo uso. DOS PARTS",
+   "familia": "un-solo-uso",
+   "marcas": [
+    "Leaf",
+    "Paper Cutlery"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/un-solo-uso/cubiertos-desechables/cubiertos-de-papel.html",
+    "https://www.garciadepou.com/es/un-solo-uso/cubiertos-desechables/set-bolsa-de-cubiertos-y-estuches.html?product_list_order=position"
+   ],
+   "notas_internas": [
+    "dos parts"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!207",
+   "tipo": "producto",
+   "fecha": "2026-10-22",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2026
+  },
+  {
+   "tema": "Navidad 2026: aperitivos y cócteles. Mini recipientes, vasitos, cucharitas, soportes y soluciones de presentación para aperitivos y eventos",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/kerstmis/vajilla-para-aperitivos.html"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!208",
+   "tipo": "producto",
+   "fecha": "2026-10-27",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2026
+  },
+  {
+   "tema": "Packaging para comercios y regalo. Bolsas boutique, cordón, SOS, papel y bolsas de presentación. Campaña navideña",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cotillon/papel-y-bolsas-para-regalos.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!209",
+   "tipo": "producto",
+   "fecha": "2026-10-29",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 10,
+   "anyo": 2026
+  },
+  {
+   "tema": "Catering y pastelería para Navidad. Cajas, bandejas, blondas, cápsulas, transporte y presentación",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cotillon/pasteleria.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!210",
+   "tipo": "producto",
+   "fecha": "2026-11-03",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2026
+  },
+  {
+   "tema": "Buffet y eventos: todo para presentar y servir. Mini recipientes, soportes, bandejas, menaje de presentación y soluciones para buffet",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/bar-y-buffet.html"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!211",
+   "tipo": "producto",
+   "fecha": "2026-11-05",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2026
+  },
+  {
+   "tema": "Navidad: mesas preparadas para los grandes servicios. Servilletas, mantelería, Tête-à-Tête, cubertería y vasos",
+   "familia": "cotillon",
+   "marcas": [
+    "CUBE"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cotillon/manteles-de-navidad-de-papel.html?product_list_order=position",
+    "https://www.garciadepou.com/es/cotillon/servilletas-de-navidad.html?product_list_order=position",
+    "https://www.garciadepou.com/es/kerstmis/cubiertos.html?product_list_order=position",
+    "https://www.garciadepou.com/es/kerstmis/vasos-de-navidad.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!212",
+   "tipo": "producto",
+   "fecha": "2026-11-10",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2026
+  },
+  {
+   "tema": "Take Away & Delivery para la temporada alta. Bolsas, cajas, envases estancos, packaging para pedidos y transporte",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/take-away.html"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!213",
+   "tipo": "producto",
+   "fecha": "2026-11-12",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2026
+  },
+  {
+   "tema": "Cotillón y Fin de Año",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cotillon/bolsas-de-cotillon.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!214",
+   "tipo": "producto",
+   "fecha": "2026-11-17",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2026
+  },
+  {
+   "tema": "Botellas, lotes y packaging gourmet. Botellas THEPACK Gourmet, presentación de lotes, botelleros y soluciones regalo",
+   "familia": "cotillon",
+   "marcas": [
+    "THEPACK"
+   ],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cotillon/cajas-para-botellas-y-lotes.html?product_list_order=position"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!215",
+   "tipo": "producto",
+   "fecha": "2026-11-19",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2026
+  },
+  {
+   "tema": "Prepare su stock para Navidad. Servilletas, vasos, bolsas, envases, take-away… Una mica de tot. Per tornar a enllaçar el catàleg",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/christmas"
+   ],
+   "notas_internas": [
+    "per tornar",
+    "una mica de tot"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!216",
+   "tipo": "lanzamiento-catalogo",
+   "fecha": "2026-11-24",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2026
+  },
+  {
+   "tema": "Street Food de invierno. Cross-selling de Churros, castañas, sopas, cremas, bebidas calientes y soluciones para consumo para llevar",
+   "familia": "take-away",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/disposable-products/cucuruchos-de-papel.html?product_list_order=position",
+    "https://www.garciadepou.com/es/take-away/tarrinas/tarrinas-para-sopas.html?product_list_order=position",
+    "https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-calientes.html"
+   ],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!217",
+   "tipo": "producto",
+   "fecha": "2026-11-26",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "otono",
+   "mes": 11,
+   "anyo": 2026
+  },
+  {
+   "tema": "REPETIR: Navidad: aperitivos y presentaciones especiales. Mini recipientes, vasitos, cucharas, bandejas y soluciones para aperitivos",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/kerstmis/vajilla-para-aperitivos.html"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!218",
+   "tipo": "repeticion",
+   "fecha": "2026-12-01",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2026
+  },
+  {
+   "tema": "REPETIR: Packaging para regalos y productos gourmet. Bolsas regalo/boutique, papel, botelleros y presentación premium",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cotillon/papel-y-bolsas-para-regalos.html?product_list_order=position"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!219",
+   "tipo": "repeticion",
+   "fecha": "2026-12-03",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2026
+  },
+  {
+   "tema": "REPETIR: Catering y pastelería: preparados para los grandes servicios. Reposición de cajas, bandejas, discos, blondas, cápsulas y soluciones de transporte",
+   "familia": "un-solo-uso",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/pasteleria"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!220",
+   "tipo": "repeticion",
+   "fecha": "2026-12-10",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2026
+  },
+  {
+   "tema": "REPETIR: Cotillón y Fin de Año",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cotillon/bolsas-de-cotillon.html?product_list_order=position"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!221",
+   "tipo": "repeticion",
+   "fecha": "2026-12-15",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2026
+  },
+  {
+   "tema": "REPETIR: La mesa de Fin de Año",
+   "familia": "cotillon",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [
+    "https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html"
+   ],
+   "notas_internas": [
+    "repetir"
+   ],
+   "alternativa": "",
+   "origen": "Hoja3!222",
+   "tipo": "repeticion",
+   "fecha": "2026-12-17",
+   "hora": "15:00",
+   "dia_semana": "jueves",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2026
+  },
+  {
+   "tema": "Felicitación de Navidad",
+   "familia": "institucional",
+   "marcas": [],
+   "paginas_catalogo": [],
+   "urls": [],
+   "notas_internas": [],
+   "alternativa": "",
+   "origen": "Hoja3!223",
+   "tipo": "institucional",
+   "fecha": "2026-12-22",
+   "hora": "15:00",
+   "dia_semana": "martes",
+   "temporada": "invierno",
+   "mes": 12,
+   "anyo": 2026
+  }
+ ]
+}
