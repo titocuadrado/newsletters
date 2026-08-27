@@ -1,0 +1,1150 @@
+<title>Newsletters 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════
+   GARCÍA DE POU — Brand stylesheet
+   Hoja base de marca. Copiar tal cual al proyecto y construir encima.
+   Origen: styles.css del rediseño (Multiplica). No editar los tokens.
+
+   Requiere en el <head>:
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── RESET ────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+html { font-size: 16px; overflow-x: clip; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  background: var(--white);
+  color: var(--black);
+  overflow-x: clip;
+}
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+a { color: inherit; text-decoration: none; cursor: pointer; }
+ul { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ── TOKENS ───────────────────────────────────────────────────────────── */
+:root {
+  /* Neutros */
+  --black:  #0A0A0A;
+  --white:  #FFFFFF;
+  --g50:    #F5F5F5;   /* fondo de sección puntual / zebra */
+  --g100:   #EEEEEE;   /* bordes DECORATIVOS: cards, divisores, paneles */
+  --g300:   #C4C4C4;
+  --g400:   #909090;   /* bordes de CONTROL interactivo — WCAG 1.4.11 ≈3.2:1 */
+  --g500:   #6E6E6E;   /* texto secundario, labels, eyebrows (AA sobre blanco) */
+  --g600:   #555555;   /* texto enfático secundario */
+  --g700:   #3D3D3D;   /* banners, barras de anuncio */
+
+  /* Marca */
+  --blue:      #002D72;   /* azul corporativo GDP — SOLO acción */
+  --blue-80:   #1A4490;   /* hover de botón azul */
+  --blue-60:   #2C5BA8;   /* hover sobre fondo azul */
+  --blue-10:   #EBF0F8;   /* fondo suave / estado activo */
+  --white-15:  #ffffff26; /* separadores sobre fondo azul */
+  --yellow:    #FFD100;   /* SOLO ofertas/badges/acentos de marketing */
+  --terracota: #8B3A2A;   /* destacados cálidos: banners, campañas */
+
+  /* Feedback / estado — nunca como color principal de UI */
+  --green:       #C5E63D;
+  --green-dark:  #2F4A05;
+  --yellow-dark: #7A5C00;
+  --red:         #A21C1C;
+  --red-10:      #FDECEC;
+  --red-accent:  #EE333E;
+  --red-promo:   #D42B2B;
+  --green-eco:      #2D7A4F;   /* pilar eco / sostenibilidad */
+  --green-eco-dark: #1F5A38;
+
+  /* Pills de estado — fondo sólido claro + texto oscuro (AA ≥ 4.5) */
+  --pill-success-bg: #E3F3E8;  --pill-success-fg: #15683A;
+  --pill-warn-bg:    #FBEBCF;  --pill-warn-fg:    #8A5800;
+  --pill-info-bg:    #E3ECFB;  --pill-info-fg:    #1A4490;
+  --pill-neutral-bg: #ECEEF1;  --pill-neutral-fg: #44494F;
+
+  /* Layout */
+  --container:   100%;
+  --gap:         clamp(24px, 4vw, 64px);
+  --grid-cols:   24;
+  --grid-gutter: var(--sp-16);
+  --radius:      8px;
+
+  /* Alturas de control — usar SIEMPRE estos tokens */
+  --ctrl-h-xs: 26px;
+  --ctrl-h-sm: 32px;
+  --ctrl-h:    44px;   /* estándar: botón default, qty, add-to-cart */
+  --ctrl-h-lg: 48px;
+
+  /* Escala tipográfica */
+  --fs-2xs:  10px;   /* badges, códigos, contadores */
+  --fs-3xs:  12px;   /* nav, breadcrumbs, micro-labels */
+  --fs-xs:   14px;   /* labels, eyebrows, botones */
+  --fs-sm:   16px;
+  --fs-base: 14px;   /* cuerpo secundario */
+  --fs-md:   16px;   /* cuerpo, botones LG */
+  --fs-lg:   16px;   /* cuerpo principal */
+  --fs-xl:   18px;   /* subheadings */
+  --fs-2xl:  20px;   /* precios, headings */
+  --fs-3xl:  24px;   /* Caveat decorativo */
+  --fs-4xl:  32px;   /* títulos de sección */
+
+  /* Espaciado — 8-point grid. NUNCA px literales en padding/margin/gap. */
+  --sp-4:  4px;
+  --sp-8:  8px;
+  --sp-12: 12px;
+  --sp-16: 16px;
+  --sp-20: 20px;
+  --sp-24: 24px;
+  --sp-32: 32px;
+  --sp-40: 40px;
+  --sp-48: 48px;
+  --sp-64: 64px;
+  --sp-80: 80px;
+  --sp-96: 96px;
+}
+
+/* ── LAYOUT ───────────────────────────────────────────────────────────── */
+.wrap { max-width: var(--container); margin-inline: auto; padding-inline: var(--gap); }
+
+/* Grid de 24 columnas, gutter 16px */
+.row { display: flex; flex-wrap: wrap; margin-inline: calc(var(--grid-gutter) / -2); }
+.row > [class*="col-"] { padding-inline: calc(var(--grid-gutter) / 2); }
+[class*="col-"] { flex: 0 0 auto; width: 100%; }
+@media (min-width: 1100px) {
+  .col-lg-1  { width: calc(100% / 24 * 1);  } .col-lg-2  { width: calc(100% / 24 * 2);  }
+  .col-lg-3  { width: calc(100% / 24 * 3);  } .col-lg-4  { width: calc(100% / 24 * 4);  }
+  .col-lg-5  { width: calc(100% / 24 * 5);  } .col-lg-6  { width: calc(100% / 24 * 6);  }
+  .col-lg-7  { width: calc(100% / 24 * 7);  } .col-lg-8  { width: calc(100% / 24 * 8);  }
+  .col-lg-9  { width: calc(100% / 24 * 9);  } .col-lg-10 { width: calc(100% / 24 * 10); }
+  .col-lg-11 { width: calc(100% / 24 * 11); } .col-lg-12 { width: calc(100% / 24 * 12); }
+  .col-lg-14 { width: calc(100% / 24 * 14); } .col-lg-15 { width: calc(100% / 24 * 15); }
+  .col-lg-16 { width: calc(100% / 24 * 16); } .col-lg-18 { width: calc(100% / 24 * 18); }
+  .col-lg-20 { width: calc(100% / 24 * 20); } .col-lg-24 { width: 100%; }
+}
+
+/* ── TIPOGRAFÍA — taxonomía cerrada, no inventar combinaciones ────────── */
+.t-hero {
+  font-size: clamp(44px, 6vw, 96px); font-weight: 900; line-height: .95;
+  letter-spacing: -.04em; text-transform: uppercase;
+}
+.t-number {
+  font-size: clamp(40px, 7vw, 100px); font-weight: 900; line-height: 1;
+  letter-spacing: -.05em; color: #949494;
+}
+.section-title, .t-h1 {
+  font-size: clamp(22px, 2.5vw, 36px); font-weight: 900; line-height: 1.05;
+  letter-spacing: -.04em; text-transform: uppercase; color: var(--black);
+}
+.t-h2 { font-size: clamp(18px, 2vw, 24px); font-weight: 900; line-height: 1.1; letter-spacing: -.03em; }
+.t-h3 { font-size: var(--fs-xl); font-weight: 700; line-height: 1.2; letter-spacing: -.02em; }
+.t-subtitle {
+  font-size: var(--fs-md); font-weight: 700; line-height: 1.2;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+/* Eyebrow — firma visual: toda cabecera de sección lleva eyebrow + section-title */
+.label, .t-eyebrow {
+  font-size: var(--fs-xs); font-weight: 600; line-height: 1.2;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--g500);
+}
+.t-label-block {
+  font-size: var(--fs-xs); font-weight: 700; line-height: 1.2;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--black);
+}
+.t-nav { font-size: var(--fs-3xs); font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.t-micro { font-size: var(--fs-3xs); font-weight: 600; line-height: 1.3; }
+.t-body    { font-size: var(--fs-md);   font-weight: 400; line-height: 1.5; }
+.t-body-sm { font-size: var(--fs-base); font-weight: 400; line-height: 1.5; }
+.t-body-medium   { font-size: var(--fs-md); font-weight: 500; line-height: 1.4; }
+.t-body-semibold { font-size: var(--fs-md); font-weight: 600; line-height: 1.4; }
+.t-script { font-family: 'Caveat', cursive; font-weight: 500; line-height: 1; letter-spacing: -.01em; }
+
+.section-header {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  margin-bottom: var(--sp-48);
+}
+@media (max-width: 720px) {
+  .section-header { flex-direction: column; align-items: center; text-align: center; gap: var(--sp-16); }
+}
+
+/* ── BOTONES ──────────────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--sp-8);
+  height: var(--ctrl-h); padding: 0 28px;
+  font-family: inherit; font-size: var(--fs-xs); font-weight: 500;
+  letter-spacing: .07em; text-transform: uppercase; white-space: nowrap;
+  border-radius: var(--radius);
+  transition: background .2s, color .2s, border-color .2s;
+}
+.btn svg { flex-shrink: 0; }
+.btn-sm { height: var(--ctrl-h-sm); padding: 0 var(--sp-16); font-size: var(--fs-3xs); gap: 6px; }
+.btn-lg { height: 56px; padding: 0 var(--sp-48); font-size: var(--fs-md); gap: var(--sp-8); letter-spacing: .06em; }
+.btn.btn-icon-only { padding: 0; width: var(--ctrl-h); aspect-ratio: 1; }
+.btn.btn-sm.btn-icon-only { width: var(--ctrl-h-sm); }
+
+.btn-blue         { background: var(--blue); color: var(--white); }
+.btn-blue:hover   { background: var(--blue-80); }
+.btn-outline-blue       { border: 1.5px solid var(--blue); color: var(--blue); }
+.btn-outline-blue:hover { background: var(--blue); color: var(--white); }
+/* Yellow — uso muy comedido: marketing/ofertas puntuales */
+.btn-yellow       { background: var(--yellow); color: var(--blue); }
+.btn-yellow:hover { background: var(--white); color: var(--blue); }
+/* White / Outline-White — SOLO sobre fondo oscuro o foto */
+.btn-white        { background: var(--white); color: var(--blue); }
+.btn-white:hover  { background: var(--blue-80); color: var(--white); }
+.btn-outline-white       { border: 1.5px solid rgba(255,255,255,.7); color: var(--white); }
+.btn-outline-white:hover { background: var(--white); border-color: var(--white); color: var(--blue); }
+
+.btn:disabled, .btn[aria-disabled="true"] { opacity: .35; cursor: not-allowed; pointer-events: none; }
+
+/* Iconos <img> dentro de botón */
+.btn-ico { width: 16px; height: 16px; object-fit: contain; }
+.btn-blue .btn-ico { filter: brightness(0) invert(1); }
+.btn-outline-blue:hover .btn-ico { filter: brightness(0) invert(1); }
+
+/* ── ICONO CLICABLE EN TABLA — norma del sistema, no recrear ──────────── */
+.table-icon-btn {
+  background: transparent; border: none; cursor: pointer; color: var(--blue);
+  width: 32px; height: 32px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background .2s, color .2s; flex-shrink: 0;
+}
+.table-icon-btn:hover { background: var(--blue); color: var(--white); }
+.tib-ico { width: 18px; height: 18px; object-fit: contain; }
+.table-icon-btn:hover .tib-ico { filter: brightness(0) invert(1); }
+
+/* Chevron compartido — <img> a icons/chevron-*.svg (carga en file:// sin servidor) */
+.gdp-chevron { width: 1em; height: 1em; flex-shrink: 0; object-fit: contain; vertical-align: middle; }
+
+/* ── CARDS ────────────────────────────────────────────────────────────── */
+.gdp-card {
+  background: var(--white);
+  display: flex; flex-direction: column; height: 100%;
+  position: relative;
+  border: 1px solid var(--g100);      /* borde decorativo */
+  border-radius: var(--radius);
+  transition: box-shadow .25s;
+}
+/* REGLA: el hover de card es SOMBRA. Nunca cambiar el color del borde. */
+.gdp-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+.gdp-card-img { aspect-ratio: 3/4; overflow: hidden; background: var(--g50); position: relative; }
+.gdp-card-img img { transition: transform .6s cubic-bezier(.16,1,.3,1); }
+.gdp-card:hover .gdp-card-img img { transform: scale(1.05); }
+.gdp-card-body { padding: var(--sp-16); display: flex; flex-direction: column; gap: var(--sp-8); flex: 1; }
+
+/* ── FORMULARIOS ──────────────────────────────────────────────────────── */
+.gdp-field { position: relative; display: flex; flex-direction: column; }
+.gdp-field > span {                    /* label flotante sobre el input */
+  position: absolute; top: var(--sp-8); left: var(--sp-16); z-index: 1;
+  color: var(--g500); font-size: var(--fs-3xs); font-weight: 600;
+}
+.gdp-field input,
+.gdp-field select,
+.gdp-field textarea {
+  width: 100%; height: 56px;
+  border: 1px solid var(--g400);       /* borde de control — AA 1.4.11 */
+  border-radius: var(--radius);
+  background: var(--g50); color: var(--black);
+  font: inherit; font-size: var(--fs-md);
+  padding: var(--sp-20) var(--sp-16) var(--sp-8);
+  outline: none;
+  transition: border-color .2s, background .2s;
+}
+.gdp-field textarea { height: auto; min-height: 72px; resize: none; padding-top: var(--sp-32); }
+.gdp-field input:focus,
+.gdp-field select:focus,
+.gdp-field textarea:focus { border-color: var(--blue); background: var(--white); }
+.gdp-field.is-error input,
+.gdp-field.is-error select,
+.gdp-field.is-error textarea { border-color: var(--red); background: var(--red-10); }
+.gdp-field-error { margin-top: var(--sp-8); color: var(--red); font-size: var(--fs-sm); line-height: 1.35; }
+.gdp-field-hint  { font-size: var(--fs-3xs); color: var(--g500); margin-top: var(--sp-4); }
+.gdp-field-grid  { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-16); }
+.gdp-field--full { grid-column: 1 / -1; }
+@media (max-width: 720px) { .gdp-field-grid { grid-template-columns: 1fr; } }
+
+/* ── ALERTAS ──────────────────────────────────────────────────────────── */
+.gdp-alert {
+  display: flex; align-items: stretch; gap: 0;
+  border: 1px solid; border-radius: var(--radius);
+  background: var(--white); overflow: hidden; text-align: left;
+}
+.gdp-alert-icon {
+  flex-shrink: 0; width: 54px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white);
+}
+.gdp-alert-icon svg { width: 22px; height: 22px; }
+.gdp-alert-content { flex: 1; min-width: 0; padding: var(--sp-12) var(--sp-16) var(--sp-12) var(--sp-12); }
+.gdp-alert-title {
+  display: block; font-size: var(--fs-base); font-weight: 700;
+  letter-spacing: -.02em; color: var(--black); margin-bottom: var(--sp-4); line-height: 1.3;
+}
+.gdp-alert-msg { margin: 0; font-size: var(--fs-base); font-weight: 400; color: var(--g500); }
+
+.gdp-alert--success { border-color: var(--green); }
+.gdp-alert--success .gdp-alert-icon { background: var(--green); color: var(--green-dark); }
+.gdp-alert--warning { border-color: var(--yellow); }
+.gdp-alert--warning .gdp-alert-icon { background: var(--yellow); color: var(--yellow-dark); }
+.gdp-alert--info    { border-color: var(--blue); }
+.gdp-alert--info .gdp-alert-icon    { background: var(--blue); }
+.gdp-alert--error   { border-color: var(--red); }
+.gdp-alert--error .gdp-alert-icon   { background: var(--red); }
+.gdp-alert--neutral { border-color: var(--g300); }
+.gdp-alert--neutral .gdp-alert-icon { background: var(--g500); }
+
+/* ── PILLS DE ESTADO ──────────────────────────────────────────────────── */
+.gdp-status {
+  display: inline-flex; align-items: center;
+  padding: 3px 10px; border-radius: 999px;
+  font-size: var(--fs-3xs); font-weight: 700; line-height: 1.45; white-space: nowrap;
+  background: var(--pill-neutral-bg); color: var(--pill-neutral-fg);
+}
+.gdp-status--success { background: var(--pill-success-bg); color: var(--pill-success-fg); }
+.gdp-status--warn    { background: var(--pill-warn-bg);    color: var(--pill-warn-fg); }
+.gdp-status--info    { background: var(--pill-info-bg);    color: var(--pill-info-fg); }
+
+/* ── BARRA DE ANUNCIO ─────────────────────────────────────────────────── */
+.gdp-announcement {
+  background: var(--g700); height: 32px;
+  display: flex; align-items: center; overflow: hidden;
+}
+.gdp-announcement .ann-item {
+  display: flex; align-items: center; gap: var(--sp-48); padding-right: var(--sp-48);
+  font-size: var(--fs-xs); font-weight: 500; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--g100); flex-shrink: 0;
+}
+
+/* ── ACCIÓN FLOTANTE MOBILE — siempre en barra blanca inferior ────────── */
+.gdp-mobile-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+  background: var(--white); border-top: 1px solid var(--g100);
+  padding: var(--sp-12) var(--gap);
+}
+.gdp-mobile-bar .btn { width: 100%; }
+
+/* ── DIVISOR ──────────────────────────────────────────────────────────── */
+.gdp-divider { height: 1px; background: var(--g100); border: none; }
+
+
+/* ── Calendario de newsletters: componentes propios ────────────────────── */
+body { padding-bottom: var(--sp-64); }
+.cal-wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
+
+.cal-head { border-bottom: 1px solid var(--g100); padding: var(--sp-32) 0 var(--sp-24); }
+.cal-logo { width: auto; height: 38px; }
+.cal-title { margin-top: var(--sp-24); font-size: var(--fs-4xl); }
+.cal-lede { max-width: 64ch; margin-top: var(--sp-16); color: var(--g600); line-height: 1.6; }
+.cal-lede strong { color: var(--black); font-weight: 700; }
+.cal-meta { display: flex; flex-wrap: wrap; gap: var(--sp-8) var(--sp-24); margin-top: var(--sp-20); }
+.cal-meta span { font-size: var(--fs-3xs); color: var(--g500); text-transform: uppercase; letter-spacing: .08em; }
+
+.cal-nav { display: flex; flex-wrap: wrap; gap: var(--sp-4); padding: var(--sp-16) 0;
+  border-bottom: 1px solid var(--g100); position: sticky; top: 0; background: var(--white); z-index: 5; }
+.cal-nav a { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--blue); padding: var(--sp-8) var(--sp-12);
+  border-radius: var(--radius); }
+.cal-nav a:hover, .cal-nav a:focus-visible { background: var(--blue-10); }
+
+.cal-mes { padding-top: var(--sp-48); }
+.cal-mes-head { display: flex; align-items: baseline; gap: var(--sp-16); flex-wrap: wrap;
+  padding-bottom: var(--sp-12); border-bottom: 2px solid var(--black); }
+.cal-mes-head .label { flex: 0 0 auto; }
+.cal-mes-t { font-size: var(--fs-4xl); font-weight: 900; text-transform: uppercase;
+  letter-spacing: -.04em; line-height: 1; }
+.cal-mes-n { margin-left: auto; font-size: var(--fs-3xs); color: var(--g500);
+  text-transform: uppercase; letter-spacing: .08em; font-variant-numeric: tabular-nums; }
+
+.cal-scroll { overflow-x: auto; }
+table.cal-t { width: 100%; border-collapse: collapse; min-width: 720px; }
+table.cal-t th { text-align: left; font-size: var(--fs-2xs); font-weight: 700; color: var(--g500);
+  text-transform: uppercase; letter-spacing: .1em; padding: var(--sp-12) var(--sp-12);
+  border-bottom: 1px solid var(--g100); white-space: nowrap; }
+table.cal-t td { padding: var(--sp-16) var(--sp-12); border-bottom: 1px solid var(--g100);
+  vertical-align: top; }
+table.cal-t tbody tr:last-child td { border-bottom: none; }
+
+.cal-fecha { width: 92px; white-space: nowrap; }
+.cal-fecha b { display: block; font-size: var(--fs-2xl); font-weight: 900; letter-spacing: -.04em;
+  line-height: 1; font-variant-numeric: tabular-nums; }
+.cal-fecha em { display: block; margin-top: 3px; font-style: normal; font-size: var(--fs-2xs);
+  color: var(--g500); text-transform: uppercase; letter-spacing: .06em; }
+
+.cal-tema { font-size: var(--fs-md); font-weight: 600; line-height: 1.4; }
+.cal-razon { display: block; margin-top: var(--sp-8); font-size: var(--fs-3xs); font-weight: 400;
+  color: var(--g500); line-height: 1.55; max-width: 56ch; }
+.cal-aviso { display: inline-block; margin-left: var(--sp-8); font-size: var(--fs-2xs);
+  font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--g600);
+  background: var(--g50); border: 1px solid var(--g100); border-radius: 4px; padding: 2px 6px;
+  vertical-align: 2px; cursor: help; }
+
+.cal-urlcel { width: 34%; }
+.cal-url { font-size: var(--fs-3xs); color: var(--blue); line-height: 1.5; word-break: break-word;
+  border-bottom: 1px solid transparent; }
+.cal-url:hover, .cal-url:focus-visible { border-bottom-color: var(--blue); }
+.cal-rev, .cal-sinurl { display: inline-block; font-size: var(--fs-2xs); font-weight: 700;
+  text-transform: uppercase; letter-spacing: .06em; padding: 2px 6px; border-radius: 4px;
+  background: var(--g50); color: var(--g600); border: 1px solid var(--g100); }
+
+.cal-nota { margin-top: var(--sp-48); padding-top: var(--sp-24); border-top: 1px solid var(--g100); }
+.cal-nota p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.7; max-width: 78ch; }
+.cal-nota p + p { margin-top: var(--sp-12); }
+.cal-nota strong { color: var(--black); }
+
+@media (max-width: 720px) {
+  .cal-mes-n { margin-left: 0; }
+  .cal-urlcel { width: auto; }
+}
+</style>
+
+<header class="cal-head">
+  <div class="cal-wrap">
+    <svg class="cal-logo" role="img" aria-label="García de Pou" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="275" height="38" viewBox="0 0 275 38">
+    <defs>
+        <path id="a" d="M0 .845h229.144v21.03H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#002D72" d="M0 0v18.328c0 9.064 5.722 16.604 14.144 19.525l.355-.123c8.024-2.785 13.787-10.418 13.787-19.402V0H0zm14.148 29.115c-1.99 0-6.72-.693-6.86-3.496L7.278 8.025h1.196v7.468a5.65 5.65 0 0 1 1.09-.642 8.975 8.975 0 0 1 1.681-.556l.383 1.813c-.49.115-.928.262-1.298.43-1.014.461-1.196.908-1.196 1.065 0 .158.182.604 1.196 1.064.929.423 2.277.708 3.817.708s2.889-.285 3.818-.708c1.014-.46 1.196-.906 1.196-1.064 0-.157-.183-.604-1.196-1.065a7.27 7.27 0 0 0-1.409-.455l.417-1.78c1.017.225 2.048.588 2.814 1.14l.023-7.418h1.197l.005 17.464c0 2.91-4.843 3.626-6.865 3.626zm-2.136-16.582h4.262l-.67 5.204h-2.922l-.67-5.204zm9.732-5.54h-7.105v4.547h-.993V6.993H6.543V5.795h15.2v1.198z"/>
+        <g transform="translate(45 7.95)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="#002D72" d="M219.68 21.845c-1.444 0-2.741-.182-3.896-.547-1.153-.367-2.134-.926-2.941-1.675-.809-.772-1.435-1.734-1.876-2.89-.424-1.173-.635-2.55-.635-4.132V1.249h5.683v11.238c0 1.463.337 2.554 1.011 3.264.673.694 1.576 1.041 2.71 1.041 1.135 0 2.041-.337 2.714-1.012.673-.674 1.01-1.724 1.01-3.149V1.25h5.684v11.209c0 1.636-.231 3.052-.693 4.246-.443 1.176-1.078 2.147-1.904 2.919-.808.75-1.799 1.308-2.971 1.675-1.155.365-2.453.547-3.896.547zm-23.373.03c-1.557 0-3-.27-4.329-.807-1.327-.559-2.47-1.31-3.431-2.255a10.482 10.482 0 0 1-2.28-3.32 10.337 10.337 0 0 1-.808-4.075c0-1.502.27-2.86.808-4.131a10.2 10.2 0 0 1 2.309-3.352 10.485 10.485 0 0 1 3.462-2.251c1.325-.559 2.769-.839 4.326-.839 1.558 0 3 .28 4.33.839 1.325.538 2.47 1.28 3.43 2.224.963.945 1.713 2.05 2.253 3.322.558 1.271.835 2.628.835 4.071 0 1.504-.277 2.87-.835 4.161-.54 1.27-1.299 2.387-2.28 3.351-.98.945-2.136 1.696-3.463 2.255-1.327.536-2.769.808-4.327.808zm.057-5.054a5.02 5.02 0 0 0 3.723-1.588 5.63 5.63 0 0 0 1.038-1.735c.25-.655.374-1.348.374-2.08 0-.789-.125-1.483-.374-2.138a5.374 5.374 0 0 0-1.066-1.734 5.11 5.11 0 0 0-1.646-1.184 4.766 4.766 0 0 0-2.106-.462c-.77 0-1.474.144-2.106.434a5.179 5.179 0 0 0-1.617 1.184 5.246 5.246 0 0 0-1.037 1.704 6.158 6.158 0 0 0-.347 2.08c0 .79.126 1.484.375 2.139.249.653.595 1.232 1.038 1.732.463.502 1.01.906 1.645 1.214a5.04 5.04 0 0 0 2.106.434zM166.67 1.25h8.655c1.27 0 2.423.163 3.462.49 1.038.31 1.924.772 2.654 1.387a5.86 5.86 0 0 1 1.673 2.225c.404.887.608 1.889.608 3.005 0 1.252-.223 2.3-.665 3.206a6.33 6.33 0 0 1-1.788 2.283c-.772.615-1.696 1.079-2.772 1.388-1.056.305-2.21.46-3.46.46h-2.77v5.779h-5.597V1.249zm8.251 10.052c1 0 1.779-.229 2.337-.69.576-.482.866-1.13.866-1.936 0-.925-.29-1.582-.866-2.024-.558-.461-1.346-.693-2.367-.693h-2.625v5.343h2.655zM108.368 1.105h5.393l8.598 20.367h-6l-1.47-3.611h-7.791l-1.442 3.61h-5.887l8.599-20.366zm4.906 12.393L111.02 7.75l-2.278 5.748h4.532zM91.2 21.47h5.626V1.25H91.2v20.22zm-12.32.406c-1.442 0-2.798-.261-4.068-.78a10.194 10.194 0 0 1-3.318-2.169 11.002 11.002 0 0 1-2.222-3.32c-.537-1.291-.808-2.685-.808-4.189 0-1.522.271-2.889.808-4.16a10.34 10.34 0 0 1 2.222-3.35 10.056 10.056 0 0 1 3.345-2.254c1.31-.54 2.734-.809 4.272-.809 1.039 0 1.98.105 2.826.318a8.695 8.695 0 0 1 2.309.866c.712.366 1.347.81 1.905 1.33.575.52 1.086 1.087 1.529 1.704l-4.214 3.263c-.575-.73-1.21-1.308-1.903-1.732-.692-.426-1.53-.636-2.51-.636a4.45 4.45 0 0 0-1.96.432 4.568 4.568 0 0 0-1.504 1.128 5.617 5.617 0 0 0-1.009 1.704 6.23 6.23 0 0 0-.345 2.08c0 .81.115 1.52.345 2.196.25.654.588 1.222 1.01 1.704.425.482.923.867 1.503 1.157a4.716 4.716 0 0 0 1.96.404c.519 0 .99-.059 1.414-.175a4.34 4.34 0 0 0 1.183-.492c.364-.23.7-.49 1.01-.78.326-.306.643-.643.95-1.009l4.214 3.004c-.48.655-1.01 1.262-1.587 1.822a8.566 8.566 0 0 1-1.933 1.443 9.77 9.77 0 0 1-2.422.951c-.887.232-1.887.349-3.002.349zM47.548 1.249h9.55c1.557 0 2.876.193 3.953.578 1.077.387 1.952.924 2.625 1.618 1.193 1.155 1.79 2.723 1.79 4.71 0 1.615-.376 2.907-1.126 3.927-.751 1.022-1.76 1.8-3.03 2.342l4.819 7.048h-6.463l-4.07-6.125h-2.45v6.125h-5.598V1.249zm9.29 9.707c.961 0 1.702-.213 2.22-.635.52-.444.78-1.032.78-1.763 0-.867-.268-1.465-.807-1.847-.539-.407-1.279-.609-2.221-.609h-3.665v4.854h3.693zm-26.11-9.851h5.397l8.594 20.367H38.72l-1.471-3.611h-7.791l-1.442 3.61H22.13l8.6-20.366zm4.904 12.393l-2.25-5.748-2.278 5.748h4.528zm-24.64 8.378c-1.577 0-3.038-.251-4.385-.751a10.7 10.7 0 0 1-3.464-2.167 10.02 10.02 0 0 1-2.306-3.293C.278 14.375 0 12.959 0 11.418c0-1.522.27-2.889.807-4.16a10.472 10.472 0 0 1 2.28-3.35 10.208 10.208 0 0 1 3.434-2.254c1.346-.54 2.798-.809 4.355-.809 1.79 0 3.328.26 4.618.78 1.308.52 2.5 1.241 3.578 2.166l-3.29 3.96a8.857 8.857 0 0 0-2.25-1.417c-.751-.326-1.625-.491-2.626-.491-.73 0-1.414.144-2.049.433A5.144 5.144 0 0 0 7.242 7.46a5.687 5.687 0 0 0-1.097 1.762 5.819 5.819 0 0 0-.404 2.167c0 .868.136 1.616.404 2.311a5.41 5.41 0 0 0 1.124 1.793c.503.48 1.08.866 1.734 1.153.673.27 1.412.406 2.22.406 1.31 0 2.387-.28 3.231-.839v-2.456h-3.982v-4.1h9.291v12.219l-2.953-1.272a15.13 15.13 0 0 1-.855.375c-1.461.598-3.116.897-4.963.897z" mask="url(#b)"/>
+        </g>
+        <path fill="#A6A8AB" d="M192.292 9.199h14.973v3.178H195.84v5.257h10.126v3.176H195.84v5.432h11.57v3.178h-15.118V9.2zm-21.696 0h7.53c1.575 0 3.02.26 4.326.78 1.328.5 2.463 1.202 3.405 2.109a9.28 9.28 0 0 1 2.221 3.205c.522 1.214.781 2.533.781 3.958 0 1.483-.26 2.813-.78 4.044a9.246 9.246 0 0 1-2.222 3.207c-.942.906-2.077 1.619-3.405 2.14-1.307.519-2.751.778-4.326.778h-7.53V9.2zm7.53 16.987c1.056 0 2.019-.165 2.884-.492.867-.347 1.596-.818 2.194-1.416a6.312 6.312 0 0 0 1.414-2.166 7.18 7.18 0 0 0 .518-2.744c0-1.041-.172-1.954-.518-2.803a5.96 5.96 0 0 0-1.414-2.166c-.598-.618-1.327-1.1-2.194-1.445-.865-.347-1.828-.52-2.884-.52h-3.982v13.752h3.982z"/>
+    </g>
+</svg>
+    <h1 class="section-title cal-title">Newsletters 2027</h1>
+    <p class="t-body cal-lede">104 envíos, martes y jueves a las 15:00. Los temas están puestos según
+      <strong>cuándo compra el hostelero</strong>, no cuándo consume: la mantelería de Navidad va en octubre,
+      la terraza en marzo y la caja del roscón en noviembre. <strong>98 de 104</strong> llevan URL de
+      categoría; <strong>98 de 104</strong> son papel y cartón de fabricación propia.</p>
+    <div class="cal-meta">
+      <span>Marketing · García de Pou</span>
+      <span>Propuesta · pendiente de aprobación</span>
+      <span>Sin envíos extraordinarios</span>
+    </div>
+  </div>
+</header>
+
+<nav class="cal-nav" aria-label="Meses">
+  <div class="cal-wrap" style="display:flex;flex-wrap:wrap;gap:var(--sp-4)"><a href="#mes-1">Ene</a> <a href="#mes-2">Feb</a> <a href="#mes-3">Mar</a> <a href="#mes-4">Abr</a> <a href="#mes-5">May</a> <a href="#mes-6">Jun</a> <a href="#mes-7">Jul</a> <a href="#mes-8">Ago</a> <a href="#mes-9">Sep</a> <a href="#mes-10">Oct</a> <a href="#mes-11">Nov</a> <a href="#mes-12">Dic</a></div>
+</nav>
+
+<main class="cal-wrap">
+  <section class="cal-mes" id="mes-1">
+    <div class="cal-mes-head">
+      <p class="label">Primer trimestre</p>
+      <h2 class="cal-mes-t">Enero</h2>
+      <span class="cal-mes-n">8 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>5</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Sopas y cremas para llevar: tarrinas con tapa y envases microondables<span class="cal-aviso" title="parecido a «Sopas, cremas y comida caliente para llevar. Tarrinas con ta» del 2026-09-29">ya salió algo parecido</span><span class="cal-razon">Enero es el mes de la comida caliente de mediodía y del menú de oficina. La sopa para llevar exige tarrina estanca con tapa, y el cliente la repone justo ahora.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away/tarrinas/tarrinas-para-sopas.html?product_list_order=position" target="_blank" rel="noopener">/take-away/tarrinas/tarrinas-para-sopas.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>7</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Empiece el año con la mesa nueva: servilletas y mantelería de diario<span class="cal-razon">Después de Navidad el almacén está vacío y el hostelero rehace el stock básico. Es la compra de reposición más grande del año en papelería de mesa.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>12</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Mantelines individuales: cambie la imagen del menú del día<span class="cal-razon">El mantelín es el soporte más barato para renovar la mesa, y el arranque de año es cuando el hostelero se replantea la carta y la imagen.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-individuales.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-individuales.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>14</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Servilletas Canguro: agilidad en mesa cuando la plantilla es corta<span class="cal-aviso" title="parecido a «Servilletas Canguro» del 2026-04-16">ya salió algo parecido</span><span class="cal-razon">En enero y en agosto se trabaja con menos personal. La servilleta con el cubierto dentro ahorra un gesto por comensal, y eso se nota en el servicio.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>19</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Papel antigrasa: proteger, presentar y no traspasar<span class="cal-razon">Producto de consumo continuo y de fabricación propia. Quien lo prueba lo repone todo el año, y en enero entra en la compra de reposición.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away/papel-antigrasa/envoltorios-recipientes-presentacion.html?product_list_order=position" target="_blank" rel="noopener">/take-away/papel-antigrasa/envoltorios-recipientes-presenta…</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>21</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">San Valentín: la mesa que se recuerda. Tête-à-Tête, Like-Linen y mantelería decorada<span class="cal-aviso" title="parecido a «Like-Linen» del 2026-06-04">ya salió algo parecido</span><span class="cal-razon">San Valentín se prepara en la última semana de enero. Es la primera ocasión del año para vender mantelería de gama alta, y el hostelero sube el ticket ese día.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/tete-a-tete.html" target="_blank" rel="noopener">/un-solo-uso/tete-a-tete.html</a> <span class="cal-rev">revisar</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>26</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Cajas de bombones y pastelería fina para San Valentín<span class="cal-aviso" title="parecido a «Cajas pastelería» del 2026-08-18">ya salió algo parecido</span><span class="cal-razon">Pastelería y bombonería trabajan San Valentín con caja pequeña y de presentación. Compra corta pero de margen alto.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/pasteleria/cajas-para-pasteleria.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/pasteleria/cajas-para-pasteleria.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>28</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Bolsas y papel de regalo para San Valentín<span class="cal-aviso" title="parecido a «Packaging para comercios y regalo. Bolsas boutique, cordón, » del 2026-10-29">ya salió algo parecido</span><span class="cal-razon">Comercio y pastelería necesitan envolver bonito una semana concreta. Bolsa pequeña, papel y lazo: pedido rápido y repetible cada año.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/papel-y-bolsas-para-regalos.html?product_list_order=position" target="_blank" rel="noopener">/cotillon/papel-y-bolsas-para-regalos.html</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-2">
+    <div class="cal-mes-head">
+      <p class="label">&nbsp;</p>
+      <h2 class="cal-mes-t">Febrero</h2>
+      <span class="cal-mes-n">8 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>2</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Carnaval: churros, buñuelos y masas fritas. Cucuruchos y papelinas de punta<span class="cal-razon">Carnaval y Cuaresma son semanas de fritura dulce. El cucurucho y la papelina de punta se agotan, y son de fabricación propia.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/disposable-products/cucuruchos-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/disposable-products/cucuruchos-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>4</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Mantelería Airlaid: efecto tela sin lavandería<span class="cal-aviso" title="parecido a «Mantelería Airlaid Natural pag 48-49» del 2026-04-02">ya salió algo parecido</span><span class="cal-razon">El argumento es el coste: el Airlaid da la sensación de mantel de tela sin el gasto de lavandería ni el riesgo de manchas. Cambia la conversación de precio a coste total.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>9</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Servilletas personalizadas: su logo en cada mesa, también en tirada corta<span class="cal-razon">La personalización es lo que ningún competidor de precio puede igualar, y se puede hacer en tirada corta. Febrero y septiembre son los meses en que hay tiempo de producir.</span></td>
+            <td class="cal-urlcel"><span class="cal-sinurl">sin enlace — pendiente</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>11</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Cuaresma y vigilia: presentar y envolver el pescado<span class="cal-razon">Siete semanas de menú de pescado y bacalao. Papel antigrasa, bandeja y bolsa específicos para producto graso y húmedo.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away/papel-antigrasa/envoltorios-recipientes-presentacion.html?product_list_order=position" target="_blank" rel="noopener">/take-away/papel-antigrasa/envoltorios-recipientes-presenta…</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>16</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Bolsas para panadería y bollería: el desayuno fuera de casa<span class="cal-razon">Consumo diario, reposición constante y fabricación propia. La bolsa de croissant se compra en cajas grandes y se repite todo el año.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel-planas/bolsas-para-pan.html" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel-planas/bolsas-para-pan.html</a> <span class="cal-rev">revisar</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>18</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Guisos y platos de cuchara para llevar<span class="cal-razon">Febrero es el mes de más consumo de guiso y legumbre. El take away de plato de cuchara necesita envase hondo, estanco y que se pueda calentar.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away/tarrinas/tarrinas-para-sopas.html?product_list_order=position" target="_blank" rel="noopener">/take-away/tarrinas/tarrinas-para-sopas.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>23</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Servilletas Double Point: la calidad que se nota en la mano<span class="cal-razon">Subir del tisú al Double Point cuesta muy poco por comensal y el cliente lo percibe al instante. Es la venta de gama más fácil del catálogo, y es fabricación propia.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>25</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Posavasos y presentación de barra para el aperitivo de invierno<span class="cal-razon">El aperitivo de fin de semana no para en invierno. Posavasos personalizable y presentación en papel: producto pequeño, propio y de reposición continua.</span></td>
+            <td class="cal-urlcel"><span class="cal-sinurl">sin enlace — pendiente</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-3">
+    <div class="cal-mes-head">
+      <p class="label">&nbsp;</p>
+      <h2 class="cal-mes-t">Marzo</h2>
+      <span class="cal-mes-n">9 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>2</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Prepare la terraza antes de que llegue el sol: mantelería Spunbond y mantelines<span class="cal-razon">LA COMPRA SE ADELANTA: la terraza se equipa en marzo y se usa en mayo. El Spunbond aguanta el viento y no se levanta, que es el problema real de la terraza.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles/manteles-spunbond-en-rollo.html" target="_blank" rel="noopener">/un-solo-uso/manteles/manteles-spunbond-en-rollo.html</a> <span class="cal-rev">revisar</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>4</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Las heladerías abren: tarrinas, conos y cucharillas<span class="cal-razon">La heladería abre en marzo y hace la compra de temporada de golpe. Quien no está en marzo no entra hasta septiembre.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/tarrinas-para-helados.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/tarrinas-para-helados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>9</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Torrijas y dulces de Cuaresma: cajas, blondas y bandejas<span class="cal-razon">La torrija es un producto de temporada corta y alto volumen. Necesita bandeja, blonda y caja que aguanten el almíbar.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/pasteleria" target="_blank" rel="noopener">/pasteleria</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>11</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Día del Padre: pastelería y regalo<span class="cal-razon">Fecha de pastelería y comercio, 19 de marzo. Caja, bolsa y papel: pedido corto que se repite cada año en la misma semana.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/pasteleria/cajas-para-pasteleria.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/pasteleria/cajas-para-pasteleria.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>16</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Semana Santa: comida para llevar en los días de más afluencia<span class="cal-razon">Procesiones, romerías y turismo concentrado. El consumo se va a la calle y todo se vende en envase de un solo uso.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away.html" target="_blank" rel="noopener">/take-away.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>18</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Servilletas de color: vista la mesa de primavera<span class="cal-razon">Cambio de temporada: el hostelero renueva la gama de color cuando cambia la carta. Ocasión natural para subir de calidad, del tisú al Double Point.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>23</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Bolsas abiertas a dos lados: bocadillos para llevar y comer de pie<span class="cal-razon">La bolsa abierta a dos lados es el formato de bocadillo de calle. Romerías, ferias y eventos: consumo de pie que no admite plato.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel/bolsas-kraft.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>25</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Papel antigrasa decorado: presente el frito como se merece<span class="cal-razon">Mismo producto, presentación distinta: el papel decorado permite cobrar más por el mismo frito. Argumento de ticket medio, no de coste.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away/papel-antigrasa/envoltorios-recipientes-presentacion.html?product_list_order=position" target="_blank" rel="noopener">/take-away/papel-antigrasa/envoltorios-recipientes-presenta…</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>30</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Tête-à-Tête: el camino de mesa que cambia el ticket medio<span class="cal-razon">Producto de fabricación propia poco conocido por el cliente pequeño. Viste la mesa con muy poco material y sube la percepción de precio.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/tete-a-tete.html" target="_blank" rel="noopener">/un-solo-uso/tete-a-tete.html</a> <span class="cal-rev">revisar</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-4">
+    <div class="cal-mes-head">
+      <p class="label">Segundo trimestre</p>
+      <h2 class="cal-mes-t">Abril</h2>
+      <span class="cal-mes-n">9 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>1</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Feria de Abril y romerías: fritos para consumo de pie<span class="cal-razon">Semanas de máximo consumo en la calle en Andalucía y el Levante. Papelina, cucurucho y cajetilla: todo fabricación propia y todo desechable.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/disposable-products/cucuruchos-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/disposable-products/cucuruchos-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>6</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Comuniones: se contratan ahora. Mantelería coordinada y servilletas<span class="cal-razon">La comunión se cierra con dos meses de antelación. En abril el restaurante ya sabe cuántos servicios tiene y compra la mantelería del conjunto.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html" target="_blank" rel="noopener">/cotillon/conjuntos-decorados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>8</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Catering de exterior: bandejas traiteur y cajas de transporte<span class="cal-aviso" title="parecido a «Catering: presentar y transportar. Bandejas con funda, cajas» del 2026-09-17">ya salió algo parecido</span><span class="cal-razon">Empieza la temporada de eventos al aire libre. El problema del catering es transportar sin que se mueva ni se enfríe: bandeja con funda y caja rígida.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bandejas-traiteur.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bandejas-traiteur.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>13</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Mantelines para la carta de primavera<span class="cal-razon">Cambio de carta, cambio de mantelín. Es la ocasión de vender diseño de temporada en lugar de blanco liso.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-individuales.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-individuales.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>15</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Pescaíto frito y fritura de temporada: envolver sin que traspase<span class="cal-razon">El frito es el producto más exigente con el papel. Antigrasa de fabricación propia y cucurucho: el cliente lo nota en la primera bandeja.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away/papel-antigrasa/envoltorios-recipientes-presentacion.html?product_list_order=position" target="_blank" rel="noopener">/take-away/papel-antigrasa/envoltorios-recipientes-presenta…</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>20</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Bolsas de pastelería para tartas de celebración<span class="cal-razon">Comuniones, bodas y cumpleaños. La tarta sale del obrador en caja y bolsa, y en temporada de celebraciones se multiplica el consumo.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/pasteleria/cajas-para-pasteleria.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/pasteleria/cajas-para-pasteleria.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>22</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Airlaid Natural: la mesa de temporada en tono crudo<span class="cal-aviso" title="parecido a «Mantelería Airlaid Natural pag 48-49» del 2026-04-02">ya salió algo parecido</span><span class="cal-razon">El tono natural es el que más se vende en primavera y verano. Producto de fabricación propia y de gama media-alta.</span></td>
+            <td class="cal-urlcel"><span class="cal-sinurl">sin enlace — pendiente</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>27</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Día de la Madre: pastelería y regalo<span class="cal-razon">Primer domingo de mayo, se prepara la última semana de abril. Caja, bolsa y papel de presentación para pastelería y comercio.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/pasteleria/cajas-para-pasteleria.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/pasteleria/cajas-para-pasteleria.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>29</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Bebidas frías: vasos, tapas y portavasos para la terraza<span class="cal-aviso" title="parecido a «Bebidas frías, batidos y granizados. Vasos, tapas, pajitas» del 2026-04-30">ya salió algo parecido</span><span class="cal-razon">La terraza arranca y con ella el refresco, el batido y el granizado para llevar. Compra de temporada que se repone en junio y julio.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-frias.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-fria…</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-5">
+    <div class="cal-mes-head">
+      <p class="label">&nbsp;</p>
+      <h2 class="cal-mes-t">Mayo</h2>
+      <span class="cal-mes-n">8 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>4</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Comuniones en pico: la mesa de la celebración<span class="cal-razon">Mayo es el mes de las comuniones. Servicio de mantel completo y volumen concentrado en cuatro fines de semana.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html" target="_blank" rel="noopener">/cotillon/conjuntos-decorados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>6</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Bodas y catering: presentar, transportar y servir fuera de casa<span class="cal-razon">Arranca la temporada de bodas y no para hasta septiembre. El catering compra bandeja, caja de transporte y mantelería de golpe para toda la temporada.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bandejas-traiteur.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bandejas-traiteur.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>11</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Terrazas a pleno: mantelería que aguanta viento y sol<span class="cal-razon">En mayo la terraza ya está llena y el problema es que el mantel se levanta y se mancha. Spunbond y mantelín precortado resuelven las dos cosas.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles/manteles-spunbond-en-rollo.html" target="_blank" rel="noopener">/un-solo-uso/manteles/manteles-spunbond-en-rollo.html</a> <span class="cal-rev">revisar</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>13</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Helados y granizados: tarrinas, vasos y cucharillas<span class="cal-aviso" title="parecido a «NEW Vasos Flurry y helados» del 2026-06-18">ya salió algo parecido</span><span class="cal-razon">Reposición de temporada de la heladería, ahora en firme. Quien vendió en marzo vuelve a comprar en mayo con las cifras reales.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/tarrinas-para-helados.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/tarrinas-para-helados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>18</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Bolsas de papel para heladería y pastelería de temporada<span class="cal-razon">Con la temporada abierta, la bolsa pasa a ser consumo diario. Kraft, con asa y personalizable en tirada corta.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel/bolsas-kraft.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>20</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Servilletas Canguro: servicio rápido con la terraza llena<span class="cal-aviso" title="parecido a «Servilletas Canguro» del 2026-04-16">ya salió algo parecido</span><span class="cal-razon">Con lleno total, cada gesto ahorrado cuenta. La servilleta con cubierto dentro es el producto que más agiliza la mesa.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>25</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Papelinas y cucuruchos para ferias locales<span class="cal-razon">Mayo y junio concentran las ferias de pueblo. Consumo de pie, producto frito y envase de fabricación propia.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/disposable-products/cucuruchos-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/disposable-products/cucuruchos-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>27</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Envases para picnic y comida al aire libre<span class="cal-razon">La comida se va al exterior: parques, playa, excursión. Envase ligero, cerrado y que aguante el traslado.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away.html" target="_blank" rel="noopener">/take-away.html</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-6">
+    <div class="cal-mes-head">
+      <p class="label">&nbsp;</p>
+      <h2 class="cal-mes-t">Junio</h2>
+      <span class="cal-mes-n">9 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>1</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Bolsas de papel para las rebajas: kraft, con asa y personalizables<span class="cal-razon">Rebajas de enero y de julio. El comercio de barrio y la panadería necesitan bolsa con imagen, y es el momento en que se plantean personalizarla.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel/bolsas-kraft.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>3</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">San Juan y verbenas: fritos y consumo en la calle<span class="cal-razon">La noche de San Juan y las verbenas de junio son consumo de pie y volumen alto en pocas horas. Todo desechable.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/recipientes-para-fritas.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/envases-de-carton/recipientes-para-fritas.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>8</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Fin de curso y celebraciones: mantelería y servilletas<span class="cal-razon">Junio cierra el curso: comidas de grupo, cenas de despedida y celebraciones escolares. Servicio de mantel para grupos grandes.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>10</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Heladería en temporada alta: reposición de tarrinas y conos<span class="cal-razon">Segunda compra de la temporada, la de volumen. El cliente ya sabe qué formato le funciona y pide en cantidad.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/tarrinas-para-helados.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/tarrinas-para-helados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>15</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Chiringuitos: el take away de playa<span class="cal-razon">El chiringuito vende para llevar todo el día. Bolsa, envase y papel que aguanten humedad, arena y calor.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel/bolsas-kraft.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>17</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Just in Time: servilletas dispensadas para alto volumen<span class="cal-razon">Con la temporada alta la servilleta se gasta el doble y se desperdicia el triple. El dispensador reduce consumo por comensal: argumento de coste medible.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>22</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Mantelería reciclada: el argumento sostenible en plena temporada<span class="cal-razon">El turista europeo pregunta por el material. La línea reciclada permite responder sin subir el coste, y es de fabricación propia.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>24</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Bolsas para pan y bollería en volumen de verano<span class="cal-razon">El desayuno de verano se hace fuera y en terraza. La panadería multiplica el consumo de bolsa pequeña.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel-planas/bolsas-para-pan.html" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel-planas/bolsas-para-pan.html</a> <span class="cal-rev">revisar</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>29</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Bocadillos, wraps y comida de mano para el verano<span class="cal-razon">El bocadillo es el plato del verano: playa, excursión y evento. Bolsa abierta a dos lados y envoltorio antigrasa.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel/bolsas-kraft.html</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-7">
+    <div class="cal-mes-head">
+      <p class="label">Tercer trimestre</p>
+      <h2 class="cal-mes-t">Julio</h2>
+      <span class="cal-mes-n">9 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>1</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Take away de playa: bolsas y envases que aguantan el calor<span class="cal-aviso" title="parecido a «Bolsas para take-away y delivery» del 2026-10-15">ya salió algo parecido</span><span class="cal-razon">Julio es el pico de consumo fuera. El envase tiene que aguantar temperatura, humedad y transporte sin perder forma.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away.html" target="_blank" rel="noopener">/take-away.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>6</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Fritos y aperitivos de barra: cajetillas, cucuruchos y vasos abiertos<span class="cal-aviso" title="parecido a «Vasos abiertos para fritos pag 190» del 2026-05-05">ya salió algo parecido</span><span class="cal-razon">El aperitivo de verano se sirve en formato individual y de pie. Producto de fabricación propia, margen bueno y reposición semanal.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/recipientes-para-fritas.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/envases-de-carton/recipientes-para-fritas.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>8</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Hamburguesas y bocadillos: el papel que no traspasa<span class="cal-razon">En julio el volumen de hamburguesa se dispara y el papel malo se nota enseguida. Antigrasa de fabricación propia, con o sin diseño.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away/papel-antigrasa/envoltorios-recipientes-presentacion.html?product_list_order=position" target="_blank" rel="noopener">/take-away/papel-antigrasa/envoltorios-recipientes-presenta…</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>13</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Servilletas dispensadas: máximo volumen con mínimo desperdicio<span class="cal-razon">Cuando la sala va a tope el consumo de servilleta se descontrola. El dispensador es la única forma de acotarlo.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>15</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Mantelines: cambiar la mesa en segundos con lleno total<span class="cal-razon">Con rotación alta, el mantelín es lo que permite dejar la mesa lista sin limpiar. Precortado, en paquete, y con diseño de temporada.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-individuales.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-individuales.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>20</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Reposición de julio: lo que no puede faltarle en agosto<span class="cal-razon">El argumento más nuestro: stock permanente y entrega rápida. En agosto no hay margen para esperar un pedido, y el cliente lo sabe.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>22</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Posavasos: la barra en temporada alta<span class="cal-razon">Producto pequeño, de fabricación propia y personalizable, que se consume sin parar en temporada de terraza.</span></td>
+            <td class="cal-urlcel"><span class="cal-sinurl">sin enlace — pendiente</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>27</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Bolsas de papel para el comercio de temporada<span class="cal-razon">Julio es rebajas y turismo. El comercio de zona turística necesita bolsa con imagen y en cantidad.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel/bolsas-kraft.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>29</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Granizados y bebidas frías: el vaso adecuado para cada bebida<span class="cal-razon">Cada bebida pide su vaso: granizado, batido, smoothie y refresco tienen tapa y pajita distintas. Es una venta de surtido, no de referencia.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-frias.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-fria…</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-8">
+    <div class="cal-mes-head">
+      <p class="label">&nbsp;</p>
+      <h2 class="cal-mes-t">Agosto</h2>
+      <span class="cal-mes-n">9 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>3</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Reposición de agosto: 6.000 referencias en stock y entrega rápida<span class="cal-razon">En agosto el hostelero no planifica, apaga fuegos. Lo que vende es disponibilidad inmediata, y es exactamente nuestra ventaja.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>5</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Canguro y Mini Servis: rapidez con personal de refuerzo<span class="cal-razon">En agosto la plantilla es nueva y no conoce la casa. El producto que simplifica el gesto reduce el error del camarero de temporada.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/servilletas-de-papel/servilletas-kangaroo.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>10</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Aperitivos de barra: presentación rápida en papel<span class="cal-razon">El aperitivo de agosto se sirve sin parar. Papelina, cucurucho y antigrasa: se prepara antes, se sirve en un gesto.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/times/papelinas-de-punta.html" target="_blank" rel="noopener">/un-solo-uso/times/papelinas-de-punta.html</a> <span class="cal-rev">revisar</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>12</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Mantelería de diario en formato de volumen<span class="cal-razon">En agosto se consume mantelería como en ningún otro mes. Formato en rollo y en paquete grande, para no reponer cada dos días.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>17</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Bolsas para bollería y desayunos de verano<span class="cal-razon">El desayuno de agosto es en terraza y para llevar. Consumo diario de bolsa pequeña en panadería y hotel.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel-planas/bolsas-para-croissant.html" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel-planas/bolsas-para-croissant.html</a> <span class="cal-rev">revisar</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>19</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Tarrinas de helado: la punta de la temporada<span class="cal-aviso" title="parecido a «Tarrinas helado» del 2026-04-09">ya salió algo parecido</span><span class="cal-razon">Agosto es el techo del año en helado. Última reposición fuerte antes de que baje en septiembre.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/tarrinas-para-helados.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/tarrinas-para-helados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>24</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Prepare septiembre: la mesa para la vuelta al menú del día<span class="cal-razon">LA COMPRA SE ADELANTA: en septiembre vuelve el menú diario y la mantelería de sala. Quien lo plantea en agosto llega antes que el pedido de urgencia.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-individuales.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-individuales.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>26</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Papel antigrasa para la fritura de temporada alta<span class="cal-razon">Consumo continuo en agosto y producto donde la calidad se nota. Reposición segura.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away/papel-antigrasa/envoltorios-recipientes-presentacion.html?product_list_order=position" target="_blank" rel="noopener">/take-away/papel-antigrasa/envoltorios-recipientes-presenta…</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>31</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Comida para llevar en pleno agosto: envases para todo el día<span class="cal-aviso" title="parecido a «Sopas, cremas y comida caliente para llevar. Tarrinas con ta» del 2026-09-29">ya salió algo parecido</span><span class="cal-razon">El take away de agosto no tiene hora punta, tiene todo el día. Envase que aguante espera en expositor y traslado.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away.html" target="_blank" rel="noopener">/take-away.html</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-9">
+    <div class="cal-mes-head">
+      <p class="label">&nbsp;</p>
+      <h2 class="cal-mes-t">Septiembre</h2>
+      <span class="cal-mes-n">9 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>2</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Vuelta al menú del día: mantelines y servilletas de diario<span class="cal-razon">Septiembre reabre el menú de mediodía y la sala de diario. Es la segunda compra de reposición más grande del año, después de enero.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-individuales.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-individuales.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>7</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Vendimia y enoturismo: vestir la mesa del vino<span class="cal-razon">Septiembre y octubre son temporada de bodega y visita. Mantelería, posavasos y presentación para una mesa que se fotografía.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/manteles-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/manteles-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>9</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Panadería: la nueva temporada de bollería<span class="cal-razon">Con el frío vuelve el bollo y el desayuno sentado. Bolsa, papel y bandeja para una temporada que va de septiembre a marzo.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel-planas/bolsas-para-croissant.html" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel-planas/bolsas-para-croissant.html</a> <span class="cal-rev">revisar</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>14</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Personalice con su logo: pídalo ahora para tenerlo en Navidad<span class="cal-razon">LA COMPRA SE ADELANTA: la personalización necesita plazo de producción. Quien lo quiere para Navidad tiene que pedirlo en septiembre.</span></td>
+            <td class="cal-urlcel"><span class="cal-sinurl">sin enlace — pendiente</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>16</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Like-Linen: la mesa de otoño con efecto tela<span class="cal-aviso" title="parecido a «Like-Linen» del 2026-06-04">ya salió algo parecido</span><span class="cal-razon">Cambio de temporada a tonos cálidos y gama alta. Fabricación propia y el producto que mejor sube la percepción de la mesa.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/marcas/like-linen.html?product_list_order=position" target="_blank" rel="noopener">/marcas/like-linen.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>21</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Bolsas de papel: vuelta al comercio de barrio<span class="cal-razon">Septiembre reactiva el comercio de proximidad. Bolsa kraft, con asa, y la posibilidad de personalizarla en tirada corta.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel/bolsas-kraft.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>23</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">PFAS Free: la normativa de envases, al día<span class="cal-aviso" title="parecido a «ThePack + Blog Normativa Envases pfas» del 2026-04-21">ya salió algo parecido</span><span class="cal-razon">El cliente profesional pregunta por la normativa y no quiere quedarse con stock no conforme. Es una venta por tranquilidad, no por precio.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/pfas-free.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/pfas-free.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>28</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Envases para el menú de oficina: microondables y estancos<span class="cal-razon">El menú de mediodía para llevar es negocio recurrente los doce meses, y se refuerza cuando pasa el frío y la gente vuelve a la calle.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/envases-de-carton/recipientes-take-away-microondables.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/envases-de-carton/recipientes-take-away-microo…</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>30</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Catering de empresa y coffee break: vasos, bandejas y servilleta<span class="cal-razon">Vuelven las reuniones, las formaciones y los desayunos de trabajo. Consumo recurrente y cliente que pide siempre lo mismo.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-calientes.html" target="_blank" rel="noopener">/un-solo-uso/vasos-desechables/vasos-de-carton-bebidas-cali…</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-10">
+    <div class="cal-mes-head">
+      <p class="label">Cuarto trimestre</p>
+      <h2 class="cal-mes-t">Octubre</h2>
+      <span class="cal-mes-n">8 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>5</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">La Navidad se compra ahora: mantelería y servilletas de Navidad<span class="cal-aviso" title="parecido a «Navidad: mesas preparadas para los grandes servicios. Servil» del 2026-11-10">ya salió algo parecido</span><span class="cal-razon">LA COMPRA SE ADELANTA DOS MESES: el hostelero cierra la mantelería de Navidad en octubre. En diciembre ya solo repone lo que le falta.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/servilletas-de-navidad.html?product_list_order=position" target="_blank" rel="noopener">/cotillon/servilletas-de-navidad.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>7</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Castañas y churros de otoño: cucuruchos y papelinas de punta<span class="cal-razon">La castañera y la churrería arrancan en octubre. Envase de fabricación propia, temporada corta y consumo intenso.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/disposable-products/cucuruchos-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/disposable-products/cucuruchos-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>12</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Halloween y Todos los Santos: mantelería y bolsas decoradas<span class="cal-razon">Fecha cada vez más comercial en hostelería y comercio. Producto decorado, temporada de una semana y pedido que se repite cada año.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html" target="_blank" rel="noopener">/cotillon/conjuntos-decorados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>14</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Panellets y dulces de Todos los Santos: cajas, cápsulas y blondas<span class="cal-razon">Temporada muy corta y muy concentrada en pastelería catalana y de Levante. Formato pequeño y presentación cuidada.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/pasteleria" target="_blank" rel="noopener">/pasteleria</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>19</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Vuelven las sopas y las cremas: tarrinas con tapa estanca<span class="cal-aviso" title="parecido a «Sopas, cremas y comida caliente para llevar. Tarrinas con ta» del 2026-09-29">ya salió algo parecido</span><span class="cal-razon">Con el frío la sopa vuelve a la carta y al take away. El problema es que no se derrame: tapa con cierre y material que aguante el caliente.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away/tarrinas/tarrinas-para-sopas.html?product_list_order=position" target="_blank" rel="noopener">/take-away/tarrinas/tarrinas-para-sopas.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>21</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">La mesa de otoño: setas, caza y cocido<span class="cal-razon">Cambio de carta a producto de temporada y de más ticket. Ocasión para subir de calidad en mantelería y servilleta.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/marcas/like-linen.html?product_list_order=position" target="_blank" rel="noopener">/marcas/like-linen.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>26</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Cenas de empresa: reserve la mantelería antes de que se agote<span class="cal-razon">LA COMPRA SE ADELANTA: la cena de empresa se contrata en octubre y noviembre. El restaurante que espera a diciembre no encuentra el diseño que quiere.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html" target="_blank" rel="noopener">/cotillon/conjuntos-decorados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>28</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Bolsas de papel para el comercio de otoño<span class="cal-razon">Arranca la campaña larga que va de octubre a Reyes. El comercio hace la compra grande de bolsa ahora.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel/bolsas-kraft.html</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-11">
+    <div class="cal-mes-head">
+      <p class="label">&nbsp;</p>
+      <h2 class="cal-mes-t">Noviembre</h2>
+      <span class="cal-mes-n">9 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>2</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Cenas de empresa: la mesa que justifica el precio del menú<span class="cal-razon">El menú de empresa se vende por la puesta en escena. Mantelería coordinada y Tête-à-Tête cambian la percepción del mismo menú.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html" target="_blank" rel="noopener">/cotillon/conjuntos-decorados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>4</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Black Friday: bolsas de papel para el comercio<span class="cal-razon">Semana de volumen máximo en comercio. La bolsa se pide con dos semanas de antelación y se agota en tres días.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bolsas-de-papel/bolsas-kraft.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bolsas-de-papel/bolsas-kraft.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>9</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Menús de Navidad: mantelería coordinada de principio a fin<span class="cal-razon">El conjunto decorado vende porque resuelve la mesa entera de una vez: mantel, servilleta, camino y detalle, todo del mismo diseño.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/conjuntos-decorados.html" target="_blank" rel="noopener">/cotillon/conjuntos-decorados.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>11</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Catering navideño: bandejas, cajas y transporte<span class="cal-aviso" title="parecido a «Catering: presentar y transportar. Bandejas con funda, cajas» del 2026-09-17">ya salió algo parecido</span><span class="cal-razon">El catering de Navidad se cierra en noviembre. Transporte y presentación son el cuello de botella, no el producto.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bandejas-traiteur.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bandejas-traiteur.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>16</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Lotes y regalos de empresa: papel, bolsas y cajas de botella<span class="cal-razon">La cesta de empresa se monta en noviembre. Es venta de presentación pura, con margen y con fecha límite muy clara.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/cajas-para-botellas-y-lotes.html?product_list_order=position" target="_blank" rel="noopener">/cotillon/cajas-para-botellas-y-lotes.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>18</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Pastelería de Navidad: cajas, blondas y cápsulas<span class="cal-aviso" title="parecido a «Cajas pastelería» del 2026-08-18">ya salió algo parecido</span><span class="cal-razon">El obrador prepara turrón, tronco y polvorones en noviembre. Compra de envase concentrada y muy anticipada al consumo.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/pasteleria" target="_blank" rel="noopener">/pasteleria</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>23</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Últimos días para personalizar con su logo antes de Navidad<span class="cal-razon">Cierre de plazo de producción. Es un argumento de urgencia real, no inventado, y funciona muy bien en noviembre.</span></td>
+            <td class="cal-urlcel"><span class="cal-sinurl">sin enlace — pendiente</span></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>25</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Cotillón: bolsas y complementos de Fin de Año<span class="cal-aviso" title="parecido a «Cotillón y Fin de Año» del 2026-11-17">ya salió algo parecido</span><span class="cal-razon">El cotillón se compra en noviembre porque en diciembre ya no llega. Producto de temporada de una noche y margen alto.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/bolsas-de-cotillon.html?product_list_order=position" target="_blank" rel="noopener">/cotillon/bolsas-de-cotillon.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>30</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Servilletas de Navidad: todas las calidades, del tisú al Like-Linen<span class="cal-aviso" title="parecido a «Servilletas y mantelines Vertex Like Linen» del 2026-03-17">ya salió algo parecido</span><span class="cal-razon">Misma ocasión, cuatro niveles de precio. Permite entrar en cualquier cliente y subir la gama al año siguiente.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/servilletas-de-navidad.html?product_list_order=position" target="_blank" rel="noopener">/cotillon/servilletas-de-navidad.html</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="cal-mes" id="mes-12">
+    <div class="cal-mes-head">
+      <p class="label">&nbsp;</p>
+      <h2 class="cal-mes-t">Diciembre</h2>
+      <span class="cal-mes-n">9 envíos</span>
+    </div>
+    <div class="cal-scroll">
+      <table class="cal-t">
+        <thead><tr><th>Fecha</th><th>Tema</th><th>URL</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="cal-fecha"><b>2</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Roscón y dulces de Reyes: cajas, blondas y bandejas de pastelería<span class="cal-aviso" title="parecido a «Cajas pastelería» del 2026-08-18">ya salió algo parecido</span><span class="cal-razon">El roscón se vende del 28 de diciembre al 6 de enero. La caja se compra en la primera quincena de diciembre, no en enero.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/pasteleria/cajas-para-pasteleria.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/pasteleria/cajas-para-pasteleria.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>7</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">La mesa de Navidad: servilletas, manteles y Tête-à-Tête<span class="cal-aviso" title="parecido a «Manteles» del 2026-09-08">ya salió algo parecido</span><span class="cal-razon">Reposición de diciembre: el que se quedó corto compra ahora y sin discutir precio. Entrega rápida es lo único que importa.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/manteles-de-navidad-de-papel.html?product_list_order=position" target="_blank" rel="noopener">/cotillon/manteles-de-navidad-de-papel.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>9</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Cotillón y Fin de Año<span class="cal-aviso" title="parecido a «Cotillón y Fin de Año» del 2026-11-17">ya salió algo parecido</span><span class="cal-razon">Última llamada para la noche del 31. Pedido corto, urgente y de margen alto.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/bolsas-de-cotillon.html?product_list_order=position" target="_blank" rel="noopener">/cotillon/bolsas-de-cotillon.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>14</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Lotes y regalos: papel, bolsas y cajas de botella<span class="cal-razon">Las dos primeras semanas de diciembre son el pico de la cesta de empresa y del regalo gourmet.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/cajas-para-botellas-y-lotes.html?product_list_order=position" target="_blank" rel="noopener">/cotillon/cajas-para-botellas-y-lotes.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>16</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Pastelería de Navidad: presentar el turrón y el tronco<span class="cal-razon">El obrador vende del 1 al 24 y necesita reponer envase a mitad de campaña. Caja, bandeja y blonda de presentación.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/pasteleria" target="_blank" rel="noopener">/pasteleria</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>21</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">Comida para llevar en festivos: envases y bolsas para los días grandes<span class="cal-razon">Nochebuena, Navidad y Fin de Año se comen cada vez más en casa con comida encargada. Envase de transporte y presentación.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/take-away.html" target="_blank" rel="noopener">/take-away.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>23</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Reposición de última hora: entrega rápida antes de Nochebuena<span class="cal-razon">El argumento del stock permanente en su momento de máximo valor. Aquí no se compite por precio, se compite por llegar.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/cotillon/servilletas-de-navidad.html?product_list_order=position" target="_blank" rel="noopener">/cotillon/servilletas-de-navidad.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>28</b><em>Mar · 15:00</em></td>
+            <td class="cal-tema">La mesa de Fin de Año: mantelería de gala<span class="cal-razon">La cena del 31 es el servicio de más ticket del año. El cliente acepta subir de gama en mantelería para esa noche.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/marcas/like-linen.html?product_list_order=position" target="_blank" rel="noopener">/marcas/like-linen.html</a></td>
+          </tr>
+          <tr>
+            <td class="cal-fecha"><b>30</b><em>Jue · 15:00</em></td>
+            <td class="cal-tema">Take away de Navidad: transportar el plato preparado<span class="cal-razon">La charcutería y el restaurante venden platos para casa. Bandeja con funda, caja rígida y bolsa que aguante el peso.</span></td>
+            <td class="cal-urlcel"><a class="cal-url" href="https://www.garciadepou.com/es/un-solo-uso/bandejas-traiteur.html?product_list_order=position" target="_blank" rel="noopener">/un-solo-uso/bandejas-traiteur.html</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="cal-nota">
+    <p><strong>Cómo leer la fecha.</strong> Está adelantada al momento de compra, no al de consumo. El
+    hostelero cierra la mantelería de Navidad en octubre, equipa la terraza en marzo y encarga la caja del
+    roscón en noviembre. Enviar la Navidad en diciembre llega tarde: ya solo se vende reposición.</p>
+    <p><strong>La línea gris</strong> bajo cada tema es el argumento comercial: por qué ese producto vende en
+    esa fecha y a quién. Está para defender el plan en la aprobación, no para la newsletter. Si estorba, se
+    quita.</p>
+    <p><strong>«Ya salió algo parecido»</strong> marca los temas cuyo asunto se solapa con un envío de los
+    últimos diez meses. No es un error: son ángulos distintos del mismo producto. Pase el cursor por encima
+    para ver con cuál.</p>
+    <p><strong>Las URL</strong> salen de los enlaces que ya se han usado de verdad en newsletters anteriores,
+    nunca inventadas. Las marcadas <em>revisar</em> son de la estructura anterior a la migración de la web y
+    puede que ya no resuelvan. Los <strong>6 temas sin enlace</strong> — posavasos, personalizados, Airlaid —
+    son categorías que nunca se han enlazado en una newsletter, y ahí sí hace falta el catálogo.</p>
+    <p>Son enlaces de referencia para diseño. Los definitivos, por idioma y con marcas de seguimiento, se
+    ponen al maquetar en Mailchimp.</p>
+  </div>
+</main>

@@ -16,7 +16,8 @@ Propuesta completa, con el diagnóstico y las fases: [`docs/propuesta.html`](doc
 | `data/origen-*.xlsx` | Los cuatro Excel originales, tal cual. Solo como fuente. |
 | `data/historico.json` | 499 envíos fechados (2022-02-03 → 2026-12-22), normalizados. |
 | `data/temas.json` | Banco de 720 temas únicos con familia, origen de fabricación, marcas, páginas, enlaces y uso. |
-| `data/plan-2027-Q1.json` | Propuesta generada para el Q1 de 2027. Ejemplo de salida. |
+| `data/calendario-comercial.json` | 111 ocasiones comerciales HORECA: qué compra el hostelero y cuándo. |
+| `data/temas-2027.json` / `.csv` | Los 104 temas propuestos para 2027, con fecha y URL. |
 
 Los cuatro ficheros de origen vienen en dos formatos distintos:
 
@@ -42,8 +43,8 @@ PYTHONPATH=scripts python3 scripts/importar_excel.py \
   data/origen-Planning_NL_2025.xlsx \
   data/origen-Planning_NL_2026.xlsx
 
-# Proponer el planning de un trimestre -> data/plan-<año>-Q<n>.json
-python3 scripts/proponer_plan.py --desde 2027-01-01 --hasta 2027-03-31
+# Proponer los temas de un periodo -> data/temas-<año>.json (+ .csv con --csv)
+python3 scripts/proponer_temas.py --desde 2027-01-01 --hasta 2027-12-31 --csv
 ```
 
 ### La regla de negocio que manda
@@ -59,34 +60,37 @@ cartón**: 114 envíos y 292 temas dependen de esa respuesta.
 
 ### Cómo propone los temas
 
-`proponer_plan.py` genera los huecos de martes y jueves del periodo y asigna un tema
-a cada uno, en este orden:
+La fuente de ideas es **`scripts/calendario_comercial.py`**, no el histórico. Son 111
+ocasiones comerciales HORECA, cada una con:
 
-1. **Fijo institucional** — lanzamiento de catálogo o tarifa en su fecha habitual (`FIJOS`).
-2. **Cuota de fabricación propia** — si el plan va por debajo de `CUOTA_PROPIA` (65%),
-   fuerza un tema de papel y cartón propio.
-3. **Ancla estacional** — qué se envió esa misma semana ISO en años anteriores.
-4. **Estreno** — tema del banco que nunca ha salido, priorizando fabricación propia.
-5. **Rotación** — si no hay candidato, el tema disponible más antiguo.
+- el **tema** tal como iría en la newsletter
+- los **meses en los que toca enviar**, ya descontada la antelación de compra
+- la **razón comercial**: por qué vende en esa fecha
+- el **cliente** al que le vende
+- las **claves** para localizar la URL de categoría
+- si es **papel y cartón de fabricación propia**
 
-Filtros que se aplican siempre:
+La idea central es la **antelación de compra**: el hostelero cierra la mantelería de
+Navidad en octubre, equipa la terraza en marzo y encarga la caja del roscón en
+noviembre. El calendario envía en el momento de la compra, no del consumo.
 
-- **Descanso** — no repite un tema enviado en los últimos 12 meses (`MESES_DESCANSO`).
-- **Ventana estacional** — un tema de Navidad no puede caer en enero, ni uno de
-  granizados en diciembre (`VENTANAS_FAMILIA`, `VENTANAS_CLAVE`).
-- **Destacable** — un tema de distribución solo se propone si es novedad, nunca ha
-  salido, o está marcado a mano como destacable.
+`proponer_temas.py` reparte esas ocasiones sobre los martes y jueves del periodo,
+prioriza fabricación propia hasta `CUOTA_PROPIA` (75%), y tira de meses vecinos si un
+mes se queda corto de ideas. **No propone envíos extraordinarios**: nada de catálogos,
+tarifas, felicitaciones ni encuestas.
 
-Los festivos se marcan como aviso, no como bloqueo: en el histórico hay envíos el
-15 de agosto, el 24 y el 31 de diciembre.
+El histórico se usa solo para dos cosas:
+
+1. **Sacar la URL** de entre los 225 enlaces que ya se han usado de verdad — nunca se
+   inventa una. El sitio cambió de estructura con la migración, así que se prefieren los
+   enlaces posteriores a `FECHA_MIGRACION` y los anteriores se marcan para revisar.
+2. **Avisar de solapamiento** si un tema muy parecido salió en los últimos 10 meses.
 
 ## Pendiente
 
-- **Respuesta sobre los envases y vasos de cartón** — bloquea la clasificación.
-- Depurar el banco: fundir duplicados, separar el tema editorial del nombre interno y
-  sacar de producto lo que no lo es (`Presentació Suite Majoristes` y similares).
-- Recuperar los cuatro campos del formato rico: productos, blog, varios enlaces y
-  disclaimer por mercado.
-- Recuperar la numeración de campaña, que se quedó en el 807.
+- **Catálogo de producto** — 6 temas de 2027 no tienen enlace porque son categorías que
+  nunca se han enlazado en una newsletter (posavasos, personalizados, Airlaid). El
+  catálogo cerraría ese hueco y permitiría bajar de categoría a referencia concreta.
+- Ampliar el calendario comercial: febrero y agosto son los meses con menos ocasiones.
 - Interfaz del planificador, vista de aprobación y brief de diseño en Gmail.
-- Conector de Mailchimp para traer aperturas y clics al banco.
+- Conector de Mailchimp para traer aperturas y clics, y saber qué temas funcionan.
