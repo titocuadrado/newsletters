@@ -483,13 +483,14 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
     </g>
 </svg>
     <h1 class="section-title pl-title" style="font-size: var(--fs-4xl)">Planificador de newsletters</h1>
-    <p class="t-body pl-lede">Propuesta para sustituir el Excel de planning por un sistema que genere el
-      calendario, proponga los temas a partir de lo ya enviado, resuelva las URL en los cuatro idiomas y
-      prepare solo la lista de aprobación y el brief de diseño.</p>
+    <p class="t-body pl-lede">Propuesta para sustituir los Excel de planning por un sistema que genere el
+      calendario, proponga los temas a partir de cinco años de envíos y prepare solo la lista de aprobación y
+      el brief de diseño — recuperando por el camino cuatro campos que el formato antiguo tenía y el actual
+      perdió.</p>
     <div class="pl-meta">
       <span>Marketing · García de Pou</span>
       <span>27 agosto 2026</span>
-      <span>Base: Planning_NL_2026.xlsx</span>
+      <span>Base: 4 Excel de planning, 2022–2026</span>
       <span>Estado: propuesta para revisar</span>
     </div>
   </div>
@@ -504,20 +505,24 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
       <h2 class="section-title">Ya he leído tu Excel</h2>
     </div></div>
     <div class="pl-prose">
-      <p>He importado las tres hojas y las he convertido en datos. Salen <strong>292 envíos fechados</strong>
-      entre el 2 de mayo de 2024 y el 22 de diciembre de 2026, más <strong>59 ideas sin fecha</strong> al pie
-      de las hojas. De ahí he construido un banco de <strong>327 temas únicos</strong>, cada uno con su familia
-      de catálogo, sus marcas, sus páginas, su URL si la tenía, cuántas veces se ha enviado y cuándo fue la
-      última vez.</p>
+      <p>He importado los cuatro ficheros y los he convertido en datos. Salen <strong>499 envíos
+      fechados</strong> entre el 3 de febrero de 2022 y el 22 de diciembre de 2026, más <strong>364 ideas sin
+      fecha</strong> al pie de las hojas. De ahí sale un banco de <strong>720 temas únicos</strong>, cada uno
+      con su familia, sus marcas, sus páginas de catálogo, sus enlaces, cuántas veces se ha enviado y cuándo
+      fue la última.</p>
+      <p>El año no está escrito en ninguna celda, así que el importador lo deduce: prueba años de arranque y
+      se queda con el que hace cuadrar los días de la semana que tú escribiste. Sale limpio en los cuatro
+      ficheros, y el resultado se valida solo — <strong>95, 100, 104, 101 y 99 envíos</strong> de 2022 a 2026.
+      Dos por semana, cinco años seguidos, sin un hueco.</p>
       <p>El dato importante no es el volumen: es que <strong>toda esa memoria estaba en texto libre</strong>.
-      Dos años de criterio tuyo dentro de celdas que no se pueden ordenar, contar ni consultar. Eso es lo que
+      Cinco años de criterio tuyo dentro de celdas que no se pueden ordenar, contar ni consultar. Eso es lo que
       cambia el sistema — el Excel olvida, el banco recuerda.</p>
     </div>
     <div class="pl-stats">
-      <div class="pl-stat"><b>292</b><span>envíos importados y fechados</span></div>
-      <div class="pl-stat"><b>327</b><span>temas en el banco</span></div>
-      <div class="pl-stat"><b>20%</b><span>de los envíos llevaban URL</span></div>
-      <div class="pl-stat"><b>1%</b><span>de los envíos en 4 de las 8 familias</span></div>
+      <div class="pl-stat"><b>499</b><span>envíos importados, feb 2022 → dic 2026</span></div>
+      <div class="pl-stat"><b>720</b><span>temas únicos en el banco</span></div>
+      <div class="pl-stat"><b>4</b><span>campos que el formato antiguo tenía y el actual no</span></div>
+      <div class="pl-stat"><b>109</b><span>filas que eran replanificaciones de una fecha ya ocupada</span></div>
     </div>
   </div>
 </section>
@@ -525,96 +530,199 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
 <section class="pl-s">
   <div class="wrap">
     <div class="section-header"><div>
+      <p class="label">El hallazgo</p>
+      <h2 class="section-title">El formato de 2022 era mejor que el de ahora</h2>
+    </div></div>
+    <div class="pl-prose">
+      <p>El <code>Planning_Newsletters_V18</code> no es una versión antigua del mismo documento: es
+      <strong>otro documento, con cuatro campos que el actual no tiene</strong>. Y son justo los cuatro que
+      hacen falta para preparar un envío.</p>
+      <p>El más importante es la separación entre <strong>tema</strong> y <strong>productos</strong>. En 2022 el
+      tema era un gancho editorial — «Cafeteros», «Tiempo de sopa», «Burger lovers», «Panaderías»,
+      «Heladerías», «Listos para el verano» — y los productos que entraban en el envío iban en su propia
+      columna. Hoy el tema <em>es</em> la lista de productos. Se perdió la capa editorial, que es la que hace
+      que una newsletter se abra.</p>
+    </div>
+    <div class="pl-scroll">
+      <table class="pl-t">
+        <thead><tr>
+          <th>Campo</th><th>Formato 2022–2024 · 202 envíos</th><th>Formato 2024–2026 · 297 envíos</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Tema editorial</strong></td>
+            <td>Columna propia, separada del producto. «Tiempo de sopa», «Burger lovers».</td>
+            <td class="hoy">No existe. El tema es la lista de producto.</td>
+          </tr>
+          <tr>
+            <td><strong>Productos</strong></td>
+            <td>Columna propia en el <strong>35%</strong> de los envíos. «Plastic free, pared ondulada, tapas bionic, agitadores».</td>
+            <td class="hoy">No existe como campo.</td>
+          </tr>
+          <tr>
+            <td><strong>Enlaces</strong></td>
+            <td><strong>74%</strong> de los envíos. Hasta <strong>4</strong> por newsletter, no uno.</td>
+            <td class="hoy"><strong>19%</strong> de los envíos, y solo desde octubre de 2025.</td>
+          </tr>
+          <tr>
+            <td><strong>Blog asociado</strong></td>
+            <td><strong>7%</strong>. «Estrellas Michelin a domicilio», «¿Qué son los dim-sum?», «Blog FSC».</td>
+            <td class="hoy">No existe.</td>
+          </tr>
+          <tr>
+            <td><strong>Disclaimer por mercado</strong></td>
+            <td><strong>11%</strong>. Avisos de feria distintos por mercado:<br>
+            «EXPORT: SIGEP / ESPAÑA Y PORTUGAL: HOSTELCO / FRANCIA: EUROPAIN».</td>
+            <td class="hoy">No existe.</td>
+          </tr>
+          <tr>
+            <td><strong>Número de campaña</strong></td>
+            <td colspan="2">Sí, en los dos, pero solo en 30 de 499 envíos. Va del <strong>689</strong> al
+            <strong>807</strong>, así que la numeración siguió existiendo aunque dejó de anotarse.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="pl-t-cap">El disclaimer por mercado es el que no habría adivinado nunca. Es contenido de pie que
+    cambia según el país al que va la versión — y encaja exactamente con que envíes en cuatro idiomas.
+    El planificador lo recupera como campo por mercado.</p>
+  </div>
+</section>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
       <p class="label">Diagnóstico</p>
-      <h2 class="section-title">Siete fricciones, con la prueba al lado</h2>
+      <h2 class="section-title">Seis fricciones, con la prueba al lado</h2>
     </div></div>
     <div class="pl-fr">
 
       <div class="pl-fr-item">
         <div class="pl-fr-n">01</div>
         <div class="pl-fr-b">
-          <h3>La fecha se escribe a mano</h3>
-          <p>«Martes 18 junio» es texto, no una fecha. No se puede ordenar, filtrar ni cruzar con nada, y hay
-          erratas que lo demuestran. Con dos envíos fijos por semana, escribir las fechas de un trimestre es
-          trabajo que la máquina hace en un segundo y sin fallos.</p>
+          <h3>La fecha se escribe a mano y el año no se escribe</h3>
+          <p>«Martes 18 junio» es texto, no una fecha, y en ninguna celda de ningún fichero aparece el año.
+          Para importarlo he tenido que deducirlo probando años y comprobando que los días de la semana
+          cuadren. Funciona, pero dice mucho: el dato más básico del planning no está registrado.</p>
         </div>
-        <div class="pl-fr-ev">«Juves 20 junio» · «Miercoles 14 mayo» · «Mar 6 oct» — tres formatos distintos.
-        <b>4</b> envíos fuera del patrón martes/jueves.</div>
+        <div class="pl-fr-ev">Tres formatos de fecha: «Juves 20 junio» · «Miércoles 23 noviembre» ·
+        «Mar 6 oct». <b>5</b> envíos fuera del patrón martes/jueves.</div>
       </div>
 
       <div class="pl-fr-item">
         <div class="pl-fr-n">02</div>
         <div class="pl-fr-b">
-          <h3>La URL solo existe en uno de cada cinco envíos</h3>
-          <p>Y las primeras aparecen en octubre de 2025. En los otros 235 envíos la URL se resolvió en algún
-          otro sitio: un correo, un mensaje, la cabeza de alguien. Es justo el dato que diseño necesita y el
-          que dice si la newsletter convierte.</p>
+          <h3>El planning se bifurca y no queda rastro de qué salió</h3>
+          <p>Al cruzar los cuatro ficheros, <strong>109 filas replanifican una fecha que ya tenía otro tema
+          asignado</strong>. Es lo normal cuando se replanifica sobre una copia, pero significa que hoy no hay
+          forma de saber cuál de los dos temas se envió de verdad. He resuelto los conflictos dando prioridad
+          al fichero más nuevo, y así los cinco años cuadran a dos envíos por semana — pero es una deducción
+          mía, no un dato tuyo.</p>
         </div>
-        <div class="pl-fr-ev"><b>57</b> de <b>292</b> envíos con URL. Primera: <b>16-oct-2025</b>.</div>
+        <div class="pl-fr-ev"><b>608</b> filas fechadas en total → <b>499</b> envíos reales +
+        <b>109</b> replanificaciones descartadas.</div>
       </div>
 
       <div class="pl-fr-item">
         <div class="pl-fr-n">03</div>
         <div class="pl-fr-b">
-          <h3>Hay ocho URL con el idioma mezclado</h3>
-          <p>Dentro de <code>/es/</code> aparecen rutas en neerlandés e inglés. Funcionan por los rewrites de
-          Magento, así que nadie lo nota. Pero son URL que no se pueden traducir automáticamente a las otras
-          tres versiones, porque el patrón de la ruta no es el español.</p>
+          <h3>El enlace pasó del 74% al 19%</h3>
+          <p>Y con él se fue información que diseño necesita. Me dices que la URL está ahí para que diseño vea
+          qué tipo de producto vas a enlazar — con más razón: hoy la ve en uno de cada cinco envíos, cuando en
+          2022 la veía en tres de cada cuatro, y a veces con cuatro enlaces que dibujaban el envío entero.</p>
         </div>
-        <div class="pl-fr-ev"><code>/es/kerstmis/</code> · <code>/es/tafel-en-accessoires/</code> ·
-        <code>/es/bar-en-buffet/voorgerechten/</code> · <code>/es/disposable-products/</code></div>
+        <div class="pl-fr-ev">Formato rico <b>149/202</b> con enlace · formato simple <b>57/297</b>.
+        <b>56</b> envíos llevaban más de un enlace.</div>
       </div>
 
       <div class="pl-fr-item">
         <div class="pl-fr-n">04</div>
         <div class="pl-fr-b">
-          <h3>Envías en cuatro idiomas y solo anotas una URL</h3>
-          <p>63 de las 64 URL del Excel son <code>/es/</code>. Las versiones en inglés, francés y portugués
-          apuntan a otra parte que el planning no registra — o apuntan al español. Es la pregunta que más me
-          cambia el diseño del sistema, y está abajo.</p>
+          <h3>Una celda guarda tres cosas distintas</h3>
+          <p>El asunto, la página del catálogo y una nota interna en catalán viven juntos en la misma celda.
+          Cada vez que preparas el brief de diseño tienes que separarlos mentalmente. Son tres campos, y
+          separados se pueden reutilizar de un año al siguiente.</p>
         </div>
-        <div class="pl-fr-ev"><b>63</b> de <b>64</b> URL en <code>/es/</code>. Ninguna en
-        <code>/en/</code>, <code>/fr/</code> ni <code>/pt/</code>.</div>
+        <div class="pl-fr-ev"><b>108</b> envíos con la página dentro del texto · <b>40</b> con nota interna:
+        «només els de dalt», «hi ha nous dissenys», «DOS ENLLAÇOS», «ojo, no son plastic free».</div>
       </div>
 
       <div class="pl-fr-item">
         <div class="pl-fr-n">05</div>
         <div class="pl-fr-b">
-          <h3>Una celda guarda tres cosas distintas</h3>
-          <p>El asunto publicable, la página del catálogo y una nota interna en catalán viven juntos en la misma
-          celda. Cada vez que preparas el brief de diseño tienes que separarlos mentalmente. Son tres campos,
-          y separados se pueden reutilizar.</p>
+          <h3>El estado es vocabulario libre</h3>
+          <p>Etiquetas sueltas escritas dentro del propio tema para decir en qué punto está cada envío. Así no
+          hay manera de ver de un golpe qué está aprobado por gerencia, qué está en diseño y qué falta montar
+          — que es lo que necesitas saber cada lunes.</p>
         </div>
-        <div class="pl-fr-ev"><b>93</b> envíos con la página dentro del texto · <b>30</b> con nota interna:
-        «només els de dalt», «hi ha nous dissenys», «DOS PARTS».</div>
+        <div class="pl-fr-ev">«(Feta)» · «Repetida» · «REPETIR» · «no stock» · «stock» · «NEW» · «HOS» ·
+        «(repetir)» · «amb nova tarifa»</div>
       </div>
 
       <div class="pl-fr-item">
         <div class="pl-fr-n">06</div>
         <div class="pl-fr-b">
-          <h3>El estado es vocabulario libre</h3>
-          <p>Siete etiquetas distintas para decir en qué punto está cada envío, escritas dentro del propio tema.
-          Así no hay manera de ver de un golpe qué está aprobado por gerencia, qué está en diseño y qué falta
-          montar — que es exactamente lo que necesitas saber cada lunes.</p>
+          <h3>Hay papel y cartón propio sin estrenar</h3>
+          <p>De los 720 temas del banco, <strong>279 no se han enviado nunca</strong> y 395 se enviaron una
+          sola vez. Tu problema no es repetirte. Y filtrando por lo que de verdad interesa —
+          <strong>de los 202 temas de fabricación propia identificados, 73 nunca han salido</strong>:
+          17 de servilletas, 16 de mantelería, 11 de bolsas de papel, 9 de papel antigrasa. Ahí está el
+          margen, y es justo en la parte del catálogo que sí fabricáis.</p>
         </div>
-        <div class="pl-fr-ev">«(Feta)» · «Repetida» · «REPETIR» · «no stock» · «stock» · «NEW» · «HOS»</div>
-      </div>
-
-      <div class="pl-fr-item">
-        <div class="pl-fr-n">07</div>
-        <div class="pl-fr-b">
-          <h3>Hay catálogo sin estrenar</h3>
-          <p>Esta es la que menos esperaba. Un solo uso y take away se llevan el 64% de los envíos, y eso tiene
-          lógica de negocio. Pero <strong>Limpieza e higiene, Habitaciones y acogida, Utensilios de cocina y
-          Rotulación son cuatro de las ocho familias de la web y suman tres envíos en 292</strong>. Y 55 temas
-          del banco no se han enviado nunca. El problema no es repetirse — 256 de los 327 temas se usaron una
-          sola vez. Es que hay surtido que no ha salido en dos años.</p>
-        </div>
-        <div class="pl-fr-ev">un solo uso <b>45%</b> · take away <b>19%</b> · cotillón <b>10%</b> ·
-        las cuatro familias restantes juntas <b>1%</b>.</div>
+        <div class="pl-fr-ev">Banco: <b>279</b> temas nunca enviados de <b>720</b>.
+        Fabricación propia: <b>73</b> sin estrenar de <b>202</b>.</div>
       </div>
 
     </div>
+  </div>
+</section>
+
+<section class="pl-s">
+  <div class="wrap">
+    <div class="section-header"><div>
+      <p class="label">La regla que manda</p>
+      <h2 class="section-title">Fabricación propia primero</h2>
+    </div></div>
+    <div class="pl-prose">
+      <p>Esto corrige algo que yo había leído mal. En la primera versión de esta propuesta señalé como problema
+      que cuatro de las ocho familias de la web apenas aparecen en las newsletters. No es un problema: es una
+      decisión. Se prioriza el un solo uso de papel y cartón porque es de fabricación propia, y el resto del
+      catálogo solo entra si el producto es atractivo, novedoso o de una calidad que merezca destacarse.
+      Esa regla es ahora la primera del motor, y he quitado la que empujaba justo lo contrario.</p>
+      <p>Al clasificar los 499 envíos por origen aparece una pregunta que no puedo resolver yo, y de la que
+      dependen <strong>114 envíos y 292 temas del banco</strong>: los envases de cartón — cajas THEPACK,
+      barquillas, bandejas, tarrinas, ensaladeras, cucuruchos, vasos de cartón — ¿salen de Ordis o se compran?
+      Según la respuesta, tu mezcla real es una u otra:</p>
+    </div>
+    <div class="pl-scroll">
+      <table class="pl-t">
+        <thead><tr>
+          <th>Si los envases de cartón son…</th><th>Fabricación propia</th><th>Distribución</th>
+          <th>Institucional</th><th>Lectura</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>de fabricación propia</strong></td>
+            <td class="num"><strong>53,5%</strong></td>
+            <td class="num">23,0%</td>
+            <td class="num">8,8%</td>
+            <td>La mezcla ya va en la dirección de la estrategia. El sistema solo tiene que mantenerla y
+            cubrir los 73 temas propios sin estrenar.</td>
+          </tr>
+          <tr>
+            <td><strong>de distribución</strong></td>
+            <td class="num"><strong>30,7%</strong></td>
+            <td class="num">23,0%</td>
+            <td class="num">8,8%</td>
+            <td>Hay un desajuste real entre lo que se prioriza sobre el papel y lo que sale en la práctica, y
+            merece una conversación aparte.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="pl-t-cap">El 14,6% restante del primer escenario son temas editoriales de varios productos
+    («Heladerías», «Panaderías», «Sushi take away») que no se pueden clasificar por el nombre: heredarán el
+    origen de los productos que lleven dentro.</p>
   </div>
 </section>
 
@@ -628,39 +736,41 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
       <p>Propongo una aplicación en el repositorio, sin servidor: los datos son ficheros JSON versionados en
       git y la interfaz es una página que se abre en el navegador. La clave del diseño es que
       <strong>la aplicación y yo leemos y escribimos los mismos ficheros</strong>. Tú trabajas en la pantalla;
-      yo puedo generar un trimestre, validar URL o redactar el brief sin que haya que exportar ni importar nada.
-      Y como está en git, cada cambio del planning queda registrado con fecha.</p>
+      yo puedo generar un trimestre, depurar el banco o redactar el brief sin que haya que exportar ni importar
+      nada. Y como está en git, cada cambio del planning queda registrado con fecha — que es exactamente lo que
+      hoy falta cuando el planning se bifurca.</p>
     </div>
     <div class="pl-piezas">
       <div class="pl-pieza">
         <p class="label">Pieza 1 · la memoria</p>
         <h3>Banco de temas</h3>
-        <p>Los 327 temas ya cargados, cada uno con familia, marcas, páginas de catálogo, URL, en qué temporadas
-        se ha usado, cuántas veces y cuándo fue la última. Es el activo que hoy no existe: cuando propongas un
-        tema sabrás al instante si lo enviaste hace ocho meses o si nunca ha salido.
+        <p>Los 720 temas ya cargados, con familia, origen de fabricación, marcas, páginas de catálogo, enlaces,
+        productos, blog, cuántas veces se ha enviado y cuándo fue la última. Es el activo que hoy no existe:
+        al proponer un tema sabrás al instante si salió hace ocho meses o si nunca ha salido.
         <br><code>data/temas.json</code></p>
       </div>
       <div class="pl-pieza">
         <p class="label">Pieza 2 · las fechas</p>
         <h3>Generador de calendario</h3>
-        <p>Martes y jueves a las 15:00 de todo el trimestre, generados. Marca los festivos como aviso, no como
-        bloqueo, porque tú sí has enviado el 15 de agosto y el 24 de diciembre. Los envíos extraordinarios
-        (catálogo, tarifas, felicitación) se insertan fuera del patrón sin romper nada.</p>
+        <p>Martes y jueves a las 15:00 de todo el trimestre, generados, con el año incluido. Los festivos se
+        marcan como aviso y no como bloqueo, porque tú sí has enviado el 15 de agosto y el 24 de diciembre.
+        Los extraordinarios — catálogo, tarifas, felicitación — van a su fecha habitual sin romper el patrón.</p>
       </div>
       <div class="pl-pieza">
-        <p class="label">Pieza 3 · el enlace</p>
-        <h3>Resolutor de URL</h3>
-        <p>Un índice de las URL del sitio en los cuatro idiomas. Escribes el tema, te propone la URL, y genera
-        las tres traducciones. Avisa si alguna devuelve 404 antes de que la newsletter salga, y detecta las
-        rutas con el idioma mezclado. Necesita un volcado del sitemap: es lo único que te voy a pedir.
-        <br><code>data/urls.json</code></p>
+        <p class="label">Pieza 3 · el criterio</p>
+        <h3>Motor de propuesta</h3>
+        <p>Fabricación propia primero, ancla estacional, descanso de doce meses, ventana de temporada y cuota
+        de estrenos. Cada línea propuesta viene con el motivo por el que se eligió y la fecha del último envío,
+        para que puedas discutirla en lugar de aceptarla a ciegas.
+        <br><code>scripts/proponer_plan.py</code></p>
       </div>
       <div class="pl-pieza">
         <p class="label">Pieza 4 · las salidas</p>
         <h3>Lista de aprobación y brief</h3>
         <p>Los dos documentos que hoy preparas a mano. La vista de aprobación para gerencia, en una página y
-        con el estado de cada envío. Y el brief de diseño como borrador en tu Gmail, con la tabla completa:
-        fecha, asunto, URL de los cuatro idiomas, páginas del catálogo y notas internas.</p>
+        con el estado de cada envío. Y el brief de diseño como borrador en tu Gmail con los campos recuperados:
+        tema editorial, productos, enlaces de referencia, páginas del catálogo, blog, disclaimer por mercado y
+        notas internas.</p>
       </div>
     </div>
   </div>
@@ -679,23 +789,24 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
           <tr>
             <td><strong>Pensar los temas</strong></td>
             <td class="hoy">De memoria y criterio, mirando el catálogo y las hojas anteriores.</td>
-            <td>Te propongo el trimestre entero desde el banco: temporada, rotación y familias sin estrenar.
-            Sigue siendo tu decisión — aceptas, cambias o descartas cada línea.</td>
+            <td>Te propongo el trimestre entero: fabricación propia primero, temporada, descanso y estrenos.
+            Sigue siendo tu decisión — aceptas, cambias o descartas cada línea, con el motivo delante.</td>
           </tr>
           <tr>
             <td><strong>Poner las fechas</strong></td>
-            <td class="hoy">A mano, en texto, una por una.</td>
+            <td class="hoy">A mano, en texto, una por una, sin año.</td>
             <td>Generadas. Arrastras para mover un envío y el resto se recoloca.</td>
           </tr>
           <tr>
-            <td><strong>Buscar la URL</strong></td>
-            <td class="hoy">Ir a la web, buscar la categoría, copiar y pegar. Una por envío, cuando se hace.</td>
-            <td>Autocompletado desde el índice, más las tres traducciones. Con aviso si el enlace está roto.</td>
+            <td><strong>El enlace de referencia</strong></td>
+            <td class="hoy">Buscar la categoría en la web y pegarla. Cuando se hace.</td>
+            <td>Autocompletado desde los 308 enlaces que ya están en el histórico, agrupados por tema.
+            Admite varios por envío, como en 2022.</td>
           </tr>
           <tr>
             <td><strong>Página del catálogo</strong></td>
             <td class="hoy">Escrita dentro del propio asunto.</td>
-            <td>Campo propio, heredado del tema. Se actualiza al cambiar de catálogo.</td>
+            <td>Campo propio, heredado del tema.</td>
           </tr>
           <tr>
             <td><strong>Aprobación de gerencia</strong></td>
@@ -704,24 +815,26 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
           </tr>
           <tr>
             <td><strong>Brief a diseño</strong></td>
-            <td class="hoy">Redactar el email a mano cada trimestre, con la lista aprobada.</td>
-            <td>Borrador listo en tu Gmail con la tabla completa. Lo revisas y lo envías tú.</td>
+            <td class="hoy">Redactar el email a mano cada trimestre con la lista aprobada.</td>
+            <td>Borrador listo en tu Gmail con los siete campos. Lo revisas y lo envías tú.</td>
           </tr>
           <tr>
             <td><strong>Montaje en Mailchimp</strong></td>
-            <td class="hoy">Manual, cuatro veces por envío (una por idioma).</td>
-            <td>Fase 3. Hay conector oficial de Mailchimp: se puede crear la campaña desde el plan.</td>
+            <td class="hoy">Manual, cuatro veces por envío, y ahí pones los enlaces definitivos con UTM.</td>
+            <td>Sigue siendo tuyo — ahí está el criterio de seguimiento. Lo que puede automatizarse es traer
+            los resultados de vuelta.</td>
           </tr>
           <tr>
             <td><strong>Resultados</strong></td>
             <td class="hoy">Se consultan en Mailchimp y se quedan ahí.</td>
-            <td>Aperturas y clics vuelven al banco. El tema pasa a saber cómo funcionó la última vez.</td>
+            <td>Aperturas y clics vuelven al banco. Con 499 envíos ya cargados, el tema pasa a saber cómo
+            funcionó.</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p class="pl-t-cap">Lo que no cambia: el criterio editorial es tuyo. El sistema quita el trabajo mecánico
-    de alrededor — fechas, URL, formatos, correos — para que el tiempo se vaya en decidir qué se cuenta.</p>
+    <p class="pl-t-cap">Lo que no cambia: el criterio editorial es tuyo, y el montaje en Mailchimp con los
+    enlaces por idioma y las marcas de seguimiento también. El sistema quita el trabajo mecánico de alrededor.</p>
   </div>
 </section>
 
@@ -733,138 +846,154 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
     </div></div>
     <div class="pl-prose">
       <p>Esto no es una maqueta con texto de relleno. Es la salida real del motor sobre tu histórico: he pedido
-      el Q1 de 2027 y ha generado los 25 huecos y propuesto un tema para cada uno. La columna de la derecha
-      dice por qué eligió ese tema y cuándo se envió por última vez.</p>
+      el Q1 de 2027 y ha generado los 25 huecos, ha colocado los dos institucionales en su fecha habitual — el
+      catálogo del año en la cuarta semana de enero y las tarifas en la primera de febrero — y ha propuesto un
+      tema para el resto, cumpliendo la cuota de fabricación propia.</p>
     </div>
     <div class="pl-mock">
       <div class="pl-mock-bar">
-        <div class="pl-q">Q1 2027 <em>· enero – marzo · 25 envíos</em></div>
+        <div class="pl-q">Q1 2027 <em>· enero – marzo · 25 envíos · 65% fabricación propia</em></div>
         <div class="pl-mock-acts">
           <button class="btn btn-outline-blue btn-sm">Regenerar</button>
-          <button class="btn btn-outline-blue btn-sm">Resolver URL</button>
+          <button class="btn btn-outline-blue btn-sm">Brief de diseño</button>
           <button class="btn btn-blue btn-sm">Enviar a aprobación</button>
         </div>
       </div>
       <div class="pl-mock-scroll">
         <table class="pl-plan">
           <thead><tr>
-            <th>Fecha</th><th>Asunto propuesto</th><th>Familia</th><th>Págs.</th><th>Idiomas</th><th>Estado</th>
+            <th>Fecha</th><th>Tema propuesto</th><th>Origen</th><th>Págs.</th><th>Enlace</th><th>Estado</th>
           </tr></thead>
           <tbody>
             <tr>
               <td class="pl-fecha">5 ene 2027<em>martes 15:00</em></td>
-              <td class="pl-asunto">Tarrinas sopa y crema<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 7/1/2025</span></td>
-              <td class="pl-fam">un solo uso</td>
+              <td class="pl-asunto">Mantelería Diseño Keiko<span class="pl-motivo">Ancla estacional · última vez 3/1/2023</span></td>
+              <td><span class="pl-lg">Propia</span></td>
               <td class="pl-pags">—</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="pl-lg">ref</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">7 ene 2027<em>jueves 15:00</em></td>
-              <td class="pl-asunto">Akala (381-383)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 9/1/2025</span></td>
-              <td class="pl-fam">mesa accesorios</td>
-              <td class="pl-pags">381, 383</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td class="pl-asunto">Contenedores cuadrados, ensaladeras, cubos pollo<span class="pl-motivo">Ancla estacional · última vez 5/1/2023</span></td>
+              <td><span class="pl-lg falta">Por confirmar</span></td>
+              <td class="pl-pags">—</td>
+              <td><span class="pl-lg">ref</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">12 ene 2027<em>martes 15:00</em></td>
-              <td class="pl-asunto">Amenities<span class="pl-motivo">Estreno · familia infrarrepresentada · última vez 14/11/2024</span></td>
-              <td class="pl-fam">habitaciones</td>
+              <td class="pl-asunto">1. Bolsas para pan (p. 111-113)<span class="pl-motivo">Cuota de fabricación propia · sin envíos previos</span></td>
+              <td><span class="pl-lg">Propia</span></td>
               <td class="pl-pags">—</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="pl-lg falta">—</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">14 ene 2027<em>jueves 15:00</em></td>
-              <td class="pl-asunto">Tarrinas con tapa para sopas nuevas, Tarrinas sopa y crema<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 8/1/2026</span></td>
-              <td class="pl-fam">un solo uso</td>
+              <td class="pl-asunto">Lanzamiento del catálogo del año<span class="pl-motivo">Fijo institucional · fecha habitual</span></td>
+              <td><span class="pl-lg">Institucional</span></td>
               <td class="pl-pags">—</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="pl-lg falta">—</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">19 ene 2027<em>martes 15:00</em></td>
-              <td class="pl-asunto">Nuevas Tablas de madera para presentación (320)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 14/1/2025</span></td>
-              <td class="pl-fam">bar buffet</td>
-              <td class="pl-pags">320</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td class="pl-asunto">Línea reciclada Servilletas - Nuevos diseños: Tartan y Dakar<span class="pl-motivo">Ancla estacional · última vez 17/1/2023</span></td>
+              <td><span class="pl-lg">Propia</span></td>
+              <td class="pl-pags">—</td>
+              <td><span class="pl-lg">ref</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">21 ene 2027<em>jueves 15:00</em></td>
-              <td class="pl-asunto">Mesas de trabajo cocina 42<span class="pl-motivo">Estreno · familia infrarrepresentada · última vez 17/10/2024</span></td>
-              <td class="pl-fam">utensilios cocina</td>
+              <td class="pl-asunto">Clear Paper Ventana THEPACK<span class="pl-motivo">Ancla estacional · última vez 19/1/2023</span></td>
+              <td><span class="pl-lg falta">Por confirmar</span></td>
               <td class="pl-pags">—</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="pl-lg">ref</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">26 ene 2027<em>martes 15:00</em></td>
-              <td class="pl-asunto">Nuevo Papel antigrasa + aluminio Fitipaldi fast food, Rojo (108)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 23/1/2025</span></td>
-              <td class="pl-fam">un solo uso</td>
-              <td class="pl-pags">108</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td class="pl-asunto">2. Bolsas para croissants y bollería (p. 110)<span class="pl-motivo">Cuota de fabricación propia · sin envíos previos</span></td>
+              <td><span class="pl-lg">Propia</span></td>
+              <td class="pl-pags">—</td>
+              <td><span class="pl-lg falta">—</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">28 ene 2027<em>jueves 15:00</em></td>
-              <td class="pl-asunto">807 - Nuevas referencias manteleria Spunbond (pag 75)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 18/2/2025</span></td>
-              <td class="pl-fam">un solo uso</td>
-              <td class="pl-pags">75</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td class="pl-asunto">Nuevo Papel antigrasa + aluminio Fitipaldi fast food, Rojo (108)<span class="pl-motivo">Ancla estacional · última vez 23/1/2025</span></td>
+              <td><span class="pl-lg">Propia</span></td>
+              <td class="pl-pags">108</td>
+              <td><span class="pl-lg falta">—</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">2 feb 2027<em>martes 15:00</em></td>
-              <td class="pl-asunto">Cubos pedal negros 46<span class="pl-motivo">Estreno · familia infrarrepresentada · sin envíos previos</span></td>
-              <td class="pl-fam">limpieza higiene</td>
+              <td class="pl-asunto">Actualización de tarifas<span class="pl-motivo">Fijo institucional · fecha habitual</span></td>
+              <td><span class="pl-lg">Institucional</span></td>
               <td class="pl-pags">—</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="pl-lg falta">—</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">4 feb 2027<em>jueves 15:00</em></td>
-              <td class="pl-asunto">Vasitos para postres, con tapa y sin tapa (pag. 334,335)<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 28/1/2025</span></td>
-              <td class="pl-fam">sin clasificar</td>
-              <td class="pl-pags">334, 335</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td class="pl-asunto">Airlaid Natural (PAG 62 63)<span class="pl-motivo">Ancla estacional · última vez 30/1/2024</span></td>
+              <td><span class="pl-lg">Propia</span></td>
+              <td class="pl-pags">62, 63</td>
+              <td><span class="pl-lg falta">—</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">9 feb 2027<em>martes 15:00</em></td>
-              <td class="pl-asunto">Cajas pastelería apertura frontal (pag. 201) Hay Blanca, deco y marrón<span class="pl-motivo">Ancla estacional · misma semana en años anteriores · última vez 4/2/2025</span></td>
-              <td class="pl-fam">un solo uso</td>
-              <td class="pl-pags">201</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td class="pl-asunto">Presentació Suite Majoristes<span class="pl-motivo">Ancla estacional · última vez 10/2/2022</span></td>
+              <td><span class="pl-lg falta">Por confirmar</span></td>
+              <td class="pl-pags">—</td>
+              <td><span class="pl-lg falta">—</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
             <tr>
               <td class="pl-fecha">11 feb 2027<em>jueves 15:00</em></td>
-              <td class="pl-asunto">Flushable Roll it<span class="pl-motivo">Estreno · familia infrarrepresentada · sin envíos previos</span></td>
-              <td class="pl-fam">limpieza higiene</td>
+              <td class="pl-asunto">Bandejas Fast Food<span class="pl-motivo">Ancla estacional · última vez 7/2/2023</span></td>
+              <td><span class="pl-lg falta">Por confirmar</span></td>
               <td class="pl-pags">—</td>
-              <td><div class="pl-idiomas"><span class="pl-lg falta">es</span><span class="pl-lg falta">en</span><span class="pl-lg falta">fr</span><span class="pl-lg falta">pt</span></div></td>
+              <td><span class="pl-lg">ref</span></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">16 feb 2027<em>martes 15:00</em></td>
+              <td class="pl-asunto">2. Papel antigrasa para envolver quesadillas y nachos<span class="pl-motivo">Cuota de fabricación propia · sin envíos previos</span></td>
+              <td><span class="pl-lg">Propia</span></td>
+              <td class="pl-pags">—</td>
+              <td><span class="pl-lg falta">—</span></td>
+              <td><span class="gdp-status">Propuesta</span></td>
+            </tr>
+            <tr>
+              <td class="pl-fecha">18 feb 2027<em>jueves 15:00</em></td>
+              <td class="pl-asunto">2. Papel antigrasa PFAS Free<span class="pl-motivo">Cuota de fabricación propia · sin envíos previos</span></td>
+              <td><span class="pl-lg">Propia</span></td>
+              <td class="pl-pags">—</td>
+              <td><span class="pl-lg falta">—</span></td>
               <td><span class="gdp-status">Propuesta</span></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    <p class="pl-t-cap">Fila real del motor <code>proponer_plan.py</code>. Las páginas salen del banco;
-    los idiomas aparecen en gris porque el índice de URL es la fase 2 y todavía no está cargado.
-    Se muestran las 12 primeras de 25.</p>
+    <p class="pl-t-cap">Salida real de <code>proponer_plan.py</code>. Se muestran 14 de 25 filas.
+    «Por confirmar» en la columna de origen es exactamente la pregunta de los envases de cartón.</p>
 
     <div class="pl-prose" style="margin-top: var(--sp-32)">
-      <p><strong>Dos cosas que el propio motor deja a la vista</strong>, y que prefiero decirte ahora que
-      descubrirlas tú luego. La primera: el 5 y el 14 de enero propone dos temas de tarrinas de sopa que son
-      casi el mismo — el banco viene del Excel y arrastra duplicados con nombres distintos. Hace falta una pasada
-      de consolidación, contigo, para fundirlos. La segunda: algunos nombres llegan tal cual estaban
-      («1. Burgers Gourmet 🍔», «Mobiliario Supra-TEK Video»), y el asunto que ve el cliente hay que
-      escribirlo aparte del nombre interno del tema. Las dos se arreglan en la fase 1.</p>
-      <p>Y una que sí ha funcionado: el primer intento colocó bolsas de regalo de Navidad la primera semana de
+      <p><strong>Lo que el propio motor deja a la vista</strong>, y prefiero decírtelo ahora. El banco arrastra
+      los nombres tal cual estaban en los Excel, y se nota: hay entradas que son fichas de contenido más que
+      temas («3. Servilletas con diseños elegantes para un servicio…»), hay duplicados con nombres distintos
+      que habría que fundir, y hay cosas que no son producto colgando de la clasificación de producto
+      («Presentació Suite Majoristes»). Una pasada de depuración contigo lo arregla, y es lo primero de la
+      fase 1.</p>
+      <p>Y una que sí funcionó: el primer intento colocó bolsas de regalo de Navidad la primera semana de
       enero, porque el ancla estacional miraba la misma semana del año anterior sin más. Añadí ventanas
-      estacionales por tema y desapareció. Ahora enero abre con sopas y cremas, que es donde toca.</p>
+      estacionales por tema y desapareció — enero abre ahora con mantelería y bolsas de pan.</p>
     </div>
   </div>
 </section>
@@ -876,8 +1005,8 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
       <h2 class="section-title">El estado de cada envío, en una sola línea</h2>
     </div></div>
     <div class="pl-prose">
-      <p>Las siete etiquetas sueltas del Excel se convierten en un recorrido fijo. Cada envío está siempre en
-      uno de estos siete estados, y la pantalla se puede filtrar por cualquiera de ellos.</p>
+      <p>Las etiquetas sueltas del Excel se convierten en un recorrido fijo. Cada envío está siempre en uno de
+      estos siete estados, y la pantalla se filtra por cualquiera de ellos.</p>
     </div>
     <div class="pl-flow">
       <span class="gdp-status">Idea</span>
@@ -894,9 +1023,10 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
       <span class="pl-flow-arrow">→</span>
       <span class="gdp-status gdp-status--success">Enviada</span>
     </div>
-    <p class="pl-t-cap">Aparte, dos marcas independientes del estado, porque pueden pasar en cualquier punto:
-    <strong>sin stock</strong> (bloquea el envío y te pide sustituir el tema) y <strong>repetición</strong>
-    (el tema ya salió y se reenvía a propósito).</p>
+    <p class="pl-t-cap">Aparte, tres marcas independientes del estado porque pueden pasar en cualquier punto:
+    <strong>sin stock</strong> (bloquea el envío y pide sustituir el tema), <strong>repetición</strong>
+    (el tema ya salió y se reenvía a propósito) y <strong>destacable</strong> (producto de distribución que
+    merece salir aunque no sea de fabricación propia).</p>
   </div>
 </section>
 
@@ -904,17 +1034,20 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
   <div class="wrap">
     <div class="section-header"><div>
       <p class="label">Entrega</p>
-      <h2 class="section-title">Tres fases, la primera ya sustituye al Excel</h2>
+      <h2 class="section-title">Tres fases, y la primera ya sustituye al Excel</h2>
     </div></div>
     <div class="pl-fases">
       <div class="pl-fase">
         <div class="pl-fase-n"><p class="label">Fase</p><b>01</b></div>
         <div class="pl-fase-b">
-          <h3>El planificador funcionando — no necesita nada de nadie</h3>
+          <h3>El planificador funcionando — solo necesito la respuesta del cartón</h3>
           <ul>
-            <li>Banco de temas depurado: consolidar duplicados y separar el nombre interno del asunto público.</li>
-            <li>Pantalla del planificador con el trimestre, arrastrar para mover, estados y filtros.</li>
-            <li>Motor de propuesta de temas, ya funcionando, afinado con lo que salga de la depuración.</li>
+            <li>Depurar el banco: fundir duplicados, separar el tema editorial del nombre interno y sacar de
+            producto lo que no lo es.</li>
+            <li>Recuperar los cuatro campos del formato antiguo: productos, blog, varios enlaces y disclaimer
+            por mercado.</li>
+            <li>Pantalla del planificador: el trimestre, arrastrar para mover, estados, filtros y el motivo de
+            cada propuesta.</li>
             <li>Vista de aprobación para gerencia y borrador del brief de diseño en Gmail.</li>
             <li>Al terminar esta fase, el Excel deja de usarse.</li>
           </ul>
@@ -923,23 +1056,25 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
       <div class="pl-fase">
         <div class="pl-fase-n"><p class="label">Fase</p><b>02</b></div>
         <div class="pl-fase-b">
-          <h3>Las URL, en los cuatro idiomas — necesito el sitemap</h3>
+          <h3>Afinar el criterio con lo que ya sabemos</h3>
           <ul>
-            <li>Índice de URL del sitio en español, inglés, francés y portugués.</li>
-            <li>Autocompletado al escribir el tema y las tres traducciones automáticas.</li>
-            <li>Validador que comprueba las cuatro antes de que salga la newsletter.</li>
-            <li>Revisión de las ocho URL con el idioma mezclado que ya están en el histórico.</li>
+            <li>Recuperar los temas editoriales de 2022 («Cafeteros», «Panaderías», «Heladerías») como capa
+            sobre el producto, que es lo que se perdió.</li>
+            <li>Cubrir los 73 temas de fabricación propia que nunca han salido.</li>
+            <li>Autocompletado de enlaces desde los 308 del histórico. El sitemap solo hace falta para
+            categorías que nunca has enlazado — te lo pido si llegamos a necesitarlo.</li>
+            <li>Recuperar la numeración de campaña, que se quedó a medias en el 807.</li>
           </ul>
         </div>
       </div>
       <div class="pl-fase">
         <div class="pl-fase-n"><p class="label">Fase</p><b>03</b></div>
         <div class="pl-fase-b">
-          <h3>Mailchimp en los dos sentidos</h3>
+          <h3>Mailchimp de vuelta</h3>
           <ul>
-            <li>Conectar el conector oficial de Mailchimp y crear la campaña desde el plan aprobado.</li>
-            <li>Traer aperturas, clics y bajas de vuelta al banco de temas.</li>
-            <li>Con dos años de histórico ya cargado, ahí empieza a poder decirse qué temas funcionan.</li>
+            <li>Traer aperturas, clics y bajas al banco de temas. Hay conector oficial de Mailchimp.</li>
+            <li>El montaje sigue siendo tuyo: los enlaces por idioma y las marcas de seguimiento los pones tú.</li>
+            <li>Con cinco años de histórico ya cargado, ahí empieza a poder decirse qué temas funcionan.</li>
           </ul>
         </div>
       </div>
@@ -951,48 +1086,41 @@ footer.pl-foot p { font-size: var(--fs-3xs); color: var(--g500); line-height: 1.
   <div class="wrap">
     <div class="section-header"><div>
       <p class="label">Lo que necesito de ti</p>
-      <h2 class="section-title">Cinco decisiones</h2>
+      <h2 class="section-title">Una pregunta y dos confirmaciones</h2>
     </div></div>
     <div class="pl-q-list">
       <div class="pl-q-item">
-        <h3>1 · Las URL de inglés, francés y portugués: ¿quién las pone hoy?</h3>
-        <p>Es la que más cambia el sistema. Si diseño las traduce, el planificador solo tiene que generarlas y
-        pasárselas validadas. Si las cuatro versiones enlazan al español, es un agujero de conversión que vale
-        la pena arreglar y hay que decidir si se arregla ahora.</p>
+        <h3>1 · Los envases de cartón, ¿los fabricáis en Ordis?</h3>
+        <p>Cajas THEPACK, barquillas, bandejas, tarrinas, ensaladeras, cucuruchos, cajetillas de fritos… y
+        aparte los vasos de cartón, que puede que sean otro caso. De esto dependen 114 envíos, 292 temas del
+        banco y la prioridad que les da el motor. Es lo único que me bloquea.</p>
       </div>
       <div class="pl-q-item">
-        <h3>2 · ¿Me puedes conseguir el sitemap de garciadepou.com?</h3>
-        <p>Desde aquí el dominio me lo bloquea el proxy de red, así que no puedo rastrearlo yo. Con el
-        <code>sitemap.xml</code> de los cuatro idiomas, o un export de categorías de Magento, monto el índice
-        completo. Sin él puedo arrancar con las 64 URL que ya están en el Excel e ir creciendo, pero es peor.</p>
+        <h3>2 · ¿Recuperamos el tema editorial de 2022?</h3>
+        <p>Volver a separar el gancho («Tiempo de sopa») del producto («tarrinas para sopa») es la mejora de
+        más valor que he encontrado, y es la que más trabajo te añade: hay que escribir el gancho. Puede ser
+        solo en los envíos importantes en lugar de en los cincuenta del trimestre.</p>
       </div>
       <div class="pl-q-item">
-        <h3>3 · ¿Dónde quieres trabajar: la aplicación o un Google Sheet?</h3>
-        <p>Recomiendo la aplicación. Un Sheet volvería a ser texto libre y perderíamos justo lo que arreglamos.
-        Pero si gerencia prefiere revisar en un Sheet, la vista de aprobación se exporta ahí sin problema.</p>
-      </div>
-      <div class="pl-q-item">
-        <h3>4 · ¿Conectamos Mailchimp?</h3>
-        <p>Existe conector oficial y no está instalado en tu cuenta. Es lo que permite cerrar el círculo:
-        crear la campaña desde el plan y traer los resultados. Se puede dejar para el final, pero cuanto antes
-        se conecte, antes empieza a acumularse el dato de rendimiento por tema.</p>
-      </div>
-      <div class="pl-q-item">
-        <h3>5 · ¿Alguna fecha que haya que saltar siempre?</h3>
-        <p>En tu histórico enviaste el 15 de agosto, el 24 y el 31 de diciembre, así que de momento trato los
-        festivos como aviso y no como bloqueo. Si hay días que nunca deben salir, los marco como cerrados.</p>
+        <h3>3 · El disclaimer por mercado, ¿sigue vigente?</h3>
+        <p>En 2022 los avisos de feria iban por mercado — SIGEP para export, Hostelco para España y Portugal,
+        Europain para Francia. Si sigues necesitando pie distinto por versión de idioma, lo recupero como
+        campo. Si ya no, no lo monto.</p>
       </div>
     </div>
-    <p class="pl-nota">Con la respuesta a la 1 y la 2 puedo tener la fase 1 lista para que la pruebes.</p>
+    <p class="pl-nota">Con la respuesta del cartón arranco la fase 1; las otras dos las puedo asumir por
+    defecto y cambiar luego.</p>
   </div>
 </section>
 
 <footer class="pl-foot">
   <div class="wrap">
-    <p>Propuesta preparada sobre <strong>Planning_NL_2026.xlsx</strong> (3 hojas, 351 filas). Todas las cifras
-    de este documento salen de la importación de ese fichero, no de estimaciones. El código de importación y
-    el motor de propuesta están en la rama <code>claude/garcia-pou-newsletter-planner-e9691c</code> del
-    repositorio <code>newsletters</code>, con los datos generados en <code>data/</code>.</p>
+    <p>Propuesta preparada sobre cuatro ficheros de planning: <strong>Planning_Newsletters_V18</strong>,
+    <strong>Planning_NL_primaveraestiu</strong>, <strong>Planning_NL_2025</strong> y
+    <strong>Planning_NL_2026</strong> — 11 hojas, 499 envíos reales entre febrero de 2022 y diciembre de 2026.
+    Todas las cifras de este documento salen de la importación de esos ficheros, no de estimaciones. El
+    importador, el motor de propuesta y los datos generados están en la rama
+    <code>claude/garcia-pou-newsletter-planner-e9691c</code> del repositorio <code>newsletters</code>.</p>
   </div>
 </footer>
 
