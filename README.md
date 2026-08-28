@@ -101,21 +101,18 @@ El histórico se usa solo para dos cosas:
 | `app/probar.py` | Suite de pruebas en navegador (Playwright): 47 comprobaciones. |
 | `docs/planificador.html` | La versión ensamblada y publicada. |
 
-Se publica en dos variantes del mismo fichero:
+Se publica **una sola versión**, la de trabajo, con las capacidades `artifact` y
+`downloads` declaradas: guarda y exporta. Esas capacidades restringen el compartir
+público — se puede compartir con personas concretas o con la organización, pero no con
+«cualquiera con el enlace». La versión para difundir se hará al final, cuando el plan
+esté cerrado.
 
-- **Editable** — con las capacidades `artifact` y `downloads` declaradas. Guarda y exporta.
-  Las capacidades restringen el compartir público: solo se comparte con personas u
-  organización, no con «cualquiera con el enlace».
-- **Solo lectura** — el mismo fichero sin capacidades declaradas. `app.js` detecta que
-  `claude.use('artifact')` devuelve `null` y pasa a solo lectura. Esta sí se puede
-  compartir con cualquiera con el enlace.
-
-En solo lectura los tres botones (Guardar, Exportar CSV, Brief de diseño) **se quedan a
-la vista, apagados**, para que quien mira entienda qué hace la herramienta completa. Al
-pulsarlos explican por qué no funcionan en esa vista. Se apagan con `desactivar()`, que
-usa la clase `pl-off` y `aria-disabled` en lugar del atributo `disabled`, porque la hoja
-de marca pone `pointer-events: none` en los elementos deshabilitados y entonces el botón
-no podría responder al clic — `app.css` recupera los eventos para esa clase.
+Aun así la página degrada bien para cualquier visitante sin permiso de escritura: los
+tres botones (Guardar, Exportar CSV, Brief de diseño) **se quedan a la vista, apagados**,
+y al pulsarlos explican por qué no funcionan. Se apagan con `desactivar()`, que usa la
+clase `pl-off` y `aria-disabled` en lugar del atributo `disabled`, porque la hoja de
+marca pone `pointer-events: none` en los elementos deshabilitados y entonces el botón no
+podría responder al clic — `app.css` recupera los eventos para esa clase.
 
 ```bash
 python3 app/montar.py    # -> planificador.html
