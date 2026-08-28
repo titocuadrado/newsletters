@@ -98,7 +98,7 @@ El histórico se usa solo para dos cosas:
 | `app/cuerpo.html` | El esqueleto de la interfaz (cabecera, KPIs, barra de filtros, pie). |
 | `app/marca/` | Hoja de marca y logo de García de Pou, copiados aquí para que la compilación no dependa de rutas externas. |
 | `app/montar.py` | Ensambla todo en `planificador.html` con los datos de `data/temas-2027.json`. |
-| `app/probar.py` | Suite de pruebas en navegador (Playwright): 38 comprobaciones. |
+| `app/probar.py` | Suite de pruebas en navegador (Playwright): 47 comprobaciones. |
 | `docs/planificador.html` | La versión ensamblada y publicada. |
 
 Se publica en dos variantes del mismo fichero:
@@ -107,9 +107,15 @@ Se publica en dos variantes del mismo fichero:
   Las capacidades restringen el compartir público: solo se comparte con personas u
   organización, no con «cualquiera con el enlace».
 - **Solo lectura** — el mismo fichero sin capacidades declaradas. `app.js` detecta que
-  `claude.use('artifact')` devuelve `null`, esconde Guardar y las exportaciones, y cambia
-  el pie para avisar de que los cambios se quedan en la pantalla del visitante. Esta sí
-  se puede compartir con cualquiera con el enlace.
+  `claude.use('artifact')` devuelve `null` y pasa a solo lectura. Esta sí se puede
+  compartir con cualquiera con el enlace.
+
+En solo lectura los tres botones (Guardar, Exportar CSV, Brief de diseño) **se quedan a
+la vista, apagados**, para que quien mira entienda qué hace la herramienta completa. Al
+pulsarlos explican por qué no funcionan en esa vista. Se apagan con `desactivar()`, que
+usa la clase `pl-off` y `aria-disabled` en lugar del atributo `disabled`, porque la hoja
+de marca pone `pointer-events: none` en los elementos deshabilitados y entonces el botón
+no podría responder al clic — `app.css` recupera los eventos para esa clase.
 
 ```bash
 python3 app/montar.py    # -> planificador.html

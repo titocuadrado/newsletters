@@ -32,6 +32,11 @@ body { background: var(--white); color: var(--black); }
 .pl-bar input[type="text"] { min-width: 220px; flex: 1 1 220px; max-width: 340px; }
 .pl-bar select:focus-visible, .pl-bar input:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
 
+/* Botón apagado que sigue respondiendo, para poder explicar por qué no funciona.
+   La hoja de marca anula los eventos en [aria-disabled]; aquí se recuperan. */
+.btn.pl-off[aria-disabled="true"] { opacity: .45; cursor: not-allowed; pointer-events: auto; }
+.btn.pl-off[aria-disabled="true"]:hover { box-shadow: none; }
+
 .pl-check { display: inline-flex; align-items: center; gap: var(--sp-8); font-size: var(--fs-base);
   color: var(--g600); white-space: nowrap; cursor: pointer; }
 .pl-check input { width: 16px; height: 16px; accent-color: var(--blue); cursor: pointer; }

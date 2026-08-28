@@ -187,10 +187,11 @@ with sync_playwright() as pw:
     pagRO.wait_for_timeout(200)
     pagRO.click('#btn-guardar')
     pagRO.wait_for_timeout(600)
+    check(pagRO.eval_on_selector('#btn-guardar', 'b => b.classList.contains("pl-off")'),
+          'tras el rechazo, Guardar queda apagado pero visible')
     check('solo lectura' in pagRO.eval_on_selector('#avisos', 'e => e.textContent').lower(),
           'avisa de que la vista es de solo lectura')
-    check(pagRO.eval_on_selector('#btn-guardar', 'b => b.disabled') is True,
-          'deshabilita Guardar tras el rechazo')
+
     check(pagRO.evaluate('ESTADO.rev') == 2, 'no deja la revisión descuadrada tras el fallo')
     pag2.screenshot(path=f'{SP}/captura-v2.png', full_page=False)
 
@@ -204,8 +205,28 @@ with sync_playwright() as pw:
     check(not err3, f'no revienta sin window.claude  {err3[:2]}')
     check(pag3.eval_on_selector('#sucio', 'e => e.textContent').startswith('Solo lectura'),
           'pasa a modo solo lectura')
-    check(pag3.eval_on_selector('#btn-guardar', 'b => b.style.display') == 'none',
-          'esconde el botón de Guardar')
+    check(pag3.eval_on_selector('#btn-guardar', 'b => b.classList.contains("pl-off")'),
+          'el botón de Guardar se ve pero queda apagado')
+    check(pag3.eval_on_selector('#btn-csv', 'b => b.classList.contains("pl-off")')
+          and pag3.eval_on_selector('#btn-brief', 'b => b.classList.contains("pl-off")'),
+          'Exportar CSV y Brief de diseño se ven pero quedan apagados')
+    for bid in ('btn-csv', 'btn-brief', 'btn-guardar'):
+        vis = pag3.eval_on_selector('#' + bid,
+              'b => { const r = b.getBoundingClientRect(); return r.width > 0 && r.height > 0; }')
+        check(vis, f'#{bid} sigue visible en la vista compartida')
+    pag3.eval_on_selector('#btn-csv', 'b => b.click()')
+    pag3.wait_for_timeout(300)
+    txt = pag3.eval_on_selector('#avisos', 'e => e.textContent')
+    check('no están disponibles' in txt and 'CSV' in txt,
+          f'al pulsar Exportar CSV explica por qué no funciona')
+    pag3.eval_on_selector('#btn-brief', 'b => b.click()')
+    pag3.wait_for_timeout(300)
+    check('brief' in pag3.eval_on_selector('#avisos', 'e => e.textContent').lower(),
+          'al pulsar Brief de diseño explica por qué no funciona')
+    pag3.eval_on_selector('#btn-guardar', 'b => b.click()')
+    pag3.wait_for_timeout(300)
+    check('solo lectura' in pag3.eval_on_selector('#avisos', 'e => e.textContent').lower(),
+          'al pulsar Guardar explica que la vista es de solo lectura')
     check('solo lectura' in pag3.eval_on_selector('#pie-guardar', 'e => e.textContent').lower(),
           'el pie explica que los cambios no se guardan')
     check(pag3.eval_on_selector_all('#tabla tbody tr', 'els => els.length') == 104,
@@ -216,8 +237,8 @@ with sync_playwright() as pw:
     pag3.wait_for_timeout(200)
     check(pag3.eval_on_selector('#sucio', 'e => e.textContent').startswith('Solo lectura'),
           'sigue diciendo solo lectura aunque el invitado escriba')
-    check(pag3.eval_on_selector('#btn-csv', 'b => b.style.display') == 'none',
-          'oculta los botones de descarga')
+    check(pag3.evaluate('ESTADO.rev') == 2,
+          'nada de lo pulsado en la vista compartida cambia el plan')
     nav.close()
 
 print('\n' + '='*60)

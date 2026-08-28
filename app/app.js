@@ -213,10 +213,25 @@ function aviso(texto, tipo) {
   c.scrollIntoView({ block: 'nearest' });
 }
 
+function desactivar(id, motivo) {
+  const b = document.getElementById(id);
+  if (!b) return;
+  b.classList.add('pl-off');
+  b.setAttribute('aria-disabled', 'true');
+  b.setAttribute('title', motivo);
+  b.setAttribute('data-motivo', motivo);
+  b.disabled = false;
+}
+
+function apagado(b) {
+  if (!b || !b.classList.contains('pl-off')) return false;
+  aviso(b.getAttribute('data-motivo'), 'warn');
+  return true;
+}
+
 function modoLectura() {
   SOLO_LECTURA = true;
-  const b = document.getElementById('btn-guardar');
-  if (b) { b.disabled = true; b.style.display = 'none'; }
+  desactivar('btn-guardar', 'Esta vista es de solo lectura: el plan no se puede modificar desde aquí.');
   const p = document.getElementById('pie-guardar');
   if (p) {
     p.innerHTML = '<strong>Esta vista es de solo lectura.</strong> Puedes tocar todo lo que ves '
@@ -227,6 +242,7 @@ function modoLectura() {
 }
 
 async function guardar() {
+  if (apagado(document.getElementById('btn-guardar'))) return;
   if (SOLO_LECTURA) return;
   const api = window.claude && window.claude.use ? await window.claude.use('artifact') : null;
   if (!api) {
@@ -349,10 +365,10 @@ async function probarCapacidades() {
   const dl = hayApi ? await window.claude.use('downloads') : null;
   PUEDE_DESCARGAR = !!dl;
   if (!dl) {
-    ['btn-csv', 'btn-brief'].forEach(function (id) {
-      const b = document.getElementById(id);
-      if (b) b.style.display = 'none';
-    });
+    desactivar('btn-csv', 'Las descargas no están disponibles en la vista compartida. '
+      + 'En la versión de trabajo este botón baja el plan completo en CSV.');
+    desactivar('btn-brief', 'Las descargas no están disponibles en la vista compartida. '
+      + 'En la versión de trabajo este botón genera el brief para el departamento de diseño.');
   }
 }
 
@@ -381,10 +397,12 @@ function arrancar() {
   document.getElementById('btn-nuevo').onclick = nuevoEnvio;
   document.getElementById('btn-guardar').onclick = guardar;
   document.getElementById('btn-csv').onclick = function () {
+    if (apagado(this)) return;
     descargar('newsletters-' + ESTADO.periodo[0].slice(0, 4) + '.csv', csv(),
               'newsletters-' + ESTADO.periodo[0].slice(0, 4) + '.txt');
   };
   document.getElementById('btn-brief').onclick = function () {
+    if (apagado(this)) return;
     descargar('brief-diseno-' + ESTADO.periodo[0].slice(0, 4) + '.txt', brief(), null);
   };
 
@@ -418,7 +436,8 @@ function codigoFuente(estado) {
     esc.toString(), nuevoId.toString(), fechaLarga.toString(), ordenar.toString(),
     filtrados.toString(), opcionesEstado.toString(), pintarKpis.toString(),
     pintar.toString(), marcarSucio.toString(), buscaEnvio.toString(), alEditar.toString(),
-    alPulsar.toString(), nuevoEnvio.toString(), aviso.toString(), modoLectura.toString(),
+    alPulsar.toString(), nuevoEnvio.toString(), aviso.toString(), desactivar.toString(),
+    apagado.toString(), modoLectura.toString(),
     guardar.toString(), csv.toString(), brief.toString(), descargar.toString(),
     recuperarBorrador.toString(), probarCapacidades.toString(), arrancar.toString(),
     codigoFuente.toString(), documento.toString(),
