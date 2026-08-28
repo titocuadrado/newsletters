@@ -15,11 +15,11 @@
    "propia": true
   },
   {
-   "tema": "Roscón y dulces de Reyes: cajas, blondas y bandejas de pastelería",
+   "tema": "Dulces de Epifanía: la caja del roscón, la galette y el bolo-rei",
    "meses": [
     12
    ],
-   "razon": "El roscón se vende del 28 de diciembre al 6 de enero. La caja se compra en la primera quincena de diciembre, no en enero.",
+   "razon": "El dulce de Reyes se vende del 28 de diciembre al 6 de enero en media Europa, con otro nombre en cada país. La caja se compra en la primera quincena de diciembre, no en enero.",
    "cliente": "Pastelería, panadería, obrador",
    "claves": [
     "cajas-para-pasteleria",
@@ -68,12 +68,12 @@
    "propia": false
   },
   {
-   "tema": "Bolsas de papel para las rebajas: kraft, con asa y personalizables",
+   "tema": "Bolsas de papel para la campaña de rebajas: kraft, con asa y personalizables",
    "meses": [
     12,
     6
    ],
-   "razon": "Rebajas de enero y de julio. El comercio de barrio y la panadería necesitan bolsa con imagen, y es el momento en que se plantean personalizarla.",
+   "razon": "Las rebajas de invierno y de verano mueven volumen de bolsa en todos los mercados, aunque cada país tenga sus fechas. Es cuando el comercio se plantea personalizarla.",
    "cliente": "Comercio, panadería, pastelería, take away",
    "claves": [
     "bolsas-kraft",
@@ -122,6 +122,33 @@
    "propia": true
   },
   {
+   "tema": "Temporada de montaña: bebidas calientes y comida de pista",
+   "meses": [
+    12,
+    1
+   ],
+   "razon": "De diciembre a marzo las estaciones de esquí de los Alpes y los Pirineos trabajan a tope y todo se sirve para llevar, con guantes puestos. Vaso resistente, tapa segura y envase que aguante el frío.",
+   "cliente": "Estación de esquí, refugio, hotel de montaña",
+   "claves": [
+    "vasos-de-carton-bebidas-calientes"
+   ],
+   "propia": false
+  },
+  {
+   "tema": "Delivery de invierno: cuando el consumo se va a casa",
+   "meses": [
+    1,
+    11
+   ],
+   "razon": "En los meses fríos el pedido a domicilio sube en todos los mercados. El envase tiene que llegar caliente, cerrado y presentable: es donde se juega la repetición del cliente.",
+   "cliente": "Delivery, dark kitchen, restaurante",
+   "claves": [
+    "take-away",
+    "recipientes-take-away-microondables"
+   ],
+   "propia": false
+  },
+  {
    "tema": "San Valentín: la mesa que se recuerda. Tête-à-Tête, Like-Linen y mantelería decorada",
    "meses": [
     1
@@ -148,12 +175,12 @@
    "propia": true
   },
   {
-   "tema": "Carnaval: churros, buñuelos y masas fritas. Cucuruchos y papelinas de punta",
+   "tema": "Carnaval: masas fritas y dulces de temporada. Cucuruchos y papelinas de punta",
    "meses": [
     2
    ],
-   "razon": "Carnaval y Cuaresma son semanas de fritura dulce. El cucurucho y la papelina de punta se agotan, y son de fabricación propia.",
-   "cliente": "Churrería, feria, food truck, panadería",
+   "razon": "Carnaval se celebra en toda Europa y en todas partes se traduce en fritura dulce para comer de pie. El cucurucho y la papelina se agotan, y son de fabricación propia.",
+   "cliente": "Obrador, feria, food truck, panadería",
    "claves": [
     "cucuruchos-de-papel",
     "papelinas"
@@ -200,12 +227,12 @@
    "propia": true
   },
   {
-   "tema": "Cuaresma y vigilia: presentar y envolver el pescado",
+   "tema": "Menú de pescado: envolver y presentar producto graso y húmedo",
    "meses": [
     2,
     3
    ],
-   "razon": "Siete semanas de menú de pescado y bacalao. Papel antigrasa, bandeja y bolsa específicos para producto graso y húmedo.",
+   "razon": "Las semanas previas a Pascua desplazan la carta hacia el pescado en buena parte de Europa. Papel antigrasa, bandeja y bolsa específicos para producto que traspasa.",
    "cliente": "Pescadería, restaurante, take away",
    "claves": [
     "papel-antigrasa",
@@ -254,6 +281,20 @@
    "propia": true
   },
   {
+   "tema": "Temporada hotelera: el desayuno que recuerda el cliente",
+   "meses": [
+    3,
+    5
+   ],
+   "razon": "El hotel prepara la temporada en primavera. El desayuno es donde el huésped juzga la casa, y la bolsa de bollería y la servilleta salen en cada servicio.",
+   "cliente": "Hotel, apartamento turístico, hostal",
+   "claves": [
+    "bolsas-para-croissant",
+    "servilletas-de-papel"
+   ],
+   "propia": true
+  },
+  {
    "tema": "Servilletas Double Point: la calidad que se nota en la mano",
    "meses": [
     2,
@@ -275,6 +316,20 @@
    "cliente": "Bar, cervecería, cafetería, hotel",
    "claves": [
     "posavasos"
+   ],
+   "propia": true
+  },
+  {
+   "tema": "Brunch de fin de semana: la mesa que se fotografía",
+   "meses": [
+    2,
+    9
+   ],
+   "razon": "El brunch se ha instalado en toda Europa y es un servicio de margen alto donde la presentación lo es todo. Mantelería de gama, servilleta de calidad y papel decorado.",
+   "cliente": "Cafetería, brunch, hotel, panadería",
+   "claves": [
+    "like-linen",
+    "manteles-individuales"
    ],
    "propia": true
   },
@@ -304,11 +359,11 @@
    "propia": true
   },
   {
-   "tema": "Torrijas y dulces de Cuaresma: cajas, blondas y bandejas",
+   "tema": "Dulces de Pascua: cajas, blondas y bandejas para producto delicado",
    "meses": [
     3
    ],
-   "razon": "La torrija es un producto de temporada corta y alto volumen. Necesita bandeja, blonda y caja que aguanten el almíbar.",
+   "razon": "Temporada corta y de mucho volumen en pastelería, sea cual sea el dulce de cada país. Necesita bandeja, blonda y caja que aguanten producto húmedo o con almíbar.",
    "cliente": "Pastelería, panadería, restaurante",
    "claves": [
     "pasteleria",
@@ -317,12 +372,12 @@
    "propia": true
   },
   {
-   "tema": "Día del Padre: pastelería y regalo",
+   "tema": "Pastelería de regalo: cajas con ventana y bolsas de presentación",
    "meses": [
     3
    ],
-   "razon": "Fecha de pastelería y comercio, 19 de marzo. Caja, bolsa y papel: pedido corto que se repite cada año en la misma semana.",
-   "cliente": "Pastelería, comercio",
+   "razon": "Marzo concentra fechas de regalo distintas en cada país. Lo común es la caja pequeña con ventana y la bolsa de presentación: pedido corto y de margen alto.",
+   "cliente": "Pastelería, comercio, obrador",
    "claves": [
     "cajas-para-pasteleria",
     "papel-y-bolsas-para-regalos"
@@ -330,12 +385,12 @@
    "propia": true
   },
   {
-   "tema": "Semana Santa: comida para llevar en los días de más afluencia",
+   "tema": "Pascua: take away en los días de más afluencia del primer semestre",
    "meses": [
     3
    ],
-   "razon": "Procesiones, romerías y turismo concentrado. El consumo se va a la calle y todo se vende en envase de un solo uso.",
-   "cliente": "Bar, take away, food truck, churrería",
+   "razon": "El puente de Pascua mueve turismo en toda Europa y concentra el consumo en la calle. Todo se vende en envase de un solo uso y se agota en cuatro días.",
+   "cliente": "Bar, take away, food truck, hotel",
    "claves": [
     "take-away",
     "bolsas-de-papel"
@@ -360,7 +415,7 @@
     3,
     6
    ],
-   "razon": "La bolsa abierta a dos lados es el formato de bocadillo de calle. Romerías, ferias y eventos: consumo de pie que no admite plato.",
+   "razon": "La bolsa abierta a dos lados es el formato del bocadillo de calle. Ferias, mercados y eventos al aire libre: consumo de pie que no admite plato.",
    "cliente": "Bar, panadería, food truck, evento",
    "claves": [
     "bolsas-de-papel"
@@ -394,12 +449,12 @@
    "propia": true
   },
   {
-   "tema": "Feria de Abril y romerías: fritos para consumo de pie",
+   "tema": "Ferias y mercados de primavera: fritos para consumo de pie",
    "meses": [
     4
    ],
-   "razon": "Semanas de máximo consumo en la calle en Andalucía y el Levante. Papelina, cucurucho y cajetilla: todo fabricación propia y todo desechable.",
-   "cliente": "Caseta, feria, churrería, food truck",
+   "razon": "Con el buen tiempo arrancan las ferias, los mercados y los eventos al aire libre. Papelina, cucurucho y cajetilla: fabricación propia y consumo de un solo uso.",
+   "cliente": "Caseta, feria, food truck, evento",
    "claves": [
     "cucuruchos-de-papel",
     "recipientes-para-fritas"
@@ -407,11 +462,11 @@
    "propia": true
   },
   {
-   "tema": "Comuniones: se contratan ahora. Mantelería coordinada y servilletas",
+   "tema": "Banquetes de primavera: se contratan ahora. Mantelería coordinada",
    "meses": [
     4
    ],
-   "razon": "La comunión se cierra con dos meses de antelación. En abril el restaurante ya sabe cuántos servicios tiene y compra la mantelería del conjunto.",
+   "razon": "LA COMPRA SE ADELANTA: los banquetes de primavera se cierran con dos meses de antelación. En abril el restaurante ya sabe cuántos servicios tiene y compra el conjunto.",
    "cliente": "Restaurante de celebraciones, catering, hotel",
    "claves": [
     "conjuntos-decorados",
@@ -458,13 +513,13 @@
    "propia": true
   },
   {
-   "tema": "Pescaíto frito y fritura de temporada: envolver sin que traspase",
+   "tema": "Fritura de temporada: envolver sin que traspase",
    "meses": [
     4,
     7
    ],
    "razon": "El frito es el producto más exigente con el papel. Antigrasa de fabricación propia y cucurucho: el cliente lo nota en la primera bandeja.",
-   "cliente": "Chiringuito, freiduría, bar de playa",
+   "cliente": "Bar de playa, freiduría, food truck",
    "claves": [
     "papel-antigrasa",
     "cucuruchos-de-papel"
@@ -472,12 +527,12 @@
    "propia": true
   },
   {
-   "tema": "Bolsas de pastelería para tartas de celebración",
+   "tema": "Bolsas y cajas de pastelería para tartas de celebración",
    "meses": [
     4,
     5
    ],
-   "razon": "Comuniones, bodas y cumpleaños. La tarta sale del obrador en caja y bolsa, y en temporada de celebraciones se multiplica el consumo.",
+   "razon": "Bodas, cumpleaños y banquetes. La tarta sale del obrador en caja y bolsa, y en temporada de celebraciones se multiplica el consumo.",
    "cliente": "Pastelería, obrador, panadería",
    "claves": [
     "cajas-para-pasteleria"
@@ -510,11 +565,11 @@
    "propia": false
   },
   {
-   "tema": "Comuniones en pico: la mesa de la celebración",
+   "tema": "Temporada de banquetes: la mesa de la celebración",
    "meses": [
     5
    ],
-   "razon": "Mayo es el mes de las comuniones. Servicio de mantel completo y volumen concentrado en cuatro fines de semana.",
+   "razon": "Mayo abre la temporada de celebraciones en toda Europa. Servicio de mantel completo y volumen concentrado en pocos fines de semana.",
    "cliente": "Restaurante de celebraciones, catering, hotel",
    "claves": [
     "conjuntos-decorados",
@@ -562,11 +617,11 @@
    "propia": true
   },
   {
-   "tema": "Día de la Madre: pastelería y regalo",
+   "tema": "Día de la Madre: pastelería y regalo (mayo en casi toda Europa)",
    "meses": [
     4
    ],
-   "razon": "Primer domingo de mayo, se prepara la última semana de abril. Caja, bolsa y papel de presentación para pastelería y comercio.",
+   "razon": "Cae en mayo en la mayoría de mercados, así que se prepara a finales de abril. Caja, bolsa y papel de presentación para pastelería y comercio.",
    "cliente": "Pastelería, comercio, floristería",
    "claves": [
     "cajas-para-pasteleria",
@@ -599,12 +654,12 @@
    "propia": true
   },
   {
-   "tema": "Papelinas y cucuruchos para ferias locales",
+   "tema": "Papelinas y cucuruchos para ferias y mercados",
    "meses": [
     5,
     6
    ],
-   "razon": "Mayo y junio concentran las ferias de pueblo. Consumo de pie, producto frito y envase de fabricación propia.",
+   "razon": "Mayo y junio concentran ferias, mercados y eventos al aire libre. Consumo de pie, producto frito y envase de fabricación propia.",
    "cliente": "Caseta, feria, food truck",
    "claves": [
     "cucuruchos-de-papel"
@@ -624,11 +679,11 @@
    "propia": false
   },
   {
-   "tema": "San Juan y verbenas: fritos y consumo en la calle",
+   "tema": "Fiestas de verano y eventos de calle: volumen alto en pocas horas",
    "meses": [
     6
    ],
-   "razon": "La noche de San Juan y las verbenas de junio son consumo de pie y volumen alto en pocas horas. Todo desechable.",
+   "razon": "Junio abre la temporada de fiestas al aire libre en toda Europa. Consumo de pie, servicio rápido y todo de un solo uso.",
    "cliente": "Bar, chiringuito, caseta, food truck",
    "claves": [
     "recipientes-para-fritas",
@@ -1074,6 +1129,33 @@
    "propia": true
   },
   {
+   "tema": "Comedores escolares y colectividades: vuelta al curso",
+   "meses": [
+    8,
+    9
+   ],
+   "razon": "Septiembre reabre comedores escolares, hospitales y empresas en todos los mercados. Son contratos de volumen que se cierran de una vez para todo el curso.",
+   "cliente": "Colectividades, catering social, comedor escolar",
+   "claves": [
+    "manteles-individuales",
+    "servilletas-de-papel"
+   ],
+   "propia": true
+  },
+  {
+   "tema": "Fiestas de la cerveza: servicio de pie y volumen concentrado",
+   "meses": [
+    9
+   ],
+   "razon": "De septiembre a octubre las fiestas cerveceras mueven cifras enormes en Alemania y cada vez más en el resto de Europa. Posavasos, papel antigrasa y envase de frito.",
+   "cliente": "Cervecería, carpa, festival, food truck",
+   "claves": [
+    "posavasos",
+    "papel-antigrasa"
+   ],
+   "propia": true
+  },
+  {
    "tema": "La Navidad se compra ahora: mantelería y servilletas de Navidad",
    "meses": [
     10
@@ -1087,12 +1169,12 @@
    "propia": true
   },
   {
-   "tema": "Castañas y churros de otoño: cucuruchos y papelinas de punta",
+   "tema": "Street food de otoño: cucuruchos y papelinas para fritos y frutos secos",
    "meses": [
     10
    ],
-   "razon": "La castañera y la churrería arrancan en octubre. Envase de fabricación propia, temporada corta y consumo intenso.",
-   "cliente": "Churrería, castañera, feria, food truck",
+   "razon": "En octubre vuelve el puesto de calle y el mercado de invierno en toda Europa. Envase de fabricación propia, temporada corta y consumo intenso.",
+   "cliente": "Puesto de calle, feria, mercado, food truck",
    "claves": [
     "cucuruchos-de-papel",
     "papelinas"
@@ -1100,11 +1182,11 @@
    "propia": true
   },
   {
-   "tema": "Halloween y Todos los Santos: mantelería y bolsas decoradas",
+   "tema": "Halloween: mantelería y bolsas decoradas",
    "meses": [
     10
    ],
-   "razon": "Fecha cada vez más comercial en hostelería y comercio. Producto decorado, temporada de una semana y pedido que se repite cada año.",
+   "razon": "Fecha cada vez más comercial en hostelería y comercio en toda Europa. Producto decorado, temporada de una semana y pedido que se repite cada año.",
    "cliente": "Bar, cafetería, comercio, pastelería",
    "claves": [
     "conjuntos-decorados"
@@ -1112,11 +1194,11 @@
    "propia": true
   },
   {
-   "tema": "Panellets y dulces de Todos los Santos: cajas, cápsulas y blondas",
+   "tema": "Pastelería de otoño: formato pequeño, cápsulas y blondas",
    "meses": [
     10
    ],
-   "razon": "Temporada muy corta y muy concentrada en pastelería catalana y de Levante. Formato pequeño y presentación cuidada.",
+   "razon": "Cada mercado tiene su dulce de otoño, y todos comparten el mismo problema: formato pequeño, presentación cuidada y temporada muy corta.",
    "cliente": "Pastelería, obrador, panadería",
    "claves": [
     "pasteleria",
@@ -1277,11 +1359,11 @@
    "propia": true
   },
   {
-   "tema": "Cotillón: bolsas y complementos de Fin de Año",
+   "tema": "Fin de Año: bolsas y complementos de fiesta",
    "meses": [
     11
    ],
-   "razon": "El cotillón se compra en noviembre porque en diciembre ya no llega. Producto de temporada de una noche y margen alto.",
+   "razon": "LA COMPRA SE ADELANTA: se compra en noviembre porque en diciembre ya no llega. Producto para una sola noche y de margen alto.",
    "cliente": "Discoteca, restaurante, hotel, comercio",
    "claves": [
     "bolsas-de-cotillon",
@@ -1302,6 +1384,20 @@
    "propia": true
   },
   {
+   "tema": "Mercados de Navidad: consumo en la calle con frío",
+   "meses": [
+    10,
+    11
+   ],
+   "razon": "Los mercados navideños de Alemania, Francia y Austria son seis semanas de consumo de pie y a la intemperie. Vaso caliente, cucurucho y papel antigrasa, en volumen.",
+   "cliente": "Puesto de mercado, caseta, food truck, hostelería de calle",
+   "claves": [
+    "vasos-de-carton-bebidas-calientes",
+    "cucuruchos-de-papel"
+   ],
+   "propia": true
+  },
+  {
    "tema": "La mesa de Navidad: servilletas, manteles y Tête-à-Tête",
    "meses": [
     12
@@ -1315,11 +1411,11 @@
    "propia": true
   },
   {
-   "tema": "Cotillón y Fin de Año",
+   "tema": "Fin de Año: última llamada para la noche del 31",
    "meses": [
     12
    ],
-   "razon": "Última llamada para la noche del 31. Pedido corto, urgente y de margen alto.",
+   "razon": "Pedido corto, urgente y de margen alto. Aquí no se compite por precio, se compite por llegar a tiempo.",
    "cliente": "Discoteca, restaurante, hotel",
    "claves": [
     "bolsas-de-cotillon"
@@ -1390,7 +1486,7 @@
    "propia": true
   },
   {
-   "tema": "Roscón de Reyes: prepare la caja antes de que empiece a venderse",
+   "tema": "Dulce de Reyes: prepare la caja antes de que empiece a venderse",
    "meses": [
     11
    ],

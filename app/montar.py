@@ -5,6 +5,7 @@ SP    = os.path.dirname(os.path.abspath(__file__))
 RAIZ  = os.path.dirname(SP) if os.path.basename(SP) == 'app' else '/home/user/newsletters'
 MARCA = os.path.join(RAIZ, 'app', 'marca')
 DATOS = os.path.join(RAIZ, 'data', 'temas-2027.json')
+MOTOR = os.path.join(RAIZ, 'data', 'planificador-datos.json')
 
 css  = open(f'{MARCA}/gdp-brand.css').read() + '\n' + open(f'{SP}/app.css').read()
 logo = open(f'{MARCA}/logo-gdp.svg').read().strip().replace(
@@ -18,7 +19,8 @@ envios = [{
     'estado': 'propuesta', 'propia': bool(p['fabricacion_propia']),
     'razon': p['razon'] or '', 'cliente': p['cliente'] or '',
 } for i, p in enumerate(plan['envios'], 1)]
-estado = {'titulo': 'Plan 2027', 'periodo': plan['periodo'], 'rev': 1,
+# La revisión sigue la del artifact publicado: la 2 la guardó el usuario desde la página.
+estado = {'titulo': 'Plan 2027', 'periodo': plan['periodo'], 'rev': 3,
           'guardado': None, 'envios': envios}
 
 doc = ('<title>Planificador de Newsletters</title>\n'
@@ -31,7 +33,8 @@ doc = ('<title>Planificador de Newsletters</title>\n'
        '<script>\n'
        'const CSS = ' + json.dumps(css) + ';\n'
        'const CUERPO = ' + json.dumps(cuerpo) + ';\n'
-       'let ESTADO = ' + json.dumps(estado, ensure_ascii=False) + ';\n\n'
+       'let ESTADO = ' + json.dumps(estado, ensure_ascii=False) + ';\n'
+       'const DATOS = ' + open(MOTOR).read() + ';\n\n'
        + app + '\n</script>\n')
 
 cuerpo_script = doc[doc.index('<script>'):doc.rindex('</script>')]

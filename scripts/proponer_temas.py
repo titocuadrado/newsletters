@@ -24,6 +24,7 @@ DIAS_ENVIO = (1, 3)          # martes y jueves
 HORA = '15:00'
 CUOTA_PROPIA = 0.75          # los temas de papel y carton propio deben dominar
 MESES_DESCANSO = 10          # meses antes de volver a proponer la misma ocasion
+DESCANSO_FAMILIA = 4         # envios antes de repetir familia de producto
 NOMBRE_DIA = ['lunes','martes','miercoles','jueves','viernes','sabado','domingo']
 MES_CORTO = ['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']
 
@@ -132,24 +133,38 @@ def main():
 
     fechas = huecos(desde, hasta)
     usados, plan = set(), []
+    ultima_familia = {}          # familia de producto -> hueco en que se uso
 
-    def candidatos(mes):
-        """Ocasiones del mes, sin usar, propias primero."""
+    def familia_de(i):
+        # La primera clave de URL identifica la familia: servilletas, bolsas, antigrasa...
+        claves = ocasiones[i]['claves']
+        return claves[0] if claves else 'sin-familia'
+
+    def candidatos(mes, pos):
+        """Ocasiones del mes sin usar: propias primero y repartiendo familias."""
         libres = [i for i in por_mes.get(mes, []) if i not in usados]
-        return sorted(libres, key=lambda i: (not ocasiones[i]['propia'], i))
+
+        def orden(i):
+            visto = ultima_familia.get(familia_de(i))
+            distancia = 999 if visto is None else pos - visto
+            return (not ocasiones[i]['propia'],
+                    1 if distancia < DESCANSO_FAMILIA else 0,
+                    -distancia,
+                    i)
+        return sorted(libres, key=orden)
 
     def cuota_actual():
         if not plan:
             return 1.0
         return sum(1 for p in plan if p['fabricacion_propia']) / len(plan)
 
-    for f in fechas:
-        cands = candidatos(f.month)
+    for pos, f in enumerate(fechas):
+        cands = candidatos(f.month, pos)
         # Meses vecinos si el mes se queda corto de ideas
         if not cands:
             for vecino in (f.month - 1, f.month + 1):
                 vecino = 12 if vecino == 0 else 1 if vecino == 13 else vecino
-                cands = candidatos(vecino)
+                cands = candidatos(vecino, pos)
                 if cands:
                     break
         if not cands:
@@ -166,6 +181,7 @@ def main():
 
         idx = cands[0]
         usados.add(idx)
+        ultima_familia[familia_de(idx)] = pos
         o = ocasiones[idx]
 
         aviso = None

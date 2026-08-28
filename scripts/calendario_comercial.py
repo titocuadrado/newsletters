@@ -15,6 +15,15 @@ Cada ocasion lleva:
 
 La antelacion de compra es la clave del calendario: el hostelero compra la Navidad en
 octubre y la terraza en marzo. Enviar en diciembre la mantelería de Navidad es tarde.
+
+AMBITO INTERNACIONAL. Las newsletters salen en cuatro idiomas y llegan a unos 60 paises,
+con Francia, Portugal, Italia y Alemania como mercados de exportacion consolidados. Las
+ocasiones tienen que funcionar en todos: nada de Feria de Abril, San Juan, torrijas,
+panellets ni romerias. Se usan los motores universales del ciclo HORECA (temporada de
+terraza, de helado, de sopa, campana de Navidad, vuelta al trabajo) y solo las fechas
+que se celebran en todo el continente (Navidad, Fin de Ano, San Valentin, Carnaval,
+Pascua, Halloween, Black Friday). Cuando una fecha varia de un pais a otro se nombra
+sin atarla al calendario espanol.
 """
 
 # (tema, meses_de_envio, razon_comercial, cliente, claves_url, fabricacion_propia)
@@ -26,9 +35,9 @@ OCASIONES = [
  "llevar exige tarrina estanca con tapa, y el cliente la repone justo ahora.",
  "Menú diario, take away, comida de oficina", ["tarrinas-para-sopas", "tarrinas"], True),
 
-("Roscón y dulces de Reyes: cajas, blondas y bandejas de pastelería", [12],
- "El roscón se vende del 28 de diciembre al 6 de enero. La caja se compra en la primera "
- "quincena de diciembre, no en enero.",
+("Dulces de Epifanía: la caja del roscón, la galette y el bolo-rei", [12],
+ "El dulce de Reyes se vende del 28 de diciembre al 6 de enero en media Europa, con otro "
+ "nombre en cada país. La caja se compra en la primera quincena de diciembre, no en enero.",
  "Pastelería, panadería, obrador", ["cajas-para-pasteleria", "pasteleria"], True),
 
 ("Bebidas calientes para llevar: vasos de doble pared, tapas y paletinas", [1, 10, 11],
@@ -46,9 +55,9 @@ OCASIONES = [
  "cierre y tapa transparente, que la ensalada se vende con la vista.",
  "Take away, delivery, poke y healthy food", ["ensaladeras", "take-away"], False),
 
-("Bolsas de papel para las rebajas: kraft, con asa y personalizables", [12, 6],
- "Rebajas de enero y de julio. El comercio de barrio y la panadería necesitan bolsa con "
- "imagen, y es el momento en que se plantean personalizarla.",
+("Bolsas de papel para la campaña de rebajas: kraft, con asa y personalizables", [12, 6],
+ "Las rebajas de invierno y de verano mueven volumen de bolsa en todos los mercados, "
+ "aunque cada país tenga sus fechas. Es cuando el comercio se plantea personalizarla.",
  "Comercio, panadería, pastelería, take away", ["bolsas-kraft", "bolsas-de-papel"], True),
 
 ("Mantelines individuales: cambie la imagen del menú del día", [1, 9],
@@ -66,6 +75,17 @@ OCASIONES = [
  "el año, y en enero entra en la compra de reposición.",
  "Fast food, bar de tapas, take away", ["papel-antigrasa"], True),
 
+("Temporada de montaña: bebidas calientes y comida de pista", [12, 1],
+ "De diciembre a marzo las estaciones de esquí de los Alpes y los Pirineos trabajan a "
+ "tope y todo se sirve para llevar, con guantes puestos. Vaso resistente, tapa segura y "
+ "envase que aguante el frío.",
+ "Estación de esquí, refugio, hotel de montaña", ["vasos-de-carton-bebidas-calientes"], False),
+
+("Delivery de invierno: cuando el consumo se va a casa", [1, 11],
+ "En los meses fríos el pedido a domicilio sube en todos los mercados. El envase tiene "
+ "que llegar caliente, cerrado y presentable: es donde se juega la repetición del cliente.",
+ "Delivery, dark kitchen, restaurante", ["take-away", "recipientes-take-away-microondables"], False),
+
 # ─────────────── FEBRERO ───────────────
 ("San Valentín: la mesa que se recuerda. Tête-à-Tête, Like-Linen y mantelería decorada", [1],
  "San Valentín se prepara en la última semana de enero. Es la primera ocasión del año "
@@ -77,10 +97,10 @@ OCASIONES = [
  "Compra corta pero de margen alto.",
  "Pastelería, bombonería, chocolatería", ["cajas-para-pasteleria", "pasteleria"], True),
 
-("Carnaval: churros, buñuelos y masas fritas. Cucuruchos y papelinas de punta", [2],
- "Carnaval y Cuaresma son semanas de fritura dulce. El cucurucho y la papelina de punta "
- "se agotan, y son de fabricación propia.",
- "Churrería, feria, food truck, panadería", ["cucuruchos-de-papel", "papelinas"], True),
+("Carnaval: masas fritas y dulces de temporada. Cucuruchos y papelinas de punta", [2],
+ "Carnaval se celebra en toda Europa y en todas partes se traduce en fritura dulce para "
+ "comer de pie. El cucurucho y la papelina se agotan, y son de fabricación propia.",
+ "Obrador, feria, food truck, panadería", ["cucuruchos-de-papel", "papelinas"], True),
 
 ("Bolsas y papel de regalo para San Valentín", [1],
  "Comercio y pastelería necesitan envolver bonito una semana concreta. Bolsa pequeña, "
@@ -97,9 +117,9 @@ OCASIONES = [
  "hacer en tirada corta. Febrero y septiembre son los meses en que hay tiempo de producir.",
  "Restaurante, cadena, hotel, franquicia", ["personalizados"], True),
 
-("Cuaresma y vigilia: presentar y envolver el pescado", [2, 3],
- "Siete semanas de menú de pescado y bacalao. Papel antigrasa, bandeja y bolsa "
- "específicos para producto graso y húmedo.",
+("Menú de pescado: envolver y presentar producto graso y húmedo", [2, 3],
+ "Las semanas previas a Pascua desplazan la carta hacia el pescado en buena parte de "
+ "Europa. Papel antigrasa, bandeja y bolsa específicos para producto que traspasa.",
  "Pescadería, restaurante, take away", ["papel-antigrasa", "bandejas"], True),
 
 ("Envases para el menú de oficina: microondables y estancos", [2, 9],
@@ -117,6 +137,11 @@ OCASIONES = [
  "necesita envase hondo, estanco y que se pueda calentar.",
  "Restaurante de menú, take away, charcutería", ["tarrinas-para-sopas", "recipientes-take-away-microondables"], True),
 
+("Temporada hotelera: el desayuno que recuerda el cliente", [3, 5],
+ "El hotel prepara la temporada en primavera. El desayuno es donde el huésped juzga la "
+ "casa, y la bolsa de bollería y la servilleta salen en cada servicio.",
+ "Hotel, apartamento turístico, hostal", ["bolsas-para-croissant", "servilletas-de-papel"], True),
+
 ("Servilletas Double Point: la calidad que se nota en la mano", [2, 5],
  "Subir del tisú al Double Point cuesta muy poco por comensal y el cliente lo percibe al "
  "instante. Es la venta de gama más fácil del catálogo, y es fabricación propia.",
@@ -126,6 +151,11 @@ OCASIONES = [
  "El aperitivo de fin de semana no para en invierno. Posavasos personalizable y "
  "presentación en papel: producto pequeño, propio y de reposición continua.",
  "Bar, cervecería, cafetería, hotel", ["posavasos"], True),
+
+("Brunch de fin de semana: la mesa que se fotografía", [2, 9],
+ "El brunch se ha instalado en toda Europa y es un servicio de margen alto donde la "
+ "presentación lo es todo. Mantelería de gama, servilleta de calidad y papel decorado.",
+ "Cafetería, brunch, hotel, panadería", ["like-linen", "manteles-individuales"], True),
 
 # ─────────────── MARZO ───────────────
 ("Prepare la terraza antes de que llegue el sol: mantelería Spunbond y mantelines", [3],
@@ -138,20 +168,20 @@ OCASIONES = [
  "marzo no entra hasta septiembre.",
  "Heladería, pastelería, chiringuito", ["tarrinas-para-helados"], True),
 
-("Torrijas y dulces de Cuaresma: cajas, blondas y bandejas", [3],
- "La torrija es un producto de temporada corta y alto volumen. Necesita bandeja, blonda "
- "y caja que aguanten el almíbar.",
+("Dulces de Pascua: cajas, blondas y bandejas para producto delicado", [3],
+ "Temporada corta y de mucho volumen en pastelería, sea cual sea el dulce de cada país. "
+ "Necesita bandeja, blonda y caja que aguanten producto húmedo o con almíbar.",
  "Pastelería, panadería, restaurante", ["pasteleria", "blondas"], True),
 
-("Día del Padre: pastelería y regalo", [3],
- "Fecha de pastelería y comercio, 19 de marzo. Caja, bolsa y papel: pedido corto que se "
- "repite cada año en la misma semana.",
- "Pastelería, comercio", ["cajas-para-pasteleria", "papel-y-bolsas-para-regalos"], True),
+("Pastelería de regalo: cajas con ventana y bolsas de presentación", [3],
+ "Marzo concentra fechas de regalo distintas en cada país. Lo común es la caja pequeña "
+ "con ventana y la bolsa de presentación: pedido corto y de margen alto.",
+ "Pastelería, comercio, obrador", ["cajas-para-pasteleria", "papel-y-bolsas-para-regalos"], True),
 
-("Semana Santa: comida para llevar en los días de más afluencia", [3],
- "Procesiones, romerías y turismo concentrado. El consumo se va a la calle y todo se "
- "vende en envase de un solo uso.",
- "Bar, take away, food truck, churrería", ["take-away", "bolsas-de-papel"], True),
+("Pascua: take away en los días de más afluencia del primer semestre", [3],
+ "El puente de Pascua mueve turismo en toda Europa y concentra el consumo en la calle. "
+ "Todo se vende en envase de un solo uso y se agota en cuatro días.",
+ "Bar, take away, food truck, hotel", ["take-away", "bolsas-de-papel"], True),
 
 ("Servilletas de color: vista la mesa de primavera", [3],
  "Cambio de temporada: el hostelero renueva la gama de color cuando cambia la carta. "
@@ -159,8 +189,8 @@ OCASIONES = [
  "Restaurante, cafetería, bar", ["servilletas-de-papel"], True),
 
 ("Bolsas abiertas a dos lados: bocadillos para llevar y comer de pie", [3, 6],
- "La bolsa abierta a dos lados es el formato de bocadillo de calle. Romerías, ferias y "
- "eventos: consumo de pie que no admite plato.",
+ "La bolsa abierta a dos lados es el formato del bocadillo de calle. Ferias, mercados y "
+ "eventos al aire libre: consumo de pie que no admite plato.",
  "Bar, panadería, food truck, evento", ["bolsas-de-papel"], True),
 
 ("Papel antigrasa decorado: presente el frito como se merece", [3, 5],
@@ -174,14 +204,14 @@ OCASIONES = [
  "Restaurante de mantel, hotel, catering", ["tete-a-tete"], True),
 
 # ─────────────── ABRIL ───────────────
-("Feria de Abril y romerías: fritos para consumo de pie", [4],
- "Semanas de máximo consumo en la calle en Andalucía y el Levante. Papelina, cucurucho y "
- "cajetilla: todo fabricación propia y todo desechable.",
- "Caseta, feria, churrería, food truck", ["cucuruchos-de-papel", "recipientes-para-fritas"], True),
+("Ferias y mercados de primavera: fritos para consumo de pie", [4],
+ "Con el buen tiempo arrancan las ferias, los mercados y los eventos al aire libre. "
+ "Papelina, cucurucho y cajetilla: fabricación propia y consumo de un solo uso.",
+ "Caseta, feria, food truck, evento", ["cucuruchos-de-papel", "recipientes-para-fritas"], True),
 
-("Comuniones: se contratan ahora. Mantelería coordinada y servilletas", [4],
- "La comunión se cierra con dos meses de antelación. En abril el restaurante ya sabe "
- "cuántos servicios tiene y compra la mantelería del conjunto.",
+("Banquetes de primavera: se contratan ahora. Mantelería coordinada", [4],
+ "LA COMPRA SE ADELANTA: los banquetes de primavera se cierran con dos meses de "
+ "antelación. En abril el restaurante ya sabe cuántos servicios tiene y compra el conjunto.",
  "Restaurante de celebraciones, catering, hotel", ["conjuntos-decorados", "manteles-de-papel"], True),
 
 ("Catering de exterior: bandejas traiteur y cajas de transporte", [4, 5],
@@ -199,13 +229,13 @@ OCASIONES = [
  "lugar de blanco liso.",
  "Restaurante de menú, cafetería, terraza", ["manteles-individuales"], True),
 
-("Pescaíto frito y fritura de temporada: envolver sin que traspase", [4, 7],
+("Fritura de temporada: envolver sin que traspase", [4, 7],
  "El frito es el producto más exigente con el papel. Antigrasa de fabricación propia y "
  "cucurucho: el cliente lo nota en la primera bandeja.",
- "Chiringuito, freiduría, bar de playa", ["papel-antigrasa", "cucuruchos-de-papel"], True),
+ "Bar de playa, freiduría, food truck", ["papel-antigrasa", "cucuruchos-de-papel"], True),
 
-("Bolsas de pastelería para tartas de celebración", [4, 5],
- "Comuniones, bodas y cumpleaños. La tarta sale del obrador en caja y bolsa, y en "
+("Bolsas y cajas de pastelería para tartas de celebración", [4, 5],
+ "Bodas, cumpleaños y banquetes. La tarta sale del obrador en caja y bolsa, y en "
  "temporada de celebraciones se multiplica el consumo.",
  "Pastelería, obrador, panadería", ["cajas-para-pasteleria"], True),
 
@@ -220,9 +250,9 @@ OCASIONES = [
  "Take away, delivery, supermercado, cafetería", ["ensaladeras"], False),
 
 # ─────────────── MAYO ───────────────
-("Comuniones en pico: la mesa de la celebración", [5],
- "Mayo es el mes de las comuniones. Servicio de mantel completo y volumen concentrado en "
- "cuatro fines de semana.",
+("Temporada de banquetes: la mesa de la celebración", [5],
+ "Mayo abre la temporada de celebraciones en toda Europa. Servicio de mantel completo y "
+ "volumen concentrado en pocos fines de semana.",
  "Restaurante de celebraciones, catering, hotel", ["conjuntos-decorados", "manteles-de-papel"], True),
 
 ("Bodas y catering: presentar, transportar y servir fuera de casa", [5],
@@ -240,9 +270,9 @@ OCASIONES = [
  "a comprar en mayo con las cifras reales.",
  "Heladería, chiringuito, cafetería", ["tarrinas-para-helados"], True),
 
-("Día de la Madre: pastelería y regalo", [4],
- "Primer domingo de mayo, se prepara la última semana de abril. Caja, bolsa y papel de "
- "presentación para pastelería y comercio.",
+("Día de la Madre: pastelería y regalo (mayo en casi toda Europa)", [4],
+ "Cae en mayo en la mayoría de mercados, así que se prepara a finales de abril. Caja, "
+ "bolsa y papel de presentación para pastelería y comercio.",
  "Pastelería, comercio, floristería", ["cajas-para-pasteleria", "papel-y-bolsas-para-regalos"], True),
 
 ("Bolsas de papel para heladería y pastelería de temporada", [5],
@@ -255,9 +285,9 @@ OCASIONES = [
  "producto que más agiliza la mesa.",
  "Terraza, restaurante, cafetería", ["servilletas-kangaroo"], True),
 
-("Papelinas y cucuruchos para ferias locales", [5, 6],
- "Mayo y junio concentran las ferias de pueblo. Consumo de pie, producto frito y envase "
- "de fabricación propia.",
+("Papelinas y cucuruchos para ferias y mercados", [5, 6],
+ "Mayo y junio concentran ferias, mercados y eventos al aire libre. Consumo de pie, "
+ "producto frito y envase de fabricación propia.",
  "Caseta, feria, food truck", ["cucuruchos-de-papel"], True),
 
 ("Envases para picnic y comida al aire libre", [5],
@@ -266,9 +296,9 @@ OCASIONES = [
  "Take away, supermercado, catering", ["take-away"], False),
 
 # ─────────────── JUNIO ───────────────
-("San Juan y verbenas: fritos y consumo en la calle", [6],
- "La noche de San Juan y las verbenas de junio son consumo de pie y volumen alto en "
- "pocas horas. Todo desechable.",
+("Fiestas de verano y eventos de calle: volumen alto en pocas horas", [6],
+ "Junio abre la temporada de fiestas al aire libre en toda Europa. Consumo de pie, "
+ "servicio rápido y todo de un solo uso.",
  "Bar, chiringuito, caseta, food truck", ["recipientes-para-fritas", "cucuruchos-de-papel"], True),
 
 ("Fin de curso y celebraciones: mantelería y servilletas", [6],
@@ -448,25 +478,35 @@ OCASIONES = [
  "conforme. Es una venta por tranquilidad, no por precio.",
  "Todos, especialmente cadenas y colectividades", ["pfas-free"], True),
 
+("Comedores escolares y colectividades: vuelta al curso", [8, 9],
+ "Septiembre reabre comedores escolares, hospitales y empresas en todos los mercados. "
+ "Son contratos de volumen que se cierran de una vez para todo el curso.",
+ "Colectividades, catering social, comedor escolar", ["manteles-individuales", "servilletas-de-papel"], True),
+
+("Fiestas de la cerveza: servicio de pie y volumen concentrado", [9],
+ "De septiembre a octubre las fiestas cerveceras mueven cifras enormes en Alemania y "
+ "cada vez más en el resto de Europa. Posavasos, papel antigrasa y envase de frito.",
+ "Cervecería, carpa, festival, food truck", ["posavasos", "papel-antigrasa"], True),
+
 # ─────────────── OCTUBRE ───────────────
 ("La Navidad se compra ahora: mantelería y servilletas de Navidad", [10],
  "LA COMPRA SE ADELANTA DOS MESES: el hostelero cierra la mantelería de Navidad en "
  "octubre. En diciembre ya solo repone lo que le falta.",
  "Restaurante, hotel, catering, colectividades", ["servilletas-de-navidad", "manteles-de-navidad"], True),
 
-("Castañas y churros de otoño: cucuruchos y papelinas de punta", [10],
- "La castañera y la churrería arrancan en octubre. Envase de fabricación propia, "
- "temporada corta y consumo intenso.",
- "Churrería, castañera, feria, food truck", ["cucuruchos-de-papel", "papelinas"], True),
+("Street food de otoño: cucuruchos y papelinas para fritos y frutos secos", [10],
+ "En octubre vuelve el puesto de calle y el mercado de invierno en toda Europa. Envase "
+ "de fabricación propia, temporada corta y consumo intenso.",
+ "Puesto de calle, feria, mercado, food truck", ["cucuruchos-de-papel", "papelinas"], True),
 
-("Halloween y Todos los Santos: mantelería y bolsas decoradas", [10],
- "Fecha cada vez más comercial en hostelería y comercio. Producto decorado, temporada de "
- "una semana y pedido que se repite cada año.",
+("Halloween: mantelería y bolsas decoradas", [10],
+ "Fecha cada vez más comercial en hostelería y comercio en toda Europa. Producto "
+ "decorado, temporada de una semana y pedido que se repite cada año.",
  "Bar, cafetería, comercio, pastelería", ["conjuntos-decorados"], True),
 
-("Panellets y dulces de Todos los Santos: cajas, cápsulas y blondas", [10],
- "Temporada muy corta y muy concentrada en pastelería catalana y de Levante. Formato "
- "pequeño y presentación cuidada.",
+("Pastelería de otoño: formato pequeño, cápsulas y blondas", [10],
+ "Cada mercado tiene su dulce de otoño, y todos comparten el mismo problema: formato "
+ "pequeño, presentación cuidada y temporada muy corta.",
  "Pastelería, obrador, panadería", ["pasteleria", "blondas"], True),
 
 ("Vuelven las sopas y las cremas: tarrinas con tapa estanca", [10],
@@ -530,9 +570,9 @@ OCASIONES = [
  "funciona muy bien en noviembre.",
  "Restaurante, hotel, cadena, comercio", ["personalizados"], True),
 
-("Cotillón: bolsas y complementos de Fin de Año", [11],
- "El cotillón se compra en noviembre porque en diciembre ya no llega. Producto de "
- "temporada de una noche y margen alto.",
+("Fin de Año: bolsas y complementos de fiesta", [11],
+ "LA COMPRA SE ADELANTA: se compra en noviembre porque en diciembre ya no llega. "
+ "Producto para una sola noche y de margen alto.",
  "Discoteca, restaurante, hotel, comercio", ["bolsas-de-cotillon", "cotillon"], True),
 
 ("Servilletas de Navidad: todas las calidades, del tisú al Like-Linen", [11],
@@ -540,14 +580,21 @@ OCASIONES = [
  "la gama al año siguiente.",
  "Todos", ["servilletas-de-navidad"], True),
 
+("Mercados de Navidad: consumo en la calle con frío", [10, 11],
+ "Los mercados navideños de Alemania, Francia y Austria son seis semanas de consumo de "
+ "pie y a la intemperie. Vaso caliente, cucurucho y papel antigrasa, en volumen.",
+ "Puesto de mercado, caseta, food truck, hostelería de calle",
+ ["vasos-de-carton-bebidas-calientes", "cucuruchos-de-papel"], True),
+
 # ─────────────── DICIEMBRE ───────────────
 ("La mesa de Navidad: servilletas, manteles y Tête-à-Tête", [12],
  "Reposición de diciembre: el que se quedó corto compra ahora y sin discutir precio. "
  "Entrega rápida es lo único que importa.",
  "Restaurante, hotel, catering", ["manteles-de-navidad", "servilletas-de-navidad"], True),
 
-("Cotillón y Fin de Año", [12],
- "Última llamada para la noche del 31. Pedido corto, urgente y de margen alto.",
+("Fin de Año: última llamada para la noche del 31", [12],
+ "Pedido corto, urgente y de margen alto. Aquí no se compite por precio, se compite "
+ "por llegar a tiempo.",
  "Discoteca, restaurante, hotel", ["bolsas-de-cotillon"], True),
 
 ("Lotes y regalos: papel, bolsas y cajas de botella", [12],
@@ -575,7 +622,7 @@ OCASIONES = [
  "en mantelería para esa noche.",
  "Restaurante, hotel", ["like-linen", "conjuntos-decorados"], True),
 
-("Roscón de Reyes: prepare la caja antes de que empiece a venderse", [11],
+("Dulce de Reyes: prepare la caja antes de que empiece a venderse", [11],
  "LA COMPRA SE ADELANTA: el roscón se vende del 28 de diciembre al 6 de enero, y la caja "
  "hay que tenerla antes. Es el último pedido del año y el primero del siguiente.",
  "Pastelería, panadería, obrador", ["cajas-para-pasteleria"], True),

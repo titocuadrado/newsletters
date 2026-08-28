@@ -1,5 +1,5 @@
 from playwright.sync_api import sync_playwright
-import sys, os, json
+import sys, os, json, datetime
 
 SP = os.path.dirname(os.path.abspath(__file__))
 frag = open(f'{SP}/planificador.html').read()
@@ -268,6 +268,117 @@ with sync_playwright() as pw:
     check(bool(pub) and pub.startswith('<!doctype html>'),
           'guardar publica un documento completo')
     check(pag.evaluate('ESTADO.rev') == 2, f'la revisión sube a 2 (es {pag.evaluate("ESTADO.rev")})')
+
+    print('\n=== PLANIFICACION AUTOMATICA DE UN TRIMESTRE ===')
+    # Se planifica sobre un trimestre vacio: 2028 Q2
+    pag.evaluate("ESTADO.envios = ESTADO.envios.filter(e => e.fecha < '2028-01-01'); pintar();")
+    n_previo = pag.evaluate('ESTADO.envios.length')
+    pag.click('#btn-planificar')
+    pag.wait_for_timeout(300)
+    check(pag.eval_on_selector('#planificar', 'e => !e.hasAttribute("hidden")'),
+          'el botón abre el panel de planificación')
+    check(len(pag.eval_on_selector('#p-previo', 'e => e.textContent')) > 30,
+          'el panel adelanta cuántos huecos hay')
+
+    pag.select_option('#p-anyo', '2028')
+    pag.select_option('#p-trim', '2')
+    pag.wait_for_timeout(200)
+    previo = pag.eval_on_selector('#p-previo', 'e => e.textContent')
+    check('26' in previo and 'nada planificado' in previo,
+          f'calcula los martes y jueves del Q2 2028: {previo[:70]}')
+
+    pag.click('#p-lanzar')
+    pag.wait_for_timeout(700)
+    check(pag.eval_on_selector('#planificar', 'e => e.hasAttribute("hidden")'),
+          'el panel se cierra al planificar')
+
+    nuevos = pag.evaluate(
+        "ESTADO.envios.filter(e => e.fecha >= '2028-04-01' && e.fecha <= '2028-06-30')")
+    check(len(nuevos) == 26, f'genera los 26 envíos del trimestre (son {len(nuevos)})')
+    check(pag.evaluate('ESTADO.envios.length') == n_previo + 26,
+          'y no toca los envíos de fuera del trimestre')
+
+    dias = set()
+    for e in nuevos:
+        y, m, d = (int(x) for x in e['fecha'].split('-'))
+        import datetime
+        dias.add(datetime.date(y, m, d).weekday())
+    check(dias == {1, 3}, f'todos caen en martes o jueves (días encontrados: {sorted(dias)})')
+    check(len(set(e['fecha'] for e in nuevos)) == 26, 'sin dos envíos el mismo día')
+    check(all(e['tema'] and 'sin propuesta' not in e['tema'] for e in nuevos),
+          'ningún hueco se queda sin tema')
+    check(len(set(e['tema'] for e in nuevos)) == 26, 'no repite tema dentro del trimestre')
+
+    con_url = [e for e in nuevos if e['url']]
+    check(len(con_url) >= 20, f'{len(con_url)} de 26 llevan URL de categoría')
+    check(all(u['url'].startswith('https://www.garciadepou.com/') for u in con_url),
+          'todas las URL son del dominio real')
+    urls_hist = set(pag.evaluate('DATOS.urls.map(x => x.u.split("?")[0])'))
+    inventadas = [e['url'] for e in con_url if e['url'].split('?')[0] not in urls_hist]
+    check(not inventadas, f'ninguna URL inventada: {inventadas[:2]}')
+
+    propias = [e for e in nuevos if e['propia']]
+    check(len(propias) / len(nuevos) >= 0.75,
+          f'cumple la cuota de fabricación propia ({len(propias)}/{len(nuevos)})')
+    check(all(e['estado'] == 'propuesta' for e in nuevos), 'todos entran como propuesta')
+    check(all(e['razon'] for e in nuevos), 'todos traen su argumento comercial')
+
+    texto_aviso = pag.eval_on_selector('#avisos', 'e => e.textContent')
+    check('Q2 de 2028 planificado' in texto_aviso, 'resume lo que ha hecho')
+    check('Deshacer' in texto_aviso, 'y ofrece deshacerlo')
+    check(pag.eval_on_selector('#sucio', 'e => e.textContent') == 'Cambios sin guardar',
+          'queda marcado como pendiente de guardar')
+
+    print('\n--- las ocasiones deben servir fuera de España ---')
+    LOCALISMOS = ['feria de abril', 'san juan', 'verbena', 'torrija', 'panellet', 'pescaíto',
+                  'romería', 'castañera', 'todos los santos', 'comunión', 'comuniones',
+                  'día del padre', 'cuaresma', 'vigilia', 'cotillón', 'semana santa', 'churro']
+    todos = pag.evaluate('DATOS.ocasiones.map(o => o.tema + " " + o.razon)')
+    malos = [t[:60] for t in todos if any(k in t.lower() for k in LOCALISMOS)]
+    check(not malos, f'ninguna ocasión es exclusiva de España: {malos[:3]}')
+    check(len(todos) >= 110, f'{len(todos)} ocasiones en el calendario comercial')
+    meses_ok = pag.evaluate(
+        "(() => { const c = {}; DATOS.ocasiones.forEach(o => o.meses.forEach("
+        "m => c[m] = (c[m]||0)+1)); return Object.keys(c).length === 12 &&"
+        " Object.values(c).every(v => v >= 10); })()")
+    check(meses_ok, 'los doce meses tienen al menos 10 ocasiones disponibles')
+
+    print('\n--- planificar sobre un trimestre ya ocupado avisa antes ---')
+    pag.evaluate('window.__confirmado = null;'
+                 ' window.confirm = m => { window.__confirmado = m; return false; };')
+    pag.click('#btn-planificar')
+    pag.wait_for_timeout(200)
+    pag.select_option('#p-anyo', '2028')
+    pag.select_option('#p-trim', '2')
+    pag.wait_for_timeout(200)
+    check('se sustituirán' in pag.eval_on_selector('#p-previo', 'e => e.textContent'),
+          'el panel avisa de que va a sustituir')
+    pag.click('#p-lanzar')
+    pag.wait_for_timeout(400)
+    check(pag.evaluate('window.__confirmado') is not None, 'pide confirmación antes de sustituir')
+    check(pag.evaluate(
+        "ESTADO.envios.filter(e => e.fecha >= '2028-04-01' && e.fecha <= '2028-06-30').length")
+        == 26, 'si se cancela, no cambia nada')
+    pag.evaluate('window.confirm = () => true;')
+    pag.click('#p-lanzar')
+    pag.wait_for_timeout(700)
+    check(pag.evaluate(
+        "ESTADO.envios.filter(e => e.fecha >= '2028-04-01' && e.fecha <= '2028-06-30').length")
+        == 26, 'al confirmar, sustituye sin duplicar')
+    pag.eval_on_selector('#btn-accion', 'b => b.click()')
+    pag.wait_for_timeout(300)
+
+    print('\n--- el trimestre siguiente se propone solo ---')
+    pag.evaluate("ESTADO.envios = ESTADO.envios.filter(e => e.fecha <= '2027-03-31'); pintar();")
+    pag.click('#btn-planificar')
+    pag.wait_for_timeout(300)
+    check(pag.eval_on_selector('#p-anyo', 'e => e.value') == '2027'
+          and pag.eval_on_selector('#p-trim', 'e => e.value') == '2',
+          'tras un plan que acaba en marzo de 2027, propone el Q2 de 2027')
+    pag.click('#p-cancelar')
+    pag.wait_for_timeout(200)
+    check(pag.eval_on_selector('#planificar', 'e => e.hasAttribute("hidden")'),
+          'Cancelar cierra el panel sin tocar nada')
 
     print('\n=== RECONSTRUCCION: la pagina se reescribe a si misma ===')
     v2 = pag.evaluate('window.__publicado || documento(ESTADO)')

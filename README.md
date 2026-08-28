@@ -93,12 +93,13 @@ El histórico se usa solo para dos cosas:
 
 | Fichero | Qué es |
 |---|---|
-| `app/app.js` | Toda la lógica: pintado, edición, filtros, guardado y exportaciones. |
+| `app/app.js` | Toda la lógica: pintado, edición, filtros, guardado y exportaciones. Incluye el motor de planificación. |
+| `app/motor.js` | El motor de planificación automática, tal como se inserta en `app.js`. |
 | `app/app.css` | Estilos propios, encima de la hoja de marca. |
 | `app/cuerpo.html` | El esqueleto de la interfaz (cabecera, KPIs, barra de filtros, pie). |
 | `app/marca/` | Hoja de marca y logo de García de Pou, copiados aquí para que la compilación no dependa de rutas externas. |
 | `app/montar.py` | Ensambla todo en `planificador.html` con los datos de `data/temas-2027.json`. |
-| `app/probar.py` | Suite de pruebas en navegador (Playwright): 79 comprobaciones. |
+| `app/probar.py` | Suite de pruebas en navegador (Playwright): 107 comprobaciones. |
 | `docs/planificador.html` | La versión ensamblada y publicada. |
 
 Se publica **una sola versión**, la de trabajo, con las capacidades `artifact` y
@@ -118,6 +119,48 @@ podría responder al clic — `app.css` recupera los eventos para esa clase.
 python3 app/montar.py    # -> planificador.html
 python3 app/probar.py    # abre Chromium y verifica todo
 ```
+
+### Planificar un trimestre con un botón
+
+**Planificar trimestre** genera los ~26 envíos de un trimestre completo: reparte las
+ocasiones comerciales sobre los martes y jueves, pone la URL de categoría y deja todo
+como `propuesta` para revisar. El motor va **dentro de la página**: no llama a ningún
+servidor. Sus datos se embeben en la compilación desde `data/planificador-datos.json`
+(118 ocasiones + 225 URL reales del histórico), que genera `scripts/datos_app.py`.
+
+Orden de asignación de cada hueco:
+
+1. **Fabricación propia primero** hasta cubrir `CUOTA_PROPIA` (75%).
+2. **Reparto de familias**: no repite familia de producto antes de `DESCANSO_FAMILIA`
+   (4 envíos). Sin esta regla salían tres newsletters de papel antigrasa el mismo mes.
+3. **Meses vecinos** si un mes se queda sin ideas disponibles.
+
+La URL sale de `eligeUrl()`, que busca entre los enlaces ya usados en newsletters
+anteriores y **nunca inventa uno**. Prefiere los posteriores a `FECHA_MIGRACION`, la
+categoría antes que la subcategoría, y descarta las vistas filtradas. Los temas sin
+enlace se quedan en blanco a propósito.
+
+Si el trimestre elegido ya tiene envíos, avisa y pide confirmación antes de sustituirlos,
+y siempre ofrece **Deshacer**. También marca los temas que se parecen a otros que ya
+están en el plan.
+
+`scripts/proponer_temas.py` es el equivalente offline y aplica las mismas reglas.
+
+### Ámbito internacional
+
+Las newsletters salen en cuatro idiomas y llegan a unos 60 países, con Francia, Portugal,
+Italia y Alemania como mercados de exportación consolidados, así que **las ocasiones no
+pueden ser locales**. Del calendario se han eliminado Feria de Abril, San Juan, torrijas,
+panellets, pescaíto, romerías, comuniones, Día del Padre y Todos los Santos, y se han
+reescrito en clave europea: Pascua en lugar de Semana Santa, banquetes de primavera en
+lugar de comuniones, dulces de Epifanía en lugar de roscón de Reyes, street food de otoño
+en lugar de castañas y churros. Se conservan las fechas que se celebran en todo el
+continente: Navidad, Fin de Año, San Valentín, Carnaval, Pascua, Halloween y Black Friday.
+
+Se han añadido ocasiones de otros mercados que faltaban: temporada de montaña y esquí,
+fiestas de la cerveza, mercados de Navidad, comedores escolares y temporada hotelera.
+
+La suite comprueba que ninguna ocasión contenga un localismo español.
 
 ### Mover envíos
 
@@ -170,9 +213,13 @@ Detalles que la suite cubre y conviene no romper:
 
 ## Pendiente
 
-- **Catálogo de producto** — 6 temas de 2027 no tienen enlace porque son categorías que
-  nunca se han enlazado en una newsletter (posavasos, personalizados, Airlaid). El
-  catálogo cerraría ese hueco y permitiría bajar de categoría a referencia concreta.
+- **Sitemap de categorías** — es lo que más mejora la calidad ahora mismo. El motor solo
+  puede usar las 225 URL del histórico, y por eso algunos temas se quedan sin enlace
+  (posavasos, personalizados, Airlaid) y otros comparten URL de categoría. Con el sitemap
+  cada tema tendría su enlace exacto.
+- **Catálogo de producto (4 capítulos)** — permitiría bajar de categoría a referencia
+  concreta: páginas, diseños y medidas en cada tema, y detectar el surtido que no ha
+  salido nunca.
 - Ampliar el calendario comercial: febrero y agosto son los meses con menos ocasiones.
 - Brief de diseño como borrador en Gmail (ahora se descarga como `.txt`).
 - Vista de aprobación para gerencia, separada de la de edición.

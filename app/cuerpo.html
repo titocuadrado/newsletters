@@ -6,6 +6,7 @@
       <h1>Plan 2027</h1>
     </div>
     <div class="pl-top-acts">
+      <button class="btn btn-blue btn-sm" id="btn-planificar">Planificar trimestre</button>
       <button class="btn btn-outline-blue btn-sm" id="btn-csv">Exportar CSV</button>
       <button class="btn btn-outline-blue btn-sm" id="btn-brief">Brief de diseño</button>
       <button class="btn btn-blue" id="btn-guardar" disabled>Guardar</button>
@@ -23,6 +24,37 @@
     <button class="btn btn-outline-blue btn-sm" id="btn-nuevo">+ Añadir envío</button>
     <label class="pl-check"><input type="checkbox" id="f-razon" checked> Argumento comercial</label>
     <span class="pl-sucio" id="sucio">Todo guardado</span>
+  </div>
+</div>
+
+<div class="pl-plan" id="planificar" hidden>
+  <div class="pl-plan-in">
+    <div class="pl-plan-t">
+      <p class="label">Planificación automática</p>
+      <h2>Genere el trimestre completo</h2>
+      <p class="pl-plan-d">Reparte los temas sobre los martes y jueves según lo que compra el
+        hostelero en cada época del año, con la fecha adelantada al momento de la compra.
+        Prioriza el papel y cartón de fabricación propia y pone la URL de categoría cuando la
+        hay. Después se revisa y se ajusta a mano.</p>
+    </div>
+    <div class="pl-plan-c">
+      <label class="pl-plan-l">Trimestre
+        <select id="p-trim">
+          <option value="1">Q1 · enero a marzo</option>
+          <option value="2">Q2 · abril a junio</option>
+          <option value="3">Q3 · julio a septiembre</option>
+          <option value="4">Q4 · octubre a diciembre</option>
+        </select>
+      </label>
+      <label class="pl-plan-l">Año
+        <select id="p-anyo">
+          <option>2026</option><option>2027</option><option>2028</option><option>2029</option>
+        </select>
+      </label>
+      <button class="btn btn-blue" id="p-lanzar">Planificar</button>
+      <button class="btn btn-outline-blue" id="p-cancelar">Cancelar</button>
+    </div>
+    <p class="pl-plan-p" id="p-previo"></p>
   </div>
 </div>
 

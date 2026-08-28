@@ -48,6 +48,26 @@ body { background: var(--white); color: var(--black); }
 .pl-sucio--si { color: var(--red); border-color: var(--red); background: var(--red-10); }
 .pl-sucio--ro { color: var(--g600); background: var(--g50); }
 
+/* Panel de planificación automática */
+.pl-plan { border-bottom: 1px solid var(--g100); background: var(--g50); }
+.pl-plan-in { max-width: 1400px; margin: 0 auto; padding: var(--sp-24) clamp(16px, 3vw, 40px); }
+.pl-plan-t h2 { font-size: var(--fs-2xl); font-weight: 900; text-transform: uppercase;
+  letter-spacing: -.03em; line-height: 1.1; }
+.pl-plan-t .label { margin-bottom: 3px; }
+.pl-plan-d { max-width: 74ch; margin-top: var(--sp-8); font-size: var(--fs-base);
+  color: var(--g600); line-height: 1.6; }
+.pl-plan-c { display: flex; flex-wrap: wrap; gap: var(--sp-12); align-items: flex-end;
+  margin-top: var(--sp-20); }
+.pl-plan-l { display: flex; flex-direction: column; gap: var(--sp-4);
+  font-size: var(--fs-2xs); color: var(--g500); text-transform: uppercase; letter-spacing: .08em; }
+.pl-plan-l select { height: var(--ctrl-h); border: 1px solid var(--g400); border-radius: var(--radius);
+  padding: 0 var(--sp-12); font-family: inherit; font-size: var(--fs-md); font-weight: 500;
+  background: var(--white); color: var(--black); text-transform: none; letter-spacing: 0; }
+.pl-plan-l select:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
+.pl-plan-p { margin-top: var(--sp-12); font-size: var(--fs-3xs); color: var(--g600); line-height: 1.6; }
+
+.pl-tag--ojo { color: var(--red); border-color: var(--red); background: var(--red-10); cursor: help; }
+
 #avisos { max-width: 1400px; margin: var(--sp-16) auto 0; padding: 0 clamp(16px, 3vw, 40px); }
 #avisos .gdp-alert-msg .btn { margin-left: var(--sp-8); }
 
