@@ -64,6 +64,7 @@ with sync_playwright() as pw:
           'Guardar se habilita')
 
     print('\n--- cambiar estado y fecha ---')
+    id_aprobada = pag.evaluate('ESTADO.envios[0].id')
     pag.select_option('#tabla tbody tr:first-child select[data-campo="estado"]', 'aprobada')
     pag.wait_for_timeout(200)
     check(pag.evaluate('ESTADO.envios[0].estado') == 'aprobada', 'el estado llega a ESTADO')
@@ -116,6 +117,142 @@ with sync_playwright() as pw:
     nb = pag.evaluate('brief().length')
     check(nb > 5000, f'el brief tiene contenido ({nb} caracteres)')
 
+    print('\n--- mover envios (las fechas son huecos fijos) ---')
+    huecos_antes = pag.evaluate('ESTADO.envios.map(e => e.fecha).join("|")')
+    orden_antes  = pag.evaluate('ESTADO.envios.map(e => e.id).join("|")')
+    check(pag.eval_on_selector_all('#tabla .pl-asa', 'els => els.length') == 104,
+          'cada fila tiene su asa de arrastre')
+
+    # Alt+flecha abajo desde el asa: baja un hueco
+    prim = pag.evaluate('ESTADO.envios[0].id')
+    pag.eval_on_selector('tr[data-id=\"' + prim + '\"] .pl-asa', 'b => b.focus()')
+    pag.keyboard.press('Alt+ArrowDown')
+    pag.wait_for_timeout(400)
+    check(pag.evaluate(f'ESTADO.envios[1].id') == prim,
+          'Alt+flecha abajo mueve el envío un hueco')
+    check(pag.evaluate('ESTADO.envios.map(e => e.fecha).join("|")') == huecos_antes,
+          'los huecos del calendario no cambian: solo se reparten distinto')
+    check('Deshacer' in pag.eval_on_selector('#avisos', 'e => e.textContent'),
+          'ofrece deshacer el movimiento')
+    check('recolocado' in pag.eval_on_selector('#avisos', 'e => e.textContent'),
+          'dice cuántos envíos se han recolocado')
+    pag.eval_on_selector('#btn-accion', 'b => b.click()')
+    pag.wait_for_timeout(300)
+    check(pag.evaluate('ESTADO.envios.map(e => e.id).join("|")') == orden_antes,
+          'deshacer devuelve el orden anterior')
+
+    # Se mueve con eventos de puntero, así que el ratón real sirve para probarlo.
+    def arrastrar(id_desde, id_hasta, mitad_superior=True):
+        # Las dos filas tienen que caber en pantalla: el ratón no puede salir del viewport.
+        pag.evaluate(
+            "([a, b]) => {"
+            " const ra = document.querySelector('tr[data-id=\"'+a+'\"]').getBoundingClientRect();"
+            " const rb = document.querySelector('tr[data-id=\"'+b+'\"]').getBoundingClientRect();"
+            " const centro = (Math.min(ra.top, rb.top) + Math.max(ra.bottom, rb.bottom)) / 2;"
+            " window.scrollBy({top: centro - innerHeight / 2, behavior: 'instant'}); }",
+            [id_desde, id_hasta])
+        pag.wait_for_timeout(150)
+        a = pag.query_selector('tr[data-id="' + id_desde + '"] .pl-asa').bounding_box()
+        assert 0 < a['y'] < 950, f'el asa quedó fuera de pantalla: {a}'
+        pag.mouse.move(a['x'] + a['width'] / 2, a['y'] + a['height'] / 2)
+        pag.mouse.down()
+        b = pag.query_selector('tr[data-id="' + id_hasta + '"] td.c-t').bounding_box()
+        y = b['y'] + (b['height'] * (0.2 if mitad_superior else 0.8))
+        pag.mouse.move(b['x'] + 30, y, steps=8)
+        pag.wait_for_timeout(150)
+
+    check(pag.eval_on_selector_all('#tabla tr.pl-antes, #tabla tr.pl-despues',
+                                   'els => els.length') == 0,
+          'sin arrastre en curso no hay marca de destino')
+
+    # Arrastre corto y visible: el 6.o envio pasa delante del 2.o
+    pag.evaluate('window.scrollTo(0, 0)')
+    pag.wait_for_timeout(150)
+    id_org = pag.evaluate('ESTADO.envios[5].id')
+    id_dst = pag.evaluate('ESTADO.envios[1].id')
+    arrastrar(id_org, id_dst, True)
+    check(pag.eval_on_selector_all('#tabla tr.pl-antes', 'els => els.length') == 1,
+          'durante el arrastre se marca dónde va a caer')
+    check(pag.eval_on_selector_all('#tabla tr.pl-arrastrando', 'els => els.length') == 1,
+          'y la fila que se mueve se atenúa')
+    pag.mouse.up()
+    pag.wait_for_timeout(400)
+    idx = pag.evaluate('ESTADO.envios.findIndex(e => e.id === "' + id_org + '")')
+    check(idx == 1, f'el envío cae justo antes del destino (índice {idx}, esperado 1)')
+    check(pag.eval_on_selector_all(
+              '#tabla tr.pl-antes, #tabla tr.pl-despues, #tabla tr.pl-arrastrando',
+              'els => els.length') == 0,
+          'al soltar se limpian las marcas de arrastre')
+    check(pag.evaluate('document.body.classList.contains("pl-moviendo")') is False,
+          'y el cursor de arrastre se retira')
+    check(pag.evaluate('window.getSelection().toString().length') == 0,
+          'el arrastre no deja media página seleccionada')
+    check(pag.evaluate('ESTADO.envios.map(e => e.fecha).join("|")') == huecos_antes,
+          'tras el arrastre los huecos del calendario siguen siendo los mismos')
+    check(pag.evaluate('ESTADO.envios.length') == 104, 'no se pierde ni se duplica ningún envío')
+    check(len(set(pag.evaluate('ESTADO.envios.map(e => e.fecha)'))) == 104,
+          'no hay dos envíos en la misma fecha')
+
+    # Soltar en la mitad inferior mete DETRAS del destino
+    id_org2 = pag.evaluate('ESTADO.envios[0].id')
+    id_dst2 = pag.evaluate('ESTADO.envios[4].id')
+    arrastrar(id_org2, id_dst2, False)
+    check(pag.eval_on_selector_all('#tabla tr.pl-despues', 'els => els.length') == 1,
+          'soltando por la mitad inferior, la marca va al otro lado')
+    pag.mouse.up()
+    pag.wait_for_timeout(400)
+    check(pag.evaluate('ESTADO.envios.findIndex(e => e.id === "' + id_org2 + '")') == 4,
+          'y el envío queda detrás del destino')
+
+    print('\n--- scroll automatico al arrastrar hacia el borde ---')
+    pag.evaluate("window.scrollTo({top: 1400, behavior: 'instant'})")
+    pag.wait_for_timeout(250)
+    y0 = pag.evaluate('window.scrollY')
+    check(y0 > 200, f'la página está desplazada para la prueba (scrollY={y0})')
+    BUSCA_MEDIO = ("(() => { const fs = Array.from(document.querySelectorAll('#tabla tbody tr'));"
+                   " const f = fs.find(x => { const r = x.getBoundingClientRect();"
+                   " return r.top > 300 && r.top < 600; });"
+                   " return f ? f.getAttribute('data-id') : null; })()")
+    medio = pag.evaluate(BUSCA_MEDIO)
+    check(medio is not None, 'hay una fila a media pantalla para agarrar')
+    a = pag.query_selector('tr[data-id="' + medio + '"] .pl-asa').bounding_box()
+    pag.mouse.move(a['x'] + a['width'] / 2, a['y'] + a['height'] / 2)
+    pag.mouse.down()
+    pag.mouse.move(a['x'] + 30, 30, steps=6)      # hasta el borde superior
+    pag.wait_for_timeout(700)
+    y1 = pag.evaluate('window.scrollY')
+    check(y1 < y0 - 50, f'arrastrar al borde superior desplaza la página ({y0} -> {y1})')
+    pag.mouse.up()
+    pag.wait_for_timeout(300)
+    check(pag.evaluate('SCROLL') is None, 'al soltar se detiene el desplazamiento')
+    check(pag.evaluate('MOVIENDO') is None, 'y se olvida el envío que se movía')
+    pag.evaluate('window.scrollTo(0, 0)')
+    pag.wait_for_timeout(150)
+
+    print('\n--- con filtro puesto no se puede arrastrar ---')
+    pag.select_option('#f-mes', '05')
+    pag.wait_for_timeout(300)
+    check(pag.eval_on_selector('#tabla .pl-asa', 'b => b.disabled') is True,
+          'con filtro, las asas quedan deshabilitadas')
+    check('filtro' in pag.eval_on_selector('#tabla .pl-asa', 'b => b.title').lower(),
+          'y explican por qué')
+    pag.select_option('#f-mes', 'todos')
+    pag.wait_for_timeout(300)
+    check(pag.eval_on_selector('#tabla .pl-asa', 'b => b.disabled') is False,
+          'al quitar el filtro se vuelven a habilitar')
+
+    print('\n--- deshacer un borrado ---')
+    n0 = pag.evaluate('ESTADO.envios.length')
+    pag.evaluate('''() => {
+      window.confirm = () => true;
+      document.querySelector('#tabla tbody tr button[data-accion="borrar"]').click();
+    }''')
+    pag.wait_for_timeout(300)
+    check(pag.evaluate('ESTADO.envios.length') == n0 - 1, 'borrar quita el envío')
+    pag.eval_on_selector('#btn-accion', 'b => b.click()')
+    pag.wait_for_timeout(300)
+    check(pag.evaluate('ESTADO.envios.length') == n0, 'deshacer recupera el envío borrado')
+
     print('\n--- descarga del CSV ---')
     pag.click('#btn-csv')
     pag.wait_for_timeout(400)
@@ -154,8 +291,8 @@ with sync_playwright() as pw:
     check(not err2, f'sin errores de JS en v2  {err2[:3]}')
     filas2 = pag2.eval_on_selector_all('#tabla tbody tr', 'els => els.length')
     check(filas2 == 104, f'v2 renderiza 104 filas (hay {filas2})')
-    check(pag2.evaluate('ESTADO.envios[0].estado') == 'aprobada',
-          'v2 conserva el estado editado')
+    check(pag2.evaluate('ESTADO.envios.find(e => e.id === "' + id_aprobada + '").estado')
+          == 'aprobada', 'v2 conserva el estado editado')
     check(pag2.evaluate('ESTADO.envios.filter(e=>e.tema.indexOf("PRUEBA")===0).length') == 1,
           'v2 conserva el tema editado')
     check(pag2.evaluate('ESTADO.envios.filter(e=>e.url && e.url.indexOf("posavasos")>-1).length') == 1,
@@ -237,6 +374,8 @@ with sync_playwright() as pw:
     pag3.wait_for_timeout(200)
     check(pag3.eval_on_selector('#sucio', 'e => e.textContent').startswith('Solo lectura'),
           'sigue diciendo solo lectura aunque el invitado escriba')
+    check(pag3.eval_on_selector('#tabla .pl-asa', 'b => b.disabled') is True,
+          'en solo lectura no se pueden mover envíos')
     check(pag3.evaluate('ESTADO.rev') == 2,
           'nada de lo pulsado en la vista compartida cambia el plan')
     nav.close()

@@ -22,6 +22,9 @@ let FILTROS = { mes: 'todos', estado: 'todos', texto: '', razon: true };
 let SUCIO = false;
 let SOLO_LECTURA = false;
 let PUEDE_DESCARGAR = false;
+let ANTERIOR = null;      // instantánea para deshacer, un nivel
+let MOVIENDO = null;      // {id, destino, antes} mientras se arrastra
+let SCROLL = null;        // temporizador del scroll automático al llegar al borde
 
 function esc(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -40,6 +43,74 @@ function fechaLarga(iso) {
 
 function ordenar() {
   ESTADO.envios.sort(function (a, b) { return a.fecha < b.fecha ? -1 : a.fecha > b.fecha ? 1 : 0; });
+}
+
+function hayFiltro() {
+  return FILTROS.mes !== 'todos' || FILTROS.estado !== 'todos' || FILTROS.texto.trim() !== '';
+}
+
+function instantanea() {
+  ANTERIOR = JSON.parse(JSON.stringify(ESTADO.envios));
+}
+
+function deshacer() {
+  if (!ANTERIOR) return;
+  ESTADO.envios = ANTERIOR;
+  ANTERIOR = null;
+  marcarSucio(true);
+  pintar();
+  document.getElementById('avisos').innerHTML = '';
+}
+
+function indiceDe(id) {
+  for (let i = 0; i < ESTADO.envios.length; i++) {
+    if (ESTADO.envios[i].id === id) return i;
+  }
+  return -1;
+}
+
+function reasignarHuecos() {
+  // Las fechas son huecos fijos del calendario: se vuelven a repartir en orden.
+  const huecos = ESTADO.envios.map(function (e) { return e.fecha; }).sort();
+  ESTADO.envios.forEach(function (e, i) { e.fecha = huecos[i]; });
+}
+
+function mover(id, destino) {
+  // destino = índice donde debe quedar el envío, en la lista completa ya ordenada
+  ordenar();
+  const desde = indiceDe(id);
+  if (desde === -1) return 0;
+  let hasta = Math.max(0, Math.min(ESTADO.envios.length - 1, destino));
+  if (hasta === desde) return 0;
+  instantanea();
+  const e = ESTADO.envios.splice(desde, 1)[0];
+  ESTADO.envios.splice(hasta, 0, e);
+  reasignarHuecos();
+  return Math.abs(hasta - desde);
+}
+
+function tras(saltos, id) {
+  if (!saltos) return;
+  marcarSucio(true);
+  pintar();
+  const e = ESTADO.envios[indiceDe(id)];
+  const p = e.fecha.split('-');
+  const n = Math.abs(saltos);
+  aviso('«' + e.tema.slice(0, 48) + '» pasa al ' + (+p[2]) + ' de ' + MESES[+p[1]].toLowerCase()
+        + '. Se han recolocado ' + n + (n === 1 ? ' envío más.' : ' envíos más.'),
+        'ok', { texto: 'Deshacer', fn: deshacer });
+  const fila = document.querySelector('tr[data-id="' + id + '"]');
+  if (fila) {
+    fila.classList.add('pl-recien');
+    fila.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+}
+
+function moverUno(id, delta) {
+  if (SOLO_LECTURA) return;
+  ordenar();
+  const saltos = mover(id, indiceDe(id) + delta);
+  tras(saltos, id);
 }
 
 function filtrados() {
@@ -81,6 +152,7 @@ function pintarKpis() {
 function pintar() {
   ordenar();
   pintarKpis();
+  const filtrado = hayFiltro();
   const lista = filtrados();
   const cont = document.getElementById('tabla');
   if (!lista.length) {
@@ -97,11 +169,19 @@ function pintar() {
         + '<h2 class="pl-mes-t">' + MESES[+mes.slice(5, 7)] + ' <em>' + mes.slice(0, 4) + '</em></h2>'
         + '<span class="pl-mes-n">' + nMes + (nMes === 1 ? ' envío' : ' envíos') + '</span></div>'
         + '<table class="pl-t"><thead><tr>'
+        + '<th class="c-g"><span class="pl-oculto">Mover</span></th>'
         + '<th class="c-f">Fecha</th><th class="c-t">Tema</th><th class="c-u">URL</th>'
         + '<th class="c-e">Estado</th><th class="c-x"></th></tr></thead><tbody>';
       mesPrevio = mes;
     }
+    const mover_ok = !SOLO_LECTURA && !filtrado;
     html += '<tr data-id="' + e.id + '">'
+      + '<td class="c-g"><button class="pl-asa"' + (mover_ok ? '' : ' disabled')
+      + ' aria-label="Mover el envío del ' + esc(e.fecha)
+      + '. Alt y flecha arriba o abajo para cambiarlo de hueco."'
+      + ' title="' + (mover_ok ? 'Arrastrar para cambiar de hueco · Alt+↑ / Alt+↓'
+                               : 'Quita el filtro para poder mover envíos') + '">'
+      + '<span aria-hidden="true">⠿</span></button></td>'
       + '<td class="c-f"><input type="date" data-campo="fecha" value="' + esc(e.fecha) + '" aria-label="Fecha del envío">'
       + '<em>' + fechaLarga(e.fecha) + ' · 15:00</em></td>'
       + '<td class="c-t"><div class="pl-edit" contenteditable="plaintext-only" data-campo="tema" '
@@ -175,10 +255,124 @@ function alPulsar(ev) {
   const e = buscaEnvio(id);
   if (b.getAttribute('data-accion') === 'borrar') {
     if (!confirm('¿Quitar el envío «' + e.tema.slice(0, 60) + '»?')) return;
+    instantanea();
     ESTADO.envios = ESTADO.envios.filter(function (x) { return x.id !== id; });
     marcarSucio(true);
     pintar();
+    aviso('Quitado «' + e.tema.slice(0, 48) + '».', 'warn', { texto: 'Deshacer', fn: deshacer });
   }
+}
+
+function limpiaSeleccion() {
+  const sel = window.getSelection ? window.getSelection() : null;
+  if (sel && sel.removeAllRanges) { try { sel.removeAllRanges(); } catch (err) {} }
+}
+
+function limpiaMarcas() {
+  const t = document.getElementById('tabla');
+  ['pl-arrastrando', 'pl-antes', 'pl-despues'].forEach(function (c) {
+    t.querySelectorAll('.' + c).forEach(function (el) { el.classList.remove(c); });
+  });
+}
+
+/* Mover envíos con eventos de puntero, no con HTML5 drag-and-drop: así funciona
+   igual con ratón y con dedo, y no se pelea con los campos editables de la fila. */
+
+function marcaDestino() {
+  limpiaMarcas();
+  if (!MOVIENDO) return;
+  const orig = document.querySelector('tr[data-id="' + MOVIENDO.id + '"]');
+  if (orig) orig.classList.add('pl-arrastrando');
+  if (!MOVIENDO.destino) return;
+  const fila = document.querySelector('tr[data-id="' + MOVIENDO.destino + '"]');
+  if (fila) fila.classList.add(MOVIENDO.antes ? 'pl-antes' : 'pl-despues');
+}
+
+function autoScroll(y) {
+  // Con 104 filas hay que poder arrastrar más allá de lo que se ve.
+  const margen = 90;
+  const paso = y < margen ? -14 : (y > window.innerHeight - margen ? 14 : 0);
+  if (!paso) {
+    if (SCROLL) { clearInterval(SCROLL); SCROLL = null; }
+    return;
+  }
+  if (SCROLL) return;
+  SCROLL = setInterval(function () {
+    window.scrollBy({ top: paso, behavior: 'instant' });
+  }, 16);
+}
+
+function alPunteroAbajo(ev) {
+  const asa = ev.target.closest('.pl-asa');
+  if (!asa || asa.disabled) return;
+  if (SOLO_LECTURA || hayFiltro()) return;
+  ev.preventDefault();
+  const fila = asa.closest('tr');
+  MOVIENDO = { id: fila.getAttribute('data-id'), destino: null, antes: true };
+  document.body.classList.add('pl-moviendo');
+  limpiaSeleccion();
+  try { asa.setPointerCapture(ev.pointerId); } catch (err) {}
+  asa.addEventListener('pointermove', alPunteroMueve);
+  asa.addEventListener('pointerup', alPunteroArriba);
+  asa.addEventListener('pointercancel', alPunteroFin);
+  marcaDestino();
+}
+
+function alPunteroMueve(ev) {
+  if (!MOVIENDO) return;
+  ev.preventDefault();
+  limpiaSeleccion();
+  autoScroll(ev.clientY);
+  const el = document.elementFromPoint(ev.clientX, ev.clientY);
+  const fila = el && el.closest ? el.closest('tr[data-id]') : null;
+  if (!fila || fila.getAttribute('data-id') === MOVIENDO.id) {
+    MOVIENDO.destino = null;
+  } else {
+    const caja = fila.getBoundingClientRect();
+    MOVIENDO.antes = (ev.clientY - caja.top) < caja.height / 2;
+    MOVIENDO.destino = fila.getAttribute('data-id');
+  }
+  marcaDestino();
+}
+
+function alPunteroArriba(ev) {
+  if (!MOVIENDO) return;
+  const m = MOVIENDO;
+  alPunteroFin(ev);
+  if (!m.destino) return;
+  ordenar();
+  const iOrigen = indiceDe(m.id);
+  let iDestino = indiceDe(m.destino);
+  if (!m.antes) iDestino = iDestino + 1;
+  if (iOrigen < iDestino) iDestino = iDestino - 1;
+  tras(mover(m.id, iDestino), m.id);
+}
+
+function alPunteroFin(ev) {
+  const asa = ev && ev.currentTarget;
+  if (asa && asa.removeEventListener) {
+    asa.removeEventListener('pointermove', alPunteroMueve);
+    asa.removeEventListener('pointerup', alPunteroArriba);
+    asa.removeEventListener('pointercancel', alPunteroFin);
+  }
+  if (SCROLL) { clearInterval(SCROLL); SCROLL = null; }
+  document.body.classList.remove('pl-moviendo');
+  limpiaSeleccion();
+  limpiaMarcas();
+  MOVIENDO = null;
+}
+
+function alTeclaAsa(ev) {
+  const asa = ev.target.closest('.pl-asa');
+  if (!asa) return;
+  const id = asa.closest('tr').getAttribute('data-id');
+  if (ev.key === 'ArrowUp' && ev.altKey) { ev.preventDefault(); moverUno(id, -1); reenfocar(id); }
+  if (ev.key === 'ArrowDown' && ev.altKey) { ev.preventDefault(); moverUno(id, 1); reenfocar(id); }
+}
+
+function reenfocar(id) {
+  const asa = document.querySelector('tr[data-id="' + id + '"] .pl-asa');
+  if (asa) asa.focus();
 }
 
 function nuevoEnvio() {
@@ -203,13 +397,17 @@ function nuevoEnvio() {
   }
 }
 
-function aviso(texto, tipo) {
+function aviso(texto, tipo, accion) {
   const c = document.getElementById('avisos');
   const clase = tipo === 'error' ? 'gdp-alert--error' : tipo === 'ok' ? 'gdp-alert--success'
     : tipo === 'warn' ? 'gdp-alert--warning' : 'gdp-alert--info';
   c.innerHTML = '<div class="gdp-alert ' + clase + '" role="status">'
     + '<div class="gdp-alert-icon"></div><div class="gdp-alert-content">'
-    + '<p class="gdp-alert-msg">' + esc(texto) + '</p></div></div>';
+    + '<p class="gdp-alert-msg">' + esc(texto)
+    + (accion ? ' <button class="btn btn-outline-blue btn-sm" id="btn-accion">'
+                + esc(accion.texto) + '</button>' : '')
+    + '</p></div></div>';
+  if (accion) document.getElementById('btn-accion').onclick = accion.fn;
   c.scrollIntoView({ block: 'nearest' });
 }
 
@@ -239,6 +437,7 @@ function modoLectura() {
       + 'pero los cambios se quedan en tu pantalla y no modifican el plan.';
   }
   marcarSucio(SUCIO);
+  pintar();   // repinta para que las asas de mover queden deshabilitadas de verdad
 }
 
 async function guardar() {
@@ -410,6 +609,8 @@ function arrancar() {
   tabla.addEventListener('input', alEditar);
   tabla.addEventListener('change', alEditar);
   tabla.addEventListener('click', alPulsar);
+  tabla.addEventListener('pointerdown', alPunteroAbajo);
+  tabla.addEventListener('keydown', alTeclaAsa);
 
   window.addEventListener('beforeunload', function (ev) {
     if (SUCIO && !SOLO_LECTURA) { ev.preventDefault(); ev.returnValue = ''; }
@@ -433,7 +634,15 @@ function codigoFuente(estado) {
     'let SUCIO = false;',
     'let SOLO_LECTURA = false;',
     'let PUEDE_DESCARGAR = false;',
+    'let ANTERIOR = null;',
+    'let MOVIENDO = null;',
+    'let SCROLL = null;',
     esc.toString(), nuevoId.toString(), fechaLarga.toString(), ordenar.toString(),
+    hayFiltro.toString(), instantanea.toString(), deshacer.toString(), indiceDe.toString(),
+    reasignarHuecos.toString(), mover.toString(), tras.toString(), moverUno.toString(),
+    limpiaSeleccion.toString(), limpiaMarcas.toString(), marcaDestino.toString(),
+    autoScroll.toString(), alPunteroAbajo.toString(), alPunteroMueve.toString(), alPunteroArriba.toString(),
+    alPunteroFin.toString(), alTeclaAsa.toString(), reenfocar.toString(),
     filtrados.toString(), opcionesEstado.toString(), pintarKpis.toString(),
     pintar.toString(), marcarSucio.toString(), buscaEnvio.toString(), alEditar.toString(),
     alPulsar.toString(), nuevoEnvio.toString(), aviso.toString(), desactivar.toString(),

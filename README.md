@@ -98,7 +98,7 @@ El histórico se usa solo para dos cosas:
 | `app/cuerpo.html` | El esqueleto de la interfaz (cabecera, KPIs, barra de filtros, pie). |
 | `app/marca/` | Hoja de marca y logo de García de Pou, copiados aquí para que la compilación no dependa de rutas externas. |
 | `app/montar.py` | Ensambla todo en `planificador.html` con los datos de `data/temas-2027.json`. |
-| `app/probar.py` | Suite de pruebas en navegador (Playwright): 47 comprobaciones. |
+| `app/probar.py` | Suite de pruebas en navegador (Playwright): 79 comprobaciones. |
 | `docs/planificador.html` | La versión ensamblada y publicada. |
 
 Se publica **una sola versión**, la de trabajo, con las capacidades `artifact` y
@@ -118,6 +118,36 @@ podría responder al clic — `app.css` recupera los eventos para esa clase.
 python3 app/montar.py    # -> planificador.html
 python3 app/probar.py    # abre Chromium y verifica todo
 ```
+
+### Mover envíos
+
+Las fechas del plan son **huecos fijos** del calendario: martes y jueves a las 15:00. Al
+mover un envío no se inventa una fecha nueva — se reordena la lista y `reasignarHuecos()`
+vuelve a repartir las mismas fechas en orden. Así nunca aparecen dos envíos el mismo día
+ni un envío en sábado.
+
+Tres formas de mover, todas por el asa `⠿` de la izquierda de cada fila:
+
+- **Arrastrando** con el ratón o el dedo. Una línea azul marca dónde va a caer, y al
+  llegar al borde de la pantalla la página se desplaza sola.
+- **Alt + ↑ / ↓** con el asa enfocada, para mover un hueco cada vez sin ratón.
+- **Cambiando la fecha** en el propio campo, que es lo práctico para saltos largos.
+
+Está hecho con **eventos de puntero, no con HTML5 drag-and-drop**: el arrastre nativo no
+funciona en táctil, se pelea con los campos `contenteditable` de la fila y no hay forma
+fiable de probarlo. Con `pointerdown` / `pointermove` / `pointerup` y `setPointerCapture`
+funciona igual con ratón y con dedo, y la suite lo verifica con el ratón de verdad.
+
+Detalles que conviene no romper:
+
+- **Con un filtro puesto no se puede arrastrar**: los vecinos que se ven no son los
+  vecinos reales, así que las asas se deshabilitan y explican por qué.
+- La tabla lleva `user-select: none` salvo en los campos editables. Sin eso, arrastrar
+  seleccionaba media página en azul. Intentarlo desde los eventos del ratón rompía el
+  arrastre — el CSS es la vía que no depende del orden de los eventos.
+- El scroll automático usa `behavior: 'instant'`: la hoja de marca pone
+  `scroll-behavior: smooth` y con eso el arrastre iba a tirones.
+- Mover y borrar guardan una instantánea y ofrecen **Deshacer** en el aviso.
 
 ### Cómo se guarda
 
