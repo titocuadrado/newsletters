@@ -202,8 +202,20 @@ with sync_playwright() as pw:
     pag3.wait_for_selector('#tabla tr', timeout=15000)
     pag3.wait_for_timeout(600)
     check(not err3, f'no revienta sin window.claude  {err3[:2]}')
-    check(pag3.eval_on_selector('#sucio', 'e => e.textContent') == 'Solo lectura',
+    check(pag3.eval_on_selector('#sucio', 'e => e.textContent').startswith('Solo lectura'),
           'pasa a modo solo lectura')
+    check(pag3.eval_on_selector('#btn-guardar', 'b => b.style.display') == 'none',
+          'esconde el botón de Guardar')
+    check('solo lectura' in pag3.eval_on_selector('#pie-guardar', 'e => e.textContent').lower(),
+          'el pie explica que los cambios no se guardan')
+    check(pag3.eval_on_selector_all('#tabla tbody tr', 'els => els.length') == 104,
+          'la copia congelada sigue mostrando los 104 envíos')
+    pag3.eval_on_selector('#tabla tbody tr [data-campo=\"tema\"]',
+                          'e => { e.textContent = \"un invitado escribiendo\"; '
+                          'e.dispatchEvent(new Event(\"input\", {bubbles:true})); }')
+    pag3.wait_for_timeout(200)
+    check(pag3.eval_on_selector('#sucio', 'e => e.textContent').startswith('Solo lectura'),
+          'sigue diciendo solo lectura aunque el invitado escriba')
     check(pag3.eval_on_selector('#btn-csv', 'b => b.style.display') == 'none',
           'oculta los botones de descarga')
     nav.close()

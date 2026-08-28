@@ -96,9 +96,20 @@ El histórico se usa solo para dos cosas:
 | `app/app.js` | Toda la lógica: pintado, edición, filtros, guardado y exportaciones. |
 | `app/app.css` | Estilos propios, encima de la hoja de marca. |
 | `app/cuerpo.html` | El esqueleto de la interfaz (cabecera, KPIs, barra de filtros, pie). |
-| `app/montar.py` | Ensambla los tres en `planificador.html` con los datos de `data/temas-2027.json`. |
-| `app/probar.py` | Suite de pruebas en navegador (Playwright): 33 comprobaciones. |
+| `app/marca/` | Hoja de marca y logo de García de Pou, copiados aquí para que la compilación no dependa de rutas externas. |
+| `app/montar.py` | Ensambla todo en `planificador.html` con los datos de `data/temas-2027.json`. |
+| `app/probar.py` | Suite de pruebas en navegador (Playwright): 38 comprobaciones. |
 | `docs/planificador.html` | La versión ensamblada y publicada. |
+
+Se publica en dos variantes del mismo fichero:
+
+- **Editable** — con las capacidades `artifact` y `downloads` declaradas. Guarda y exporta.
+  Las capacidades restringen el compartir público: solo se comparte con personas u
+  organización, no con «cualquiera con el enlace».
+- **Solo lectura** — el mismo fichero sin capacidades declaradas. `app.js` detecta que
+  `claude.use('artifact')` devuelve `null`, esconde Guardar y las exportaciones, y cambia
+  el pie para avisar de que los cambios se quedan en la pantalla del visitante. Esta sí
+  se puede compartir con cualquiera con el enlace.
 
 ```bash
 python3 app/montar.py    # -> planificador.html

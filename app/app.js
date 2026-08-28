@@ -127,7 +127,11 @@ function marcarSucio(si) {
   SUCIO = si;
   const b = document.getElementById('btn-guardar');
   const s = document.getElementById('sucio');
-  if (SOLO_LECTURA) { s.textContent = 'Solo lectura'; s.className = 'pl-sucio pl-sucio--ro'; return; }
+  if (SOLO_LECTURA) {
+    s.textContent = 'Solo lectura \u00b7 los cambios no se guardan';
+    s.className = 'pl-sucio pl-sucio--ro';
+    return;
+  }
   s.textContent = si ? 'Cambios sin guardar' : 'Todo guardado';
   s.className = 'pl-sucio' + (si ? ' pl-sucio--si' : '');
   b.disabled = !si;
@@ -211,7 +215,14 @@ function aviso(texto, tipo) {
 
 function modoLectura() {
   SOLO_LECTURA = true;
-  document.getElementById('btn-guardar').disabled = true;
+  const b = document.getElementById('btn-guardar');
+  if (b) { b.disabled = true; b.style.display = 'none'; }
+  const p = document.getElementById('pie-guardar');
+  if (p) {
+    p.innerHTML = '<strong>Esta vista es de solo lectura.</strong> Puedes tocar todo lo que ves '
+      + '\u2014 escribir sobre un tema, cambiar fechas, estados y URL, filtrar y buscar \u2014 '
+      + 'pero los cambios se quedan en tu pantalla y no modifican el plan.';
+  }
   marcarSucio(SUCIO);
 }
 

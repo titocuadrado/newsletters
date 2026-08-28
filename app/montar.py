@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Ensambla el planificador: CSS de marca + CSS propio + cuerpo + datos + app.js."""
 import json, os
-SP = os.path.dirname(os.path.abspath(__file__))
-MARCA = '/root/.claude/skills/synced/estilo-garcia-de-pou/assets'
+SP    = os.path.dirname(os.path.abspath(__file__))
+RAIZ  = os.path.dirname(SP) if os.path.basename(SP) == 'app' else '/home/user/newsletters'
+MARCA = os.path.join(RAIZ, 'app', 'marca')
+DATOS = os.path.join(RAIZ, 'data', 'temas-2027.json')
 
 css  = open(f'{MARCA}/gdp-brand.css').read() + '\n' + open(f'{SP}/app.css').read()
 logo = open(f'{MARCA}/logo-gdp.svg').read().strip().replace(
@@ -10,7 +12,7 @@ logo = open(f'{MARCA}/logo-gdp.svg').read().strip().replace(
 app  = open(f'{SP}/app.js').read()
 cuerpo = open(f'{SP}/cuerpo.html').read().replace('__LOGO__', logo)
 
-plan = json.load(open('/home/user/newsletters/data/temas-2027.json'))
+plan = json.load(open(DATOS))
 envios = [{
     'id': 'e%03d' % i, 'fecha': p['fecha'], 'tema': p['tema'], 'url': p['url'],
     'estado': 'propuesta', 'propia': bool(p['fabricacion_propia']),
